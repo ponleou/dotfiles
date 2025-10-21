@@ -1,4 +1,4 @@
-/* Catppuccin Mocha Peach userContent.css*/
+/* Catppuccin Mocha Yellow userContent.css*/
 
 @media (prefers-color-scheme: dark) {
 
@@ -6,9 +6,9 @@
   @-moz-document url-prefix("about:") {
     :root {
       --in-content-page-color: #cdd6f4 !important;
-      --color-accent-primary: #fab387 !important;
-      --color-accent-primary-hover: rgb(251, 195, 161) !important;
-      --color-accent-primary-active: rgb(250, 208, 136) !important;
+      --color-accent-primary: #f9e2af !important;
+      --color-accent-primary-hover: rgb(251, 234, 199) !important;
+      --color-accent-primary-active: rgb(249, 244, 175) !important;
       background-color: #1e1e2e !important;
       --in-content-page-background: #1e1e2e !important;
     }
@@ -24,15 +24,15 @@
       --newtab-element-hover-color: #313244 !important;
       --newtab-text-primary-color: #cdd6f4 !important;
       --newtab-wordmark-color: #cdd6f4 !important;
-      --newtab-primary-action-background: #fab387 !important;
+      --newtab-primary-action-background: #f9e2af !important;
     }
 
     .icon {
-      color: #fab387 !important;
+      color: #f9e2af !important;
     }
 
     .search-wrapper .logo-and-wordmark .logo {
-      background: url("zen-logo-mocha.svg"), url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Peach/zen-logo-mocha.svg") no-repeat center !important;
+      background: url("zen-logo-mocha.svg"), url("https://raw.githubusercontent.com/IAmJafeth/zen-browser/main/themes/Mocha/Yellow/zen-logo-mocha.svg") no-repeat center !important;
       display: inline-block !important;
       height: 82px !important;
       width: 82px !important;
@@ -48,7 +48,7 @@
     }
 
     .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
-      color: #fab387 !important;
+      color: #f9e2af !important;
     }
 
     .top-site-outer .search-topsite {
@@ -65,11 +65,11 @@
     :root {
       --zen-colors-tertiary: #181825 !important;
       --in-content-text-color: #cdd6f4 !important;
-      --link-color: #fab387 !important;
-      --link-color-hover: rgb(251, 195, 161) !important;
+      --link-color: #f9e2af !important;
+      --link-color-hover: rgb(251, 234, 199) !important;
       --zen-colors-primary: #313244 !important;
       --in-content-box-background: #313244 !important;
-      --zen-primary-color: #fab387 !important;
+      --zen-primary-color: #f9e2af !important;
     }
 
     groupbox , moz-card{
