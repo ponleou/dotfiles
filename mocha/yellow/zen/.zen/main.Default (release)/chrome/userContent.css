@@ -9,8 +9,8 @@
       --color-accent-primary: #f9e2af !important;
       --color-accent-primary-hover: rgb(251, 234, 199) !important;
       --color-accent-primary-active: rgb(249, 244, 175) !important;
-      background-color: #1e1e2e99 !important;
-      --in-content-page-background: #1e1e2e99 !important;
+      background-color: #1e1e2e !important;
+      --in-content-page-background: #1e1e2e !important;
     }
 
   }
@@ -19,9 +19,9 @@
   @-moz-document url("about:newtab"), url("about:home") {
 
     :root {
-      --newtab-background-color: #1e1e2e99 !important;
-      --newtab-background-color-secondary: #31324499 !important;
-      --newtab-element-hover-color: #31324499 !important;
+      --newtab-background-color: #1e1e2e !important;
+      --newtab-background-color-secondary: #313244 !important;
+      --newtab-element-hover-color: #313244 !important;
       --newtab-text-primary-color: #cdd6f4 !important;
       --newtab-wordmark-color: #cdd6f4 !important;
       --newtab-primary-action-background: #f9e2af !important;
@@ -63,27 +63,27 @@
   /* Variables and styles specific to about:preferences */
   @-moz-document url-prefix("about:preferences") {
     :root {
-      --zen-colors-tertiary: #18182599 !important;
+      --zen-colors-tertiary: #181825 !important;
       --in-content-text-color: #cdd6f4 !important;
       --link-color: #f9e2af !important;
       --link-color-hover: rgb(251, 234, 199) !important;
-      --zen-colors-primary: #31324499 !important;
-      --in-content-box-background: #31324499 !important;
+      --zen-colors-primary: #313244 !important;
+      --in-content-box-background: #313244 !important;
       --zen-primary-color: #f9e2af !important;
     }
 
     groupbox , moz-card{
-      background: #1e1e2e99 !important;
+      background: #1e1e2e !important;
     }
 
     button,
     groupbox menulist {
-      background: #31324499 !important;
+      background: #313244 !important;
       color: #cdd6f4 !important;
     }
 
     .main-content {
-      background-color: #11111b99 !important;
+      background-color: #11111b !important;
     }
 
     .identity-color-blue {
@@ -130,15 +130,15 @@
   /* Variables and styles specific to about:addons */
   @-moz-document url-prefix("about:addons") {
     :root {
-      --zen-dark-color-mix-base: #18182599 !important;
-      --background-color-box: #1e1e2e99 !important;
+      --zen-dark-color-mix-base: #181825 !important;
+      --background-color-box: #1e1e2e !important;
     }
   }
 
   /* Variables and styles specific to about:protections */
   @-moz-document url-prefix("about:protections") {
     :root {
-      --zen-primary-color: #1e1e2e99 !important;
+      --zen-primary-color: #1e1e2e !important;
       --social-color: #cba6f7 !important;
       --coockie-color: #89dceb !important;
       --fingerprinter-color: #f9e2af !important;
@@ -152,7 +152,7 @@
 
 
     .card {
-      background-color: #31324499 !important;
+      background-color: #313244 !important;
     }
   }
 }
