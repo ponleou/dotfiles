@@ -20,14 +20,14 @@
     --lwt-sidebar-text-color: #cdd6f4 !important;
     --lwt-sidebar-background-color: #11111b99 !important;
     --toolbar-bgcolor: #31324499 !important;
-    --newtab-background-color: #1e1e2e !important;
+    --newtab-background-color: #1e1e2e99 !important;
     --zen-themed-toolbar-bg: #18182599 !important;
     --zen-main-browser-background: #18182599 !important;
-    --toolbox-bgcolor-inactive: #181825 !important;
+    --toolbox-bgcolor-inactive: #18182599 !important;
   }
 
   #permissions-granted-icon {
-    color: #181825 !important;
+    color: #18182599 !important;
   }
 
   .sidebar-placesTree {
@@ -47,7 +47,7 @@
   }
 
   .content-shortcuts {
-    background-color: #1e1e2e !important;
+    background-color: #1e1e2e99 !important;
     border-color: #f9e2af !important;
   }
 
@@ -121,10 +121,10 @@
   }
 
   hbox#titlebar {
-    background-color: #181825 !important;
+    background-color: #18182599 !important;
   }
 
   #zen-appcontent-navbar-container {
-    background-color: #181825 !important;
+    background-color: #18182599 !important;
   }
 }
