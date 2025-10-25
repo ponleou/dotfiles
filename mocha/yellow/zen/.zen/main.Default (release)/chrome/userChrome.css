@@ -31,7 +31,7 @@
   }
 
   .sidebar-placesTree {
-    background-color: #1e1e2e !important;
+    background-color: #1e1e2e99 !important;
   }
 
   #zen-workspaces-button {
@@ -56,13 +56,13 @@
   }
 
   #zenEditBookmarkPanelFaviconContainer {
-    background: #11111b !important;
+    background: #11111b99 !important;
   }
 
   #zen-media-controls-toolbar {
     & #zen-media-progress-bar {
       &::-moz-range-track {
-        background: #313244 !important;
+        background: #31324499 !important;
       }
     }
   }
@@ -75,7 +75,7 @@
           .toolbarbutton-text,
           .toolbarbutton-badge-stack
         ) {
-        fill: #11111b;
+        fill: #11111b99;
       }
     }
   }
