@@ -45,7 +45,7 @@ export SCRIPT_DIR
 export -f trigger_sync_after_idle
 export -f trigger_hook
 
-inotifywait -q -m -r --exclude '/\.git($|/)' \
+inotifywait -q -m -r --exclude '/\.git($|/)|\.build$' \
   -e CLOSE_WRITE \
   -e CREATE \
   -e DELETE \
