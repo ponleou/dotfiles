@@ -50,15 +50,28 @@ stow_mods() {
 
   while [[ $# -gt 0 ]]; do
     local flag="${1##-}"
+    local value="$2"
+
+    if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
+      echo "Error: Unknown mod '$flag'. Available mods:"
+      ls -1 "$script_dir/mocha/modlist/"
+      exit 1
+    fi
+
+    if [[ ! -d "$script_dir/mocha/modlist/$flag/$option" ]]; then
+      echo "Error: Invalid option '$option' for mod '$flag'. Available options:"
+      ls -1 "$script_dir/mocha/modlist/$flag/"
+      exit 1
+    fi
 
     if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
       local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
       stow -D --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$prev"
     fi
 
-    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$2"
+    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$value"
 
-    echo $2 > $script_dir/settings/$settings_prefix$flag
+    echo $value > $script_dir/settings/$settings_prefix$flag
 
     shift 2
   done
