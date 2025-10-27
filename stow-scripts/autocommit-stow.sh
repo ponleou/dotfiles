@@ -42,7 +42,8 @@ trigger_hook() {
 }
 
 export SCRIPT_DIR
-export -f trigger_sync_after_idle 
+export -f trigger_sync_after_idle
+export -f trigger_hook
 
 inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e CLOSE_WRITE \
@@ -51,4 +52,4 @@ inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e MOVED_TO \
   -e MOVED_FROM \
   -e MODIFY \
-  --format="trigger_hook && git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
+  --format="git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
