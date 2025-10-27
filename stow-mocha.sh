@@ -49,14 +49,14 @@ stow_mods() {
   local settings_prefix=".current_mod_"
 
   while [[ $# -gt 0 ]]; do
-    local flag="${1#-}"
+    local flag="${1##-}"
 
-    if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]
+    if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
       local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
       stow -D --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$prev"
     fi
 
-    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods $2
+    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$2"
 
     echo $2 > $script_dir/settings/$settings_prefix$flag
 
