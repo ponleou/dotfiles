@@ -35,6 +35,14 @@ Note that this repository also contains my personal scripts and systemd-services
 -   papirus-icon-theme
 -   darkly
 
+Fonts:
+
+-   ttf-work-sans
+-   ttf-fira-code
+-   ttf-nerd-fonts-symbols
+-   otf-font-awesome
+-   woff2-font-awesome
+
 Optional:
 
 -   autotiling
