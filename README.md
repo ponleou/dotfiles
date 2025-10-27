@@ -20,10 +20,11 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Keybinds
 
-### Unknowned Directory Packages
+### Unowned Directory Packages
 
 -   vesktop (only owns settings/)
 -   youtube music
+-   Code (vscode)
 
 ### Dependencies
 
