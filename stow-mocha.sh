@@ -51,7 +51,13 @@ stow_mods() {
   while [[ $# -gt 0 ]]; do
     local flag="${1##-}"
     local value="$2"
-    echo $#
+    
+    if [[ $# -lt 2 ]]; then
+      echo "Error: Flag '$1' requires a value"
+      shift 1
+      continue
+    fi
+
     if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
       echo "Error: Unknown mod '$flag'. Available mods:"
       ls -1 "$script_dir/mocha/modlist/"
