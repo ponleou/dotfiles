@@ -6,7 +6,7 @@
     "remote.SSH.useLocalServer": false,
     "remote.SSH.connectTimeout": 300,
     "remote.SSH.remotePlatform": {},
-    "terminal.integrated.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace",
+    "terminal.integrated.fontFamily": "Fira Code, 'monospace', monospace",
     "git.enableSmartCommit": true,
     "javascript.inlayHints.parameterNames.enabled": "all",
     "cmake.showOptionsMovedNotification": false,
