@@ -4,7 +4,7 @@
     "terminal.integrated.automationProfile.linux": {},
     "task.slowProviderWarning": true,
     "remote.SSH.useLocalServer": false,
-    "remote.SSH.connectTimeout": 300,
+    "remote.SSH.connectTimeout": 390,
     "remote.SSH.remotePlatform": {},
     "terminal.integrated.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace",
     "git.enableSmartCommit": true,
