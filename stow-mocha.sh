@@ -2,13 +2,13 @@
 
 accents=("peach" "yellow")
 
-$mocha_packages = "btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
-$mocha_bases = "sway-base vesktop-base"
+mocha_packages = "btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
+mocha_bases = "sway-base vesktop-base"
 
-$accent_packages = "nwg-look qt6ct ytm zen"
-$accent_options = "rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
+accent_packages = "nwg-look qt6ct ytm zen"
+accent_options = "rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
 
-$build_packages = "Code"
+build_packages = "Code"
 
 # parse flags
 valid_accent=0
