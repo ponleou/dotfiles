@@ -20,6 +20,8 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Keybinds
 
+## Additional Information
+
 ### Unowned Directory Packages
 
 -   vesktop (only owns settings/)
