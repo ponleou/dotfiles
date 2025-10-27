@@ -26,9 +26,6 @@ fi
 # run stows and scripts
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
-stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
-
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
@@ -69,6 +66,9 @@ stow_mods() {
     echo default > "$script_dir/settings/.current_mod_fx"
   fi
 }
+
+stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
 if [[ $valid_accent == 1 ]]; then
   stow_accent "$1"
