@@ -3,6 +3,14 @@
 accents=("peach" "yellow")
 valid_accent=0
 
+$mocha_packages = "btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
+$mocha_bases = "sway-base vesktop-base"
+
+$accent_packages = "nwg-look qt6ct ytm zen"
+$accent_options = "rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
+
+# parse flags
+
 for accent in "${accents[@]}"; do
   if [[ "$1" == "$accent" ]]; then
     valid_accent=1
@@ -18,21 +26,20 @@ fi
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
-
-stow --dir=$script_dir/mocha/base --target=$HOME btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases sway-base vesktop-base
+stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
   if [[ -f "$script_dir/settings/.current_accent" ]]; then
     local prev_accent=$(cat "$script_dir/settings/.current_accent")
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" nwg-look qt6ct ytm zen
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option
+    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" $accent_packages
+    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" $accent_options
   fi
 
-  stow --dir="$script_dir/mocha/$accent" --target="$HOME" nwg-look qt6ct ytm zen
-  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option
+  stow --dir="$script_dir/mocha/$accent" --target="$HOME" $accent_packages
+  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" $accent_options
 
   echo $accent > "$script_dir/settings/.current_accent"
 
