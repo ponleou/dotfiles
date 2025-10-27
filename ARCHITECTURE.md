@@ -1,4 +1,4 @@
-# Dotfiles Architecture Documentation
+# Dotfiles Architecture Documentation [AI GENERATED]
 
 ## 📚 Table of Contents
 
