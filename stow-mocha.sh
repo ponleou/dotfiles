@@ -1,7 +1,6 @@
 #!/bin/bash
 
 accents=("peach" "yellow")
-valid_accent=0
 
 $mocha_packages = "btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
 $mocha_bases = "sway-base vesktop-base"
@@ -10,6 +9,8 @@ $accent_packages = "nwg-look qt6ct ytm zen"
 $accent_options = "rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
 
 # parse flags
+valid_accent=0
+enable_blur=0
 
 for accent in "${accents[@]}"; do
   if [[ "$1" == "$accent" ]]; then
@@ -18,12 +19,11 @@ for accent in "${accents[@]}"; do
   fi
 done
 
-enable_blur=0
-
 if [[ "$2" == "blur" ]]; then
   enable_blur=1
 fi
 
+# run stows and scripts
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
