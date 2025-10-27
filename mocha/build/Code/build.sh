@@ -2,4 +2,4 @@
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 sed -i "s/\"workbench.colorTheme\": \"[^\"]*\"/\"workbench.colorTheme\": \"Catppuccin Mocha\"/" "$script_dir/settings.json"
-sed -i "s/\"catppuccin.accentColor\": \"[^\"]*\"/\"workbench.colorTheme\": \"$accent\"/" "$script_dir/settings.json"
+sed -i "s/\"catppuccin.accentColor\": \"[^\"]*\"/\"workbench.accentColor\": \"$accent\"/" "$script_dir/settings.json"
