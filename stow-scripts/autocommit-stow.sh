@@ -45,6 +45,7 @@ export SCRIPT_DIR
 export -f trigger_sync_after_idle
 export -f trigger_hook
 
+# it doesnt watch .git folder and all files ending with .build
 inotifywait -q -m -r --exclude '/\.git($|/)|\.build$' \
   -e CLOSE_WRITE \
   -e CREATE \
