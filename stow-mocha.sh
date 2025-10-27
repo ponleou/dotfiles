@@ -55,13 +55,15 @@ stow_mods() {
     if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
       echo "Error: Unknown mod '$flag'. Available mods:"
       ls -1 "$script_dir/mocha/modlist/"
-      exit 1
+      shift 2
+      continue
     fi
 
     if [[ ! -d "$script_dir/mocha/modlist/$flag/$value" ]]; then
       echo "Error: Invalid option '$value' for mod '$flag'. Available options:"
       ls -1 "$script_dir/mocha/modlist/$flag/"
-      exit 1
+      shift 2
+      continue
     fi
 
     if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
