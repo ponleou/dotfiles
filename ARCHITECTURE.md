@@ -1,5 +1,7 @@
 # Dotfiles Architecture Documentation [AI GENERATED]
 
+**DISCLAIMER**: 100% of this document is entirely AI generated. A manual rewrite will be made in the future.
+
 ## 📚 Table of Contents
 
 1. [Overview](#overview)
