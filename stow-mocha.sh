@@ -46,6 +46,23 @@ stow_accent() {
 }
 
 stow_mods() {
+  local settings_prefix=".current_mod_"
+
+  while [[ $# -gt 0 ]]; do
+    local flag="${1#-}"
+
+    if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]
+      local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
+      stow -D --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$prev"
+    fi
+
+    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods $2
+
+    echo $2 > $script_dir/settings/$settings_prefix$flag
+
+    shift 2
+  done
+
   if [[ -f "$script_dir/settings/.current_accent" ]]; then
     local prev_background=$(cat "$script_dir/settings/.current_mod_background")
     local prev_fx=$(cat "$script_dir/settings/.current_mod_fx")
@@ -71,7 +88,7 @@ stow_mods() {
 
 build() {
   export expbuild_accent=$accent
-  
+
   for package in "$@"; do
     bash "$script_dir/mocha/build/$package/build.sh"
   done
@@ -88,7 +105,7 @@ else
 fi
 
 stow_accent $accent
-stow_mods
+stow_mods "${@:2}"
 
 build $build_packages
 
