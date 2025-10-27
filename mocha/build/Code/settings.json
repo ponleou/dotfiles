@@ -55,6 +55,6 @@
     },
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.colorTheme": "",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme"
 }
