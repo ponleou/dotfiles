@@ -71,7 +71,6 @@ stow_mods() {
       shift 2
       continue
     fi
-    
 
     if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
       local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
