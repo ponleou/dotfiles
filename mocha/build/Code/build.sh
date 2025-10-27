@@ -6,8 +6,8 @@ script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 # save static settings.json to .build
 static=sed "s/\"workbench.colorTheme\": \"[^\"]*\"/\"workbench.colorTheme\": \"\"/; s/\"catppuccin.accentColor\": \"[^\"]*\"/\"catppuccin.accentColor\": \"\"/" "$script_dir/settings.json"
-echo "$content" > "$script_dir/settings.json.build"
-echo "$content" > "$script_dir/settings.json"
+echo "$static" > "$script_dir/settings.json.build"
+echo "$static" > "$script_dir/settings.json"
 
 # modify the settings.json
 sed -i --follow-symlinks "s/\"workbench.colorTheme\": \"[^\"]*\"/\"workbench.colorTheme\": \"Catppuccin Mocha\"/" $script_dir/settings.json
