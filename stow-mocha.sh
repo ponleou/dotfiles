@@ -8,6 +8,8 @@ $mocha_bases = "sway-base vesktop-base"
 $accent_packages = "nwg-look qt6ct ytm zen"
 $accent_options = "rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
 
+$build_packages = "Code"
+
 # parse flags
 valid_accent=0
 enable_blur=0
@@ -65,6 +67,12 @@ stow_mods() {
     echo default > "$script_dir/settings/.current_mod_background"
     echo default > "$script_dir/settings/.current_mod_fx"
   fi
+}
+
+build() {
+  for package in "$@"; do
+    bash "$script_dir/mocha/$package/build.sh"
+  done
 }
 
 stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
