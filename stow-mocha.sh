@@ -71,6 +71,7 @@ stow_mods() {
 
 build() {
   for package in "$@"; do
+    export accent
     bash "$script_dir/mocha/build/$package/build.sh"
   done
 }
