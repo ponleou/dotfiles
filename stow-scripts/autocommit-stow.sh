@@ -31,6 +31,16 @@ trigger_sync_after_idle() {
   ) &
 }
 
+trigger_hook() {
+  HOOKS_DIR="$SCRIPT_DIR/hooks"
+  
+  if [ -d "$HOOKS_DIR" ]; then
+    for hook in "$HOOKS_DIR"/*.sh; do
+      [ -f "$hook" ] && bash "$hook"
+    done
+  fi
+}
+
 export SCRIPT_DIR
 export -f trigger_sync_after_idle 
 
@@ -41,4 +51,4 @@ inotifywait -q -m -r --exclude '/\.git($|/)' \
   -e MOVED_TO \
   -e MOVED_FROM \
   -e MODIFY \
-  --format="git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
+  --format="trigger_hook && git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
