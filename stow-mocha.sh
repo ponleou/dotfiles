@@ -58,8 +58,8 @@ stow_mods() {
       exit 1
     fi
 
-    if [[ ! -d "$script_dir/mocha/modlist/$flag/$option" ]]; then
-      echo "Error: Invalid option '$option' for mod '$flag'. Available options:"
+    if [[ ! -d "$script_dir/mocha/modlist/$flag/$value" ]]; then
+      echo "Error: Invalid option '$value' for mod '$flag'. Available options:"
       ls -1 "$script_dir/mocha/modlist/$flag/"
       exit 1
     fi
