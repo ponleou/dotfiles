@@ -54,7 +54,7 @@
         "*.hip": "cpp"
     },
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "catppuccin.accentColor": "peach",
+    "workbench.colorTheme": "Catppuccin Mcha",
+    "catppuccin.accentColor": "test",
     "workbench.iconTheme": "material-icon-theme"
 }
