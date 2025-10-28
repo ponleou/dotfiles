@@ -20,10 +20,13 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Keybinds
 
-### Unknowned Directory Packages
+## Additional Information
+
+### Unowned Directory Packages
 
 -   vesktop (only owns settings/)
 -   youtube music
+-   Code (vscode)
 
 ### Dependencies
 
@@ -33,6 +36,14 @@ Note that this repository also contains my personal scripts and systemd-services
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
 -   darkly
+
+Fonts:
+
+-   ttf-work-sans
+-   ttf-fira-code
+-   ttf-nerd-fonts-symbols
+-   otf-font-awesome
+-   woff2-font-awesome
 
 Optional:
 
