@@ -1,5 +1,5 @@
 html:not(.style-scope) {
-    --ctp-accent: var(--ctp-sapphire) !important;
+    --ctp-accent: var(--ctp-mauve) !important;
 }
 
 html:not(.style-scope) {
