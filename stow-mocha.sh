@@ -1,6 +1,6 @@
 #!/bin/bash
 
-accents=("peach" "yellow")
+accents=("peach" "yellow" "sapphire" "mauve" "green" "rosewater")
 
 mocha_packages="btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
 mocha_bases="sway-base vesktop-base"
@@ -10,9 +10,10 @@ accent_options="rofi-option swaync-option waybar-option wlogout-option sway-opti
 
 build_packages="Code"
 
+script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
+
 # parse flags
 valid_accent=0
-enable_blur=0
 
 for accent in "${accents[@]}"; do
   if [[ "$1" == "$accent" ]]; then
@@ -21,24 +22,18 @@ for accent in "${accents[@]}"; do
   fi
 done
 
-if [[ "$2" == "blur" ]]; then
-  enable_blur=1
-fi
-
-# run stows and scripts
-script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
-
+# functions
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
   if [[ -f "$script_dir/settings/.current_accent" ]]; then
     local prev_accent=$(cat "$script_dir/settings/.current_accent")
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" $accent_packages
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" $accent_options
+    stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$HOME" $accent_packages
+    stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$script_dir/mocha/options" $accent_options
   fi
 
-  stow --dir="$script_dir/mocha/$accent" --target="$HOME" $accent_packages
-  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" $accent_options
+  stow --dir="$script_dir/mocha/accents/$accent" --target="$HOME" $accent_packages
+  stow --dir="$script_dir/mocha/accents/$accent" --target="$script_dir/mocha/options" $accent_options
 
   echo $accent > "$script_dir/settings/.current_accent"
 
@@ -93,23 +88,30 @@ build() {
   done
 }
 
-stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
+main() {
+  # verifying accent
+  if [[ $valid_accent == 1 ]]; then
+    accent=$1
+  else
+    echo "Accent not found, fallback to default accent ${accents[0]}"
+    accent=${accents[0]}
+  fi
 
-if [[ $valid_accent == 1 ]]; then
-  accent=$1
-else
-  echo "Accent not found, fallback to default accent ${accents[0]}"
-  accent=${accents[0]}
-fi
+  # base
+  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
-stow_accent $accent
-stow_mods "${@:2}"
+  # accent and mods
+  stow_accent $accent
+  stow_mods "${@:2}"
 
-build $build_packages
+  # build
+  build $build_packages
 
-swaymsg reload
-swaync-client --reload-css >/dev/null 2>&1
-nwg-look -a > /dev/null 2>&1
+  # update theme
+  swaymsg reload
+  swaync-client --reload-css >/dev/null 2>&1
+  nwg-look -a > /dev/null 2>&1
+}
 
-
+main "$@"

@@ -1,8 +1,6 @@
-# Sway Dotfiles (Arch Linux and Catppuccin)
+# Swayfx Dotfiles (Arch Linux and Catppuccin)
 
-My personal _"productivity-oriented"_ rice for my Arch Linux machine with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself. Mainly using Catppuccin Mocha as the primary color scheme (more to come later).
-
-Note that this repository also contains my personal scripts and systemd-services. Once again, feel free to use it for yourself.
+My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color palette. Possibly overengineered for modularity in extensible color palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
 
 ## Applications used
 
@@ -22,12 +20,6 @@ Note that this repository also contains my personal scripts and systemd-services
 
 ## Additional Information
 
-### Unowned Directory Packages
-
--   vesktop (only owns settings/)
--   youtube music
--   Code (vscode)
-
 ### Dependencies
 
 -   nwg-look
@@ -36,6 +28,7 @@ Note that this repository also contains my personal scripts and systemd-services
 -   papirus-folders-catppuccin-git
 -   papirus-icon-theme
 -   darkly
+-   xdg-desktop-portal-gtk
 
 Fonts:
 
@@ -51,3 +44,49 @@ Optional:
 -   gpu-screen-record
 -   cliphist
 -   oh-my-zsh
+
+### Directory Structure
+
+```
+ROOT
+├── essentials/
+│   ├── bases/                                          # STOW TARGET—Stowed from [theme]'s BASE PACKAGES, extension files for essential's STOW PACKAGES
+│   ├── build/                                          # Build scripts for dynamic configs
+│   └── [package]/                                      # STOW PACKAGES—Stowed to $HOME, independent from themes
+│
+├── [theme] (e.g. mocha, latte)/
+│   ├── base/
+│   │   ├── [package]/                                  # STOW PACKAGES—Stowed to $HOME, standalone theme configs (doesn't require accent)
+│   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to essentials/bases/
+│   │
+│   ├── accents/
+│   │   └── [accent] (e.g. yellow, peach, etc.)/
+│   │       └── [package]/                              # STOW PACKAGES—Stowed to $HOME, dependent on accent
+│   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
+│   │
+│   ├── modlist/
+│   │   └── [mods] (e.g. background)/
+│   │       └── [mod-option]/
+│   │           └── [mod-package]/
+│   │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
+│   │
+│   ├── mods/
+│   │   └── [mod-package]/
+│   │       └── FILES                                   # STOW TARGET—Stowed from [theme]'s [mod-package]/FILES, are active mod symlinks
+│   │
+│   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for [theme]
+│   └── build/                                          # Build scripts for dynamic theme-dependent configs
+│
+├── script/                                             # Contains stow packages for personal scripts
+├── service/                                            # Contains stow packages for personal systemd services
+├── settings/                                           # Active config accents and mods
+├── stow-scripts/                                       # Git automation scripts (used by pon-autocommit-stow systemd service)
+└── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
+```
+
+Additional notes:
+
+-   Built config files, that are built with build scripts, contains a base template in \*.build
+-   for Vesktop config packages, stow only owns the vesktop/settings/ directory
+-   for Youtube Music config packages, stow only owns the "Youtube Music"/theme.css file, and the client application must be configured to use the theme.css style manually
+-   for Code config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
