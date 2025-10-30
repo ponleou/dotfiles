@@ -1,6 +1,6 @@
-# Sway Dotfiles (Arch Linux and Catppuccin)
+# Swayfx Dotfiles (Arch Linux and Catppuccin)
 
-My personal _"productivity-oriented"_ rice for my Arch Linux machine with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself. Mainly using Catppuccin Mocha as the primary color scheme (more to come later).
+My personal rice for my Arch Linux + Swayfx machine with some nice and minimal colors and styles. Feel free to take inspiration or copy for yourself. Mainly using Catppuccin Mocha as the primary color scheme (more to come later).
 
 Note that this repository also contains my personal scripts and systemd-services. Once again, feel free to use it for yourself.
 
