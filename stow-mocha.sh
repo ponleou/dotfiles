@@ -1,6 +1,6 @@
 #!/bin/bash
 
-accents=("peach" "yellow" "sapphire")
+accents=("peach" "yellow" "sapphire" "mauve")
 
 mocha_packages="btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
 mocha_bases="sway-base vesktop-base"
