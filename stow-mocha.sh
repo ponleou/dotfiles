@@ -93,23 +93,25 @@ build() {
   done
 }
 
-stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
+main() {
+  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
-if [[ $valid_accent == 1 ]]; then
-  accent=$1
-else
-  echo "Accent not found, fallback to default accent ${accents[0]}"
-  accent=${accents[0]}
-fi
+  if [[ $valid_accent == 1 ]]; then
+    accent=$1
+  else
+    echo "Accent not found, fallback to default accent ${accents[0]}"
+    accent=${accents[0]}
+  fi
 
-stow_accent $accent
-stow_mods "${@:2}"
+  stow_accent $accent
+  stow_mods "${@:2}"
 
-build $build_packages
+  build $build_packages
 
-swaymsg reload
-swaync-client --reload-css >/dev/null 2>&1
-nwg-look -a > /dev/null 2>&1
+  swaymsg reload
+  swaync-client --reload-css >/dev/null 2>&1
+  nwg-look -a > /dev/null 2>&1
+}
 
-
+main "$@"
