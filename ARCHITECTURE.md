@@ -54,6 +54,7 @@ ROOT
 │   ├── mods/
 │   │   └── [mod-package]/
 │   │       └── FILES/                                  # STOW TARGET—Stowed from [theme]'s [mod-package]/FILES, contains active mods symlinks
+│   │
 │   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for [theme]
 │   └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
