@@ -14,7 +14,6 @@ script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 # parse flags
 valid_accent=0
-enable_blur=0
 
 for accent in "${accents[@]}"; do
   if [[ "$1" == "$accent" ]]; then
@@ -22,10 +21,6 @@ for accent in "${accents[@]}"; do
     break
   fi
 done
-
-if [[ "$2" == "blur" ]]; then
-  enable_blur=1
-fi
 
 # functions
 stow_accent() {
