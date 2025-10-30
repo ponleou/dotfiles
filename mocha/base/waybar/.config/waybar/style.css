@@ -46,7 +46,7 @@ tooltip label {
 #workspaces button.urgent {
     /* background-image: linear-gradient(0deg, @red, @mantle); */
     /* color: rgb(190, 0, 0); */
-    color: @red;
+    color: @urgent-red;
 }
 
 .modules-right,
@@ -129,7 +129,7 @@ tooltip label {
 }
 
 #mode {
-    background-color: @red;
+    background-color: @urgent-red;
     color: @mantle;
     border-radius: 3px;
 }
