@@ -106,13 +106,14 @@ main() {
   stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
   stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
-
-
+  # accent and mods
   stow_accent $accent
   stow_mods "${@:2}"
 
+  # build
   build $build_packages
 
+  # update theme
   swaymsg reload
   swaync-client --reload-css >/dev/null 2>&1
   nwg-look -a > /dev/null 2>&1
