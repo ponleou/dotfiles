@@ -58,11 +58,11 @@ ROOT
 │   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for [theme]
 │   └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
-├── script/              # Contains stow packages for personal scripts
-├── service/             # Contains stow packages for personal systemd services
-├── settings/            # Runtime state tracking
-├── stow-scripts/        # Git automation scripts
-└── tmp/                 # Runtime temp files
+├── script/                                             # Contains stow packages for personal scripts
+├── service/                                            # Contains stow packages for personal systemd services
+├── settings/                                           # Active config accents and mods
+├── stow-scripts/                                       # Git automation scripts
+└── tmp/                                                # Runtime temp files for automation scripts and services
 ```
 
 ---
