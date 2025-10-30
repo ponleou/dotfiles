@@ -31,18 +31,18 @@ This is a **modular, themeable dotfiles system** using **GNU Stow** for symlink 
 ```
 ROOT
 ├── essentials/
-│   ├── bases/                  # STOW TARGET—Stowed from theme bases
-│   ├── build/                  # Build scripts for dynamic configs
-│   └── [package]/              # STOW PACKAGES—Independent from themes
+│   ├── bases/                                          # STOW TARGET—Stowed from theme bases, extensions for STOW PACKAGES
+│   ├── build/                                          # Build scripts for dynamic configs
+│   └── [package]/                                      # STOW PACKAGES—Independent from themes
 │
-├── [THEMES] (mocha, latte)/
+├── [THEMES] (e.g. mocha, latte)/
 │   ├── base/
-│   │   ├── [package]/          # Standalone theme configs (doesn't require accent)
-│   │   └── [*-base]/           # BASE PACKAGES—Stowed to ROOT/essentials/bases/
+│   │   ├── [package]/                                  # Standalone theme configs (doesn't require accent)
+│   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to ROOT/essentials/bases/
 │   │
-│   ├── [accent]/        # Accent color variants (peach, yellow)
-│   │   └── [app-option]/
-│   │       └── [app]/   # Accent-specific configs
+│   ├── accents/
+│   │   └── [accent] (e.g. yellow, peach, etc.)/
+│   │       └── [package]/                              # STOW PACKAGES—Dependent on accent
 │   │
 │   ├── modlist/         # Visual modification options
 │   │   └── [mod-name]/  # e.g., "background"
