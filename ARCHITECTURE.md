@@ -49,7 +49,7 @@ ROOT
 │   │   └── [mods] (e.g. background)/
 │   │       └── [mod-option]/
 │   │           └── [mod-package]/
-│   │               └── FILES                           # STOW FILES—Stowed to [theme]/mods/[mod-package]
+│   │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
 │   │
 │   ├── mods/
 │   │   └── [mod-package]/
