@@ -65,6 +65,10 @@ ROOT
 └── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
 ```
 
+Additional notes:
+
+-   Built config files, that are built with build scripts, contains a base template in \*.build
+
 ---
 
 ## Symlink Architecture
