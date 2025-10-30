@@ -31,27 +31,27 @@ This is a **modular, themeable dotfiles system** using **GNU Stow** for symlink 
 ```
 ROOT
 ├── essentials/
-│   ├── bases/                                          # STOW TARGET—Stowed from THEMES' BASE PACKAGES, extension file for essential's STOW PACKAGES
+│   ├── bases/                                          # STOW TARGET—Stowed from [theme]'s BASE PACKAGES, extension file for essential's STOW PACKAGES
 │   ├── build/                                          # Build scripts for dynamic configs
 │   └── [package]/                                      # STOW PACKAGES—Independent from themes
 │
-├── [themes] (e.g. mocha, latte)/
+├── [theme] (e.g. mocha, latte)/
 │   ├── base/
 │   │   ├── [package]/                                  # Standalone theme configs (doesn't require accent)
-│   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to ROOT/essentials/bases/
+│   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to essentials/bases/
 │   │
 │   ├── accents/
 │   │   └── [accent] (e.g. yellow, peach, etc.)/
 │   │       └── [package]/                              # STOW PACKAGES—Dependent on accent
-│   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to THEME/options/
+│   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
 │   │
-│   ├── modlist/         # Visual modification options
-│   │   └── [mod-name]/  # e.g., "background"
-│   │       └── [option]/    # e.g., "blur", "solid"
-│   │           └── [app]/   # Mod configs per app
+│   ├── modlist/
+│   │   └── [mods] (e.g. background)/
+│   │       └── [mod-option]/
+│   │           └── [mod-packages]/   # Mod configs per app
 │   │
-│   ├── mods/                                           # STOW TARGET—Stowed from THEMES' mods, contains active mods symlinks
-│   ├── options/                                        # STOW TARGET—Stowed from THEMES' OPTION PACKAGES, extension files for THEME
+│   ├── mods/                                           # STOW TARGET—Stowed from [theme]'s [mods], contains active mods symlinks
+│   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for THEME
 │   └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
 ├── script/              # User scripts
