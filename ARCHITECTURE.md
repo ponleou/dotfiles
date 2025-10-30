@@ -68,7 +68,8 @@ ROOT
 Additional notes:
 
 -   Built config files, that are built with build scripts, contains a base template in \*.build
--   Vesktop config files, stow only owns the vesktop/settings/ directory
+-   for Vesktop config packages, stow only owns the vesktop/settings/ directory
+-   for Youtube Music config packages, stow only owns the "Youtube Music"/theme.css file, and the client application must be configured to use the theme.css style manually
 
 ---
 
