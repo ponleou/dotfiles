@@ -1,8 +1,6 @@
 # Swayfx Dotfiles (Arch Linux and Catppuccin)
 
-My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color palette. Feel free to take inspiration or copy for yourself. Mainly using Catppuccin Mocha as the primary color scheme (more to come later).
-
-Note that this repository also contains my personal scripts and systemd-services. Once again, feel free to use it for yourself.
+My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color palette. Possibly overengineered for modularity in extensible color palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
 
 ## Applications used
 
