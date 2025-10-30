@@ -33,24 +33,27 @@ ROOT
 ├── essentials/
 │   ├── bases/                                          # STOW TARGET—Stowed from [theme]'s BASE PACKAGES, extension file for essential's STOW PACKAGES
 │   ├── build/                                          # Build scripts for dynamic configs
-│   └── [package]/                                      # STOW PACKAGES—Independent from themes
+│   └── [package]/                                      # STOW PACKAGES—Stowed to $HOME, independent from themes
 │
 ├── [theme] (e.g. mocha, latte)/
 │   ├── base/
-│   │   ├── [package]/                                  # Standalone theme configs (doesn't require accent)
+│   │   ├── [package]/                                  # STOW PACKAGES—Stowed to $HOME, standalone theme configs (doesn't require accent)
 │   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to essentials/bases/
 │   │
 │   ├── accents/
 │   │   └── [accent] (e.g. yellow, peach, etc.)/
-│   │       └── [package]/                              # STOW PACKAGES—Dependent on accent
+│   │       └── [package]/                              # STOW PACKAGES—Stowed to $HOME, dependent on accent
 │   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
 │   │
 │   ├── modlist/
 │   │   └── [mods] (e.g. background)/
 │   │       └── [mod-option]/
-│   │           └── [mod-packages]/   # Mod configs per app
+│   │           └── [mod-package]/                      # Contains mod files
+│   │               └── FILES/                          # STOW FILES—Stowed to [theme]/mods/[mod-packages]
 │   │
-│   ├── mods/                                           # STOW TARGET—Stowed from [theme]'s [mods], contains active mods symlinks
+│   ├── mods/
+│   │   └── [mod-package]/
+│   │       └── FILES/                                  # STOW TARGET—Stowed from [theme]'s [mod-package]/FILES, contains active mods symlinks
 │   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for THEME
 │   └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
