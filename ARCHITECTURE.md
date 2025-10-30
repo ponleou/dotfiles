@@ -33,12 +33,12 @@ ROOT
 ├── essentials/
 │   ├── bases/                  # STOW TARGET—Stowed from theme bases
 │   ├── build/                  # Build scripts for dynamic configs
-│   └── [package]/              # STOW PACKAGES—independent from themes
+│   └── [package]/              # STOW PACKAGES—Independent from themes
 │
 ├── [THEMES] (mocha, latte)/
 │   ├── base/
 │   │   ├── [package]/          # Standalone theme configs (doesn't require accent)
-│   │   └── [*-base]/         # Theme bases (stowed to essentials/bases)
+│   │   └── [*-base]/           # BASE PACKAGES—Stowed to ROOT/essentials/bases/
 │   │
 │   ├── [accent]/        # Accent color variants (peach, yellow)
 │   │   └── [app-option]/
