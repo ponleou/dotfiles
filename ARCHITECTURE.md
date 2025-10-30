@@ -48,7 +48,7 @@ ROOT
 │   ├── modlist/
 │   │   └── [mods] (e.g. background)/
 │   │       └── [mod-option]/
-│   │           └── [mod-package]/                      # Contains mod files
+│   │           └── [mod-package]/
 │   │               └── FILES/                          # STOW FILES—Stowed to [theme]/mods/[mod-package]
 │   │
 │   ├── mods/
