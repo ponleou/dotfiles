@@ -52,7 +52,7 @@ ROOT
 │   │
 │   ├── mods/                                           # STOW TARGET—Stowed from THEMES' mods, contains active mods symlinks
 │   ├── options/                                        # STOW TARGET—Stowed from THEMES' OPTION PACKAGES, extension files for THEME
-│   └── build/           # Theme-aware build scripts
+│   └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
 ├── script/              # User scripts
 ├── service/             # Systemd user services
