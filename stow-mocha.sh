@@ -33,12 +33,12 @@ stow_accent() {
 
   if [[ -f "$script_dir/settings/.current_accent" ]]; then
     local prev_accent=$(cat "$script_dir/settings/.current_accent")
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$HOME" $accent_packages
-    stow -D --dir="$script_dir/mocha/$prev_accent" --target="$script_dir/mocha/options" $accent_options
+    stow -D --dir="$script_dir/mocha/optionlist/$prev_accent" --target="$HOME" $accent_packages
+    stow -D --dir="$script_dir/mocha/optionlist/$prev_accent" --target="$script_dir/mocha/options" $accent_options
   fi
 
-  stow --dir="$script_dir/mocha/$accent" --target="$HOME" $accent_packages
-  stow --dir="$script_dir/mocha/$accent" --target="$script_dir/mocha/options" $accent_options
+  stow --dir="$script_dir/mocha/optionlist/$accent" --target="$HOME" $accent_packages
+  stow --dir="$script_dir/mocha/optionlist/$accent" --target="$script_dir/mocha/options" $accent_options
 
   echo $accent > "$script_dir/settings/.current_accent"
 
