@@ -61,7 +61,7 @@ ROOT
 ├── script/                                             # Contains stow packages for personal scripts
 ├── service/                                            # Contains stow packages for personal systemd services
 ├── settings/                                           # Active config accents and mods
-├── stow-scripts/                                       # Git automation scripts
+├── stow-scripts/                                       # Git automation scripts (used by pon-autocommit-stow systemd service)
 └── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
 ```
 
