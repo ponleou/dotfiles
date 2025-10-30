@@ -10,6 +10,8 @@ accent_options="rofi-option swaync-option waybar-option wlogout-option sway-opti
 
 build_packages="Code"
 
+script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
+
 # parse flags
 valid_accent=0
 enable_blur=0
@@ -25,9 +27,7 @@ if [[ "$2" == "blur" ]]; then
   enable_blur=1
 fi
 
-# run stows and scripts
-script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
-
+# functions
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
