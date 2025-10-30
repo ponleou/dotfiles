@@ -136,7 +136,7 @@ tooltip label {
 
 #pulseaudio.muted,
 #network.disconnected {
-    color: rgb(190, 0, 0);
+    color: @urgent-red;
 }
 
 @keyframes blink {
