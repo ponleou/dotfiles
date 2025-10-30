@@ -129,7 +129,7 @@ tooltip label {
 }
 
 #mode {
-    background-color: @urgent-red;
+    background-color: @red;
     color: @mantle;
     border-radius: 3px;
 }
