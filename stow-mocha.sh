@@ -94,15 +94,19 @@ build() {
 }
 
 main() {
-  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
-
+  # verifying accent
   if [[ $valid_accent == 1 ]]; then
     accent=$1
   else
     echo "Accent not found, fallback to default accent ${accents[0]}"
     accent=${accents[0]}
   fi
+
+  # base
+  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
+
+
 
   stow_accent $accent
   stow_mods "${@:2}"
