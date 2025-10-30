@@ -29,16 +29,16 @@ This is a **modular, themeable dotfiles system** using **GNU Stow** for symlink 
 ## Directory Structure
 
 ```
-~/.dotfiles/
-├── essentials/          # Theme-independent app configs
-│   ├── bases/           # [STOW TARGET] Symlinks to mocha theme bases
-│   ├── build/           # Build scripts for dynamic configs
-│   └── [app]/           # App configurations (sway, Code, etc.)
+ROOT
+├── essentials/
+│   ├── bases/                  # STOW TARGET -- Stowed from theme bases
+│   ├── build/                  # Build scripts for dynamic configs
+│   └── [package]/              # [STOW PACKAGES]
 │
-├── mocha/               # Catppuccin Mocha theme system
-│   ├── base/            # Core theme files
-│   │   ├── [app]/       # App theme configs
-│   │   └── [app-base]/  # Theme bases (stowed to essentials/bases)
+├── [THEMES] (mocha, latte)/
+│   ├── base/
+│   │   ├── [package]/          # Standalone theme configs (doesn't require accent)
+│   │   └── [*-base]/         # Theme bases (stowed to essentials/bases)
 │   │
 │   ├── [accent]/        # Accent color variants (peach, yellow)
 │   │   └── [app-option]/
