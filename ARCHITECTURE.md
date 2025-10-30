@@ -31,7 +31,7 @@ This is a **modular, themeable dotfiles system** using **GNU Stow** for symlink 
 ```
 ROOT
 ├── essentials/
-│   ├── bases/                                          # STOW TARGET—Stowed from theme bases, extensions for STOW PACKAGES
+│   ├── bases/                                          # **STOW TARGET**—Stowed from THEMES' BASE PACKAGES, extensions for essential's STOW PACKAGES
 │   ├── build/                                          # Build scripts for dynamic configs
 │   └── [package]/                                      # STOW PACKAGES—Independent from themes
 │
