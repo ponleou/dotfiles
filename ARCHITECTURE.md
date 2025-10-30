@@ -33,7 +33,7 @@ ROOT
 ├── essentials/
 │   ├── bases/                  # STOW TARGET—Stowed from theme bases
 │   ├── build/                  # Build scripts for dynamic configs
-│   └── [package]/              # [STOW PACKAGES]
+│   └── [package]/              # STOW PACKAGES
 │
 ├── [THEMES] (mocha, latte)/
 │   ├── base/
