@@ -46,7 +46,7 @@ Optional:
 -   cliphist
 -   oh-my-zsh
 
-## Directory Structure
+### Directory Structure
 
 ```
 ROOT
