@@ -12,7 +12,6 @@
 
 window#waybar {
     background-color: @background;
-    /* background-color: black; */
     color: @text;
 }
 
