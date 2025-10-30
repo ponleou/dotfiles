@@ -68,6 +68,7 @@ ROOT
 Additional notes:
 
 -   Built config files, that are built with build scripts, contains a base template in \*.build
+-   Vesktop config files, stow only owns the vesktop/settings/ directory
 
 ---
 
