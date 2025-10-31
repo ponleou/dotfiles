@@ -17,7 +17,7 @@ REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
 AUDIO_OUTPUT="default_output"
 AUDIO_INPUT="default_input"
-WINDOW_DEFAULT="screen"                         # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
+WINDOW="screen"                         # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
 FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
@@ -79,7 +79,7 @@ date=$(date +"%Y-%m-%d_%H-%M-%S")
 
 # gpu-screen-recorder options
 recording_options=(
-    -w $window
+    -w $WINDOW
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
@@ -93,7 +93,7 @@ recording_options=(
 )
 
 replay_options=(
-    -w $window
+    -w $WINDOW
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
@@ -111,13 +111,12 @@ replay_options=(
 case "$choice" in
 "$START_REPLAY")
     # START REPLAY
-    window=$WINDOW_DEFAULT
     gpu-screen-recorder "${replay_options[@]}"
     exit 0
     ;;
 "$START_REPLAY_PORTAL")
     # START REPLAY
-    window="portal"
+    replay_options[1]="portal"
     gpu-screen-recorder "${replay_options[@]}"
     exit 0
     ;;
@@ -133,13 +132,12 @@ case "$choice" in
     ;;
 "$START_RECORDING")
     # START RECORDING
-    window=$WINDOW_DEFAULT
     gpu-screen-recorder "${recording_options[@]}"
     exit 0
     ;;
 "$START_RECORDING_PORTAL")
     # START RECORDING
-    window="portal"
+    replay_options[1]="portal"
     gpu-screen-recorder "${recording_options[@]}"
     exit 0
     ;;
