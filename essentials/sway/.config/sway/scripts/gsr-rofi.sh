@@ -79,7 +79,7 @@ date=$(date +"%Y-%m-%d_%H-%M-%S")
 
 # gpu-screen-recorder options
 recording_options=(
-    -w $WINDOW
+    -w $window
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
@@ -93,7 +93,7 @@ recording_options=(
 )
 
 replay_options=(
-    -w $WINDOW
+    -w $window
     -f $FRAMERATE
     -fm $FRAMERATE_MODE
     -q $VIDEO_QUALITY
@@ -111,6 +111,13 @@ replay_options=(
 case "$choice" in
 "$START_REPLAY")
     # START REPLAY
+    window=$WINDOW_DEFAULT
+    gpu-screen-recorder "${replay_options[@]}"
+    exit 0
+    ;;
+"$START_REPLAY_PORTAL")
+    # START REPLAY
+    window="portal"
     gpu-screen-recorder "${replay_options[@]}"
     exit 0
     ;;
@@ -126,6 +133,13 @@ case "$choice" in
     ;;
 "$START_RECORDING")
     # START RECORDING
+    window=$WINDOW_DEFAULT
+    gpu-screen-recorder "${recording_options[@]}"
+    exit 0
+    ;;
+"$START_RECORDING_PORTAL")
+    # START RECORDING
+    window="portal"
     gpu-screen-recorder "${recording_options[@]}"
     exit 0
     ;;
