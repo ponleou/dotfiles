@@ -61,7 +61,7 @@ options=()
 
 # not running
 if [[ $running == 0 ]]; then
-    options=("$START_REPLAY" "$START_RECORDING")
+    options=("$START_REPLAY" "$START_REPLAY_PORTAL" "$START_RECORDING" "$START_RECORDING_PORTAL")
 # running in replay mode
 elif [[ $replay_mode == 1 ]]; then
     options=("$SAVE_REPLAY" "$STOP_REPLAY")
