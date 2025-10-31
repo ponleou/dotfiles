@@ -1,8 +1,0 @@
-[Unit]
-Description=Arduino Cloud Agent
-
-[Service]
-ExecStart=%h/ArduinoCloudAgent/Arduino_Cloud_Agent
-
-[Install]
-WantedBy=default.target

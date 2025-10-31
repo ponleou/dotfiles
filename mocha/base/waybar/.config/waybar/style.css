@@ -4,7 +4,6 @@
 
 * {
     border: none;
-    /* border-radius: 10px; */
     font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
     font-size: 12px;
     min-height: 0;
@@ -12,7 +11,6 @@
 
 window#waybar {
     background-color: @background;
-    /* background-color: black; */
     color: @text;
 }
 
@@ -44,9 +42,7 @@ tooltip label {
 }
 
 #workspaces button.urgent {
-    /* background-image: linear-gradient(0deg, @red, @mantle); */
-    /* color: rgb(190, 0, 0); */
-    color: @red;
+    color: @urgent-red;
 }
 
 .modules-right,
@@ -79,8 +75,6 @@ tooltip label {
 
 #music {
     border-radius: 5px;
-    /* padding: 1px 1px; */
-    /* margin-right: 5px; */
 }
 
 #idle_inhibitor,
@@ -136,7 +130,7 @@ tooltip label {
 
 #pulseaudio.muted,
 #network.disconnected {
-    color: rgb(190, 0, 0);
+    color: @urgent-red;
 }
 
 @keyframes blink {

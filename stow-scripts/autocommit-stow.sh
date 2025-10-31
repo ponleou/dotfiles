@@ -31,14 +31,26 @@ trigger_sync_after_idle() {
   ) &
 }
 
-export SCRIPT_DIR
-export -f trigger_sync_after_idle 
+trigger_hook() {
+  HOOKS_DIR="$SCRIPT_DIR/hooks"
+  
+  if [ -d "$HOOKS_DIR" ]; then
+    for hook in "$HOOKS_DIR"/*.sh; do
+      [ -f "$hook" ] && bash "$hook"
+    done
+  fi
+}
 
-inotifywait -q -m -r --exclude '/\.git($|/)' \
+export SCRIPT_DIR
+export -f trigger_sync_after_idle
+export -f trigger_hook
+
+# it doesnt watch .git folder and all files ending with .build
+inotifywait -q -m -r --exclude '/\.git($|/)|\.build$' \
   -e CLOSE_WRITE \
   -e CREATE \
   -e DELETE \
   -e MOVED_TO \
   -e MOVED_FROM \
   -e MODIFY \
-  --format="git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
+  --format="trigger_hook && git add -A && git commit -m 'autocommit: change in %w' && git push && trigger_sync_after_idle" ~/.dotfiles | sh
