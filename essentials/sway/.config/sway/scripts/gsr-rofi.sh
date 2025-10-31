@@ -17,7 +17,7 @@ REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
 AUDIO_OUTPUT="default_output"
 AUDIO_INPUT="default_input"
-WINDOW="portal"                                 # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
+WINDOW="screen"                                 # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
 FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
@@ -27,9 +27,11 @@ CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' an
 ENABLE_CURSOR="yes"                             # 'yes' or 'no'
 
 START_REPLAY=" Start Replay"
+START_REPLAY_PORTAL=" Start Replay (portal)"
 SAVE_REPLAY=" Save Replay"
 STOP_REPLAY=" Stop Replay"
 START_RECORDING=" Start Recording"
+START_RECORDING_PORTAL=" Start Recording (portal)"
 STOP_RECORDING=" Stop Recording"
 PAUSE_RECORDING=" Pause/Resume Recording"
 ####### END OF CONFIG #######
