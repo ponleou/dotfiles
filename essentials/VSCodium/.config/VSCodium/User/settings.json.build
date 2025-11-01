@@ -28,9 +28,6 @@
     "[groovy]": {
         "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
     },
-    "github.copilot.enable": {
-        "*": false
-    },
     "prettier.tabWidth": 4,
     "prettier.printWidth": 120,
     "discord.lowerDetailsEditing": "Workspace: {workspace_folder}",
