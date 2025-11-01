@@ -8,7 +8,7 @@ mocha_bases="sway-base vesktop-base"
 accent_packages="nwg-look qt6ct ytm zen"
 accent_options="rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
 
-build_packages="Code"
+build_packages="Code VSCodium"
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
