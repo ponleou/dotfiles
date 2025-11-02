@@ -202,7 +202,7 @@ bindsym $mod+r mode "resize"
 # output DP-3 disable
 # output HDMI-A-1 disable
 
-output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
+output * bg ./wallpaper/hollow_knight.jpg fill
 
 ### Idle configuration
 #
