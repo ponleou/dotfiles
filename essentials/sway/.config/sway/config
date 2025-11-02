@@ -7,6 +7,7 @@
 include base/theme
 include outputs
 include floating
+include wallpaper
 
 # other configs
 font pango: WorkSans Regular 12
@@ -201,8 +202,6 @@ bindsym $mod+r mode "resize"
 
 # output DP-3 disable
 # output HDMI-A-1 disable
-
-output * bg wallpaper.jpg fill
 
 ### Idle configuration
 #
