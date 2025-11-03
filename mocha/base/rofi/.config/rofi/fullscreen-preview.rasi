@@ -30,13 +30,13 @@ message {
 }
 
 inputbar {
-    children: [textbox-prompt-colon, entry];
+    children: [prompt, entry];
     background-color: #00000000;
     font: @font;
     border-color: @accent;
 }
 
-textbox-prompt-colon {
+prompt {
     enabled: true;
     background-color: @surface0;
     text-color: @text;
