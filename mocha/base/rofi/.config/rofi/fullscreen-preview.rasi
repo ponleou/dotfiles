@@ -85,8 +85,6 @@ listview {
 
 element {
 	orientation: vertical;
-	padding: 0.1em;
-
   	children: [element-icon, element-text ];
 }
 element-icon {
