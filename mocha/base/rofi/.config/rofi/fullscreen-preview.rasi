@@ -29,7 +29,7 @@ listview-split {
 
 wrap {
 	expand: false;
-	orientation: vertical;
+	orientation: horizontal;
 	children: [  message, inputbar ];
 }
 
