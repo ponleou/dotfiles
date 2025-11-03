@@ -99,8 +99,6 @@ element selected {
 @media ( enabled: env(PREVIEW, false)) {
   /** preview widget */
   icon-current-entry {
-    expand:          true;
-    size:            80%;
   }
   listview-split {
     children: [listview, icon-current-entry];
