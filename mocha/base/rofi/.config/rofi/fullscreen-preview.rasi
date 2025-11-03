@@ -85,5 +85,6 @@ element-text {
 element selected {
 	border: 2px;
 	border-color: @accent;
+	border-radius: 5px;
 }
 
