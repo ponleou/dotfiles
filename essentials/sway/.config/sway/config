@@ -90,7 +90,7 @@ set $file dolphin
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # gpu-record-screen with rofi
-    bindsym $mod+y exec bash -c "~/.config/sway/scripts/gsr-rofi.sh"
+    bindsym $mod+r exec bash -c "~/.config/sway/scripts/gsr-rofi.sh"
 
     # wallpaper selector
     bindsym $mod+p exec bash -c "~/.config/sway/scripts/wallpaper-rofi.sh"
