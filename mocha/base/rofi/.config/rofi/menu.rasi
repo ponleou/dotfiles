@@ -31,7 +31,6 @@ mainbox {
 
 inputbar {
     children: [prompt, entry];
-    background-color: #00000000;
     font: @font;
     border-color: @accent;
 }
