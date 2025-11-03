@@ -48,8 +48,6 @@ inputbar {
 	children: [ icon-ib, entry ];
 }
 entry {
-	placeholder: "Search";
-	placeholder-color: grey;
 }
 message {
 	background-color: @surface0;
