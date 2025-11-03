@@ -45,9 +45,10 @@ icon-ib {
 inputbar {
 	spacing: 0.4em;
 	padding: 0.4em;
-	children: [ icon-ib, entry ];
 }
 entry {
+	placeholder: "Search";
+	placeholder-color: grey;
 }
 message {
 	background-color: @surface0;
