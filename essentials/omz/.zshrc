@@ -116,4 +116,7 @@ export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 
-alias code='codium'
+alias code='codium --ozone-platform=wayland'
+
+dotfiles_path="~/.dotfiles"
+alias sm="$dotfiles_path/stow-mocha.sh"
