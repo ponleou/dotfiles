@@ -94,7 +94,7 @@ element {
   children: [element-icon, element-text ];
 }
 element-icon {
-	size: calc(((100% - 8em) / 12 ));
+	size: calc(((100% - 8em) / 100 ));
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
 }
