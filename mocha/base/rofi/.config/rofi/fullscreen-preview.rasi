@@ -76,7 +76,7 @@ element {
 }
 
 element-icon {
-	size: calc(1200px/12);
+	size: 100%;
 	horizontal-align: 0.5;
 }
 
