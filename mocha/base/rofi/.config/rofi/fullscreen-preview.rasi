@@ -11,7 +11,7 @@
 
 window {
 	children:         [ wrap, listview-split];
-	spacing:          1em;
+	spacing:          5px;
 	padding:          20px;
 	background-color: @background;
 	border-color: @accent;
