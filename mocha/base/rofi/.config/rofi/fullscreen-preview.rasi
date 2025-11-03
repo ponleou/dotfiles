@@ -4,7 +4,7 @@
 
 * {
 	background-color: transparent;
-	text-color:       white;
+	text-color:       @text;
 	width: 1200;
 }
 
