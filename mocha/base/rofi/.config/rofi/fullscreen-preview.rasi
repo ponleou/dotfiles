@@ -86,7 +86,6 @@ element-icon {
 }
 element-text {
 	horizontal-align: 0.5;
-	font: "Work Sans 12"
 }
 
 element-text selected {
