@@ -10,7 +10,7 @@
 }
 
 window {
-	children: [ wrap, listview];
+	children: [wrap, listview];
 	spacing: 10px;
 	padding: 20px;
 	background-color: @background;
@@ -43,6 +43,7 @@ prompt {
     padding: 5px 7px;
     border-radius: 5px;
 }
+
 entry {
     padding: 0 0 0 5px;
     text-color: @text;
