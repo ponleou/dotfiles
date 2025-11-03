@@ -65,7 +65,7 @@ listview {
 	flow: horizontal;
 	fixed-columns: true;
 	columns: 10;
-	lines: 3;
+	lines: 6;
 	spacing: 10px;
 }
 
