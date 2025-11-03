@@ -31,6 +31,7 @@ wrap {
 	expand: false;
 	orientation: vertical;
 	children: [ inputbar, message ];
+	border-radius: 0.4em;
 }
 
 icon-ib {
