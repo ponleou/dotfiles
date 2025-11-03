@@ -1,5 +1,5 @@
 configuration {
-/*	modes: "window,drun,run,file-browser-extended";*/
+	modes: "window,drun,run,file-browser-extended";
 /*	font: "mono 12";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
