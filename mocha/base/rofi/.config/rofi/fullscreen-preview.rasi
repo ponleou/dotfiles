@@ -93,6 +93,8 @@ element-icon {
 	size: calc(((100% - 8em) / 10 ));
 }
 element-text {
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
   	padding: 0.2em;
 }
 
