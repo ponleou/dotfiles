@@ -33,6 +33,7 @@ wrap {
 	children: [  message, inputbar ];
 	border: 1px;
 	border-color: red;
+	spacing: 15px;
 }
 
 icon-ib {
@@ -42,6 +43,7 @@ icon-ib {
 	horizontal-align: 0.5;
 	size: 1em;
 }
+
 inputbar {
     children: [prompt, entry];
     background-color: #00000000;
