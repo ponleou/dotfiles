@@ -7,6 +7,7 @@ file_name=$(basename "$file_path")
 
 
 if [ "$file_path" ]; then
-cp "$file_path" $wallpapers_dir
-echo "output * bg 'wallpapers/$file_name' fill" > $script_dir/../wallpaper
-swaymsg reload
+    cp "$file_path" $wallpapers_dir
+    echo "output * bg 'wallpapers/$file_name' fill" > $script_dir/../wallpaper
+    swaymsg reload
+fi
