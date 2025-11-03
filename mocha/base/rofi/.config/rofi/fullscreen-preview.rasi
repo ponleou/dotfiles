@@ -60,7 +60,7 @@ message {
 listview {
 	flow: horizontal;
 	fixed-columns: true;
-	columns: 2;
+	columns: 12;
 	lines: 2;
 	spacing: 1.0em;
 }
