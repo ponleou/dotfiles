@@ -1,11 +1,6 @@
-/**
- * ROFI Color Theme
- *
- * Fullscreen theme with switchable PREVIEW option.
- * 
- * User: Dave Davenport
- * Copyright: Dave Davenport
- */
+@import "./colors.rasi"
+@import "./option/accent.rasi"
+@import "./mod/background.rasi"
 
 * {
 	background-color: transparent;
@@ -14,7 +9,7 @@
 
 window {
 	fullscreen:       false;
-	background-color: black/80%;
+	background-color: @background;
 	padding:          4em;
 	children:         [ wrap, listview-split];
 	spacing:          1em;
