@@ -30,7 +30,7 @@ listview-split {
 wrap {
 	expand: false;
 	orientation: horizontal;
-	children: [ inputbar, message ];
+	children: [  message, inputbar ];
 }
 
 icon-ib {
