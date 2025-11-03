@@ -97,7 +97,6 @@ element-icon {
 element-text {
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
-  	padding: 0.2em;
 }
 
 element-text selected {
