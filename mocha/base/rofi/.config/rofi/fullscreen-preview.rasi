@@ -19,8 +19,6 @@ window {
     border-radius: 5px;
 }
 
-
-
 wrap {
 	expand: false;
 	orientation: vertical;
