@@ -19,11 +19,7 @@ window {
     border-radius: 5px;
 }
 
-listview {
-  orientation: horizontal;
-  spacing: 10px;
-  children: [listview];
-}
+
 
 wrap {
 	expand: false;
