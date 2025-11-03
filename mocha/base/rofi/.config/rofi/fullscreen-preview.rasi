@@ -50,8 +50,8 @@ entry {
 	placeholder-color: grey;
 }
 message {
-	background-color: red/20%;
-	border-color: lightsalmon;
+	background-color: @red;
+	border-color: @accent;
 	border: 3px 0px 0px 0px;
 	padding: 0.4em;
 	spacing: 0.4em;
