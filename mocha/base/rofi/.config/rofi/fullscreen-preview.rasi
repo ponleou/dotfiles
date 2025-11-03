@@ -45,7 +45,7 @@ textbox-prompt-colon {
     font: @font;
     padding: 5px 7px;
     border-radius: 5px;
-	text: "wallpaper";
+	content: "wallpaper";
 }
 
 entry {
