@@ -81,7 +81,7 @@ element {
 	border-color: red;
 }
 element-icon {
-	size: 1200px/10;
+	size: 120px;
 	horizontal-align: 0.5;
 }
 element-text {
