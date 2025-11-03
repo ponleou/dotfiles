@@ -13,7 +13,7 @@
 }
 
 window {
-	fullscreen:       true;
+	fullscreen:       false;
 	background-color: black/80%;
 	padding:          4em;
 	children:         [ wrap, listview-split];
