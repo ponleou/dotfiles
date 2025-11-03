@@ -21,7 +21,7 @@ window {
 
 listview {
   orientation: horizontal;
-  spacing: 0.4em;
+  spacing: 10px;
   children: [listview];
 }
 
