@@ -26,6 +26,12 @@ wrap {
 	spacing: 10px;
 }
 
+message {
+	background-color: @surface0;
+    padding: 5px 7px;
+	border-radius: 5px;
+}
+
 inputbar {
     children: [prompt, entry];
     background-color: #00000000;
@@ -53,12 +59,6 @@ entry {
     font: @font;
     cursor-color: transparent;
     padding: 5px 10px 5px 10px;
-}
-
-message {
-	background-color: @surface0;
-    padding: 5px 7px;
-	border-radius: 5px;
 }
 
 listview {
