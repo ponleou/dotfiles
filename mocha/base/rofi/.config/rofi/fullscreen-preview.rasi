@@ -31,8 +31,6 @@ wrap {
 	expand: false;
 	orientation: vertical;
 	children: [  message, inputbar ];
-	border: 1px;
-	border-color: red;
 	spacing: 10px;
 }
 
