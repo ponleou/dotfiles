@@ -6,7 +6,7 @@
 	background-color: transparent;
 	text-color:       @text;
 	width: 1200;
-	font: "Work Sans 9";
+	font: "Work Sans 12";
 }
 
 window {
