@@ -10,7 +10,7 @@
 }
 
 window {
-	children: [wrap, listview];
+	children: [wrap, listview, message];
 	spacing: 10px;
 	padding: 20px;
 	background-color: @background;
@@ -24,6 +24,9 @@ wrap {
 	orientation: vertical;
 	children: [ inputbar ];
 	spacing: 10px;
+}
+
+message {
 }
 
 inputbar {
