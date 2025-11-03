@@ -84,7 +84,7 @@ element {
     background-color: #00000000;
     text-color: @text;
     margin: 10px 0 0;
-    border: red;
+    border: 1px solid red;
 }
 
 element-icon {
