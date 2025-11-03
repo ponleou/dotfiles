@@ -19,6 +19,14 @@ window {
     border-radius: 5px;
 }
 
+listview {
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 5;
+	lines: 3;
+	spacing: 10px;
+}
+
 wrap {
 	expand: false;
 	orientation: vertical;
@@ -58,14 +66,6 @@ message {
 	background-color: @surface0;
     padding: 5px 7px;
 	border-radius: 5px;
-}
-
-listview {
-	flow: horizontal;
-	fixed-columns: true;
-	columns: 5;
-	lines: 3;
-	spacing: 10px;
 }
 
 element {
