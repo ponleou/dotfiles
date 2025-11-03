@@ -100,7 +100,7 @@ element-text {
   	padding: 0.2em;
 }
 
-element selected {
+element-text selected {
 	text-color: @accent;
 }
 
