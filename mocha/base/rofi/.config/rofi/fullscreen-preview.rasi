@@ -64,8 +64,8 @@ entry {
 listview {
 	flow: horizontal;
 	fixed-columns: true;
-	columns: 5;
-	lines: 3;
+	columns: 10;
+	lines: 6;
 	spacing: 10px;
 }
 
@@ -75,10 +75,12 @@ element {
 	border: 1px;
 	border-color: red;
 }
+
 element-icon {
 	size: calc(1200px/10);
 	horizontal-align: 0.5;
 }
+
 element-text {
 	horizontal-align: 0.5;
 }
