@@ -19,7 +19,7 @@ window {
     border-radius: 5px;
 }
 
-listview-split {
+listview {
   orientation: horizontal;
   spacing: 0.4em;
   children: [listview];
