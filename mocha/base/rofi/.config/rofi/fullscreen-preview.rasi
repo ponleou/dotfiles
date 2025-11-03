@@ -87,11 +87,7 @@ element {
 	orientation: vertical;
 	padding: 0.1em;
 
-	border-color: @overlay0;
-	border: 3px;
-	border-radius: 0.4em;
-
-  children: [element-icon, element-text ];
+  	children: [element-icon, element-text ];
 }
 element-icon {
 	size: calc(((100% - 8em) / 10 ));
