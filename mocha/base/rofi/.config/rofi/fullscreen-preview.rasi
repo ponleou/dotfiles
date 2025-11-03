@@ -50,10 +50,14 @@ entry {
 	placeholder-color: grey;
 }
 message {
-	background-color: @surface0;
-	padding: 0.4em;
-	spacing: 0.4em;
-	border-radius: 5px;
+    enabled: true;
+    background-color: @surface0;
+    text-color: @text;
+    text-align: center;
+    margin: 0px;
+    font: @font;
+    padding: 5px 7px;
+    border-radius: 5px;
 }
 
 listview {
