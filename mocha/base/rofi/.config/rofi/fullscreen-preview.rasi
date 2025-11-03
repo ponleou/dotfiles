@@ -10,7 +10,7 @@
 }
 
 window {
-	children: [ wrap, listview-split];
+	children: [ wrap, listview];
 	spacing: 10px;
 	padding: 20px;
 	background-color: @background;
