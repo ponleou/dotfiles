@@ -50,7 +50,7 @@ entry {
 	placeholder-color: grey;
 }
 message {
-	background-color: @surface1;
+	background-color: @surface0;
 	border-color: @accent;
 	border: 3px 0px 0px 0px;
 	padding: 0.4em;
