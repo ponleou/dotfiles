@@ -90,7 +90,7 @@ element {
 	border-color: red;
 }
 element-icon {
-	size: calc(((100% - 8em) / 10 ));
+	size: calc(((100% - 8em) / 15 ));
 	horizontal-align: 0.5;
 }
 element-text {
