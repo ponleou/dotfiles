@@ -97,13 +97,11 @@ element-icon {
 element-text {
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
-  padding: 0.2em;
+  	padding: 0.2em;
 }
 
 element selected {
-	border-color: @accent;
-	border: 3px;
-	border-radius: 0.4em;
+	font: @accent;
 }
 
 /**
