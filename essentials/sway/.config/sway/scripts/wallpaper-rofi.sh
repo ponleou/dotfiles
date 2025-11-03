@@ -7,3 +7,4 @@ file_name=$(basename $file_path)
 
 cp $file_path $wallpapers_dir
 echo "output * bg wallpapers/$file_name fill" > $script_dir/../wallpaper
+swaymsg reload
