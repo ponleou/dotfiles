@@ -3,7 +3,7 @@
 file_path=$(rofi -theme fullscreen-preview.rasi -display-file-browser-extended " wallpaper" -show file-browser-extended -file-browser-hide-parent -file-browser-only-files -file-browser-cmd 'echo' -file-browser-dir ~/.config/sway/wallpapers)
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 wallpapers_dir="$script_dir/../wallpapers/"
-file_name=$(basename $1)
+file_name=$(basename $file_path)
 
 cp $1 $wallpapers_dir
 echo "output * bg wallpapers/$file_name fill" > $script_dir/../wallpaper
