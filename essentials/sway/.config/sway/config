@@ -81,7 +81,7 @@ set $file dolphin
     bindsym $mod+Print exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
 
     # clipboard history with rofi
-    bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
+    bindsym $mod+v exec rofi -modi clipboard:~/.config/sway/scripts/cliphist-rofi-img -show clipboard -show-icons
 	
     # emoji picker with rofi
     bindsym $mod+Period exec rofi -modi emoji -show emoji
