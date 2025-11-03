@@ -5,6 +5,7 @@
 * {
 	background-color: transparent;
 	text-color:       white;
+	width: 600;
 }
 
 window {
