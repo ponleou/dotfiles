@@ -27,7 +27,6 @@ wrap {
 }
 
 message {
-	border-radius: 5px;
 }
 
 inputbar {
