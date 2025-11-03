@@ -87,7 +87,6 @@ element-text {
 }
 
 element selected {
-	background-image: linear-gradient(white/25%, white/10%);
 	border-color: @accent;
 	border: 3px;
 	border-radius: 0.4em;
