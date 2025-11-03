@@ -72,8 +72,6 @@ listview {
 element {
 	orientation: vertical;
   	children: [element-icon, element-text ];
-	border: 1px;
-	border-color: red;
 }
 
 element-icon {
