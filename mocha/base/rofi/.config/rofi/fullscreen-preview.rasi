@@ -92,13 +92,9 @@ element {
 element-icon {
 	size: calc(((100% - 8em) / 10 ));
 	horizontal-align: 0.5;
-	padding: 0;
-	margin: 0;
 }
 element-text {
 	horizontal-align: 0.5;
-		padding: 0;
-	margin: 0;
 }
 
 element-text selected {
