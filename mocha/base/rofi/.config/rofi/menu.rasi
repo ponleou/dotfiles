@@ -43,7 +43,7 @@ prompt {
     text-align: center;
     margin: 0px;
     font: @font;
-    padding: 5px 7px;
+    padding: 5px 100px;
     border-radius: 5px;
 }
 
