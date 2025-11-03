@@ -60,8 +60,14 @@ prompt {
     border-radius: 5px;
 }
 entry {
-	placeholder: "Search";
-	placeholder-color: grey;
+    padding: 0 0 0 5px;
+    text-color: @text;
+    background-color: #00000000;
+    text-align: center; 
+    line-height: 30px;   
+    font: @font;
+    cursor-color: transparent;
+    padding: 5px 10px 5px 10px;
 }
 message {
 	background-color: @surface0;
