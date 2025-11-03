@@ -70,7 +70,7 @@ element {
 	padding: 0.1em;
 
 	background-image: linear-gradient(white/5%, white/20%);
-	border-color: @accent;
+	border-color: @overlay0;
 	border: 3px;
 	border-radius: 0.4em;
 
