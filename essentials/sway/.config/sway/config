@@ -93,7 +93,7 @@ set $file dolphin
     bindsym $mod+y exec bash -c "~/.config/sway/scripts/gsr-rofi.sh"
 
     # wallpaper selector
-    bindsym $mod+w exec bash -c "~/.config/sway/scripts/wallpaper-rofi.sh"
+    bindsym $mod+u exec bash -c "~/.config/sway/scripts/wallpaper-rofi.sh"
 #
 # Layout stuff:
 #
