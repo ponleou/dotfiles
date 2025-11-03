@@ -10,11 +10,11 @@
 }
 
 window {
-	fullscreen:       false;
-	background-color: @background;
-	padding:          20px;
 	children:         [ wrap, listview-split];
-	spacing:          1em;
+	padding:          20px;
+	background-color: @background;
+	border-color: @accent;
+    border-radius: 5px;
 }
 
 
