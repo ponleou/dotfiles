@@ -34,14 +34,6 @@ wrap {
 	spacing: 10px;
 }
 
-icon-ib {
-	expand: false;
-	filename: "system-search";
-	vertical-align: 0.5;
-	horizontal-align: 0.5;
-	size: 1em;
-}
-
 inputbar {
     children: [prompt, entry];
     background-color: #00000000;
