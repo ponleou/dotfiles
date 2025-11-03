@@ -92,34 +92,3 @@ element-text selected {
 	text-color: @accent;
 }
 
-/**
- * Launching rofi with environment PREVIEW set to true
- * will split the screen and show a preview widget.
- */
-@media ( enabled: env(PREVIEW, false)) {
-  /** preview widget */
-  icon-current-entry {
-    expand:          true;
-    size:            30%;
-  }
-  listview-split {
-    children: [listview, icon-current-entry];
-  }
-  listview {
-  columns: 4;
-  }
-
-}
-
-@media ( enabled: env(NO_IMAGE, false)) {
-	listview {
-		columns: 1;
-		spacing: 0.4em;
-	}
-	element {
-		children: [ element-text ];
-	}
-	element-text {
-		horizontal-align: 0.0;
-	}
-}
