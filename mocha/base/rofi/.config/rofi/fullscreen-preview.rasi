@@ -31,7 +31,6 @@ wrap {
 	expand: false;
 	orientation: vertical;
 	children: [ inputbar, message ];
-	border-radius: 5px;
 }
 
 icon-ib {
@@ -54,6 +53,7 @@ message {
 	background-color: @surface0;
 	padding: 0.4em;
 	spacing: 0.4em;
+	border-radius: 5px;
 }
 
 listview {
