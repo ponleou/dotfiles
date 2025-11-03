@@ -101,7 +101,7 @@ element-text {
 }
 
 element selected {
-	font: @accent;
+	text-color: @accent;
 }
 
 /**
