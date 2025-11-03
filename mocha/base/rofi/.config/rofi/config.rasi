@@ -161,7 +161,8 @@ configuration {
   display-drun:   "󰣖 drun";
   display-window: "󱂬 window";
   display-combi:  "󰕘 combi";
-  display-filebrowser: "󰉋 filebrowser:";
+  display-filebrowser: "󰉋 filebrowser";
+  display-emoji: "󰞅 emoji";
 }
 
 @theme "./menu.rasi"
