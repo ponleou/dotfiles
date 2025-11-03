@@ -71,8 +71,6 @@ listview {
 element {
 	orientation: vertical;
   	children: [element-icon ];
-	border: 1px;
-	border-color: red;
 }
 
 element-icon {
@@ -84,7 +82,8 @@ element-text {
 	horizontal-align: 0.5;
 }
 
-element-text selected {
-	text-color: @accent;
+element selected {
+	border: 2px;
+	border-color: @accent;
 }
 
