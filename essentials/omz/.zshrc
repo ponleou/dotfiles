@@ -117,3 +117,6 @@ export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 
 alias code='codium --ozone-platform=wayland'
+
+dotfiles_path="~/.dotfiles"
+alias sm="$dotfiles_path/stow-mocha"
