@@ -44,6 +44,8 @@ Optional:
 -   gpu-screen-record
 -   cliphist
 -   oh-my-zsh
+-   rofi-emoji
+-   rofi-file-browser-extended-patched
 
 ### Directory Structure
 
