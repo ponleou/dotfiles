@@ -28,7 +28,7 @@ wrap {
 	orientation: vertical;
 	children: [ inputbar, message ];
 	background-image: linear-gradient(white/5%, white/40%);
-	border-color: lightblue;
+	border-color: @accent;
 	border: 3px;
 	border-radius: 0.4em;
 }
