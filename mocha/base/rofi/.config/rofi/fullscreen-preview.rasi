@@ -80,7 +80,7 @@ listview {
 	fixed-columns: true;
 	columns: 5;
 	lines: 3;
-	spacing: 1.0em;
+	spacing: 10px;
 }
 
 element {
