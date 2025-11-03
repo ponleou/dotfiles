@@ -86,6 +86,8 @@ listview {
 element {
 	orientation: vertical;
   	children: [element-icon, element-text ];
+	border: 1px;
+	border-color: red;
 }
 element-icon {
 	size: calc(((100% - 8em) / 10 ));
