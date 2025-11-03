@@ -27,7 +27,6 @@ wrap {
 }
 
 message {
-    padding: 5px 7px;
 	border-radius: 5px;
 }
 
