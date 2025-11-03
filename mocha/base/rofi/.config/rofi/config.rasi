@@ -1,5 +1,5 @@
 configuration {
-	modes: "window,drun,file-browser-extended,emoji";
+/*	modes: "window,drun,run,ssh";*/
 /*	font: "mono 12";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
@@ -154,6 +154,8 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+
+  modes: "window,drun,file-browser-extended,emoji";
 
   display-clipboard: "󰅇 clipboard";
   display-ssh:    "󰣀 ssh";
