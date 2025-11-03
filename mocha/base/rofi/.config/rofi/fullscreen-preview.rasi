@@ -10,9 +10,9 @@
 }
 
 window {
-	children:         [ wrap, listview-split];
-	spacing:          15px;
-	padding:          20px;
+	children: [ wrap, listview-split];
+	spacing: 15px;
+	padding: 20px;
 	background-color: @background;
 	border-color: @accent;
     border-radius: 5px;
