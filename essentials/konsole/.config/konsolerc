@@ -6,6 +6,9 @@ DefaultProfile=stow_dotfiles.profile
 [General]
 ConfigVersion=1
 
+[KonsoleWindow]
+RememberWindowSize=false
+
 [MainWindow]
 1920x1200 screen: Height=541
 1920x1200 screen: Width=896
