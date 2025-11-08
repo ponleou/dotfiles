@@ -49,5 +49,6 @@
     "editor.formatOnSave": true,
     "workbench.colorTheme": "",
     "catppuccin.accentColor": "",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "catppuccin-noctis-icons.hidesExplorerArrows": false
 }
