@@ -50,5 +50,8 @@
     "workbench.colorTheme": "",
     "catppuccin.accentColor": "",
     "workbench.iconTheme": "catppuccin noctis icons",
-    "catppuccin-noctis-icons.hidesExplorerArrows": false
+    "catppuccin-noctis-icons.hidesExplorerArrows": false,
+    "[erb]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp"
+    }
 }
