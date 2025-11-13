@@ -13,7 +13,7 @@ visiblePlugin=stereo_tools#0
 mostUsedPresets=G14 Speaker,Space One - alt
 outputDevice=bluez_output.E8_EE_CC_96_07_DA.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:3,Space One - alt:2
+usedPresets=G14 Speaker:5,Space One - alt:4
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
