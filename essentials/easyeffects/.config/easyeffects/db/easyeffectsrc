@@ -2,9 +2,10 @@
 spectrumShape=area
 
 [StreamInputs]
+inputDevice=alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_3E81F21F-00.mono-fallback
 mostUsedPresets=Rode USB
 plugins=rnnoise#0,equalizer#0,stereo_tools#0
-usedPresets=Rode USB:1
+usedPresets=Rode USB:2
 visiblePage=pluginsPage
 visiblePlugin=stereo_tools#0
 
