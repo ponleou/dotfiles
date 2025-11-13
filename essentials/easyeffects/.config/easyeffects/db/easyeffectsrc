@@ -2,7 +2,11 @@
 spectrumShape=area
 
 [StreamInputs]
+mostUsedPresets=Rode USB
+plugins=rnnoise#0,equalizer#0,stereo_tools#0
+usedPresets=Rode USB:1
 visiblePage=pluginsPage
+visiblePlugin=stereo_tools#0
 
 [StreamOutputs]
 outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
@@ -10,6 +14,7 @@ visiblePage=pluginsPage
 
 [Window]
 height=1008
-visiblePage=inputPage
-visiblePipeWirePage=modulesPage
+lastLoadedInputPreset=Rode USB
+visiblePage=pwPage
+visiblePipeWirePage=testSignalsPage
 width=1678
