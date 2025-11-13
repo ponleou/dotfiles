@@ -11,7 +11,7 @@ visiblePlugin=stereo_tools#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker
-outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
+outputDevice=bluez_output.E8_EE_CC_96_07_DA.1
 plugins=equalizer#0
 usedPresets=G14 Speaker:1
 visiblePage=pluginsPage
