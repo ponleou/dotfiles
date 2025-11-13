@@ -1,3 +1,6 @@
+[Spectrum]
+spectrumShape=area
+
 [StreamOutputs]
 outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
 visiblePage=pluginsPage
