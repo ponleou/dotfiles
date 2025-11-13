@@ -23,4 +23,5 @@ lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 visiblePage=inputPage
 visiblePipeWirePage=testSignalsPage
+visiblePresetSheetPage=autoloadingPage
 width=1678
