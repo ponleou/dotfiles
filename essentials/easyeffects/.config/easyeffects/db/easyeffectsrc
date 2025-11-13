@@ -15,6 +15,6 @@ visiblePage=pluginsPage
 [Window]
 height=1008
 lastLoadedInputPreset=Rode USB
-visiblePage=pwPage
 visiblePipeWirePage=testSignalsPage
+visiblePresetSheetPage=autoloadingPage
 width=1678
