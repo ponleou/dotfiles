@@ -10,12 +10,17 @@ visiblePage=pluginsPage
 visiblePlugin=stereo_tools#0
 
 [StreamOutputs]
+mostUsedPresets=G14 Speaker
 outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
+plugins=equalizer#0
+usedPresets=G14 Speaker:1
 visiblePage=pluginsPage
+visiblePlugin=equalizer#0
 
 [Window]
 height=1008
 lastLoadedInputPreset=Rode USB
+lastLoadedOutputPreset=G14 Speaker
 visiblePipeWirePage=testSignalsPage
 visiblePresetSheetPage=autoloadingPage
 width=1678
