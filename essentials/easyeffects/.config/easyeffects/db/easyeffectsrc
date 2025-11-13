@@ -7,5 +7,6 @@ visiblePage=pluginsPage
 
 [Window]
 height=1008
+visiblePage=inputPage
 visiblePresetSheetPage=autoloadingPage
 width=1678
