@@ -5,7 +5,7 @@ spectrumShape=area
 inputDevice=alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_3E81F21F-00.mono-fallback
 mostUsedPresets=Rode USB
 plugins=rnnoise#0,equalizer#0,stereo_tools#0
-usedPresets=Rode USB:3
+usedPresets=Rode USB:5
 visiblePage=pluginsPage
 visiblePlugin=stereo_tools#0
 
@@ -13,7 +13,7 @@ visiblePlugin=stereo_tools#0
 mostUsedPresets=G14 Speaker,Space One - alt
 outputDevice=bluez_output.E8_EE_CC_96_07_DA.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:5,Space One - alt:4
+usedPresets=G14 Speaker:6,Space One - alt:5
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
