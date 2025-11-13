@@ -1,0 +1,8 @@
+[StreamOutputs]
+outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
+visiblePage=pluginsPage
+
+[Window]
+height=1008
+visiblePresetSheetPage=autoloadingPage
+width=1678
