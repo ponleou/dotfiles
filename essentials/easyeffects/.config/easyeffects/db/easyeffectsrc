@@ -10,5 +10,6 @@ visiblePage=pluginsPage
 
 [Window]
 height=1008
-visiblePresetSheetPage=autoloadingPage
+visiblePage=inputPage
+visiblePipeWirePage=modulesPage
 width=1678
