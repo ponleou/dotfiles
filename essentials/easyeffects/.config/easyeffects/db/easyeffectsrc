@@ -7,7 +7,7 @@ mostUsedPresets=Rode USB
 plugins=rnnoise#0,equalizer#0,stereo_tools#0
 usedPresets=Rode USB:5
 visiblePage=pluginsPage
-visiblePlugin=stereo_tools#0
+visiblePlugin=rnnoise#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,Space One - alt
