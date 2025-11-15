@@ -55,5 +55,6 @@
   },
   "vscord.app.name": "VSCodium",
   "vscord.status.details.text.notInFile": "Idling",
-  "mesonbuild.downloadLanguageServer": true
+  "mesonbuild.downloadLanguageServer": true,
+  "clangd.checkUpdates": true
 }
