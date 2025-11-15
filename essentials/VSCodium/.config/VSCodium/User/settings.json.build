@@ -54,5 +54,6 @@
     "[erb]": {
         "editor.defaultFormatter": "Shopify.ruby-lsp"
     },
-    "vscord.app.name": "VSCodium"
+    "vscord.app.name": "VSCodium",
+    "vscord.status.details.text.notInFile": "Idle"
 }
