@@ -30,7 +30,6 @@
   },
   "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
-  "discord.lowerDetailsEditing": "Workspace: {workspace_folder}",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "[shellscript]": {
     "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
