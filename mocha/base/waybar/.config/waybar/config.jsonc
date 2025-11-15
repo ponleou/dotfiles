@@ -207,7 +207,7 @@
         "format-linked": "(No IP) ",
         "format-disconnected": "󱚵",
         "format-disabled": "󰖪",
-        "on-click": "konsole -e nmtui"
+        "on-click": "nmgui"
     },
 
     "pulseaudio": {

@@ -45,8 +45,8 @@ export SCRIPT_DIR
 export -f trigger_sync_after_idle
 export -f trigger_hook
 
-# it doesnt watch .git folder and all files ending with .build
-inotifywait -q -m -r --exclude '/\.git($|/)|\.build$' \
+# it doesnt watch .git folder, all files ending with .build, and files with .tmp (created by sponge)
+inotifywait -q -m -r --exclude '/\.git($|/)|\.build$|\.tmp' \
   -e CLOSE_WRITE \
   -e CREATE \
   -e DELETE \

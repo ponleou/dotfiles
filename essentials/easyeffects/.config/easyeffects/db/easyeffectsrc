@@ -10,10 +10,10 @@ visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [StreamOutputs]
-mostUsedPresets=G14 Speaker,Space One - alt
+mostUsedPresets=Space One,G14 Speaker,Space One - alt
 outputDevice=bluez_output.E8_EE_CC_96_07_DA.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:6,Space One - alt:5
+usedPresets=G14 Speaker:6,Space One:7,Space One - alt:2
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
@@ -22,5 +22,4 @@ height=1008
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 visiblePipeWirePage=testSignalsPage
-visiblePresetSheetPage=autoloadingPage
-width=1678
+width=832
