@@ -29,6 +29,7 @@ My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color pa
 -   papirus-icon-theme
 -   darkly
 -   xdg-desktop-portal-gtk
+-   moreutils
 
 Fonts:
 
