@@ -43,7 +43,7 @@
     "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
   },
   "notebook.output.scrolling": true,
-  "notebook.lineNumbers": "off",
+  "notebook.lineNumbers": "on",
   "[opencl]": {
     "editor.defaultFormatter": "galarius.vscode-opencl"
   },
