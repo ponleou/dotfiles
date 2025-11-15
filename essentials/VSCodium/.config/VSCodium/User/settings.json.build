@@ -53,5 +53,6 @@
     "catppuccin-noctis-icons.hidesExplorerArrows": false,
     "[erb]": {
         "editor.defaultFormatter": "Shopify.ruby-lsp"
-    }
+    },
+    "vscord.app.name": "VSCodium"
 }
