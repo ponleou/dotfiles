@@ -54,6 +54,6 @@
     "[erb]": {
         "editor.defaultFormatter": "Shopify.ruby-lsp"
     },
-    "vscord.app.name": "VSCodium",
+    "vscord.app.name": "Custom",
     "vscord.status.details.text.notInFile": "Idling"
 }
