@@ -4,7 +4,7 @@
     "appVisible": true,
     "autoUpdates": true,
     "alwaysOnTop": false,
-    "hideMenu": true,
+    "hideMenu": false,
     "hideMenuWarned": true,
     "startAtLogin": false,
     "disableHardwareAcceleration": false,
