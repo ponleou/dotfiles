@@ -8,5 +8,5 @@ build() {
   done
 }
 
-stow --dir=$script_dir/essentials --target=$HOME easyeffects GIMP mpv omz dolphin sway vesktop zen Code VSCodium
-build Code VSCodium
+stow --dir=$script_dir/essentials --target=$HOME easyeffects GIMP mpv omz dolphin sway vesktop zen Code VSCodium ytm
+build Code VSCodium ytm
