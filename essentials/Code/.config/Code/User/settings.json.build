@@ -36,7 +36,7 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "instructions": true
+    "instructions": false
   },
   "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
