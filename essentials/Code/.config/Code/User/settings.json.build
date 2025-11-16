@@ -32,7 +32,11 @@
     "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
   },
   "github.copilot.enable": {
-    "*": false
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "instructions": true
   },
   "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
