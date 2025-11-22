@@ -233,10 +233,10 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
     # Special keys for headphones
-    bindsym --locked XF86AudioPlay exec playerctl play
-    bindsym --locked XF86AudioPause exec playerctl pause	
-    bindsym --locked XF86AudioNext exec playerctl next
-    bindsym --locked XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioPlay exec playerctl -p playerctld play
+    bindsym --locked XF86AudioPause exec playerctl -p playerctld pause	
+    bindsym --locked XF86AudioNext exec playerctl -p playerctld next
+    bindsym --locked XF86AudioPrev exec playerctl -p playerctld previous
 #
 # Status Bar:
 #
