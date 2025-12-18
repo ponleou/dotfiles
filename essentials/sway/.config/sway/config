@@ -7,6 +7,7 @@
 include base/theme
 include outputs
 include floating
+include wallpaper
 
 # other configs
 font pango: WorkSans Regular 12
@@ -80,7 +81,7 @@ set $file dolphin
     bindsym $mod+Print exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
 
     # clipboard history with rofi
-    bindsym $mod+v exec rofi -modi clipboard:~/.config/cliphist/contrib/cliphist-rofi-img -show clipboard -show-icons
+    bindsym $mod+v exec rofi -modi clipboard:~/.config/sway/scripts/cliphist-rofi-img -show clipboard -show-icons
 	
     # emoji picker with rofi
     bindsym $mod+Period exec rofi -modi emoji -show emoji
@@ -90,6 +91,9 @@ set $file dolphin
 
     # gpu-record-screen with rofi
     bindsym $mod+y exec bash -c "~/.config/sway/scripts/gsr-rofi.sh"
+
+    # wallpaper selector
+    bindsym $mod+p exec bash -c "~/.config/sway/scripts/wallpaper-rofi.sh"
 #
 # Layout stuff:
 #
@@ -202,8 +206,6 @@ bindsym $mod+r mode "resize"
 # output DP-3 disable
 # output HDMI-A-1 disable
 
-output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
-
 ### Idle configuration
 #
 # Example configuration:
@@ -231,10 +233,10 @@ output * bg ./wallpaper/PXL_Luna_Beach.jpg fill
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
     # Special keys for headphones
-    bindsym --locked XF86AudioPlay exec playerctl play
-    bindsym --locked XF86AudioPause exec playerctl pause	
-    bindsym --locked XF86AudioNext exec playerctl next
-    bindsym --locked XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioPlay exec playerctl -p playerctld play
+    bindsym --locked XF86AudioPause exec playerctl -p playerctld pause	
+    bindsym --locked XF86AudioNext exec playerctl -p playerctld next
+    bindsym --locked XF86AudioPrev exec playerctl -p playerctld previous
 #
 # Status Bar:
 #
