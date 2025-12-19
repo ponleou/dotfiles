@@ -87,7 +87,7 @@ ROOT
 └── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
 ```
 
-Additional notes:
+### Notes:
 
 -   Built config files, that are built with build scripts, contains a base template in \*.build
 -   for Vesktop config packages, stow only owns the vesktop/settings/ directory
