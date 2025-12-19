@@ -42,7 +42,7 @@ squash_and_push_to_merge() {
   notify-send "Autosync completed"
 }
 
-get_no_diff_hash_in_auto() {
+get_no_diff_hash_from_auto() {
   local MAX_CHECK=1000
   local count=0
 
@@ -54,7 +54,7 @@ get_no_diff_hash_in_auto() {
       break
     fi
     
-    if git diff "$LAST_COMMIT_HASH" $hash --quiet; then
+    if git diff "$1" $hash --quiet; then
       echo $hash
       break
     fi
@@ -65,6 +65,7 @@ main() {
   check_lock
   safe_cd_tmp_dir
   squash_and_push_to_merge
+  MATCH_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_COMMIT_HASH)
 }
 
 main "$@"
