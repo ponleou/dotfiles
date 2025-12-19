@@ -89,6 +89,26 @@ write_report() {
   echo "$REPORT_FILE"
 }
 
+wait_for_file_in_branch() {
+  local FILE=$1           
+  local BRANCH=$2         
+  local TIMEOUT=30        
+  local count=0        
+   
+  local REPO_ROOT=$(git rev-parse --show-toplevel)
+  local RELATIVE_FILE=${FILE#$REPO_ROOT/}
+  
+  while [ $count -lt $TIMEOUT ]; do
+    if git ls-tree -r "$BRANCH" --name-only | grep -q "^$RELATIVE_FILE$"; then
+      return 0 
+    fi
+    sleep 1 
+    count=$((count + 1))
+  done
+  
+  return 1
+}
+
 get_latest_pr_index() {
   local from=$1
   local to=$2
