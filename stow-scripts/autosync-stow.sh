@@ -83,9 +83,10 @@ write_report() {
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "Last no-diff commit found from $AUTO_BRANCH: [$LAST_AUTO_HASH]($HTTPS_URL/commit/$LAST_AUTO_HASH)" >> $REPORT_FILE
   echo "" >> $REPORT_FILE
+  echo "commit count: $(git rev-list --count $LAST_AUTO_HASH..$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "diff:" >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
-  git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_MERGE_HASH | sort -u >> $REPORT_FILE
+  git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_AUTO_HASH | sort -u >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
 
   echo "$REPORT_FILE"
