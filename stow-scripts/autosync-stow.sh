@@ -3,9 +3,9 @@
 set -e
 
 LOCK_FILE="autosync.lck"
-SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 LAST_COMMIT_HASH=$(git rev-parse "$MERGE_BRANCH")
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 check_lock() {
   if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
@@ -45,6 +45,7 @@ squash_and_push_to_merge() {
 main() {
   check_lock
   safe_cd_tmp_dir
+  squash_and_push_to_merge
 }
 
 main "$@"
