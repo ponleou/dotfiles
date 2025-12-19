@@ -99,7 +99,7 @@ wait_for_file_in_branch() {
   local FILE_NAME=$(basename "$FILE")
   
   while [ $count -lt $TIMEOUT ]; do
-    if git ls-tree -r "$BRANCH" --name-only | grep -q "$FILENAME"; then
+    if git ls-tree -r "$BRANCH" --name-only | grep -q "$FILE_NAME"; then
       return 0
     fi
     sleep 1
