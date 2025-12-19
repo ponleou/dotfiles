@@ -40,6 +40,8 @@ validate_mods() {
       echo "$files" >&2
       exit 2
     fi
+
+    shift 2
   done
 }
 
