@@ -87,6 +87,8 @@ write_report() {
   git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_AUTO_HASH | sort -u >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
 
+  sleep 5
+
   echo "$REPORT_FILE"
 }
 
