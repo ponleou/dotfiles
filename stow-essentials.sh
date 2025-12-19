@@ -13,5 +13,5 @@ build() {
 
 
 
-stow --dir=$script_dir/essentials --target=$HOME 
-build 
+stow --dir=$script_dir/essentials --target=$HOME $packages
+build $build_packages
