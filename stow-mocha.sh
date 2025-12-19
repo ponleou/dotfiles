@@ -52,16 +52,6 @@ validate_mods() {
   done
 }
 
-
-valid_accent=0
-
-for accent in "${accents[@]}"; do
-  if [[ "$1" == "$accent" ]]; then
-    valid_accent=1
-    break
-  fi
-done
-
 # functions
 stow_accent() {
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
