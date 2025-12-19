@@ -43,11 +43,13 @@ squash_and_push_to_merge() {
 }
 
 get_no_diff_hash_in_auto() {
-  local max_check=0
+  local MAX_CHECK=1000
+  local count=0
+
   git log "$AUTO_BRANCH" --pretty=format:"%H" | while read hash; do
     count=$((count + 1))
     
-    if [ $count -gt 1000 ]; then
+    if [ $count -gt $MAX_CHECK ]; then
       echo "$hash"
       break
     fi
