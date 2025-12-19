@@ -124,7 +124,8 @@ main() {
   validate_accent $accent
   validate_mods $flags
 
-  # accent and mods
+  # base, accent and mods
+  stow_base
   stow_accent $accent
   stow_mods $flags
 
