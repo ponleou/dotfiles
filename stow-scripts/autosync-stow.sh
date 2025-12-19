@@ -9,7 +9,7 @@ set -e
 
 LOCK_FILE="autosync.lck"
 
-LAST_COMMIT_HASH=$(git rev-parse "$MERGE_BRANCH")
+LAST_MERGE_HASH=$(git rev-parse "$MERGE_BRANCH")
 CURRENT_AUTO_HASH=$(git rev-parse "$AUTO_BRANCH")
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
@@ -72,12 +72,19 @@ convert_ssh_to_https() {
   echo "$ssh_url" | sed -E 's|ssh://git@([^/]+)/(.+)|https://\1/\2|'
 }
 
+report_writer() {
+  LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
+  HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin))
+
+  CURRENT_MERGE_HASH=$(git rev-parse "$MERGE_BRANCH")
+
+  REPORT_FILE="$SCRIPT_DIR/../tmp/$CURRENT_MERGE_HASH.report.txt"
+}
+
 main() {
   check_lock
   safe_cd_tmp_dir
   squash_and_push_to_merge
-  LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_COMMIT_HASH)
-  HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin))
 }
 
 main "$@"
