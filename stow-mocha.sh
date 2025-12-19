@@ -13,6 +13,37 @@ build_packages="Code VSCodium ytm"
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 # parse flags
+validate_accent() {
+
+}
+
+validate_mods() {
+  while [[ $# -gt 0 ]]; do
+    local flag="${1##-}"
+    local value="$2"
+
+    if [[ $# -lt 2 ]]; then
+      echo "Error: Flag '$1' requires a value" >&2
+      exit 2
+    fi
+
+    if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
+      echo "Error: Unknown mod '$flag'. Available mods:" >&2
+      local files=$(ls -1 "$script_dir/mocha/modlist/")
+      echo "$files" >&2
+      exit 2
+    fi
+
+    if [[ ! -d "$script_dir/mocha/modlist/$flag/$value" ]]; then
+      echo "Error: Invalid option '$value' for mod '$flag'. Available options:" >&2
+      local files=$(ls -1 "$script_dir/mocha/modlist/$flag/")
+      echo "$files" >&2
+      exit 2
+    fi
+  done
+}
+
+
 valid_accent=0
 
 for accent in "${accents[@]}"; do
@@ -46,26 +77,6 @@ stow_mods() {
   while [[ $# -gt 0 ]]; do
     local flag="${1##-}"
     local value="$2"
-    
-    if [[ $# -lt 2 ]]; then
-      echo "Error: Flag '$1' requires a value"
-      shift 1
-      continue
-    fi
-
-    if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
-      echo "Error: Unknown mod '$flag'. Available mods:"
-      ls -1 "$script_dir/mocha/modlist/"
-      shift 2
-      continue
-    fi
-
-    if [[ ! -d "$script_dir/mocha/modlist/$flag/$value" ]]; then
-      echo "Error: Invalid option '$value' for mod '$flag'. Available options:"
-      ls -1 "$script_dir/mocha/modlist/$flag/"
-      shift 2
-      continue
-    fi
 
     if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
       local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
