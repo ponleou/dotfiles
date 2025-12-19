@@ -27,6 +27,8 @@ if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
   exit 1
 fi
 
+LAST_COMMIT_HASH=$(git rev-parse "$MERGE_BRANCH")
+
 git ls-files -z | xargs -0 -r git rm -f
 notify-send "Autosync is checking out $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
 git add -A
