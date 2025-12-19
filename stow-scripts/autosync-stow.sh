@@ -142,11 +142,9 @@ main() {
   safe_cd_tmp_dir
   local FILE=$(write_report)
 
-  cd $SCRIPT_DIR
   if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
-    exit 1
+    notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
   fi
-  safe_cd_tmp_dir
 
   squash_and_push_to_merge
   post_report $FILE
