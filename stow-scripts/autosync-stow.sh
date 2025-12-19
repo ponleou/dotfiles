@@ -113,7 +113,7 @@ post_report() {
   cd $SCRIPT_DIR
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
-  tea comment $pr_index "$(cat $FILE)"
+  local comment_feedback=$(tea comment $pr_index "$(cat $FILE)")
 
   safe_cd_tmp_dir
 }
