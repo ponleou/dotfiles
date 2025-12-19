@@ -59,7 +59,12 @@ stow_base() {
 
   if [[ -f "$settings_file_path" ]]; then
     local prev_theme=$(cat "$settings_file_path")
+    stow -D --dir=$script_dir/$prev_theme/base --target=$HOME $mocha_packages
+    stow -D --dir=$script_dir/$prev_theme/base --target=$script_dir/essentials/bases $mocha_bases
   fi
+
+  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
+  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
   echo "mocha" > "$settings_file_path"
 }
@@ -118,10 +123,6 @@ main() {
   # verify arguments
   validate_accent $accent
   validate_mods $flags
-
-  # base
-  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
 
   # accent and mods
   stow_accent $accent
