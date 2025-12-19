@@ -122,6 +122,10 @@ main() {
   check_lock
   safe_cd_tmp_dir
   local FILE=$(write_report)
+
+  # let the report get commited first
+  sleep 2
+
   squash_and_push_to_merge
   post_report $FILE
 }
