@@ -42,6 +42,15 @@ squash_and_push_to_merge() {
   notify-send "Autosync completed"
 }
 
+get_no_diff_hash_in_auto() {
+  git log "$AUTO_BRANCH" --pretty=format:"%H" | while read hash; do
+    if git diff "$LAST_COMMIT_HASH" $hash --quiet; then
+      echo $hash
+      break
+    fi
+  done
+}
+
 main() {
   check_lock
   safe_cd_tmp_dir
