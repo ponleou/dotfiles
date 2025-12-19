@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # available variables from env:
-# $AUTO_BRANCH
-# $MERGE_BRANCH
-# $TMP_DIR (can fail)
+#   $AUTO_BRANCH
+#   $MERGE_BRANCH
+#   $TMP_DIR (can fail)
 
 set -e
 
