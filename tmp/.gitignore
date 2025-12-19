@@ -1,4 +1,5 @@
 *
 !.gitignore
 !autosync.lck.bak
-!reports/
+!reports
+!reports/*
