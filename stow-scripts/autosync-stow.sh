@@ -72,7 +72,7 @@ convert_ssh_to_https() {
   echo "$ssh_url" | sed -E 's|ssh://git@([^/]+)/(.+)|https://\1/\2|'
 }
 
-report_writer() {
+write_report() {
   LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
   HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin) | sed 's/\.git$//')
 
@@ -87,13 +87,15 @@ report_writer() {
   echo "\`\`\`" >> $REPORT_FILE
   git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_MERGE_HASH | sort -u >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
+
+  echo "$REPORT_FILE"
 }
 
 get_latest_pr_index() {
-  from=$1
-  to=$2
+  local from=$1
+  local to=$2
 
-  index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
+  local index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
 
   if [[ -z "$index" ]]; then
     tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "pipeline-bot"
@@ -107,17 +109,19 @@ get_latest_pr_index() {
 }
 
 post_report() {
+  local FILE=$1
+
   cd $SCRIPT_DIR
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
-  tea comment $pr_index $(cat $SCRIPT_DIR/../tmp/)
+  tea comment $pr_index $(cat $FILE)
 }
 
 main() {
   check_lock
   safe_cd_tmp_dir
   squash_and_push_to_merge
-  report_writer
+  FILE=$(write_report)
 }
 
 main "$@"
