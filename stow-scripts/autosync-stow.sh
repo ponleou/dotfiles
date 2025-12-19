@@ -45,7 +45,7 @@ squash_and_push_to_merge() {
 get_no_diff_hash_in_auto() {
   git log "$AUTO_BRANCH" --pretty=format:"%H" | while read hash; do
     if git diff "$LAST_COMMIT_HASH" $hash --quiet; then
-      echo $hash
+      echo "$hash"
       break
     fi
   done
