@@ -73,12 +73,12 @@ convert_ssh_to_https() {
 }
 
 write_report() {
-  LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
-  HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin) | sed 's/\.git$//')
+  local LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
+  local HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin) | sed 's/\.git$//')
 
-  CURRENT_MERGE_HASH=$(git rev-parse "$MERGE_BRANCH")
+  local CURRENT_MERGE_HASH=$(git rev-parse "$MERGE_BRANCH")
 
-  REPORT_FILE="$SCRIPT_DIR/../tmp/$CURRENT_MERGE_HASH.report.txt"
+  local REPORT_FILE="$SCRIPT_DIR/../tmp/$CURRENT_MERGE_HASH.report.txt"
 
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "Last no-diff commit found from $AUTO_BRANCH: [$LAST_AUTO_HASH]($HTTPS_URL/commit/$LAST_AUTO_HASH)" >> $REPORT_FILE
