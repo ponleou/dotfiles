@@ -1,2 +1,3 @@
-settings\.json\.build$
-config\.json\.build$
+^\.config/Code/User/settings\.json\.build$
+^\.config/VSCodium/User/settings\.json\.build$
+^\.config/YouTube Music/config\.json\.build$
