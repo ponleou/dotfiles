@@ -115,13 +115,16 @@ post_report() {
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
   tea comment $pr_index "$(cat $FILE)"
+
+  safe_cd_tmp_dir
 }
 
 main() {
   check_lock
   safe_cd_tmp_dir
   squash_and_push_to_merge
-  FILE=$(write_report)
+  local FILE=$(write_report)
+  post_report $FILE
 }
 
 main "$@"
