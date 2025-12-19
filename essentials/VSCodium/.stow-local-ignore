@@ -14,4 +14,4 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-\.build$
+.*\.build$
