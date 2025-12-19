@@ -114,7 +114,7 @@ post_report() {
   cd $SCRIPT_DIR
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
-  tea comment $pr_index $(cat $FILE)
+  tea comment $pr_index "$(cat $FILE)"
 }
 
 main() {
