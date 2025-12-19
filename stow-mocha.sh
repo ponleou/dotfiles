@@ -83,9 +83,9 @@ stow_accent() {
   stow --dir="$script_dir/mocha/accents/$accent" --target="$HOME" $accent_packages
   stow --dir="$script_dir/mocha/accents/$accent" --target="$script_dir/mocha/options" $accent_options
 
-  echo $accent > "$settings_file_path"
-
   papirus-folders -C cat-mocha-$accent > /dev/null 2>&1
+
+  echo $accent > "$settings_file_path"
 }
 
 stow_mods() {
