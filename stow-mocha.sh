@@ -55,18 +55,22 @@ validate_mods() {
 # functions
 stow_base() {
   local settings_file=".current_theme"
+  local settings_file_path="$script_dir/settings/$settings_file"
 
-  if [[ -f "$script_dir/settings/$settings_file" ]]
+  if [[ -f "$settings_file_path" ]]; then
+    local prev_theme=$(cat "$settings_file_path")
+  fi
 
-  echo "mocha" > "$script_dir/settings/$settings_file"
+  echo "mocha" > "$settings_file_path"
 }
 
 stow_accent() {
   local settings_file=".current_accent"
+  local settings_file_path="$script_dir/settings/$settings_file"
   local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
 
-  if [[ -f "$script_dir/settings/$settings_file" ]]; then
-    local prev_accent=$(cat "$script_dir/settings/$settings_file")
+  if [[ -f "$settings_file_path" ]]; then
+    local prev_accent=$(cat "$settings_file_path")
     stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$HOME" $accent_packages
     stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$script_dir/mocha/options" $accent_options
   fi
@@ -74,7 +78,7 @@ stow_accent() {
   stow --dir="$script_dir/mocha/accents/$accent" --target="$HOME" $accent_packages
   stow --dir="$script_dir/mocha/accents/$accent" --target="$script_dir/mocha/options" $accent_options
 
-  echo $accent > "$script_dir/settings/$settings_file"
+  echo $accent > "$settings_file_path"
 
   papirus-folders -C cat-mocha-$accent > /dev/null 2>&1
 }
