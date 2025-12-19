@@ -10,6 +10,7 @@ set -e
 LOCK_FILE="autosync.lck"
 
 LAST_COMMIT_HASH=$(git rev-parse "$MERGE_BRANCH")
+CURRENT_AUTO_HASH=$(git rev-parse "$AUTO_BRANCH")
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 check_lock() {
@@ -70,7 +71,7 @@ main() {
   check_lock
   safe_cd_tmp_dir
   squash_and_push_to_merge
-  MATCH_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_COMMIT_HASH)
+  LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_COMMIT_HASH)
 }
 
 main "$@"
