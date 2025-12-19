@@ -39,6 +39,7 @@ safe_cd_tmp_dir() {
 }
 
 squash_and_push_to_merge() {
+  git fetch origin $AUTO_BRANCH
   git ls-files -z | xargs -0 -r git rm -f
   notify-send "Autosync is checking out $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
   git add -A
