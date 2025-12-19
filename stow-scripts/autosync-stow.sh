@@ -113,8 +113,7 @@ post_report() {
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
   local comment_feedback=$(tea comment $pr_index "$(cat $FILE)")
-  notify-send "Autosync completed"
-
+  notify-send "Writing report" "$comment_feedback"
 
   safe_cd_tmp_dir
 }
