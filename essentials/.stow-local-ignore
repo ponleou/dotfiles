@@ -1,3 +1,2 @@
-\.build$
-^.*\.build$
-.*/.*\.build$
+settings\.json\.build$
+config\.json\.build$
