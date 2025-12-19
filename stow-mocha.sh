@@ -18,7 +18,7 @@ validate_accent() {
 
   if [[ ! -d "$script_dir/mocha/accents/$accent" ]]; then
     echo "Error: Unknown accent '$1'. Available accents:" >&2
-    local files=$(ls -1 "$script_dir/moca/accents/")
+    local files=$(ls -1 "$script_dir/mocha/accents/")
     echo "$files" >&2
     exit 1
   fi
