@@ -45,7 +45,6 @@ squash_and_push_to_merge() {
   local commit_output=$(git commit -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
   notify-send "Autosync is committing" "$commit_output"
   notify-send "Autosync is pushing" "$(git push origin $MERGE_BRANCH)"
-  notify-send "Autosync completed"
 }
 
 get_no_diff_hash_from_auto() {
@@ -113,7 +112,8 @@ post_report() {
   cd $SCRIPT_DIR
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
-  tea comment $pr_index "$(cat $FILE)"
+  local comment_feedback=$(tea comment $pr_index "$(cat $FILE)")
+  notify-send "Autosync is writing report" "$comment_feedback"
 
   safe_cd_tmp_dir
 }
@@ -122,8 +122,14 @@ main() {
   check_lock
   safe_cd_tmp_dir
   local FILE=$(write_report)
+
+  # let the report get commited first
+  sleep 2
+
   squash_and_push_to_merge
   post_report $FILE
+
+  notify-send "Autosync completed"
 }
 
 main "$@"
