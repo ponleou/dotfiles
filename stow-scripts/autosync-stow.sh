@@ -89,6 +89,25 @@ write_report() {
   echo "$REPORT_FILE"
 }
 
+wait_for_file_in_branch() {
+  local FILE=$1
+  local BRANCH=$2
+  local TIMEOUT=30
+  local count=0
+  
+  local FILE_NAME=$(basename "$FILE")
+  
+  while [ $count -lt $TIMEOUT ]; do
+    if git ls-tree -r "$BRANCH" --name-only | grep -q "$FILENAME"; then
+      return 0
+    fi
+    sleep 1
+    count=$((count + 1))
+  done
+  
+  return 1
+}
+
 get_latest_pr_index() {
   local from=$1
   local to=$2
@@ -123,8 +142,9 @@ main() {
   safe_cd_tmp_dir
   local FILE=$(write_report)
 
-  # let the report get commited first
-  sleep 2
+  if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
+    notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
+  fi
 
   squash_and_push_to_merge
   post_report $FILE
