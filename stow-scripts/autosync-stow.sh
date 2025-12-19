@@ -93,17 +93,17 @@ get_latest_pr_index() {
   from=$1
   to=$2
 
-  index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="$1" and .base=="$2") | .index' | sort -n | tail -1)
+  index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
 
-  if [[ -z index ]]; then
-    tea pr create --head "$1" --base "$2" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "pipeline-bot"
-    index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="$1" and .base=="$2") | .index' | sort -n | tail -1)
-    
-    if [[ -z index ]]; then
+  if [[ -z "$index" ]]; then
+    tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "pipeline-bot"
+    index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
+    if [[ -z "$index" ]]; then
       exit 1
     fi
-
   fi
+  
+  echo "$index"
 }
 
 main() {
