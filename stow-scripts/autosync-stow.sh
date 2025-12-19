@@ -93,16 +93,16 @@ wait_for_file_in_branch() {
   local FILE=$1
   local BRANCH=$2
   local TIMEOUT=30
-  local ELAPSED=0
+  local count=0
   
-  local FILENAME=$(basename "$FILE")
+  local FILE_NAME=$(basename "$FILE")
   
-  while [ $ELAPSED -lt $TIMEOUT ]; do
+  while [ $count -lt $TIMEOUT ]; do
     if git ls-tree -r "$BRANCH" --name-only | grep -q "$FILENAME"; then
       return 0
     fi
     sleep 1
-    ELAPSED=$((ELAPSED + 1))
+    count=$((count + 1))
   done
   
   return 1
