@@ -47,8 +47,8 @@ squash_and_push_to_merge() {
   git add -A
   local commit_output=$(git commit -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
 
-  notify-send "Autosync is committing" "$commit_output"
-  notify-send "Autosync is pushing" "$(git push origin $MERGE_BRANCH)"
+  notify-send "Autosync is pushing" "$commit_output"
+  git push origin $MERGE_BRANCH
 }
 
 get_no_diff_hash_from_auto() {
