@@ -151,7 +151,6 @@ post_report() {
 
 main() {
   check_lock
-  check_no_change
   safe_cd_tmp_dir
   local FILE=$(write_report) # automatically exits if no change
 
