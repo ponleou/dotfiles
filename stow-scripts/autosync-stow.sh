@@ -146,7 +146,7 @@ main() {
   check_lock
   check_no_change
   safe_cd_tmp_dir
-  local FILE=$(write_report)
+  local FILE=$(write_report) # automatically exits if no change
 
   if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
     notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
