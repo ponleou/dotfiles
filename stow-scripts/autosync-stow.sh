@@ -116,7 +116,7 @@ get_latest_pr_index() {
   local index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
 
   if [[ -z "$index" ]]; then
-    tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "pipeline-bot"
+    tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "runner-bot"
     index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
     if [[ -z "$index" ]]; then
       exit 1
