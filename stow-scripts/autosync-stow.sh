@@ -80,12 +80,19 @@ write_report() {
   local LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
   local HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin) | sed 's/\.git$//')
 
+  local commit_count=$(git rev-list --count $LAST_AUTO_HASH..$CURRENT_AUTO_HASH)
+
+  # exit if no change
+  if [ "$commit_count" -eq 0 ]; then
+    exit 1
+  fi
+
   local REPORT_FILE="$SCRIPT_DIR/../tmp/reports/$LAST_MERGE_HASH.report.txt"
 
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "Last no-diff commit found from $AUTO_BRANCH: [$LAST_AUTO_HASH]($HTTPS_URL/commit/$LAST_AUTO_HASH)" >> $REPORT_FILE
   echo "" >> $REPORT_FILE
-  echo "commit count: $(git rev-list --count $LAST_AUTO_HASH..$CURRENT_AUTO_HASH)" >> $REPORT_FILE
+  echo "commit count: $commit_count" >> $REPORT_FILE
   echo "diff:" >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
   git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_AUTO_HASH | sort -u >> $REPORT_FILE
