@@ -48,7 +48,7 @@ squash_and_push_to_merge() {
   local commit_output=$(git commit -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
   local push_output=$(git push origin $MERGE_BRANCH 2>&1 | grep -E "(->|up-to-date|up to date|error|fatal|rejected|Everything|Total|Writing)" | head -1)
 
-  notify-send "Autosync is pushing" "$commit_output"$'\n'"$push_output"
+  notify-send "Autosync is pushing" "Commits:"$'\n'"$commit_output"$'\n'$'\n'"Push:"$'\n'"$push_output"
 }
 
 get_no_diff_hash_from_auto() {
@@ -75,16 +75,24 @@ convert_ssh_to_https() {
   echo "$ssh_url" | sed -E 's|ssh://git@([^/]+)/(.+)|https://\1/\2|'
 }
 
+# automatically exits if no change
 write_report() {
   local LAST_AUTO_HASH=$(get_no_diff_hash_from_auto $LAST_MERGE_HASH)
   local HTTPS_URL=$(convert_ssh_to_https $(git remote get-url origin) | sed 's/\.git$//')
+
+  local commit_count=$(git rev-list --count $LAST_AUTO_HASH..$CURRENT_AUTO_HASH)
+
+  # exit if no change
+  if [ "$commit_count" -eq 0 ]; then
+    exit 1
+  fi
 
   local REPORT_FILE="$SCRIPT_DIR/../tmp/reports/$LAST_MERGE_HASH.report.txt"
 
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "Last no-diff commit found from $AUTO_BRANCH: [$LAST_AUTO_HASH]($HTTPS_URL/commit/$LAST_AUTO_HASH)" >> $REPORT_FILE
   echo "" >> $REPORT_FILE
-  echo "commit count: $(git rev-list --count $LAST_AUTO_HASH..$CURRENT_AUTO_HASH)" >> $REPORT_FILE
+  echo "commit count: $commit_count" >> $REPORT_FILE
   echo "diff:" >> $REPORT_FILE
   echo "\`\`\`" >> $REPORT_FILE
   git log --name-status --pretty=format: $LAST_AUTO_HASH..$CURRENT_AUTO_HASH | sort -u >> $REPORT_FILE
@@ -144,7 +152,7 @@ post_report() {
 main() {
   check_lock
   safe_cd_tmp_dir
-  local FILE=$(write_report)
+  local FILE=$(write_report) # automatically exits if no change
 
   if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
     notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
