@@ -39,13 +39,16 @@ safe_cd_tmp_dir() {
 }
 
 squash_and_push_to_merge() {
-  git fetch origin $AUTO_BRANCH
   git ls-files -z | xargs -0 -r git rm -f
-  notify-send "Autosync is checking out $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
+
+  git fetch origin $AUTO_BRANCH
+  notify-send "Autosync is squashing $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
+  
   git add -A
   local commit_output=$(git commit -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
-  notify-send "Autosync is committing" "$commit_output"
-  notify-send "Autosync is pushing" "$(git push origin $MERGE_BRANCH)"
+  local push_output=$(git push origin $MERGE_BRANCH 2>&1 | grep -E "(->|up-to-date|up to date|error|fatal|rejected|Everything|Total|Writing)" | head -1)
+
+  notify-send "Autosync is pushing" "$commit_output"$'\n'"$push_output"
 }
 
 get_no_diff_hash_from_auto() {
@@ -116,7 +119,7 @@ get_latest_pr_index() {
   local index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
 
   if [[ -z "$index" ]]; then
-    tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "pipeline-bot"
+    tea pr create --head "$from" --base "$to" --title "v$(cat $SCRIPT_DIR/../.version)" --labels "runner-bot"
     index=$(tea pr ls --fields index,head,base --state open -o json | jq -r '.[] | select(.head=="'"$from"'" and .base=="'"$to"'") | .index' | sort -n | tail -1)
     if [[ -z "$index" ]]; then
       exit 1
