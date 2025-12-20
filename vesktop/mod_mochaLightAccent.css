@@ -1,4 +1,5 @@
 .visual-refresh .theme-dark,
 body {
-    --control-primary-text-default: 1e1e2e !important;
+    --white: rgba(30, 30, 46, 1) !important;
+    --control-primary-text-default: rgba(30, 30, 46, 1) !important;
 }
