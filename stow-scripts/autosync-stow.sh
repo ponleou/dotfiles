@@ -89,6 +89,7 @@ write_report() {
 
   local REPORT_FILE="$SCRIPT_DIR/../tmp/reports/$LAST_MERGE_HASH.report.txt"
 
+  echo "" > $REPORT_FILE
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
   echo "Last no-diff commit found from $AUTO_BRANCH: [$LAST_AUTO_HASH]($HTTPS_URL/commit/$LAST_AUTO_HASH)" >> $REPORT_FILE
   echo "" >> $REPORT_FILE
