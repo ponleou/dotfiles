@@ -58,7 +58,7 @@ textbox-prompt-colon {
 }
 
 textbox {
-    background-color: inherit;
+    background-color: unset;
 }
 
 entry {
