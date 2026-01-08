@@ -94,7 +94,7 @@ element {
     padding: 5px;
     border-radius: 0px;
     font: @font;
-    background-color: transparent;
+    background-color: red;
     text-color: @text;
     margin: 10px 0 0;
 }
