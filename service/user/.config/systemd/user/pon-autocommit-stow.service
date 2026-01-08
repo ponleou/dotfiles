@@ -1,8 +1,8 @@
 [Unit]
 Description=Auto-commit and push changes in dotfiles directory
-Before=shutdown.target reboot.target halt.target network.target
-After=network.target
-Requires=network.target
+Before=shutdown.target reboot.target halt.target network-online.target
+After=network-online.target
+Requires=network-online.target
 
 [Service]
 Type=simple
