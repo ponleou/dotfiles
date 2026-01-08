@@ -11,7 +11,7 @@ include wallpaper
 include keybinds
 
 # other configs
-font pango: WorkSans Regular 12
+font pango: WorkSans Regular 15
 
 gaps inner 10px
 gaps outer 2px
