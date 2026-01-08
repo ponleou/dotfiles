@@ -63,7 +63,6 @@ message {
 }
 
 textbox {
-    padding: 5px 5px 5px 20px;
     background-color: transparent;
     font: @font;
     text-color: @text;
