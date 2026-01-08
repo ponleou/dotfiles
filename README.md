@@ -2,18 +2,6 @@
 
 My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color palette. Possibly overengineered for modularity in extensible color palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
 
-## Applications used
-
--   WM: Swayfx
--   Bar: Waybar
--   Launcher: Rofi
--   File manager: Dolphin
--   Notifications: Swaync
--   Lockscreen: wlogout and Swaylock
--   Wallpaper: Swaybg
--   Terminal: Konsole
--   Shell: Zsh
-
 ## Screenshots
 
 ## Keybinds
