@@ -23,6 +23,7 @@ Fonts:
 
 -   ttf-work-sans
 -   ttf-fira-code
+-   ttf-firacode-nerd
 -   ttf-nerd-fonts-symbols
 -   otf-font-awesome
 -   woff2-font-awesome
