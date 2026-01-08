@@ -47,6 +47,9 @@ set $file dolphin
 
     # wallpaper selector
     bindsym $mod+p exec bash -c "~/.config/sway/scripts/wallpaper-rofi.sh"
+
+    # rofi calculator
+    bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort
 #
 # Layout stuff:
 #
