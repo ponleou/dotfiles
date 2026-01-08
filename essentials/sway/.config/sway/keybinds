@@ -8,7 +8,9 @@ set $menu rofi -show drun -show-icons
 
 set $file dolphin
 
-### Key bindings
+#
+# Key bindings
+#
     bindsym $mod+t exec $term
     bindsym $mod+q kill
     bindsym $mod+space exec $menu
