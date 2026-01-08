@@ -18,6 +18,9 @@ gaps outer 2px
 
 corner_radius 5
 
+# disable window titlebar
+default_border pixel 2
+
 # set sway cursor
 seat seat0 xcursor_theme breeze_cursors 24
 
@@ -35,8 +38,7 @@ input type:touchpad {
 	drag_lock enabled
 }
 
-# disable window titlebar
-default_border pixel 2
+
 
 focus_on_window_activation focus
 
