@@ -22,7 +22,6 @@ My personal rice for my Arch Linux + SwayFX machine based on Catppuccin color pa
 Fonts:
 
 -   ttf-work-sans
--   ttf-fira-code
 -   ttf-firacode-nerd
 -   ttf-nerd-fonts-symbols
 -   otf-font-awesome
