@@ -58,7 +58,7 @@ textbox-prompt-colon {
 }
 
 textbox {
-    background-color: transparent;
+    background-color: @background;
 }
 
 entry {
