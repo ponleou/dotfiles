@@ -3,7 +3,7 @@
   "editor.fontLigatures": true,
   "terminal.integrated.automationProfile.linux": {},
   "task.slowProviderWarning": true,
-  "terminal.integrated.fontFamily": "'Fira Code', 'monospace', monospace",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace",
   "git.enableSmartCommit": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "cmake.showOptionsMovedNotification": false,
