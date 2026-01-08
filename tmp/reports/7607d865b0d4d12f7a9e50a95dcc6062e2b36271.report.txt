@@ -1,0 +1,23 @@
+
+Squashed commits from autocommit/[085b34b3479b8897c427c79dfc7d49a63ab1217f](https://codeberg.org/ponleou/dotfiles/commit/085b34b3479b8897c427c79dfc7d49a63ab1217f)
+Last no-diff commit found from autocommit: [19400dfbdb5397cd218d72e70f595cc9a155a574](https://codeberg.org/ponleou/dotfiles/commit/19400dfbdb5397cd218d72e70f595cc9a155a574)
+
+commit count: 102
+diff:
+```
+
+A	essentials/bases/DO_NOT_MODIFY
+A	essentials/sway/.config/sway/keybinds
+D	mocha/base/ghostwriter/.gitignore
+D	mocha/base/ghostwriter/.local/share/ghostwriter/themes/catppuccin-mocha-peach.json
+M	essentials/bases/.gitignore
+M	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+M	essentials/sway/.config/sway/config
+M	essentials/sway/.config/sway/keybinds
+M	essentials/VSCodium/.config/VSCodium/User/settings.json.build
+M	mocha/base/konsole/.local/share/konsole/stow_dotfiles.profile
+M	mocha/base/rofi/.config/rofi/config.rasi
+M	mocha/base/rofi/.config/rofi/menu.rasi
+M	mocha/options/.gitignore
+M	README.md
+```
