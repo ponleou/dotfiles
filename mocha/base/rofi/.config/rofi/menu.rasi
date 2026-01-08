@@ -67,8 +67,7 @@ textbox {
 }
 
 message {
-    padding: 20px;
-    background-color: white;
+    padding: 5px 0px 0px;
 }
 
 entry {
@@ -86,7 +85,7 @@ listview {
     border: 0px;
     padding: 5px 0px 0px;
     columns: 1;
-    background-color: red;
+    background-color: transparent;
     fixed-height: false;
     lines: 7;
     border-radius: 0px;
