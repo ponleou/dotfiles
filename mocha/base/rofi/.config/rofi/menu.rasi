@@ -63,6 +63,10 @@ message, textbox {
 
 textbox {
     padding: 10px;
+    /* background-color: red; */
+}
+
+message {
     background-color: red;
 }
 
