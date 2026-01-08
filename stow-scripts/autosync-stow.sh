@@ -101,10 +101,11 @@ write_report() {
 
   echo "$REPORT_FILE"
 
+  cd "$SCRIPT_DIR"
   git add "$REPORT_FILE"
   git commit -m "autosync: written report ($(date +'%d-%m-%Y %H:%M:%S'))"
   git push
-
+  safe_cd_tmp_dir
 }
 
 wait_for_file_in_branch() {
