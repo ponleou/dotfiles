@@ -63,12 +63,12 @@ message, textbox {
 
 textbox {
     padding: 10px;
-    /* background-color: red; */
+    background-color: red;
 }
 
 message {
     padding: 20px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 entry {
