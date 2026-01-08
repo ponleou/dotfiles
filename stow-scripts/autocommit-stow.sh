@@ -41,6 +41,11 @@ trigger_hook() {
   fi
 }
 
+check_connection() {
+  ssh -T git@codeberg.org
+  tea whoami
+}
+
 export SCRIPT_DIR
 export -f trigger_sync_after_idle
 export -f trigger_hook
