@@ -58,7 +58,7 @@ textbox-prompt-colon {
 }
 
 message {
-    padding: 5px 0px 0px;
+    margin: 10px 0 0;
     background-color: transparent;
 }
 
