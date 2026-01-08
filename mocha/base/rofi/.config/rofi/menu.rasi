@@ -57,7 +57,7 @@ textbox-prompt-colon {
     width: 1ch;
 }
 
-textbox {
+message {
     background-color: inherit;
 }
 
