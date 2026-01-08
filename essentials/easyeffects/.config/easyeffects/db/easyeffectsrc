@@ -10,7 +10,7 @@ visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=Space One,G14 Speaker,Space One - alt
-outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
+outputDevice=bluez_output.E8:EE:CC:96:07:DA
 plugins=equalizer#0
 usedPresets=G14 Speaker:6,Space One:7,Space One - alt:2
 visiblePlugin=equalizer#0
