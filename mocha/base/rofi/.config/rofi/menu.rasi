@@ -64,7 +64,7 @@ message {
 }
 
 textbox {
-    padding: 20px;
+    padding: 5px 5px 5px 10px;
     margin-left: 10px;
 }
 
