@@ -68,7 +68,7 @@ textbox {
 
 message {
     padding: 20px;
-    /* background-color: red; */
+    background-color: white;
 }
 
 entry {
