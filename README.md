@@ -35,6 +35,7 @@ Optional:
 -   oh-my-zsh
 -   rofi-emoji
 -   rofi-file-browser-extended-patched
+-   rofi-calc
 
 ### Directory Structure
 
