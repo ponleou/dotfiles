@@ -65,10 +65,6 @@ exec_always autotiling
           timeout 600 'swaylock --grace 10 -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
           timeout 700 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 
 #
