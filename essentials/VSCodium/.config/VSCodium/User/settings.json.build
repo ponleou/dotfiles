@@ -8,7 +8,7 @@
   "javascript.inlayHints.parameterNames.enabled": "all",
   "cmake.showOptionsMovedNotification": false,
   "omnisharp.sdkPath": "/usr/local/bin/dotnet/sdk",
-  "editor.fontFamily": "'Fira Code', 'Symbols Nerd Font', 'monospace', monospace",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, 'monospace', monospace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "ionic.autoImportIcons": "yes",
   "[python]": {
