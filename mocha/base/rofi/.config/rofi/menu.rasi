@@ -1,19 +1,17 @@
-@import "./colors.rasi";
-@import "./option/accent.rasi";
-@import "./mod/background.rasi";
+@import "./colors.rasi"
+@import "./option/accent.rasi"
+@import "./mod/background.rasi"
 
 * {
     width: 600;
     font: "Work Sans 12";
 }
 
-element-text,
-element-icon,
-mode-switcher {
+element-text, element-icon, mode-switcher {
     background-color: inherit;
     text-color: inherit;
     font: @font;
-    highlight: none;
+    highlight: none; 
 }
 
 window {
@@ -61,8 +59,8 @@ entry {
     padding: 0 0 0 5px;
     text-color: @text;
     background-color: #00000000;
-    text-align: center;
-    line-height: 30px;
+    text-align: center; 
+    line-height: 30px;   
     font: @font;
     cursor-color: transparent;
     padding: 5px 10px 5px 10px;
@@ -99,3 +97,4 @@ element selected {
     text-color: @accent;
     font: @font;
 }
+
