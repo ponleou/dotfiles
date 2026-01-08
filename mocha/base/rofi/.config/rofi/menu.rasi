@@ -59,13 +59,13 @@ textbox-prompt-colon {
 
 message {
     padding: 5px 0px 0px;
-    font: @font;
     background-color: transparent;
 }
 
 textbox {
     padding: 5px 5px 5px 10px;
     background-color: transparent;
+    font: @font;
 }
 
 entry {
