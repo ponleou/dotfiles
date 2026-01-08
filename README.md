@@ -33,6 +33,7 @@ Optional:
 -   gpu-screen-record
 -   cliphist
 -   oh-my-zsh
+-   lazygit
 -   rofi-emoji
 -   rofi-file-browser-extended-patched
 -   rofi-calc
