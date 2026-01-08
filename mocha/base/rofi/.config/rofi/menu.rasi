@@ -45,10 +45,6 @@ prompt {
     border-radius: 5px;
 }
 
-textbox {
-    background-color: white;
-}
-
 textbox-prompt-colon {
     text-color: @text;
     background-color: #00000000;
