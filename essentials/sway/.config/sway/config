@@ -38,8 +38,6 @@ input type:touchpad {
 	drag_lock enabled
 }
 
-
-
 focus_on_window_activation focus
 
 # autostart app
@@ -51,7 +49,6 @@ exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec kwalletd6
 exec_always autotiling
-
 
 ### Idle configuration
  exec swayidle -w \
