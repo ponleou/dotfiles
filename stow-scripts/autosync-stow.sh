@@ -103,6 +103,7 @@ write_report() {
 
   git add "$REPORT_FILE"
   git commit -m "autosync: written report ($(date +'%d-%m-%Y %H:%M:%S'))"
+  git push
 
 }
 
