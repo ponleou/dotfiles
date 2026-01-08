@@ -100,6 +100,10 @@ write_report() {
   echo "\`\`\`" >> $REPORT_FILE
 
   echo "$REPORT_FILE"
+
+  git add "$REPORT_FILE"
+  git commit -m "autosync: written report ($(date +'%d-%m-%Y %H:%M:%S'))"
+
 }
 
 wait_for_file_in_branch() {
