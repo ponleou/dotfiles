@@ -65,7 +65,7 @@ message {
 
 textbox {
     padding: 5px;
-    margin: 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 entry {
@@ -94,7 +94,7 @@ element {
     padding: 5px;
     border-radius: 0px;
     font: @font;
-    background-color: red;
+    background-color: transparent;
     text-color: @text;
     margin: 10px 0 0;
 }
