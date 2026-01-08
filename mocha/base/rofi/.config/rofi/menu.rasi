@@ -1,8 +1,4 @@
-@import "./colors.rasi"
-@import "./option/accent.rasi"
-@import "./mod/background.rasi"
-
-* {
+@import "./colors.rasi" @import "./option/accent.rasi" @import "./mod/background.rasi" * {
     width: 600;
     font: "Work Sans 12";
 }
@@ -58,7 +54,7 @@ textbox-prompt-colon {
 }
 
 textbox {
-    background-color: @background;
+    background-color: transparent;
 }
 
 entry {
