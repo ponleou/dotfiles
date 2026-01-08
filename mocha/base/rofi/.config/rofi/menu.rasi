@@ -64,7 +64,8 @@ message {
 }
 
 textbox {
-    background-color: transparent;
+    padding: 5px;
+    background-color: @background;
     font: @font;
     text-color: @text;
 }
