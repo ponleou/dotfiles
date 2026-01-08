@@ -1,18 +1,6 @@
 # Swayfx Dotfiles (Arch Linux and Catppuccin)
 
-My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color palette. Possibly overengineered for modularity in extensible color palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
-
-## Applications used
-
--   WM: Swayfx
--   Bar: Waybar
--   Launcher: Rofi
--   File manager: Dolphin
--   Notifications: Swaync
--   Lockscreen: wlogout and Swaylock
--   Wallpaper: Swaybg
--   Terminal: Konsole
--   Shell: Zsh
+My personal rice for my Arch Linux + SwayFX machine based on Catppuccin color palette. Possibly overengineered for modularity in extensible color palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
 
 ## Screenshots
 
@@ -34,7 +22,7 @@ My personal rice for my Arch Linux + Swayfx machine based on Catppuccin color pa
 Fonts:
 
 -   ttf-work-sans
--   ttf-fira-code
+-   ttf-firacode-nerd
 -   ttf-nerd-fonts-symbols
 -   otf-font-awesome
 -   woff2-font-awesome
@@ -45,8 +33,10 @@ Optional:
 -   gpu-screen-record
 -   cliphist
 -   oh-my-zsh
+-   lazygit
 -   rofi-emoji
 -   rofi-file-browser-extended-patched
+-   rofi-calc
 
 ### Directory Structure
 
@@ -91,5 +81,5 @@ ROOT
 
 -   Built config files, that are built with build scripts, contains a base template in \*.build
 -   for Vesktop config packages, stow only owns the vesktop/settings/ directory
--   for Youtube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
+-   for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 -   for Code config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually

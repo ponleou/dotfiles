@@ -165,6 +165,7 @@ configuration {
   display-combi:  "󰕘 combi";
   display-filebrowser: "󰉋 filebrowser";
   display-emoji: "󰞅 emoji";
+  display-calc: " calculator";
 }
 
 @theme "./menu.rasi"
