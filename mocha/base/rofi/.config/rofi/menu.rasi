@@ -71,6 +71,7 @@ textbox {
 
 entry {
     padding: 0 0 0 5px;
+    padding: 5px;
     text-color: @text;
     background-color: transparent;
     text-align: center;
