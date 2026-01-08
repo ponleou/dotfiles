@@ -58,7 +58,14 @@ textbox-prompt-colon {
 }
 
 textbox {
-    background-color: red;
+        enabled: true;
+    background-color: @surface0;
+    text-color: @text;
+    text-align: center;
+    margin: 0px;
+    font: @font;
+    padding: 5px 7px;
+    border-radius: 5px;
 }
 
 entry {
