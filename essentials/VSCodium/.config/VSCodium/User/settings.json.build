@@ -25,9 +25,6 @@
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "editor.minimap.enabled": false,
-  "[groovy]": {
-    "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
-  },
   "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
