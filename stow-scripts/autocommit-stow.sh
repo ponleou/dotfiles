@@ -82,7 +82,7 @@ export -f trigger_sync_after_idle
 export -f trigger_hook
 export -f check_connection
 
-# it doesnt watch .git folder, and all files ending with .build
+# it doesnt watch .git folder, tmp folder, and all files ending with .build
 inotifywait -q -m -r --exclude '/\.git($|/)|\.build$|/tmp($|/)' \
   -e CLOSE_WRITE \
   -e CREATE \
