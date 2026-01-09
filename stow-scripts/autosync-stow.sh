@@ -159,7 +159,13 @@ post_report() {
 main() {
   check_lock
   safe_cd_tmp_dir
-  local FILE=$(write_report) # automatically exits if no change
+  
+  # automatically exits if no change
+  local FILE=$(write_report) 
+  local exit_code=$?
+  if [ $exit_code -ne 0 ]; then
+    exit $exit_code
+  fi
 
   if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
     notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
