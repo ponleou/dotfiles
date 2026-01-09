@@ -83,7 +83,7 @@ export -f trigger_hook
 export -f check_connection
 
 # it doesnt watch .git folder, tmp folder, and all files ending with .build
-inotifywait -q -m -r --exclude '/\.git($|/)|\.build$|/tmp($|/)' \
+inotifywait -q -m -r --exclude '/\.git($|/)|/tmp($|/)|\.build$' \
   -e CLOSE_WRITE \
   -e CREATE \
   -e DELETE \
