@@ -27,6 +27,11 @@ Fonts:
 -   otf-font-awesome
 -   woff2-font-awesome
 
+Neovim:
+
+-   tree-sitter-cli (nvim-treesitter)
+-   luarocks (lazy.nvim)
+
 Optional:
 
 -   autotiling
@@ -36,15 +41,6 @@ Optional:
 -   rofi-emoji
 -   rofi-file-browser-extended-patched
 -   rofi-calc
-
-Neovim:
-
--   tree-sitter-cli (nvim-treesitter)
--   luarocks (lazy.nvim)
--   git (blink.cmp, lazy.nvim)
--   curl (blink.cmp, nvim-treesitter)
--   lua (lazy.nvim)
--   tar (nvim-treesitter)
 
 ### Directory Structure
 

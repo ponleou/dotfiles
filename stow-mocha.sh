@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mocha_packages="btop konsole ghostwriter nwg-look qt6ct swaylock rofi swaync waybar wlogout"
-mocha_bases="sway-base vesktop-base"
+mocha_packages="btop konsole nwg-look qt6ct swaylock rofi swaync waybar wlogout"
+mocha_bases="sway-base vesktop-base nvim-base"
 
 accent_packages="nwg-look qt6ct ytm zen"
 accent_options="rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
