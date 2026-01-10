@@ -37,9 +37,14 @@ Optional:
 -   rofi-file-browser-extended-patched
 -   rofi-calc
 
-Lazy.nvim:
+Neovim:
 
--   tree-sitter-cli
+-   tree-sitter-cli (nvim-treesitter)
+-   luarocks (lazy.nvim)
+-   git (blink.cmp, lazy.nvim)
+-   curl (blink.cmp, nvim-treesitter)
+-   lua (lazy.nvim)
+-   tar (nvim-treesitter)
 
 ### Directory Structure
 
