@@ -33,7 +33,8 @@ STOP_REPLAY="󰙦  Stop Replay"
 START_RECORDING="󰻃  Start Recording"
 START_RECORDING_PORTAL="󰻃  Start Recording (portal)"
 STOP_RECORDING="󰙦  Stop Recording"
-PAUSE_RECORDING="󰏥  Pause/Resume Recording"
+PAUSE_RECORDING="󰏥  Pause Recording"
+RESUME_RECORDING="󰏥  Resume Recording"
 ####### END OF CONFIG #######
 
 
@@ -41,6 +42,8 @@ PAUSE_RECORDING="󰏥  Pause/Resume Recording"
 if [ ! -d "$SAVE_DIR" ]; then
     mkdir -p "$SAVE_DIR"
 fi
+
+PAUSE_RECORDING_FLAG="/tmp/gsr-paused-$$"
 
 if [[ -n "$1" ]]; then
     choice="$1"
@@ -100,8 +103,14 @@ if [[ -n "$1" ]]; then
             pkill -SIGINT -f gpu-screen-recorder
             ;;
         "$PAUSE_RECORDING")
+            touch "$PAUSE_RECORDING_FLAG"
             pkill -SIGUSR2 -f gpu-screen-recorder
             ;;
+        "$RESUME_RECORDING")
+            if [ -f "$PAUSE_RECORDING_FLAG" ]; then
+                rm "$PAUSE_RECORDING_FLAG"
+            fi
+            pkill -SIGUSR2 -f gpu-screen-recorder
     esac
     exit 0
 fi
@@ -129,6 +138,12 @@ elif [[ $replay_mode == 1 ]]; then
     echo "$SAVE_REPLAY"
     echo "$STOP_REPLAY"
 else
-    echo "$PAUSE_RECORDING"
     echo "$STOP_RECORDING"
+
+    if [ -f "$PAUSE_FLAG" ]; then
+        echo "$RESUME_RECORDING"
+    else 
+        echo "$PAUSE_RECORDING";
+    fi
+
 fi
