@@ -72,7 +72,7 @@ fi
 
 
 # Print Menu Items each with a newline
-choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p "󰕧 Recorder")
+choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p "󰕧  Recorder")
 
 # Get date for file name
 date=$(date +"%Y-%m-%d_%H-%M-%S")

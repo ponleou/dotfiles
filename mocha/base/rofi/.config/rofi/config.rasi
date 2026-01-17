@@ -157,15 +157,15 @@ configuration {
 
   modes: "window,drun,file-browser-extended,emoji";
 
-  display-clipboard: "󰅇  clipboard";
+  display-clipboard: "  clipboard";
   display-ssh:    "󰣀 ssh";
   display-run:    "󱓞 run";
-  display-drun:   "󰣖  drun";
+  display-drun:   "󰙵  drun";
   display-window: "󱂬 window";
   display-combi:  "󰕘 combi";
   display-filebrowser: "󰉋 filebrowser";
   display-emoji: "󰞅  emoji";
-  display-calc: "  calculator";
+  display-calc: "󰃬  calculator";
 }
 
 @theme "./menu.rasi"
