@@ -26,14 +26,14 @@ COLOR_RANGE="full"                              # 'limited', or 'full'
 CONTAINER="mkv"                                 # 'mp4', 'mkv', 'flv', 'webm' and others that support h264, hevc, av1, vp8 or vp9
 ENABLE_CURSOR="yes"                             # 'yes' or 'no'
 
-START_REPLAY=" Start Replay"
-START_REPLAY_PORTAL=" Start Replay (portal)"
-SAVE_REPLAY=" Save Replay"
-STOP_REPLAY=" Stop Replay"
-START_RECORDING=" Start Recording"
-START_RECORDING_PORTAL=" Start Recording (portal)"
-STOP_RECORDING=" Stop Recording"
-PAUSE_RECORDING=" Pause/Resume Recording"
+START_REPLAY="󰋚  Start Replay"
+START_REPLAY_PORTAL="󰋚  Start Replay (portal)"
+SAVE_REPLAY="󰐗  Save Replay"
+STOP_REPLAY="󰙦  Stop Replay"
+START_RECORDING="󰻃  Start Recording"
+START_RECORDING_PORTAL="󰻃  Start Recording (portal)"
+STOP_RECORDING="󰙦  Stop Recording"
+PAUSE_RECORDING="󰏥  Pause/Resume Recording"
 ####### END OF CONFIG #######
 
 
