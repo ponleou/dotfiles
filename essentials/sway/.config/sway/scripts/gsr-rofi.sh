@@ -77,21 +77,29 @@ if [[ -n "$1" ]]; then
     
     case "$choice" in
         "$START_REPLAY")
-            bash -c "gpu-screen-recorder ${replay_options[*]} &" &
+            {
+                gpu-screen-recorder "${replay_options[@]}" &
+            } &
             exit 0
             ;;
         "$START_REPLAY_PORTAL")
             replay_options[1]="portal"
-            bash -c "gpu-screen-recorder ${replay_options[*]} &" &
+            {
+                gpu-screen-recorder "${replay_options[@]}" &
+            } &
             exit 0
             ;;
         "$START_RECORDING")
-            bash -c "gpu-screen-recorder ${recording_options[*]} &" &
+            {
+                gpu-screen-recorder "${recording_options[@]}" &
+            } &
             exit 0
             ;;
         "$START_RECORDING_PORTAL")
             recording_options[1]="portal"
-            bash -c "gpu-screen-recorder ${recording_options[*]} &" &
+            {
+                gpu-screen-recorder "${recording_options[@]}" &
+            } &
             exit 0
             ;;
         "$SAVE_REPLAY")
