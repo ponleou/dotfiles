@@ -78,10 +78,12 @@ if [[ -n "$1" ]]; then
     case "$choice" in
     "$START_REPLAY")
         gpu-screen-recorder "${replay_options[@]}" &
+        disown
         ;;
     "$START_REPLAY_PORTAL")
         replay_options[1]="portal"
         gpu-screen-recorder "${replay_options[@]}" &
+        disown
         ;;
     "$SAVE_REPLAY")
         pkill -SIGUSR1 -f gpu-screen-recorder
@@ -91,10 +93,12 @@ if [[ -n "$1" ]]; then
         ;;
     "$START_RECORDING")
         gpu-screen-recorder "${recording_options[@]}" &
+        disown
         ;;
     "$START_RECORDING_PORTAL")
         recording_options[1]="portal"
         gpu-screen-recorder "${recording_options[@]}" &
+        disown
         ;;
     "$STOP_RECORDING")
         pkill -SIGINT -f gpu-screen-recorder
