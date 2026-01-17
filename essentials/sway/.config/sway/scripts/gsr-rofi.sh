@@ -7,7 +7,7 @@
 # License: MIT
 # 
 # Modified by: ponleou
-# Date: 06.10.2025
+# Date: 17.01.2026
 
 ###########
 # CONFIG #
@@ -17,7 +17,7 @@ REPLAY_BUFFER_SEC="60"
 FRAMERATE="60"
 AUDIO_OUTPUT="default_output"
 AUDIO_INPUT="default_input"
-WINDOW="screen"                         # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
+WINDOW="screen"                                 # 'screen', 'screen-direct', 'focused', 'portal' or 'region'
 FRAMERATE_MODE="cfr"                            # 'cfr', or 'vfr'
 VIDEO_CODEC="hevc"                              # 'auto', 'h264', 'hevc', 'av1', 'vp8', 'vp9', 'hevc_hdr', 'av1_hdr', 'hevc_10bit' or 'av1_10bit'
 AUDIO_CODEC="opus"                              # 'aac', 'opus' or 'flac'
@@ -37,6 +37,75 @@ PAUSE_RECORDING=" Pause/Resume Recording"
 ####### END OF CONFIG #######
 
 
+# Make sure the "Videos" folder exists
+if [ ! -d "$SAVE_DIR" ]; then
+    mkdir -p "$SAVE_DIR"
+fi
+
+if [[ -n "$1" ]]; then
+    choice="$1"
+    date=$(date +"%Y-%m-%d_%H-%M-%S")
+    
+    recording_options=(
+        -w $WINDOW
+        -f $FRAMERATE
+        -fm $FRAMERATE_MODE
+        -q $VIDEO_QUALITY
+        -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
+        -k $VIDEO_CODEC
+        -ac $AUDIO_CODEC
+        -cursor $ENABLE_CURSOR
+        -cr $COLOR_RANGE
+        -c $CONTAINER
+        -o "$SAVE_DIR/Recording_$date.$CONTAINER"
+    )
+    
+    replay_options=(
+        -w $WINDOW
+        -f $FRAMERATE
+        -fm $FRAMERATE_MODE
+        -q $VIDEO_QUALITY
+        -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
+        -k $VIDEO_CODEC
+        -ac $AUDIO_CODEC
+        -cursor $ENABLE_CURSOR
+        -cr $COLOR_RANGE
+        -c $CONTAINER
+        -r $REPLAY_BUFFER_SEC
+        -o "$SAVE_DIR"
+    )
+    
+    case "$choice" in
+    "$START_REPLAY")
+        gpu-screen-recorder "${replay_options[@]}" &
+        ;;
+    "$START_REPLAY_PORTAL")
+        replay_options[1]="portal"
+        gpu-screen-recorder "${replay_options[@]}" &
+        ;;
+    "$SAVE_REPLAY")
+        pkill -SIGUSR1 -f gpu-screen-recorder
+        ;;
+    "$STOP_REPLAY")
+        pkill -SIGINT -f gpu-screen-recorder
+        ;;
+    "$START_RECORDING")
+        gpu-screen-recorder "${recording_options[@]}" &
+        ;;
+    "$START_RECORDING_PORTAL")
+        recording_options[1]="portal"
+        gpu-screen-recorder "${recording_options[@]}" &
+        ;;
+    "$STOP_RECORDING")
+        pkill -SIGINT -f gpu-screen-recorder
+        ;;
+    "$PAUSE_RECORDING")
+        pkill -SIGUSR2 -f gpu-screen-recorder
+        ;;
+    esac
+    exit 0
+fi
+
 # get process states (if its running and if its in replay mode)
 process_list=$(pgrep -af gpu-screen-recorder)
 pgrep_code=$?
@@ -51,108 +120,15 @@ if [[ $running == 1 && "$process_list" == *"-r "* ]]; then
     replay_mode=1
 fi
 
-# Make sure the "Videos" folder exists
-if [ ! -d "$SAVE_DIR" ]; then
-    mkdir -p "$SAVE_DIR"
-fi
-
-# Create Menu Items based on state
-options=()
-
-# not running
 if [[ $running == 0 ]]; then
-    options=("$START_REPLAY" "$START_REPLAY_PORTAL" "$START_RECORDING" "$START_RECORDING_PORTAL")
-# running in replay mode
+    echo "$START_REPLAY"
+    echo "$START_REPLAY_PORTAL"
+    echo "$START_RECORDING"
+    echo "$START_RECORDING_PORTAL"
 elif [[ $replay_mode == 1 ]]; then
-    options=("$SAVE_REPLAY" "$STOP_REPLAY")
-# running in recording mode
-elif [[ $replay_mode == 0 ]]; then
-    options=("$PAUSE_RECORDING" "$STOP_RECORDING")
+    echo "$SAVE_REPLAY"
+    echo "$STOP_REPLAY"
+else
+    echo "$PAUSE_RECORDING"
+    echo "$STOP_RECORDING"
 fi
-
-
-# Print Menu Items each with a newline
-choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -p "󰕧  Recorder")
-
-# Get date for file name
-date=$(date +"%Y-%m-%d_%H-%M-%S")
-
-# gpu-screen-recorder options
-recording_options=(
-    -w $WINDOW
-    -f $FRAMERATE
-    -fm $FRAMERATE_MODE
-    -q $VIDEO_QUALITY
-    -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
-    -k $VIDEO_CODEC
-    -ac $AUDIO_CODEC
-    -cursor $ENABLE_CURSOR
-    -cr $COLOR_RANGE
-    -c $CONTAINER
-    -o "$SAVE_DIR/Recording_$date.$CONTAINER"
-)
-
-replay_options=(
-    -w $WINDOW
-    -f $FRAMERATE
-    -fm $FRAMERATE_MODE
-    -q $VIDEO_QUALITY
-    -a "$AUDIO_OUTPUT|$AUDIO_INPUT"
-    -k $VIDEO_CODEC
-    -ac $AUDIO_CODEC
-    -cursor $ENABLE_CURSOR
-    -cr $COLOR_RANGE
-    -c $CONTAINER
-    -r $REPLAY_BUFFER_SEC
-    -o "$SAVE_DIR"
-)
-
-# Handle selected input
-case "$choice" in
-"$START_REPLAY")
-    # START REPLAY
-    gpu-screen-recorder "${replay_options[@]}"
-    exit 0
-    ;;
-"$START_REPLAY_PORTAL")
-    # START REPLAY
-    replay_options[1]="portal"
-    gpu-screen-recorder "${replay_options[@]}"
-    exit 0
-    ;;
-"$SAVE_REPLAY")
-    # SAVE REPLAY
-    pkill -SIGUSR1 -f gpu-screen-recorder
-    exit 0
-    ;;
-"$STOP_REPLAY")
-    # STOP REPLAY
-    pkill -SIGINT -f gpu-screen-recorder
-    exit 0
-    ;;
-"$START_RECORDING")
-    # START RECORDING
-    gpu-screen-recorder "${recording_options[@]}"
-    exit 0
-    ;;
-"$START_RECORDING_PORTAL")
-    # START RECORDING
-    replay_options[1]="portal"
-    gpu-screen-recorder "${recording_options[@]}"
-    exit 0
-    ;;
-"$STOP_RECORDING")
-    # STOP RECORDING
-    pkill -SIGINT -f gpu-screen-recorder
-    exit 0
-    ;;
-"$PAUSE_RECORDING")
-    # PAUSE/RESUME RECORDING
-    pkill -SIGUSR2 -f gpu-screen-recorder
-    exit 0
-    ;;
-*)
-    echo -e "Error: Option not recognized '${choice}'"
-    exit 1
-    ;;
-esac
