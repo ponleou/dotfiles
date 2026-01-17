@@ -34,7 +34,7 @@ START_RECORDING="󰻃  Start Recording"
 START_RECORDING_PORTAL="󰻃  Start Recording (portal)"
 STOP_RECORDING="󰙦  Stop Recording"
 PAUSE_RECORDING="󰏥  Pause Recording"
-RESUME_RECORDING="󰏥  Resume Recording"
+RESUME_RECORDING="󰐌  Resume Recording"
 ####### END OF CONFIG #######
 
 
@@ -43,7 +43,7 @@ if [ ! -d "$SAVE_DIR" ]; then
     mkdir -p "$SAVE_DIR"
 fi
 
-PAUSE_RECORDING_FLAG="/tmp/gsr-paused-$$"
+PAUSE_RECORDING_FLAG="/tmp/gsr-rofi-paused"
 
 if [[ -n "$1" ]]; then
     choice="$1"
