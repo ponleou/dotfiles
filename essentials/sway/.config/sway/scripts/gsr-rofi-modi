@@ -100,6 +100,9 @@ if [[ -n "$1" ]]; then
             pkill -SIGINT -f gpu-screen-recorder
             ;;
         "$STOP_RECORDING")
+            if [ -f "$PAUSE_RECORDING_FLAG" ]; then
+                rm "$PAUSE_RECORDING_FLAG"
+            fi
             pkill -SIGINT -f gpu-screen-recorder
             ;;
         "$PAUSE_RECORDING")
@@ -140,10 +143,9 @@ elif [[ $replay_mode == 1 ]]; then
 else
     echo "$STOP_RECORDING"
 
-    if [ -f "$PAUSE_FLAG" ]; then
+    if [ -f "$PAUSE_RECORDING_FLAG" ]; then
         echo "$RESUME_RECORDING"
     else 
         echo "$PAUSE_RECORDING";
     fi
-
 fi
