@@ -107,10 +107,6 @@ element-icon {
     font: @font;
 }
 
-element selected element-icon {
-    size: 44px;
-}
-
 element selected {
     background-color: transparent;
     text-color: @accent;
