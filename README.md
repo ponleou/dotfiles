@@ -10,37 +10,37 @@ My personal rice for my Arch Linux + SwayFX machine based on Catppuccin color pa
 
 ### Dependencies
 
--   nwg-look
--   catppuccin-gtk-theme-mocha
--   qt6ct-kde
--   papirus-folders-catppuccin-git
--   papirus-icon-theme
--   darkly
--   xdg-desktop-portal-gtk
--   moreutils
+- nwg-look
+- catppuccin-gtk-theme-mocha
+- qt6ct-kde
+- papirus-folders-catppuccin-git
+- papirus-icon-theme
+- darkly
+- xdg-desktop-portal-gtk
+- moreutils
 
 Fonts:
 
--   ttf-work-sans
--   ttf-firacode-nerd
--   ttf-nerd-fonts-symbols
--   otf-font-awesome
--   woff2-font-awesome
+- ttf-work-sans
+- ttf-firacode-nerd
+- ttf-nerd-fonts-symbols
+- otf-font-awesome
+- woff2-font-awesome
 
 Neovim:
 
--   tree-sitter-cli (nvim-treesitter)
--   luarocks (lazy.nvim)
+- tree-sitter-cli (nvim-treesitter)
+- luarocks (lazy.nvim)
 
 Optional:
 
--   autotiling
--   gpu-screen-record
--   cliphist
--   oh-my-zsh
--   rofi-emoji
--   rofi-file-browser-extended-patched
--   rofi-calc
+- autotiling
+- gpu-screen-record
+- cliphist
+- oh-my-zsh
+- rofi-emoji
+- rofi-file-browser-extended-patched
+- rofi-calc
 
 ### Directory Structure
 
@@ -83,7 +83,7 @@ ROOT
 
 ### Notes:
 
--   Built config files, that are built with build scripts, contains a base template in \*.build
--   for Vesktop config packages, stow only owns the vesktop/settings/ directory
--   for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
--   for Code config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
+- Built config files, that are built with build scripts, contains a base template in \*.build
+- for Vesktop config packages, stow only owns the vesktop/settings/ directory
+- for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
+- for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
