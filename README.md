@@ -6,6 +6,118 @@ My personal rice for my Arch Linux + SwayFX machine based on Catppuccin color pa
 
 ## Keybinds
 
+> **Note:** `$mod` is set to `Mod4` (Super/Windows key)
+
+### General
+
+| Keybind                 | Action                                                         |
+| ----------------------- | -------------------------------------------------------------- |
+| `$mod + Q`              | Kill focused window                                            |
+| `$mod + Shift + Escape` | Reload Sway configuration                                      |
+| `$mod + Shift + E`      | Exit Sway (with confirmation)                                  |
+| `$mod + H`              | Split horizontally                                             |
+| `$mod + G`              | Split vertically                                               |
+| `$mod + Return`         | Toggle split layout                                            |
+| `$mod + F`              | Toggle fullscreen                                              |
+| `$mod + Shift + F`      | Toggle floating mode                                           |
+| `$mod + Shift + T`      | Toggle sticky window                                           |
+| `$mod + LMB` (drag)     | Move floating window                                           |
+| `$mod + RMB` (drag)     | Resize window                                                  |
+| `$mod + A`              | Focus left                                                     |
+| `$mod + S`              | Focus down                                                     |
+| `$mod + W`              | Focus up                                                       |
+| `$mod + D`              | Focus right                                                    |
+| `$mod + Left`           | Move window left                                               |
+| `$mod + Down`           | Move window down                                               |
+| `$mod + Up`             | Move window up                                                 |
+| `$mod + Right`          | Move window right                                              |
+| `$mod + 1-9/0`          | Switch to workspace 1-10                                       |
+| `$mod + X`              | Go to next workspace (in loop)                                 |
+| `$mod + Z`              | Go to previous workspace (in loop)                             |
+| `$mod + Ctrl + X`       | Go to next workspace (create workspace if end)                 |
+| `$mod + Ctrl + Z`       | Go to previous workspace (create workspace if end)             |
+| `$mod + Shift + 1-9/0`  | Move container to workspace 1-10                               |
+| `$mod + Shift + X`      | Move container to next workspace (create workspace if end)     |
+| `$mod + Shift + Z`      | Move container to previous workspace (create workspace if end) |
+
+### Screenshots & Screen Recording
+
+| Keybind                    | Action                                     |
+| -------------------------- | ------------------------------------------ |
+| `Print/XF86Launch1`        | Take screenshot                            |
+| `$mod + Print/XF86Launch1` | Take window screenshot                     |
+| `$mod + Y`                 | Open screen recorder (GPU Screen Recorder) |
+
+### Utilities
+
+| Keybind         | Action                           |
+| --------------- | -------------------------------- |
+| `$mod + T`      | Open terminal (Konsole)          |
+| `$mod + Space`  | Open application launcher (Rofi) |
+| `$mod + E`      | Open file manager (Dolphin)      |
+| `$mod + V`      | Open clipboard history (Rofi)    |
+| `$mod + Period` | Open emoji picker (Rofi)         |
+| `$mod + P`      | Open wallpaper selector          |
+| `$mod + C`      | Open calculator (Rofi)           |
+
+### Window Management
+
+| Keybind | Action |
+| ------- | ------ |
+
+### Focus Navigation
+
+| Keybind | Action |
+| ------- | ------ |
+
+### Window Movement
+
+| Keybind | Action |
+| ------- | ------ |
+
+### Workspaces
+
+| Keybind | Action |
+| ------- | ------ |
+
+### Scratchpad
+
+| Keybind              | Action                            |
+| -------------------- | --------------------------------- |
+| `$mod + Tab`         | Move focused window to scratchpad |
+| `$mod + Shift + Tab` | Show/cycle scratchpad windows     |
+
+### Resize Mode
+
+| Keybind                          | Action            |
+| -------------------------------- | ----------------- |
+| `$mod + R`                       | Enter resize mode |
+| `Left` (in resize mode)          | Shrink width      |
+| `Right` (in resize mode)         | Grow width        |
+| `Up` (in resize mode)            | Shrink height     |
+| `Down` (in resize mode)          | Grow height       |
+| `Return/Escape` (in resize mode) | Exit resize mode  |
+
+### Media Controls
+
+| Keybind                | Action                 |
+| ---------------------- | ---------------------- |
+| `XF86AudioMute`        | Toggle mute            |
+| `XF86AudioLowerVolume` | Decrease volume (5%)   |
+| `XF86AudioRaiseVolume` | Increase volume (5%)   |
+| `XF86AudioMicMute`     | Toggle microphone mute |
+| `XF86AudioPlay`        | Play media             |
+| `XF86AudioPause`       | Pause media            |
+| `XF86AudioNext`        | Next track             |
+| `XF86AudioPrev`        | Previous track         |
+
+### Brightness Controls
+
+| Keybind                 | Action                   |
+| ----------------------- | ------------------------ |
+| `XF86MonBrightnessDown` | Decrease brightness (5%) |
+| `XF86MonBrightnessUp`   | Increase brightness (5%) |
+
 ## Additional Information
 
 ### Dependencies
