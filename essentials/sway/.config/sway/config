@@ -64,4 +64,7 @@ bar {
 	swaybar_command waybar
 }
 
+# fix epiphany being transparent
+for_window [app_id="epiphany"] opacity 1.0
+
 include /etc/sway/config.d/*
