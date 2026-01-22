@@ -65,7 +65,7 @@ bar {
 }
 
 # fix epiphany being transparent
-for_window [app_id="org.gnome.Epiphany"] opacity 1.0
+for_window [app_id="org.gnome.Epiphany"] opacity 1.0; blur disable
 
 
 include /etc/sway/config.d/*
