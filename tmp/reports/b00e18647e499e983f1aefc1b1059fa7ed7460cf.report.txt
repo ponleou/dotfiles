@@ -1,0 +1,35 @@
+
+Squashed commits from autocommit/[4bffbf640cbc742bdc0d6ac79ddc940fd15ac4f9](https://codeberg.org/ponleou/dotfiles/commit/4bffbf640cbc742bdc0d6ac79ddc940fd15ac4f9)
+Last no-diff commit found from autocommit: [b5a05d39814198019adfc3d6f38c72fa10881ce2](https://codeberg.org/ponleou/dotfiles/commit/b5a05d39814198019adfc3d6f38c72fa10881ce2)
+
+commit count: 4
+diff:
+```
+
+A	essentials/nvim/.config/nvim/base
+A	essentials/nvim/.config/nvim/lua/plugins/colors.lua
+A	essentials/nvim/init.lua
+A	essentials/nvim/lazy-lock.json
+A	essentials/nvim/lua/config/lazy.lua
+A	essentials/nvim/lua/plugins/coding.lua
+A	essentials/nvim/lua/plugins/colors.lua
+A	essentials/nvim/lua/plugins/example.lua
+A	essentials/nvim/lua/plugins/formatter.lua
+A	essentials/nvim/lua/plugins/linter.lua
+A	essentials/nvim/lua/plugins/lsp.lua
+A	essentials/nvim/lua/plugins/treesitter.lua
+M	essentials/nvim/.config/nvim/lazy-lock.json
+M	README.md
+M	stow-essentials.sh
+M	stow-mocha.sh
+R100	essentials/nvim/init.lua	essentials/nvim/.config/nvim/init.lua
+R100	essentials/nvim/lazy-lock.json	essentials/nvim/.config/nvim/lazy-lock.json
+R100	essentials/nvim/lua/config/lazy.lua	essentials/nvim/.config/nvim/lua/config/lazy.lua
+R100	essentials/nvim/lua/plugins/coding.lua	essentials/nvim/.config/nvim/lua/plugins/coding.lua
+R100	essentials/nvim/lua/plugins/colors.lua	mocha/base/nvim-base/nvim/colors.lua
+R100	essentials/nvim/lua/plugins/example.lua	essentials/nvim/.config/nvim/lua/plugins/example.lua
+R100	essentials/nvim/lua/plugins/formatter.lua	essentials/nvim/.config/nvim/lua/plugins/formatter.lua
+R100	essentials/nvim/lua/plugins/linter.lua	essentials/nvim/.config/nvim/lua/plugins/linter.lua
+R100	essentials/nvim/lua/plugins/lsp.lua	essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+R100	essentials/nvim/lua/plugins/treesitter.lua	essentials/nvim/.config/nvim/lua/plugins/treesitter.lua
+```
