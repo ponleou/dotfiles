@@ -27,7 +27,7 @@ seat seat0 xcursor_theme breeze_cursors 24
 # inputs:
 # disable mouse acceleration
 input type:pointer {
-    pointer_accel -0.3
+    pointer_accel 0
     accel_profile flat
 }
 mouse_warping none
