@@ -13,12 +13,12 @@ mostUsedPresets=Space One,G14 Speaker,Space One - alt
 outputDevice=bluez_output.E8:EE:CC:96:07:DA
 plugins=equalizer#0
 usedPresets=G14 Speaker:6,Space One:7,Space One - alt:2
+visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [Window]
-height=1008
+height=759
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
-visiblePage=inputPage
 visiblePipeWirePage=testSignalsPage
-width=1678
+width=841
