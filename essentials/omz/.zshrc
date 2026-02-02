@@ -121,3 +121,5 @@ alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
+
+export GPG_TTY=$(tty)
