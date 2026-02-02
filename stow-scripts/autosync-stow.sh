@@ -45,7 +45,7 @@ squash_and_push_to_merge() {
   notify-send "Autosync is squashing $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
   
   git add -A
-  local commit_output=$(git commit -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
+  local commit_output=$(git commit --no-gpg-sign -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
   local push_output=$(git push origin $MERGE_BRANCH 2>&1 | grep -E "(->|up-to-date|up to date|error|fatal|rejected|Everything|Total|Writing)" | head -1)
 
   notify-send "Autosync is pushing" "Commits:"$'\n'"$commit_output"$'\n'$'\n'"Push:"$'\n'"$push_output"
@@ -103,7 +103,7 @@ write_report() {
 
   cd "$SCRIPT_DIR"
   git add "$REPORT_FILE"
-  git commit -m "autosync: written report ($(date +'%d-%m-%Y %H:%M:%S'))"
+  git commit --no-gpg-sign -m "autosync: written report ($(date +'%d-%m-%Y %H:%M:%S'))"
   git push
   safe_cd_tmp_dir
 }
