@@ -123,3 +123,12 @@ alias nano='nvim'
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
 alias gm="cat ~/.git_messages.doc"
+
+alias gp="git push"
+alias gl="git pull"
+alias gf="git fetch"
+alias ga="git add"
+alias gc="git commit -m"
+alias gr="git rebase"
+alias gco="git checkout"
+alias gcb="git checkout -b"
