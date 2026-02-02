@@ -115,11 +115,11 @@ export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
+export GPG_TTY=$(tty)
 
 alias code='codium --ozone-platform=wayland'
 alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
-
-export GPG_TTY=$(tty)
+alias gm="echo ~/.git_messages.doc"
