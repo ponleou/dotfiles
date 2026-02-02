@@ -122,4 +122,4 @@ alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
-alias gm="echo ~/.git_messages.doc"
+alias gm="cat ~/.git_messages.doc"
