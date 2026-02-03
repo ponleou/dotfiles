@@ -12,7 +12,7 @@ window {
 }
 
 button {
-    border-radius: 5px;
+    border-radius: 0px;
     border-color: @accent;
     text-decoration-color: @text;
     color: @text;
@@ -22,6 +22,25 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
+}
+
+button:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+/* Top-right button */
+button:nth-child(3) {
+    border-top-right-radius: 10px;
+}
+
+/* Bottom-left button */
+button:nth-child(4) {
+    border-bottom-left-radius: 10px;
+}
+
+/* Bottom-right button */
+button:nth-child(6) {
+    border-bottom-right-radius: 10px;
 }
 
 button:focus,
