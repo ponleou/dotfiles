@@ -4,6 +4,11 @@ My personal rice for my Arch Linux + SwayFX machine based on Catppuccin colour p
 
 ## Screenshots
 
+<img src="assets/img_1.png" width="24%" />
+<img src="assets/img_2.png" width="24%" />
+<img src="assets/img_3.png" width="24%" />
+<img src="assets/img_4.png" width="24%" />
+
 ## Keybinds
 
 > **Note:** `$mod` is set to `Mod4` (Super key)
