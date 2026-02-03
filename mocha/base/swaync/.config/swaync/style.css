@@ -3,6 +3,10 @@
 @import "./mod/background.css";
 
 * {
+    --rounded: 5px;
+}
+
+* {
     all: unset;
     font-size: 14px;
     font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
