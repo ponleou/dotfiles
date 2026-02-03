@@ -16,8 +16,6 @@ font pango: WorkSans Regular 12
 gaps inner 10px
 gaps outer 2px
 
-corner_radius 5
-
 # disable window titlebar
 default_border pixel 2
 
