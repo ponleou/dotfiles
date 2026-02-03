@@ -2,6 +2,7 @@
 @import "./option/accent.css";
 @import "./mod/background.css";
 @import "./mod/rounded.css";
+@import "./mod/gap.css";
 
 * {
     all: unset;
@@ -25,7 +26,7 @@ scale trough {
 
 .floating-notifications.background .notification-row .notification-background {
     box-shadow: inset 0 0 0 1px @surface0;
-    margin: 1rem;
+    margin: var(--gap);
     background-color: @background;
     color: @text;
     padding: 0;
@@ -74,7 +75,7 @@ scale trough {
 
 .control-center {
     box-shadow: inset 0 0 0 1px @surface0;
-    margin: 12px;
+    margin: var(--gap);
     background-color: @background;
     color: @text;
     padding: 1rem;
