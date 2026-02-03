@@ -48,6 +48,11 @@ squash_and_push_to_merge() {
   local commit_output=$(git commit --no-gpg-sign -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
   local push_output=$(git push origin $MERGE_BRANCH 2>&1 | grep -E "(->|up-to-date|up to date|error|fatal|rejected|Everything|Total|Writing)" | head -1)
 
+  # if its more than 3 lines, show only the first 5 lines
+  if [ $(echo "$commit_output" | wc -l) -gt 3 ]; then
+    commit_output=$(echo "$commit_output" | head -3)
+  fi
+
   notify-send -u low "Autosync is pushing" "Commits:"$'\n'"$commit_output"$'\n'$'\n'"Push:"$'\n'"$push_output"
 }
 
@@ -151,6 +156,15 @@ post_report() {
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
   local comment_feedback=$(tea comment $pr_index "$(cat $FILE)")
+
+  comment_feedback=$(echo "$comment_feedback" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//') # trim whitespace
+  # if more than 5 lines, show the first 2 lines and last 2 line
+  if [ $(echo "$comment_feedback" | wc -l) -gt 5 ]; then
+    comment_feedback="$(echo "$comment_feedback" | head -2)
+    ...
+    $(echo "$comment_feedback" | tail -2)"
+  fi
+
   notify-send -u low "Autosync is writing report" "$comment_feedback"
 
   safe_cd_tmp_dir
