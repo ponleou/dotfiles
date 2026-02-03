@@ -11,14 +11,14 @@
 }
 window {
     background: transparent;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 #waybar {
     background-color: @background;
     color: @text;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 tooltip {
