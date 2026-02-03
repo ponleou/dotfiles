@@ -1,5 +1,5 @@
 include ./mocha-option/accent
-include ./mod/fx
+include ./mod/bg
 
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
