@@ -25,22 +25,19 @@ button {
 }
 
 button:nth-child(1) {
-    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-/* Top-right button */
-button:nth-child(3) {
-    border-top-right-radius: 10px;
-}
-
-/* Bottom-left button */
-button:nth-child(4) {
+button:nth-child(2) {
     border-bottom-left-radius: 10px;
 }
 
-/* Bottom-right button */
+button:nth-child(5) {
+    border-top-right-radius: 10px;
+}
+
 button:nth-child(6) {
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 button:focus,
