@@ -1,8 +1,43 @@
 # SwayFX Dotfiles (Arch Linux and Catppuccin)
 
-My personal rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
+My highly customisable rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic scripts and services. Feel free to take inspiration or copy for yourself.
 
 ## Screenshots
+
+<img src="assets/img_1.png" width="24%" />
+<img src="assets/img_2.png" width="24%" />
+<img src="assets/img_3.png" width="24%" />
+<img src="assets/img_4.png" width="24%" />
+
+## Features
+
+### Supported Applications
+
+- QT and GTK themes
+- Konsole
+- Dolphin
+- Neovim
+- btop
+- Vesktop
+- VSCode and VSCodium
+- YouTube Music (pear-desktop)
+- Zen Browser
+- Rofi
+- SwayFX
+- swaylock
+- SwayNC
+- WayBar
+- wlogout
+
+### Theming
+
+- Catppuccin Mocha: green, mauve, peach, rosewater, sapphire, and yellow
+- Mods:
+    - background: solid, blur
+    - gap: big, small, none, etc.
+    - rounded: all, minimal, none, etc.
+
+_(and more to come)_
 
 ## Keybinds
 
@@ -82,7 +117,7 @@ My personal rice for my Arch Linux + SwayFX machine based on Catppuccin colour p
 
 ## Additional Information
 
-### Dependencies
+### Dependencies (may not be complete)
 
 - nwg-look
 - catppuccin-gtk-theme-mocha
@@ -136,7 +171,7 @@ ROOT
 │   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
 │   │
 │   ├── modlist/
-│   │   └── [mods] (e.g. background)/
+│   │   └── [mods] (e.g. background, gap, etc.)/
 │   │       └── [mod-option]/
 │   │           └── [mod-package]/
 │   │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
@@ -161,3 +196,4 @@ ROOT
 - for Vesktop config packages, stow only owns the vesktop/settings/ directory
 - for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 - for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
+- `nwc` in modlist options stands for "no WayBar corners"
