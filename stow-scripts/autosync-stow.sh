@@ -15,7 +15,7 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 check_lock() {
   if [ -f "$SCRIPT_DIR/../tmp/$LOCK_FILE" ]; then
-    notify-send "Autosync aborted" "$SCRIPT_DIR/../tmp/$LOCK_FILE exists"
+    notify-send -u low "Autosync aborted" "$SCRIPT_DIR/../tmp/$LOCK_FILE exists"
     exit 1
   fi
 }
@@ -42,13 +42,13 @@ squash_and_push_to_merge() {
   git ls-files -z | xargs -0 -r git rm -f
 
   git fetch origin $AUTO_BRANCH
-  notify-send "Autosync is squashing $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
+  notify-send -u low "Autosync is squashing $AUTO_BRANCH to $MERGE_BRANCH" "$(git checkout origin/$AUTO_BRANCH -- .)"
   
   git add -A
   local commit_output=$(git commit --no-gpg-sign -m "autosync: sync from $AUTO_BRANCH branch ($(date +'%d-%m-%Y %H:%M:%S'))")
   local push_output=$(git push origin $MERGE_BRANCH 2>&1 | grep -E "(->|up-to-date|up to date|error|fatal|rejected|Everything|Total|Writing)" | head -1)
 
-  notify-send "Autosync is pushing" "Commits:"$'\n'"$commit_output"$'\n'$'\n'"Push:"$'\n'"$push_output"
+  notify-send -u low "Autosync is pushing" "Commits:"$'\n'"$commit_output"$'\n'$'\n'"Push:"$'\n'"$push_output"
 }
 
 get_no_diff_hash_from_auto() {
@@ -151,7 +151,7 @@ post_report() {
   pr_index=$(get_latest_pr_index $MERGE_BRANCH "main")
 
   local comment_feedback=$(tea comment $pr_index "$(cat $FILE)")
-  notify-send "Autosync is writing report" "$comment_feedback"
+  notify-send -u low "Autosync is writing report" "$comment_feedback"
 
   safe_cd_tmp_dir
 }
@@ -168,13 +168,13 @@ main() {
   fi
 
   if ! wait_for_file_in_branch "$FILE" "origin/$AUTO_BRANCH"; then
-    notify-send "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
+    notify-send -u low "Autosync warning" "Report not found in origin/$AUTO_BRANCH, commiting early"
   fi
 
   squash_and_push_to_merge
   post_report $FILE
 
-  notify-send "Autosync completed"
+  notify-send -u low "Autosync completed"
 }
 
 main "$@"

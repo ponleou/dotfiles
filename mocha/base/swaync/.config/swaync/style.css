@@ -1,6 +1,8 @@
 @import "mocha.css";
 @import "./option/accent.css";
 @import "./mod/background.css";
+@import "./mod/rounded.css";
+@import "./mod/gap.css";
 
 * {
     all: unset;
@@ -11,7 +13,7 @@
 
 trough highlight {
     background: @text;
-    border-radius: 1px;
+    border-radius: var(--rounded-xs);
 }
 
 scale trough {
@@ -19,16 +21,16 @@ scale trough {
     background-color: @surface0;
     min-height: 2px;
     min-width: 70px;
-    border-radius: 1px;
+    border-radius: var(--rounded-xs);
 }
 
 .floating-notifications.background .notification-row .notification-background {
     box-shadow: inset 0 0 0 1px @surface0;
-    margin: 1rem;
+    margin: var(--gap);
     background-color: @background;
     color: @text;
     padding: 0;
-    border-radius: 5px;
+    border-radius: var(--window-rounded);
 }
 
 .floating-notifications.background .notification-row .notification-background:hover {
@@ -42,7 +44,7 @@ scale trough {
 .floating-notifications.background .notification-row .notification-background .close-button {
     margin: 7px;
     padding: 2px;
-    border-radius: 3px;
+    border-radius: var(--rounded-s);
     color: @base;
     background-color: @red;
 }
@@ -73,17 +75,17 @@ scale trough {
 
 .control-center {
     box-shadow: inset 0 0 0 1px @surface0;
-    margin: 12px;
+    margin: var(--gap);
     background-color: @background;
     color: @text;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: var(--window-rounded);
 }
 
 .widget-title {
     padding: 1rem;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: var(--rounded);
+    border-top-left-radius: var(--rounded);
     background-color: @background;
 }
 
@@ -93,7 +95,7 @@ scale trough {
 }
 
 .control-center .widget-title button {
-    border-radius: 5px;
+    border-radius: var(--rounded);
     color: @text;
     background-color: @surface0;
     padding: 0.5rem 1rem;
@@ -109,13 +111,13 @@ scale trough {
 
 .widget-notifications {
     padding: 0 1rem;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: var(--rounded);
+    border-bottom-left-radius: var(--rounded);
     background-color: @background;
 }
 
 .control-center .notification-row .notification-background {
-    border-radius: 5px;
+    border-radius: var(--rounded);
     color: @text;
     box-shadow: inset 0 0 0 1px @surface1;
     background-color: @base;
@@ -127,7 +129,7 @@ scrolledwindow {
 }
 
 .control-center .notification-row .notification-background .notification {
-    border-radius: 5px;
+    border-radius: var(--rounded);
     padding: 1rem;
 }
 
@@ -152,13 +154,13 @@ scrolledwindow {
 .control-center .notification-row .notification-background .close-button {
     margin: 7px;
     padding: 2px;
-    border-radius: 3px;
+    border-radius: var(--rounded-s);
     color: @base;
     background-color: @maroon;
 }
 
 .close-button {
-    border-radius: 3px;
+    border-radius: var(--rounded-s);
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
@@ -188,7 +190,7 @@ scrolledwindow {
 .notification-action {
     margin: 1px;
     margin-top: 1rem;
-    border-radius: 5px;
+    border-radius: var(--rounded);
     color: @text;
     background-color: @surface0;
     padding: 0.5rem 1rem;
@@ -245,65 +247,10 @@ scrolledwindow {
     border-radius: 8px;
 }
 
-.widget-mpris > box > button {
-    margin-right: 1rem;
-}
-
-.widget-mpris > box > button:last-child {
-    margin: 0;
-    margin-left: 1rem;
-}
-
-.mpris-overlay {
-    background-color: @accent;
-    color: @mantle;
-}
-
-.mpris-overlay > box > button {
-    margin-right: 1rem;
-}
-
-.mpris-overlay > box > button:last-child {
-    margin: 0;
-}
-
-.widget-mpris-player {
-    padding: 0.5rem;
-    background-color: @accent;
-    border-radius: 10px;
-}
-
-.widget-mpris-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.widget-mpris-subtitle {
-    font-size: 0.9rem;
-}
-
-.widget-mpris-album-art {
-    border-radius: 3px;
-}
-
-.widget-menubar > box > .menu-button-bar > button > label {
-    font-size: 3rem;
-    padding: 0.5rem 2rem;
-}
-
-.widget-menubar > box > .menu-button-bar > :last-child {
-    color: @red;
-}
-
 .power-buttons button:hover,
 .powermode-buttons button:hover,
 .screenshot-buttons button:hover {
     background: @surface0;
-}
-
-.control-center .widget-label > label {
-    color: @text;
-    font-size: 2rem;
 }
 
 .widget-buttons-grid {
@@ -317,8 +264,8 @@ scrolledwindow {
 .widget-volume {
     padding: 1rem;
     border: @accent solid 1px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: var(--rounded);
+    border-top-left-radius: var(--rounded);
     border-bottom: none;
 }
 
@@ -336,8 +283,8 @@ scrolledwindow {
     padding: 1rem;
     padding-top: 0;
     border: @accent solid 1px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: var(--rounded);
+    border-bottom-left-radius: var(--rounded);
     border-top: none;
     margin-bottom: 1rem;
 }
@@ -378,7 +325,7 @@ scrolledwindow {
     margin-right: 1rem;
     padding: 0.5rem 1rem;
     background-color: @accent;
-    border-radius: 5px;
+    border-radius: var(--rounded);
     color: @mantle;
 }
 

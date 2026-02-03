@@ -1,6 +1,8 @@
 @import "mocha.css";
 @import "./option/accent.css";
 @import "./mod/background.css";
+@import "./mod/rounded.css";
+@import "./mod/gap.css";
 
 * {
     border: none;
@@ -25,7 +27,6 @@ tooltip label {
 
 #workspaces {
     background-color: @accent;
-    border-radius: 7px;
     margin-right: 5px;
     padding: 1px 4px;
 }
@@ -48,34 +49,31 @@ tooltip label {
 .modules-right,
 .modules-center,
 .modules-left {
-    margin: 3px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     padding: 2px;
 }
 
 #interact {
     background-color: @accent;
     color: @mantle;
-    border-radius: 5px;
     padding: 1px 5px;
 }
 
 #stats {
     border: @accent solid 1px;
-    border-radius: 5px;
     margin-right: 5px;
     padding: 1px 3px;
 }
 
 #swayinfo {
     border: @accent solid 1px;
-    border-radius: 5px;
     padding: 1px 1px;
     margin-right: 5px;
 }
 
-#music {
-    border-radius: 5px;
-}
+/* #music {
+} */
 
 #idle_inhibitor,
 #pulseaudio,
@@ -115,7 +113,6 @@ tooltip label {
 #custom-playerctl {
     background-color: @accent;
     color: @mantle;
-    border-radius: 5px;
 }
 
 #custom-playerlabel {
@@ -125,7 +122,6 @@ tooltip label {
 #mode {
     background-color: @red;
     color: @mantle;
-    border-radius: 3px;
 }
 
 #pulseaudio.muted,
