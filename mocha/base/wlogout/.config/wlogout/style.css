@@ -12,7 +12,7 @@ window {
 }
 
 button {
-    border-radius: 0;
+    border-radius: 5px;
     border-color: @accent;
     text-decoration-color: @text;
     color: @text;
