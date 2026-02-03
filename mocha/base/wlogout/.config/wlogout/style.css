@@ -25,21 +25,20 @@ button {
 }
 
 button:nth-child(1) {
-    border-bottom-right-radius: 10px;
-}
-
-button:nth-child(2) {
-    border-bottom-left-radius: 10px;
-}
-
-button:nth-child(5) {
-    border-top-right-radius: 10px;
-}
-
-button:nth-child(6) {
     border-top-left-radius: 10px;
 }
 
+button:nth-child(3) {
+    border-bottom-right-radius: 10px; /* Changed from top-right */
+}
+
+button:nth-child(4) {
+    border-top-right-radius: 10px; /* Changed from bottom-left */
+}
+
+button:nth-child(6) {
+    border-bottom-right-radius: 10px;
+}
 button:focus,
 button:active,
 button:hover {
