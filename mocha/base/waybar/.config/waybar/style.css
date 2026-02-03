@@ -9,8 +9,14 @@
     font-size: 12px;
     min-height: 0;
 }
+window {
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-window#waybar {
+#waybar {
     background-color: @background;
     color: @text;
 }
