@@ -13,11 +13,10 @@ include keybinds
 # other configs
 font pango: WorkSans Regular 12
 
-gaps inner 10px
-gaps outer 2px
+gaps inner 0
+gaps outer 0
 
-# disable window titlebar
-default_border pixel 2
+default_border pixel 0
 
 # set sway cursor
 seat seat0 xcursor_theme breeze_cursors 24
