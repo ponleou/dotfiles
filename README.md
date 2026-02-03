@@ -29,7 +29,15 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 - WayBar
 - wlogout
 
-###
+### Theming
+
+- Catppuccin Mocha: green, mauve, peach, rosewater, sapphire, and yellow
+- Mods:
+    - background: solid, blur
+    - gap: big, small, none, etc.
+    - rounded: all, minimal, none, etc.
+
+_(and more to come)_
 
 ## Keybinds
 
