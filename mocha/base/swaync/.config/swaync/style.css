@@ -1,10 +1,7 @@
 @import "mocha.css";
 @import "./option/accent.css";
 @import "./mod/background.css";
-
-* {
-    --rounded: 5px;
-}
+@import "./mod/rounded.css";
 
 * {
     all: unset;
@@ -15,7 +12,7 @@
 
 trough highlight {
     background: @text;
-    border-radius: 1px;
+    border-radius: var(--rounded-xs);
 }
 
 scale trough {
@@ -23,7 +20,7 @@ scale trough {
     background-color: @surface0;
     min-height: 2px;
     min-width: 70px;
-    border-radius: 1px;
+    border-radius: var(--rounded-xs);
 }
 
 .floating-notifications.background .notification-row .notification-background {
@@ -32,7 +29,7 @@ scale trough {
     background-color: @background;
     color: @text;
     padding: 0;
-    border-radius: 5px;
+    border-radius: var(--window-rounded);
 }
 
 .floating-notifications.background .notification-row .notification-background:hover {
@@ -81,7 +78,7 @@ scale trough {
     background-color: @background;
     color: @text;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: var(--window-rounded);
 }
 
 .widget-title {
