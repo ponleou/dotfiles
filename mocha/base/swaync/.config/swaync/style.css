@@ -249,55 +249,14 @@ scrolledwindow {
     border-radius: 8px;
 }
 
-.widget-mpris > box > button {
-    margin-right: 1rem;
-}
-
-.widget-mpris > box > button:last-child {
-    margin: 0;
-    margin-left: 1rem;
-}
-
-.mpris-overlay {
-    background-color: @accent;
-    color: @mantle;
-}
-
-.mpris-overlay > box > button {
-    margin-right: 1rem;
-}
-
-.mpris-overlay > box > button:last-child {
-    margin: 0;
-}
-
-.widget-mpris-player {
-    padding: 0.5rem;
-    background-color: @accent;
-    border-radius: 10px;
-}
-
-.widget-mpris-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.widget-mpris-subtitle {
-    font-size: 0.9rem;
-}
-
-.widget-mpris-album-art {
-    border-radius: 3px;
-}
-
-.widget-menubar > box > .menu-button-bar > button > label {
+/* .widget-menubar > box > .menu-button-bar > button > label {
     font-size: 3rem;
     padding: 0.5rem 2rem;
 }
 
 .widget-menubar > box > .menu-button-bar > :last-child {
     color: @red;
-}
+} */
 
 .power-buttons button:hover,
 .powermode-buttons button:hover,
