@@ -1,6 +1,6 @@
 # SwayFX Dotfiles (Arch Linux and Catppuccin)
 
-My personal rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic git commit scripts and services. Feel free to take inspiration or copy for yourself.
+My highly customisable rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic scripts and services. Feel free to take inspiration or copy for yourself.
 
 ## Screenshots
 
