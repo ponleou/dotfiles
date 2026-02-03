@@ -1,7 +1,9 @@
 {
     "height": 30,
     "spacing": 1,
-    "margin": "5 5 0 5",
+
+    "include": ["./mod/gap.jsonc"],
+
     "modules-left": ["sway/workspaces", "group/swayinfo", "group/music"],
     "modules-center": ["clock"],
     "modules-right": ["group/stats", "group/interact"],
