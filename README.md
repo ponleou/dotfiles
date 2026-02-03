@@ -9,6 +9,24 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 <img src="assets/img_3.png" width="24%" />
 <img src="assets/img_4.png" width="24%" />
 
+## Supported Applications
+
+- QT and GTK themes
+- Konsole
+- Dolphin
+- Neovim
+- btop
+- Vesktop
+- VSCode and VSCodium
+- YouTube Music (pear-desktop)
+- Zen Browser
+- Rofi
+- SwayFX
+- swaylock
+- SwayNC
+- WayBar
+- wlogout
+
 ## Keybinds
 
 > **Note:** `$mod` is set to `Mod4` (Super key)
@@ -141,7 +159,7 @@ ROOT
 │   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
 │   │
 │   ├── modlist/
-│   │   └── [mods] (e.g. background)/
+│   │   └── [mods] (e.g. background, gap, etc.)/
 │   │       └── [mod-option]/
 │   │           └── [mod-package]/
 │   │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
@@ -166,3 +184,4 @@ ROOT
 - for Vesktop config packages, stow only owns the vesktop/settings/ directory
 - for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 - for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
+- `nwc` in modlist options stands for "no WayBar corners"
