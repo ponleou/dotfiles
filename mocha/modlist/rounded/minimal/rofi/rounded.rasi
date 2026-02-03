@@ -1,3 +1,4 @@
 * {
+    window-rounded: 0px;
     rounded: 5px;
 }
