@@ -9,16 +9,10 @@
     font-size: 12px;
     min-height: 0;
 }
-window {
-    background: transparent;
-}
 
-#waybar {
+window#waybar {
     background-color: @background;
     color: @text;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 tooltip {
