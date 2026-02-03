@@ -25,22 +25,6 @@ button {
     background-size: 25%;
 }
 
-button:nth-child(1) {
-    border-top-left-radius: 5px;
-}
-
-button:nth-child(2) {
-    border-bottom-left-radius: 5px;
-}
-
-button:nth-child(5) {
-    border-top-right-radius: 5px;
-}
-
-button:nth-child(6) {
-    border-bottom-right-radius: 5px;
-}
-
 button:focus,
 button:active,
 button:hover {
