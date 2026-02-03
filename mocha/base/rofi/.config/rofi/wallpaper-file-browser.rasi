@@ -1,6 +1,7 @@
 @import "./colors.rasi"
 @import "./option/accent.rasi"
 @import "./mod/background.rasi"
+@import "./mod/rounded.rasi"
 
 * {
 	background-color: transparent;
@@ -16,7 +17,7 @@ window {
 	background-color: @background;
 	border: 2px;
 	border-color: @accent;
-    border-radius: 5px;
+    border-radius: @window-rounded;
 }
 
 wrap {
@@ -44,7 +45,7 @@ prompt {
     margin: 0px;
     font: @font;
     padding: 5px 7px;
-    border-radius: 5px;
+    border-radius: @rounded;
 	content: "wallpaper";
 }
 
@@ -84,6 +85,6 @@ element-text {
 element selected {
 	border: 2px;
 	border-color: @accent;
-	border-radius: 5px;
+	border-radius: @rounded;
 }
 

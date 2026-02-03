@@ -1,0 +1,4 @@
+* {
+    window-rounded: 5px;
+    rounded: 5px;
+}
