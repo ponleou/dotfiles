@@ -1,6 +1,7 @@
 @import "mocha.css";
 @import "./option/accent.css";
 @import "./mod/background.css";
+@import "./mod/rounded.css";
 
 * {
     border: none;
@@ -25,7 +26,6 @@ tooltip label {
 
 #workspaces {
     background-color: @accent;
-    border-radius: 5px;
     margin-right: 5px;
     padding: 1px 4px;
 }
@@ -55,27 +55,23 @@ tooltip label {
 #interact {
     background-color: @accent;
     color: @mantle;
-    border-radius: 5px;
     padding: 1px 5px;
 }
 
 #stats {
     border: @accent solid 1px;
-    border-radius: 5px;
     margin-right: 5px;
     padding: 1px 3px;
 }
 
 #swayinfo {
     border: @accent solid 1px;
-    border-radius: 5px;
     padding: 1px 1px;
     margin-right: 5px;
 }
 
-#music {
-    border-radius: 5px;
-}
+/* #music {
+} */
 
 #idle_inhibitor,
 #pulseaudio,
@@ -115,7 +111,6 @@ tooltip label {
 #custom-playerctl {
     background-color: @accent;
     color: @mantle;
-    border-radius: 5px;
 }
 
 #custom-playerlabel {
@@ -125,7 +120,6 @@ tooltip label {
 #mode {
     background-color: @red;
     color: @mantle;
-    border-radius: 3px;
 }
 
 #pulseaudio.muted,
