@@ -9,7 +9,9 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 <img src="assets/img_3.png" width="24%" />
 <img src="assets/img_4.png" width="24%" />
 
-## Supported Applications
+## Features
+
+### Supported Applications
 
 - QT and GTK themes
 - Konsole
@@ -26,6 +28,8 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 - SwayNC
 - WayBar
 - wlogout
+
+###
 
 ## Keybinds
 
@@ -105,7 +109,7 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 
 ## Additional Information
 
-### Dependencies
+### Dependencies (may not be complete)
 
 - nwg-look
 - catppuccin-gtk-theme-mocha
