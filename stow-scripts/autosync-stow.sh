@@ -92,7 +92,13 @@ write_report() {
     exit 1
   fi
 
-  local REPORT_FILE="$SCRIPT_DIR/../tmp/reports/$LAST_MERGE_HASH.report.txt"
+  local REPORT_DIR="$SCRIPT_DIR/../tmp/reports"
+
+  if [ ! -d "$REPORT_DIR" ]; then
+    mkdir -p "$REPORT_DIR"
+  fi
+
+  local REPORT_FILE="$REPORT_DIR/$LAST_MERGE_HASH.report.txt"
 
   echo "" > $REPORT_FILE
   echo "Squashed commits from $AUTO_BRANCH/[$CURRENT_AUTO_HASH]($HTTPS_URL/commit/$CURRENT_AUTO_HASH)" >> $REPORT_FILE
