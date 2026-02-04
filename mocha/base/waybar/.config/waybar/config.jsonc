@@ -124,7 +124,7 @@
         "format": "<span>{}</span>",
         "return-type": "json",
         "max-length": 48,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} — {{markup_escape(title)}}\", \"tooltip\": \"{{duration(position)}} / {{duration(mpris:length)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} — {{markup_escape(title)}}\", \"tooltip\": \"[ {{duration(position)}} / {{duration(mpris:length)}} ]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     },
 
     "sway/scratchpad": {
