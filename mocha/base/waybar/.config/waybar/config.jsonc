@@ -87,8 +87,6 @@
             "focused": "",
             "default": "󰧞",
         },
-        "tooltip": true,
-        "tooltip-format": "{name}",
     },
 
     "bluetooth": {
