@@ -179,7 +179,7 @@
         "interval": 5,
         "format": "{}% ",
         "on-click": "konsole -e btop",
-        "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G. Swap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
+        "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G\nSwap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
         "states": {
             "critical": 80,
         },
