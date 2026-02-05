@@ -2,6 +2,6 @@
   --control-primary-text-default: rgba(30, 30, 46, 1) !important;
 }
 
-.visual-refresh.theme-dark span {
+.visual-refresh.theme-dark span[class^="botTag"] {
   --white: rgba(30, 30, 46, 1) !important;
 }
