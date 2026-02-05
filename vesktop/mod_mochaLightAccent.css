@@ -1,5 +1,7 @@
-.visual-refresh .theme-dark,
-body {
-    --white: rgba(30, 30, 46, 1) !important;
-    --control-primary-text-default: rgba(30, 30, 46, 1) !important;
+.visual-refresh.theme-dark body {
+  --control-primary-text-default: rgba(30, 30, 46, 1) !important;
+}
+
+.visual-refresh.theme-dark span {
+  --white: rgba(30, 30, 46, 1) !important;
 }
