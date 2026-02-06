@@ -86,7 +86,6 @@ tooltip label {
 #window,
 #custom-playerctl,
 #custom-playerlabel,
-#custom-playertime,
 #clock,
 #pulseaudio,
 #bluetooth,
@@ -114,8 +113,7 @@ tooltip label {
   color: @mantle;
 }
 
-#custom-playerlabel,
-#custom-playertime {
+#custom-playerlabel {
   margin: 0 -5px;
 }
 
