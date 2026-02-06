@@ -37,12 +37,12 @@ local options = {
 	-- used on the encode. If this is set to <= 0, the video bitrate will be set
 	-- to 0, which might enable constant quality modes, depending on the
 	-- video codec that's used (VP8 and VP9, for example).
-	target_filesize = 2500,
+	target_filesize = 9750,
 	-- If true, will use stricter flags to ensure the resulting file doesn't
 	-- overshoot the target filesize. Not recommended, as constrained quality
 	-- mode should work well, unless you're really having trouble hitting
 	-- the target size.
-	strict_filesize_constraint = false,
+	strict_filesize_constraint = true,
 	strict_bitrate_multiplier = 0.95,
 	-- In kilobits.
 	strict_audio_bitrate = 64,
@@ -64,7 +64,7 @@ local options = {
 	-- If set, writes the video's filename to the "Title" field on the metadata.
 	write_filename_on_metadata = false,
 	-- Set the number of encoding threads, for codecs libvpx and libvpx-vp9
-	threads = 4,
+	threads = 16,
 	additional_flags = "",
 	-- Constant Rate Factor (CRF). The value meaning and limits may change,
 	-- from codec to codec. Set to -1 to disable.
