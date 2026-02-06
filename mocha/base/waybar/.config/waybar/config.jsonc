@@ -111,7 +111,7 @@
         "format": "<span>{}</span>",
         "return-type": "json",
         "max-length": 48,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} [{{duration(position)}} / {{duration(mpris:length)}}] — {{markup_escape(title)}}\", \"tooltip\": \"{{default(markup_escape(artist), playerName)}}{{markup_escape(title)}}[{{duration(position)}} / {{duration(mpris:length)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} [{{duration(position)}} / {{duration(mpris:length)}}] — {{markup_escape(title)}}\", \"tooltip\": \"{{default(markup_escape(artist), playerName)}}\\n{{markup_escape(title)}}\\n\\n[{{duration(position)}} / {{duration(mpris:length)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     },
     "sway/scratchpad": {
         "format": "{icon}  {count}",
