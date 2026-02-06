@@ -152,7 +152,7 @@
     "custom/playerlabel": {
         "format": "<span>{}</span>",
         "return-type": "json",
-        "max-length": 25,
+        "max-length": 28,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} — {{markup_escape(title)}}\", \"tooltip\": \"{{default(markup_escape(artist), playerName)}}\\n{{markup_escape(title)}}\\n\\n[{{duration(position)}} / {{duration(mpris:length)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     },
     "custom/playertime": {
