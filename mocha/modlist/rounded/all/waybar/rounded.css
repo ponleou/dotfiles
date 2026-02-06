@@ -3,11 +3,10 @@ window#waybar,
 #interact,
 #stats,
 #swayinfo,
-#music,
 #custom-playerctl {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 #mode {
-    border-radius: 3px;
+  border-radius: 3px;
 }
