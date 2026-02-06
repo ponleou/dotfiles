@@ -158,7 +158,7 @@
     "custom/playertime": {
         "format": "<span>{}</span>",
         "return-type": "json",
-        "exec": "playerctl -a metadata --format '{\"text\": \"[{{duration(position)}} / {{duration(mpris:length)}}]\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{duration(position)}} / {{duration(mpris:length)}}\"}' -F",
     },
     "sway/scratchpad": {
         "format": "{icon}  {count}",
