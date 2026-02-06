@@ -1132,7 +1132,7 @@ do
 	AVC = _class_0
 end
 formats["avc"] = AVC()
-local HEVCVAAPI
+local HEVCAMF
 do
 	local _class_0
 	local _parent_0 = Format
@@ -1147,15 +1147,15 @@ do
 	setmetatable(_base_0, _parent_0.__base)
 	_class_0 = setmetatable({
 		__init = function(self)
-			self.displayName = "HEVC (hevc-VAAPI/AAC)"
+			self.displayName = "HEVC (hevc-AMF/AAC)"
 			self.supportsTwopass = true
-			self.videoCodec = "hevc_vaapi"
+			self.videoCodec = "hevc_amf"
 			self.audioCodec = "aac"
 			self.outputExtension = "mp4"
 			self.acceptsBitrate = true
 		end,
 		__base = _base_0,
-		__name = "HEVCVAAPI",
+		__name = "HEVCAMF",
 		__parent = _parent_0,
 	}, {
 		__index = function(cls, name)
@@ -1181,7 +1181,7 @@ do
 	end
 	HEVCVAAPI = _class_0
 end
-formats["hevc-vaapi"] = HEVCVAAPI()
+formats["hevc-amf"] = HEVCAMF()
 local AVCNVENC
 do
 	local _class_0
@@ -2695,7 +2695,7 @@ do
 				"hevc",
 				"webm-vp9",
 				"avc",
-				"hevc-vaapi",
+				"hevc-amf",
 				"avc-nvenc",
 				"webm-vp8",
 				"gif",
