@@ -57,7 +57,7 @@ local options = {
 	-- gif
 	-- mp3 (libmp3lame)
 	-- and raw (rawvideo/pcm_s16le).
-	output_format = "webm-vp8",
+	output_format = "avc-amf",
 	twopass = true,
 	-- If set, applies the video filters currently used on the playback to the encode.
 	apply_current_filters = true,
