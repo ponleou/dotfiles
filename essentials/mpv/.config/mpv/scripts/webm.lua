@@ -1132,6 +1132,56 @@ do
 	AVC = _class_0
 end
 formats["avc"] = AVC()
+local AVCAMF
+do
+	local _class_0
+	local _parent_0 = Format
+	local _base_0 = {
+		getFlags = function(self)
+			return {
+				"--ovcopts-add=bf=0",
+			}
+		end,
+	}
+	_base_0.__index = _base_0
+	setmetatable(_base_0, _parent_0.__base)
+	_class_0 = setmetatable({
+		__init = function(self)
+			self.displayName = "AVC (h264-AMF/AAC)"
+			self.supportsTwopass = true
+			self.videoCodec = "h264_amf"
+			self.audioCodec = "aac"
+			self.outputExtension = "mp4"
+			self.acceptsBitrate = true
+		end,
+		__base = _base_0,
+		__name = "AVCAMF",
+		__parent = _parent_0,
+	}, {
+		__index = function(cls, name)
+			local val = rawget(_base_0, name)
+			if val == nil then
+				local parent = rawget(cls, "__parent")
+				if parent then
+					return parent[name]
+				end
+			else
+				return val
+			end
+		end,
+		__call = function(cls, ...)
+			local _self_0 = setmetatable({}, _base_0)
+			cls.__init(_self_0, ...)
+			return _self_0
+		end,
+	})
+	_base_0.__class = _class_0
+	if _parent_0.__inherited then
+		_parent_0.__inherited(_parent_0, _class_0)
+	end
+	AVCAMF = _class_0
+end
+formats["avc-amf"] = AVCAMF()
 local HEVCAMF
 do
 	local _class_0
@@ -1232,6 +1282,56 @@ do
 	AVCNVENC = _class_0
 end
 formats["avc-nvenc"] = AVCNVENC()
+local HEVCNVENC
+do
+	local _class_0
+	local _parent_0 = Format
+	local _base_0 = {
+		getFlags = function(self)
+			return {
+				"--ovcopts-add=bf=0",
+			}
+		end,
+	}
+	_base_0.__index = _base_0
+	setmetatable(_base_0, _parent_0.__base)
+	_class_0 = setmetatable({
+		__init = function(self)
+			self.displayName = "HEVC (hevc-NVENC/AAC)"
+			self.supportsTwopass = true
+			self.videoCodec = "hevc_nvenc"
+			self.audioCodec = "aac"
+			self.outputExtension = "mp4"
+			self.acceptsBitrate = true
+		end,
+		__base = _base_0,
+		__name = "HEVCNVENC",
+		__parent = _parent_0,
+	}, {
+		__index = function(cls, name)
+			local val = rawget(_base_0, name)
+			if val == nil then
+				local parent = rawget(cls, "__parent")
+				if parent then
+					return parent[name]
+				end
+			else
+				return val
+			end
+		end,
+		__call = function(cls, ...)
+			local _self_0 = setmetatable({}, _base_0)
+			cls.__init(_self_0, ...)
+			return _self_0
+		end,
+	})
+	_base_0.__class = _class_0
+	if _parent_0.__inherited then
+		_parent_0.__inherited(_parent_0, _class_0)
+	end
+	HEVCNVENC = _class_0
+end
+formats["hevc-nvenc"] = HEVCNVENC()
 local AV1
 do
 	local _class_0
