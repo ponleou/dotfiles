@@ -2791,13 +2791,15 @@ do
 				},
 			}
 			local formatIds = {
-				"av1",
-				"hevc",
-				"webm-vp9",
 				"avc",
+				"hevc",
+				"av1",
+				"avc-amf",
 				"hevc-amf",
 				"avc-nvenc",
+				"hevc-nvenc",
 				"webm-vp8",
+				"webm-vp9",
 				"gif",
 				"mp3",
 				"raw",
