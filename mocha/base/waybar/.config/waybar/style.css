@@ -73,9 +73,6 @@ tooltip label {
   margin-right: 5px;
 }
 
-/* #music {
-} */
-
 #idle_inhibitor,
 #pulseaudio,
 #bluetooth,
@@ -117,12 +114,9 @@ tooltip label {
   color: @mantle;
 }
 
-#custom-playerlabel {
-  margin: 0 -5px;
-}
-
+#custom-playerlabel,
 #custom-playertime {
-  border: @accent solid 1px;
+  margin: 0 -5px;
 }
 
 #mode {
