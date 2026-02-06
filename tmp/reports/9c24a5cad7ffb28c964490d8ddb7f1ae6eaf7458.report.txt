@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[ac275a8467a7fe63db6f1ad420fd98ead0d9cd99](https://codeberg.org/ponleou/dotfiles/commit/ac275a8467a7fe63db6f1ad420fd98ead0d9cd99)
+Last no-diff commit found from autocommit: [19b4149c88585a886e69bc9e71ec35982a0e3edc](https://codeberg.org/ponleou/dotfiles/commit/19b4149c88585a886e69bc9e71ec35982a0e3edc)
+
+commit count: 1
+diff:
+```
+M	essentials/omz/.zshrc
+```
