@@ -1132,7 +1132,7 @@ do
 	AVC = _class_0
 end
 formats["avc"] = AVC()
-local AVCNVENC
+local HEVCVAAPI
 do
 	local _class_0
 	local _parent_0 = Format
@@ -1147,15 +1147,15 @@ do
 	setmetatable(_base_0, _parent_0.__base)
 	_class_0 = setmetatable({
 		__init = function(self)
-			self.displayName = "AVC (h264-NVENC/AAC)"
+			self.displayName = "HEVC (hevc-VAAPI/AAC)"
 			self.supportsTwopass = true
-			self.videoCodec = "h264_nvenc"
+			self.videoCodec = "hevc_vaapi"
 			self.audioCodec = "aac"
 			self.outputExtension = "mp4"
 			self.acceptsBitrate = true
 		end,
 		__base = _base_0,
-		__name = "AVCNVENC",
+		__name = "HEVCVAAPI",
 		__parent = _parent_0,
 	}, {
 		__index = function(cls, name)
@@ -1179,10 +1179,9 @@ do
 	if _parent_0.__inherited then
 		_parent_0.__inherited(_parent_0, _class_0)
 	end
-	AVCNVENC = _class_0
+	HEVCVAAPI = _class_0
 end
-formats["avc-nvenc"] = AVCNVENC()
-
+formats["hevc-vaapi"] = HEVCVAAPI()
 local AVCNVENC
 do
 	local _class_0
