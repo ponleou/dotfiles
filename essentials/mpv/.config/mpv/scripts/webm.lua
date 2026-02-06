@@ -1179,7 +1179,7 @@ do
 	if _parent_0.__inherited then
 		_parent_0.__inherited(_parent_0, _class_0)
 	end
-	HEVCVAAPI = _class_0
+	HEVCAMF = _class_0
 end
 formats["hevc-amf"] = HEVCAMF()
 local AVCNVENC
