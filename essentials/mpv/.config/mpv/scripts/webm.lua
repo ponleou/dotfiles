@@ -2695,6 +2695,7 @@ do
 				"hevc",
 				"webm-vp9",
 				"avc",
+				"hevc-vaapi",
 				"avc-nvenc",
 				"webm-vp8",
 				"gif",
