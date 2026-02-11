@@ -17,8 +17,8 @@ visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [Window]
-height=759
+height=1007
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 visiblePipeWirePage=testSignalsPage
-width=841
+width=1682
