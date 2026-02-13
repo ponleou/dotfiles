@@ -1,5 +1,5 @@
 [Presets]
-lastLoadedOutputPreset=Space One - alt
+lastLoadedOutputPreset=G14 Speaker
 
 [Spectrum]
 spectrumShape=area
@@ -13,9 +13,9 @@ visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,Space One,Space One - alt,none
-outputDevice=bluez_output.E8:EE:CC:96:07:DA
+outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
 plugins=equalizer#0
-usedPresets=G14 Speaker:12,Space One:8,Space One - alt:3,none:2
+usedPresets=G14 Speaker:13,Space One:8,Space One - alt:3,none:2
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
