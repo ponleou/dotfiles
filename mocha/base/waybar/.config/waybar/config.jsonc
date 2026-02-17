@@ -57,7 +57,7 @@
     "custom/notification": {
         "format": "{icon}",
         "format-icons": {
-            "notification": "󰂚<span foreground='#d20f39'><sup></sup></span>",
+            "notification": "󰂚<span foreground='#d20f39' baseline_shift='superscript'></span>",
             "none": "󰂚",
             "dnd-notification": "󰂛<span foreground='#d20f39'><sup></sup></span>",
             "dnd-none": "󰂛",
