@@ -57,13 +57,13 @@
     "custom/notification": {
         "format": "{icon}",
         "format-icons": {
-            "notification": "󰂚<span foreground='#d20f39'><sup></sup></span>",
+            "notification": "󰂚<span foreground='#d20f39' rise='4500' font_size='60%'></span>",
             "none": "󰂚",
-            "dnd-notification": "󰂛<span foreground='#d20f39'><sup></sup></span>",
+            "dnd-notification": "󰂛<span foreground='#d20f39' rise='4500' font_size='60%'></span>",
             "dnd-none": "󰂛",
-            "inhibited-notification": "󰂚<span foreground='#d20f39'><sup></sup></span>",
+            "inhibited-notification": "󰂚<span foreground='#d20f39' rise='4500' font_size='60%'></span>",
             "inhibited-none": "󰂚",
-            "dnd-inhibited-notification": "󰂛<span foreground='#d20f39'><sup></sup></span>",
+            "dnd-inhibited-notification": "󰂛<span foreground='#d20f39' rise='4500' font_size='60%'></span>",
             "dnd-inhibited-none": "󰂛",
         },
         "tooltip": true,
