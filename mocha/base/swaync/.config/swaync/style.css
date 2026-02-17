@@ -353,7 +353,7 @@ scrolledwindow {
 }
 
 .app-icon {
-  display: none;
+  opacity: 0;
   margin-right: 0.5rem;
   margin-bottom: -0.25rem;
   padding: 3px;
