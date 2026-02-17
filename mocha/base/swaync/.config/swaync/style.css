@@ -314,7 +314,6 @@ scrolledwindow {
 }
 
 .widget-volume label {
-  font-size: 0.8rem;
   color: @text;
   min-width: 2.5rem;
 }
