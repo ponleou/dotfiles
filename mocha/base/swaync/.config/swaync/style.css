@@ -354,8 +354,7 @@ scrolledwindow {
 }
 
 .app-icon {
-  min_width: 0;
-  min_height: 0;
+  display: hidden;
   margin-right: 0.5rem;
   margin-bottom: -0.25rem;
   padding: 3px;
