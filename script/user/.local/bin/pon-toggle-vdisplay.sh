@@ -13,3 +13,5 @@ else
     # Enable DP-3 (iGPU) and disable HDMI-A-1
     wlr-randr --output DP-3 --toggle --pos -1707,0 --scale 1.5
 fi
+
+test
