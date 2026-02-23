@@ -5,7 +5,7 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
-set $term konsole
+set $term alacritty 
 set $menu rofi -show drun -show-icons
 
 set $file dolphin
