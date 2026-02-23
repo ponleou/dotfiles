@@ -1,23 +1,46 @@
 {
     "height": 30,
     "spacing": 1,
-    "include": ["./mod/gap.jsonc"],
-    "modules-left": ["sway/workspaces", "group/swayinfo", "group/music"],
-    "modules-center": ["clock"],
-    "modules-right": ["group/stats", "group/interact"],
+    "include": [
+        "./mod/gap.jsonc"
+    ],
+    "modules-left": [
+        "sway/workspaces",
+        "group/swayinfo",
+        "group/music"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/stats",
+        "group/interact"
+    ],
     "group/music": {
         "orientation": "horizontal",
-        "modules": ["custom/playerctl", "custom/playerlabel", "custom/playertime"],
+        "modules": [
+            "custom/playerctl",
+            "custom/playerlabel",
+            "custom/playertime"
+        ],
         "disable_auto_hide": false,
     },
     "group/swayinfo": {
         "orientation": "horizontal",
-        "modules": ["sway/mode", "sway/scratchpad"],
+        "modules": [
+            "sway/mode",
+            "sway/scratchpad"
+        ],
         "disable_auto_hide": false,
     },
     "group/stats": {
         "orientation": "horizontal",
-        "modules": ["memory", "cpu", "temperature", "battery"],
+        "modules": [
+            "memory",
+            "cpu",
+            "temperature",
+            "battery"
+        ],
     },
     "group/interact": {
         "orientation": "horizontal",
@@ -53,7 +76,17 @@
     },
     "backlight": {
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         "tooltip-format": "Brightness: {percent}%",
     },
     "battery": {
@@ -63,7 +96,13 @@
             "critical": 15,
         },
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         "max-length": 25,
         "tooltip-format": "{timeTo} ({power}W)",
     },
@@ -84,7 +123,10 @@
         "format-off": "󰂲",
         "format-connected": "󰂱",
         "format-connected-battery": "󰂱",
-        "format-device-preference": ["ugreen_1", "ugreen_2"],
+        "format-device-preference": [
+            "ugreen_1",
+            "ugreen_2"
+        ],
         "tooltip-format": "{controller_alias} {controller_address}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias} {controller_address}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
@@ -121,7 +163,9 @@
     "sway/scratchpad": {
         "format": "{icon}  {count}",
         "show-empty": true,
-        "format-icons": ["󱂬"],
+        "format-icons": [
+            "󱂬"
+        ],
         "tooltip": true,
         "tooltip-format": "{app}: {title}",
     },
@@ -162,12 +206,12 @@
     "cpu": {
         "interval": 5,
         "format": "{usage}% ",
-        "on-click": "alacritty -e btop",
+        "on-click": "alacritty msg create-window -e btop",
     },
     "memory": {
         "interval": 5,
         "format": "{}% ",
-        "on-click": "alacritty -e btop",
+        "on-click": "alacritty msg create-window -e btop",
         "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G\nSwap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
         "states": {
             "critical": 80,
@@ -179,8 +223,14 @@
         "critical-threshold": 75,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", "", "", ""],
-        "on-click": "alacritty -e btop",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "on-click": "alacritty msg create-window -e btop",
         "tooltip-format": "Temperature: {temperatureC}°C",
     },
     "network": {
@@ -189,7 +239,13 @@
         "interface-wifi": "wlp5s0",
         "format-ethernet": "󰈀",
         "format-wifi": "{icon}",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr} ({essid} {signalStrength}%)",
         "format-linked": "󰈁",
@@ -211,7 +267,11 @@
             "phone": "󰏲",
             "portable": "󰏲",
             "car": "󰄋",
-            "default": ["󰕿", "󰖀", "󰕾"],
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ],
         },
         "tooltip-format": "{desc}\n{volume}% 󰕾 {format_source}",
         "on-click": "pavucontrol-qt",
