@@ -4,7 +4,7 @@ mocha_packages="btop nwg-look qt6ct rofi swaylock swaync waybar wlogout"
 mocha_bases="alacritty-base nvim-base sway-base vesktop-base"
 
 accent_packages="nwg-look qt6ct ytm zen"
-accent_options="rofi-option swaync-option waybar-option wlogout-option sway-option vesktop-option"
+accent_options="rofi-option sway-option swaync-option vesktop-option waybar-option wlogout-option"
 
 build_packages="Code VSCodium ytm"
 
