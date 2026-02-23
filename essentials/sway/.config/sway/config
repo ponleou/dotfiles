@@ -45,7 +45,8 @@ exec gtk-update-icon-cache  # allow wofi to get app icon
 exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec kwalletd6
-exec_always autotiling
+exec alacritty --daemon
+exec autotiling
 
 ### Idle configuration
  exec swayidle -w \

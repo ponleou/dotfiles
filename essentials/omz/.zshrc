@@ -119,6 +119,7 @@ export GPG_TTY=$(tty)
 
 alias code='codium --ozone-platform=wayland'
 alias nano='nvim'
+alias alacritty='alacritty msg create-window'
 
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
