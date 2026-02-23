@@ -1,5 +1,5 @@
 [general]
-import = ["mocha.toml", "bg.toml"]
+import = ["base/colors.toml", "base/mod/bg.toml"]
 
 [font]
 size = 10.0
