@@ -2,13 +2,13 @@
   "options": {
     "tray": false,
     "appVisible": true,
-    "autoUpdates": true,
+    "autoUpdates": false,
     "alwaysOnTop": false,
     "hideMenu": true,
     "hideMenuWarned": true,
     "startAtLogin": false,
     "disableHardwareAcceleration": false,
-    "removeUpgradeButton": false,
+    "removeUpgradeButton": true,
     "restartOnConfigChanges": false,
     "trayClickPlayPause": false,
     "autoResetAppCache": false,
@@ -159,7 +159,22 @@
       "enabled": false
     },
     "downloader": {
-      "enabled": false
+      "enabled": false,
+      "downloadOnFinish": {
+        "enabled": true,
+        "seconds": 20,
+        "percent": 10,
+        "mode": "seconds"
+      },
+      "selectedPreset": "mp3 (256kbps)",
+      "customPresetSetting": {
+        "extension": "mp3",
+        "ffmpegArgs": [
+          "-b:a",
+          "256k"
+        ]
+      },
+      "skipExisting": false
     },
     "navigation": {
       "enabled": true
@@ -168,13 +183,25 @@
       "enabled": false
     },
     "exponential-volume": {
-      "enabled": true
+      "enabled": false
     },
     "auth-proxy-adapter": {
       "enabled": false
     },
     "equalizer": {
       "enabled": false
+    },
+    "unobtrusive-player": {
+      "enabled": true
+    },
+    "custom-output-device": {
+      "enabled": false,
+      "output": "default",
+      "devices": {
+        "default": "Default",
+        "fe527469a9e64af5f846a46d275b08c63b36749f34b5237081a99cb74ab4b720": "Easy Effects Sink",
+        "f7d79c7e5896553134f45ee819e4010dac0041f0148e2d65232c6cd7da6a7928": "Ryzen HD Audio Controller Analog Stereo"
+      }
     }
   },
   "__internal__": {
