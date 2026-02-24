@@ -195,7 +195,7 @@
       "enabled": true
     },
     "custom-output-device": {
-      "enabled": true,
+      "enabled": false,
       "output": "default",
       "devices": {
         "default": "Default",
