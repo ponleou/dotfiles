@@ -206,12 +206,12 @@
     "cpu": {
         "interval": 5,
         "format": "{usage}% ",
-        "on-click": "alacritty msg create-window -e btop",
+        "on-click": "alacritty msg create-window --class 'btop_alacritty' -e btop",
     },
     "memory": {
         "interval": 5,
         "format": "{}% ",
-        "on-click": "alacritty msg create-window -e btop",
+        "on-click": "alacritty msg create-window --class 'btop_alacritty' -e btop",
         "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G\nSwap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
         "states": {
             "critical": 80,
@@ -230,7 +230,7 @@
             "",
             ""
         ],
-        "on-click": "alacritty msg create-window -e btop",
+        "on-click": "alacritty msg create-window --class 'btop_alacritty' -e btop",
         "tooltip-format": "Temperature: {temperatureC}°C",
     },
     "network": {
@@ -251,7 +251,7 @@
         "format-linked": "󰈁",
         "format-disconnected": "󱚵",
         "format-disabled": "󰖪",
-        "on-click": "nmgui",
+        "on-click": "alacritty msg create-window --class 'nmtui_alacritty' -e nmtui",
     },
     "pulseaudio": {
         "format": "{icon}",
