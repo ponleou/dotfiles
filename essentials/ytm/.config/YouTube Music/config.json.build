@@ -28,7 +28,7 @@
       "mode": "custom"
     },
     "precise-volume": {
-      "enabled": false,
+      "enabled": true,
       "steps": "1",
       "arrowsShortcut": true,
       "globalShortcuts": {
@@ -159,7 +159,7 @@
       "enabled": false
     },
     "downloader": {
-      "enabled": true,
+      "enabled": false,
       "downloadOnFinish": {
         "enabled": true,
         "seconds": 20,
@@ -183,13 +183,25 @@
       "enabled": false
     },
     "exponential-volume": {
-      "enabled": true
+      "enabled": false
     },
     "auth-proxy-adapter": {
       "enabled": false
     },
     "equalizer": {
       "enabled": false
+    },
+    "unobtrusive-player": {
+      "enabled": true
+    },
+    "custom-output-device": {
+      "enabled": true,
+      "output": "default",
+      "devices": {
+        "default": "Default",
+        "fe527469a9e64af5f846a46d275b08c63b36749f34b5237081a99cb74ab4b720": "Easy Effects Sink",
+        "f7d79c7e5896553134f45ee819e4010dac0041f0148e2d65232c6cd7da6a7928": "Ryzen HD Audio Controller Analog Stereo"
+      }
     }
   },
   "__internal__": {
