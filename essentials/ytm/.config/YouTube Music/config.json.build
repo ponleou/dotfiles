@@ -28,7 +28,7 @@
       "mode": "custom"
     },
     "precise-volume": {
-      "enabled": true,
+      "enabled": false,
       "steps": "1",
       "arrowsShortcut": true,
       "globalShortcuts": {
