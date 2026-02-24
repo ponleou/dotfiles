@@ -251,7 +251,7 @@
         "format-linked": "󰈁",
         "format-disconnected": "󱚵",
         "format-disabled": "󰖪",
-        "on-click": "nmgui",
+        "on-click": "alacritty msg create-window -e nmtui --class 'nmtui_alacritty'",
     },
     "pulseaudio": {
         "format": "{icon}",
