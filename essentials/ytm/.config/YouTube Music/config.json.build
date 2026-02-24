@@ -159,7 +159,22 @@
       "enabled": false
     },
     "downloader": {
-      "enabled": false
+      "enabled": true,
+      "downloadOnFinish": {
+        "enabled": true,
+        "seconds": 20,
+        "percent": 10,
+        "mode": "seconds"
+      },
+      "selectedPreset": "mp3 (256kbps)",
+      "customPresetSetting": {
+        "extension": "mp3",
+        "ffmpegArgs": [
+          "-b:a",
+          "256k"
+        ]
+      },
+      "skipExisting": false
     },
     "navigation": {
       "enabled": true
