@@ -42,7 +42,6 @@
   "material-icon-theme.files.associations": {
     "*.hip": "cpp"
   },
-  "editor.formatOnSave": true,
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
   "catppuccin-noctis-icons.hidesExplorerArrows": false,
@@ -61,5 +60,7 @@
   "ltex.language": "en-AU",
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
-  "vim.neovimConfigPath": "~/.config/nvim/init.lua"
+  "vim.neovimConfigPath": "~/.config/nvim/init.lua",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.lineNumbers": "relative"
 }
