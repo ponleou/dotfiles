@@ -45,7 +45,6 @@
   "editor.formatOnSave": true,
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
-  "workbench.iconTheme": "catppuccin-mocha",
   "catppuccin-noctis-icons.hidesExplorerArrows": false,
   "[erb]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
