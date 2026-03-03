@@ -61,5 +61,6 @@
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "~/.config/nvim/init.lua",
-  "workbench.iconTheme": "catppuccin-mocha"
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.lineNumbers": "relative"
 }
