@@ -173,6 +173,3 @@ set $file dolphin
 # Miscellaneous
 #
 
-    input type:keyboard {
-        xkb_options caps:swapescape
-    }
