@@ -168,3 +168,11 @@ set $file dolphin
     bindsym --locked XF86AudioPause exec playerctl -p playerctld pause	
     bindsym --locked XF86AudioNext exec playerctl -p playerctld next
     bindsym --locked XF86AudioPrev exec playerctl -p playerctld previous
+
+#
+# Miscellaneous
+#
+
+    input type:keyboard {
+        xkb_options caps:swapescape
+    }
