@@ -8,13 +8,13 @@ PreviewSize=22
 SidePadding=0
 
 [ExtractDialog]
-1706x1066 screen: Height=1008
-1706x1066 screen: Width=832
+1706x1066 screen: Height=372
+1706x1066 screen: Width=843
 1707x1067 screen: Height=534
 1707x1067 screen: Width=1138
 2 screens: Height=1008
 2 screens: Width=832
-DirHistory[$e]=/media/ext4/Downloads/,/media/ext4/Videos/,/media/Shared/Drive/Games in folders/temp2/,/media/Shared/Drive/Games in folders/,/media/Shared/Drive/Games in folders/temp/,/media/ext4/Downloads/qlty-cli/,/media/Shared/Downloads/,/media/Shared/Drive/Games in folders/R.E.P.O./,$HOME/Code files/Arch Linux/EcoRound_Project/Backend/,$HOME/Shared/Documents/
+DirHistory[$e]=$HOME/Downloads/temp/,$HOME/Downloads/dht11module/,/media/ext4/Downloads/,/media/ext4/Videos/,/media/Shared/Drive/Games in folders/temp2/,/media/Shared/Drive/Games in folders/,/media/Shared/Drive/Games in folders/temp/,/media/ext4/Downloads/qlty-cli/,/media/Shared/Downloads/,/media/Shared/Drive/Games in folders/R.E.P.O./
 
 [FileDialogSize]
 2 screens: Height=598
