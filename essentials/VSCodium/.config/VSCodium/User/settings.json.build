@@ -62,5 +62,8 @@
   "vim.neovimUseConfigFile": true,
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.lineNumbers": "relative",
-  "vim.neovimPath": "/usr/bin/nvim"
+  "vim.neovimPath": "/usr/bin/nvim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
