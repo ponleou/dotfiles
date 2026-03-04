@@ -60,7 +60,6 @@
   "ltex.language": "en-AU",
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
-  "vim.neovimConfigPath": "~/.config/nvim/init.lua",
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.lineNumbers": "relative",
   "vim.neovimPath": "/usr/bin/nvim"
