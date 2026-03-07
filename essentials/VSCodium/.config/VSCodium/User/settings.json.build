@@ -56,6 +56,5 @@
   "editor.lineNumbers": "relative",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  },
-  "csharp.debug.justMyCode": false
+  }
 }
