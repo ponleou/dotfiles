@@ -16,3 +16,7 @@ vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
 -- Comment line/visual selection with ctrl /
 vim.keymap.set("n", "<C-/>", "gcc", { remap = true })
 vim.keymap.set("v", "<C-/>", "gc", { remap = true })
+
+-- Enable line numbers (relative)
+vim.opt.number = true
+vim.opt.relativeNumber = true

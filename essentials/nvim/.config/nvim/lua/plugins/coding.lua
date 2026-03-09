@@ -38,7 +38,12 @@ return {
 			appearance = {
 				nerd_font_variant = "mono",
 			},
-			completion = { documentation = { auto_show = false } },
+			completion = {
+				documentation = { auto_show = false },
+
+				-- disable the suggestion popup in vscode (using neovim plugin)
+				menu = { auto_show = not vim.g.vscode },
+			},
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer" },
 			},
