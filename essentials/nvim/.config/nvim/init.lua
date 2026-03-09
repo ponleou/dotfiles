@@ -20,3 +20,6 @@ vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 -- Enable line numbers (relative)
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Use system clipboard for all yank
+vim.opt.clipboard = "unnamedplus"
