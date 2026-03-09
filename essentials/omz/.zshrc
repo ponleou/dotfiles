@@ -8,7 +8,7 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="jnrowe" # set by `omz`
+ZSH_THEME="bira" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,7 +108,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-# source /usr/share/nvm/init-nvm.sh
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
@@ -117,7 +116,7 @@ export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 export GPG_TTY=$(tty)
 
-alias code='codium --ozone-platform=wayland'
+alias code='codium' 
 alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
