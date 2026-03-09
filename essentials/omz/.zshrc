@@ -117,7 +117,7 @@ export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 export GPG_TTY=$(tty)
 
-alias code='codium --ozone-platform=wayland'
+alias code='codium' 
 alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
