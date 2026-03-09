@@ -23,3 +23,13 @@ vim.opt.relativenumber = true
 
 -- Use system clipboard for all yank
 vim.opt.clipboard = "unnamedplus"
+
+-- Disable yank on delete (and edit)
+vim.keymap.set({ "n", "v" }, "d", '"_d')
+vim.keymap.set({ "n", "v" }, "D", '"_D')
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+vim.keymap.set({ "n", "v" }, "X", '"_X')
+vim.keymap.set({ "n", "v" }, "s", '"_s')
+vim.keymap.set({ "n", "v" }, "S", '"_S')
+vim.keymap.set({ "n", "v" }, "c", '"_c')
+vim.keymap.set({ "n", "v" }, "C", '"_C')
