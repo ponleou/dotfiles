@@ -19,4 +19,4 @@ vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 
 -- Enable line numbers (relative)
 vim.opt.number = true
-vim.opt.relativeNumber = true
+vim.opt.relativenumber = true
