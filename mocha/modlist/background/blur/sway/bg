@@ -30,3 +30,6 @@ layer_effects "logout_dialog" {
   blur enable;
   blur_ignore_transparent enable;
 }
+
+# fix epiphany being transparent
+for_window [app_id="org.gnome.Epiphany"] opacity 1.0; blur disable
