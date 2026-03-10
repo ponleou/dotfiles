@@ -35,6 +35,11 @@ input type:touchpad {
 	drag_lock enabled
 }
 
+input type:keyboard {
+    repeat_rate 66
+    repeat_delay 250
+}
+
 focus_on_window_activation focus
 
 # autostart app
