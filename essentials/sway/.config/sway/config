@@ -35,6 +35,12 @@ input type:touchpad {
 	drag_lock enabled
 }
 
+input type:keyboard {
+    repeat_rate 66
+    repeat_delay 250
+    xkb_options caps:swapescape
+}
+
 focus_on_window_activation focus
 
 # autostart app
@@ -61,9 +67,5 @@ exec autotiling
 bar {
 	swaybar_command waybar
 }
-
-# fix epiphany being transparent
-for_window [app_id="org.gnome.Epiphany"] opacity 1.0; blur disable
-
 
 include /etc/sway/config.d/*
