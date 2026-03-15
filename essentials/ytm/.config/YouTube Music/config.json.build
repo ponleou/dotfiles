@@ -25,9 +25,9 @@
   "plugins": {
     "notifications": {},
     "video-toggle": {
-      "mode": "custom",
       "enabled": true,
       "hideVideo": true,
+      "mode": "native",
       "forceHide": false,
       "align": "left"
     },
