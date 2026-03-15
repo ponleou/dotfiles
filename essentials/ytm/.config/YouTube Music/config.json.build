@@ -25,7 +25,11 @@
   "plugins": {
     "notifications": {},
     "video-toggle": {
-      "mode": "custom"
+      "enabled": true,
+      "hideVideo": true,
+      "mode": "native",
+      "forceHide": false,
+      "align": "left"
     },
     "precise-volume": {
       "enabled": true,
@@ -202,6 +206,9 @@
         "fe527469a9e64af5f846a46d275b08c63b36749f34b5237081a99cb74ab4b720": "Easy Effects Sink",
         "f7d79c7e5896553134f45ee819e4010dac0041f0148e2d65232c6cd7da6a7928": "Ryzen HD Audio Controller Analog Stereo"
       }
+    },
+    "api-server": {
+      "enabled": true
     }
   },
   "__internal__": {
