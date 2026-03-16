@@ -11,5 +11,5 @@ if [ $? -eq 0 ]; then
     echo "$output" > "$script_dir/settings.json"
 else
     error=$(jq '."workbench.colorTheme" = "Catppuccin Mocha" | ."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json.build" 2>&1)
-    echo "Unexpected error while building VSCodium: $error"
+    echo "Error $script_dir/$0: $error"
 fi
