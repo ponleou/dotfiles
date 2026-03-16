@@ -208,7 +208,7 @@
       }
     },
     "api-server": {
-      "enabled": true,
+      "enabled": false,
       "hostname": "0.0.0.0",
       "port": 26538,
       "authStrategy": "AUTH_AT_FIRST",
@@ -216,6 +216,10 @@
       "authorizedClients": [
         "personal"
       ]
+    },
+    "disable-autoplay": {
+      "enabled": false,
+      "applyOnce": true
     }
   },
   "__internal__": {
