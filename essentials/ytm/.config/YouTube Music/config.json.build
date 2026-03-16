@@ -12,7 +12,7 @@
     "restartOnConfigChanges": false,
     "trayClickPlayPause": false,
     "autoResetAppCache": false,
-    "resumeOnStart": false,
+    "resumeOnStart": true,
     "likeButtons": "",
     "proxy": "",
     "startingPage": "Home",
@@ -28,7 +28,7 @@
       "enabled": true,
       "hideVideo": true,
       "mode": "native",
-      "forceHide": false,
+      "forceHide": true,
       "align": "left"
     },
     "precise-volume": {
