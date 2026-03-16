@@ -153,7 +153,7 @@
         "format": "<span>{}</span>",
         "return-type": "json",
         "max-length": 28,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} — {{markup_escape(title)}}\", \"tooltip\": \"<b>{{markup_escape(title)}}</b>\\n{{default(markup_escape(artist), playerName)}} • {{default(markup_escape(album), \"No album\")}}\\n\\n[{{duration(position)}} / {{duration(mpris:length)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{default(markup_escape(artist), playerName)}} — {{markup_escape(title)}}\", \"tooltip\": \"{{markup_escape(title)}}\\n{{default(markup_escape(artist), playerName)}} • <i>{{default(markup_escape(album), \"No album\")}}</i>\\n\\n[{{duration(position)}} / {{duration(mpris:length)}}]\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     },
     "custom/playertime": {
         "format": "<span>{}</span>",
