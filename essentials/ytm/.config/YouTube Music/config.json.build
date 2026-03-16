@@ -208,7 +208,12 @@
       }
     },
     "api-server": {
-      "enabled": true
+      "enabled": true,
+      "hostname": "0.0.0.0",
+      "port": "26538",
+      "authStrategy": "AUTH_AT_FIRST",
+      "secret": "mmsfwmkz",
+      "authorizedClients": []
     }
   },
   "__internal__": {
