@@ -1,6 +1,6 @@
 {
   "options": {
-    "tray": false,
+    "tray": true,
     "appVisible": true,
     "autoUpdates": false,
     "alwaysOnTop": false,
