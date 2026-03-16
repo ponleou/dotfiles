@@ -5,5 +5,11 @@
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 # modify the settings.json
-jq '."workbench.colorTheme" = "Catppuccin Mocha"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
-jq '."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
+output=$(jq '."workbench.colorTheme" = "Catppuccin Mocha" | ."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json.build")
+
+if [ $? -eq 0 ]; then
+    echo "$output" > "$script_dir/settings.json"
+else
+    error=$(jq '."workbench.colorTheme" = "Catppuccin Mocha" | ."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json.build" 2>&1)
+    echo "Error $script_dir/$0: $error"
+fi
