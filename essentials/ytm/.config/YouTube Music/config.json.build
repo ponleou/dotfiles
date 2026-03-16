@@ -210,10 +210,12 @@
     "api-server": {
       "enabled": true,
       "hostname": "0.0.0.0",
-      "port": "26538",
+      "port": 26538,
       "authStrategy": "AUTH_AT_FIRST",
       "secret": "mmsfwmkz",
-      "authorizedClients": []
+      "authorizedClients": [
+        "personal"
+      ]
     }
   },
   "__internal__": {
