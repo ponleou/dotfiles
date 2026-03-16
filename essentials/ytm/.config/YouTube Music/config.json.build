@@ -25,7 +25,7 @@
   "plugins": {
     "notifications": {},
     "video-toggle": {
-      "enabled": true,
+      "enabled": false,
       "hideVideo": true,
       "mode": "native",
       "forceHide": false,
