@@ -1,0 +1,14 @@
+
+Squashed commits from autocommit/[a786c6c6d7f038a5fb290f1dd4d46c1c97efccda](https://codeberg.org/ponleou/dotfiles/commit/a786c6c6d7f038a5fb290f1dd4d46c1c97efccda)
+Last no-diff commit found from autocommit: [d1e33dbcc79405c222beec2881e86e1f54c272e3](https://codeberg.org/ponleou/dotfiles/commit/d1e33dbcc79405c222beec2881e86e1f54c272e3)
+
+commit count: 1
+diff:
+```
+M	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+```
