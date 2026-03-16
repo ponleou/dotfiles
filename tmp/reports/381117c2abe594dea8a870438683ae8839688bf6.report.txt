@@ -1,9 +1,0 @@
-
-Squashed commits from autocommit/[3052688ab33625adef46526346a6093281104adb](https://codeberg.org/ponleou/dotfiles/commit/3052688ab33625adef46526346a6093281104adb)
-Last no-diff commit found from autocommit: [629e3e14a144b86d15105f111b6e8e06616a9f9c](https://codeberg.org/ponleou/dotfiles/commit/629e3e14a144b86d15105f111b6e8e06616a9f9c)
-
-commit count: 1
-diff:
-```
-M	essentials/mpv/.config/mpv/.gitattributes
-```

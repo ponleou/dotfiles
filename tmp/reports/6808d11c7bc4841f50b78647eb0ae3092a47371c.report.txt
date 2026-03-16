@@ -1,0 +1,34 @@
+
+Squashed commits from autocommit/[22490543f7c2f445bc2400491b818a0cc4fa2ba5](https://codeberg.org/ponleou/dotfiles/commit/22490543f7c2f445bc2400491b818a0cc4fa2ba5)
+Last no-diff commit found from autocommit: [01c4750e257adcb4bf1411052176d238a2acb263](https://codeberg.org/ponleou/dotfiles/commit/01c4750e257adcb4bf1411052176d238a2acb263)
+
+commit count: 11
+diff:
+```
+
+A	essentials/alacritty/.config/alacritty/alacritty.toml
+A	essentials/alacritty/.config/alacritty/base
+A	mocha/base/alacritty-base/alacritty/colors.toml
+A	mocha/base/alacritty-base/alacritty/mod
+A	mocha/modlist/background/blur/alacritty/bg.toml
+A	mocha/modlist/background/solid/alacritty/bg.toml
+A	mocha/mods/nvim/.gitkeep
+D	essentials/konsole/.config/konsolerc
+D	mocha/base/konsole/.local/share/konsole/bookmarks.xml
+D	mocha/base/konsole/.local/share/konsole/bookmarks.xml.tbcache
+D	mocha/base/konsole/.local/share/konsole/catppuccin-mocha.colorscheme
+D	mocha/base/konsole/.local/share/konsole/mod
+D	mocha/base/konsole/.local/share/konsole/stow_dotfiles.profile
+D	mocha/modlist/background/blur/konsole/catppuccin-mocha.colorscheme
+D	mocha/modlist/background/solid/konsole/catppuccin-mocha.colorscheme
+D	mocha/mods/konsole/.gitkeep
+M	essentials/alacritty/.config/alacritty/alacritty.toml
+M	essentials/omz/.zshrc
+M	essentials/sway/.config/sway/config
+M	essentials/sway/.config/sway/keybinds
+M	mocha/base/waybar/.config/waybar/config.jsonc
+M	README.md
+M	stow-essentials.sh
+M	stow-mocha.sh
+R100	mocha/mods/ghostwriter/.gitkeep	mocha/mods/alacritty/.gitkeep
+```

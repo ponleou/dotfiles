@@ -6,11 +6,9 @@
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace",
   "git.enableSmartCommit": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
-  "cmake.showOptionsMovedNotification": false,
   "omnisharp.sdkPath": "/usr/local/bin/dotnet/sdk",
   "editor.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "ionic.autoImportIcons": "yes",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
@@ -39,14 +37,8 @@
   "files.associations": {
     "*.hip": "cpp"
   },
-  "material-icon-theme.files.associations": {
-    "*.hip": "cpp"
-  },
-  "editor.formatOnSave": true,
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
-  "workbench.iconTheme": "catppuccin-mocha",
-  "catppuccin-noctis-icons.hidesExplorerArrows": false,
   "[erb]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
@@ -59,5 +51,10 @@
   },
   "vscord.status.details.text.viewing": "In {workspace}",
   "vscord.status.state.text.editing": "Working on {file_name}{file_extension}",
-  "ltex.language": "en-AU"
+  "ltex.language": "en-AU",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.lineNumbers": "relative",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
