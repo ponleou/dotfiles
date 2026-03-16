@@ -13,6 +13,3 @@ else
     error=$(jq '."workbench.colorTheme" = "Catppuccin Mocha" | ."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json.build" 2>&1)
     echo "Unexpected error while building VSCodium: $error"
 fi
-
-jq '."workbench.colorTheme" = "Catppuccin Mocha"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
-jq '."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
