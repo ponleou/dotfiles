@@ -254,7 +254,7 @@
         "tooltip-format-linked": "{ifname}: No IP",
         "tooltip-format-disconnected": "{ifname}: Not connected",
         "tooltip-format-disabled": "Disabled",
-        "on-click": "alacritty msg create-window --class 'nmtui_alacritty' -e nmtui",
+        "on-click": "alacritty msg create-window --class 'wlctl_alacritty' -e wlctl",
     },
     "pulseaudio": {
         "format": "{icon}",
