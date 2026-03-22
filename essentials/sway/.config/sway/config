@@ -46,7 +46,7 @@ focus_on_window_activation focus
 # autostart app
 exec swaync
 exec swaybg
-exec wl-paste --watch cliphist store
+exec wl-paste --watch cliphist -max-items 50 store
 exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec kwalletd6
