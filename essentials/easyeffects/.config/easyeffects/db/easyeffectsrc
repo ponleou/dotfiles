@@ -15,7 +15,7 @@ visiblePlugin=equalizer#0
 mostUsedPresets=G14 Speaker,Space One - alt,Space One,none
 outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
 plugins=equalizer#0
-usedPresets=G14 Speaker:19,Space One:8,Space One - alt:9,none:2
+usedPresets=G14 Speaker:21,Space One:8,Space One - alt:10,none:2
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
@@ -24,5 +24,6 @@ height=1007
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 visiblePage=pwPage
+visiblePipeWirePage=testSignalsPage
 visiblePresetSheetPage=communityPage
 width=1682
