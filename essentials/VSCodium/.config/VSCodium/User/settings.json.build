@@ -57,5 +57,11 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "keyboard.dispatch": "keyCode"
+  "keyboard.dispatch": "keyCode",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
