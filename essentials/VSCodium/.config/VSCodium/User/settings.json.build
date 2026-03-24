@@ -60,5 +60,8 @@
   "keyboard.dispatch": "keyCode",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
