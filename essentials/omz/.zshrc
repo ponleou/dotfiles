@@ -72,6 +72,7 @@ ZSH_THEME="bira" # set by `omz`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
