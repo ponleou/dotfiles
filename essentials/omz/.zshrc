@@ -71,9 +71,6 @@ ZSH_THEME="bira" # set by `omz`
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -117,6 +114,7 @@ export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
+export PATH=$PATH:$HOME/.dotnet/tools
 export GPG_TTY=$(tty)
 
 alias code='codium' 
@@ -137,3 +135,7 @@ alias gra="git rebase -i --autosquash"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gs="git status"
+
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
