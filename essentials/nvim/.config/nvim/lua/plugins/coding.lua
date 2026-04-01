@@ -51,14 +51,4 @@ return {
 		},
 		opts_extend = { "sources.default" },
 	},
-
-	-- inplace renderer for markdown files
-	{
-		"MeanderingProgrammer/render-markdown.nvim",
-		dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" },
-		ft = { "markdown" },
-		---@module 'render-markdown'
-		---@type render.md.UserConfig
-		opts = {},
-	},
 }
