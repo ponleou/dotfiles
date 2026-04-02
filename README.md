@@ -33,9 +33,9 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 
 - Catppuccin Mocha: green, mauve, peach, rosewater, sapphire, and yellow
 - Mods:
-    - background: solid, blur
-    - gap: big, small, none, etc.
-    - rounded: all, minimal, none, etc.
+  - background: solid, blur
+  - gap: big, small, none, etc.
+  - rounded: all, minimal, none, etc.
 
 _(and more to come)_
 
@@ -126,7 +126,6 @@ _(and more to come)_
 - papirus-icon-theme
 - darkly
 - xdg-desktop-portal-gtk
-- moreutils
 
 Fonts:
 
@@ -140,6 +139,7 @@ Neovim:
 
 - tree-sitter-cli (nvim-treesitter)
 - luarocks (lazy.nvim)
+- libtexprintf (render-markdown.nvim)
 
 Optional:
 

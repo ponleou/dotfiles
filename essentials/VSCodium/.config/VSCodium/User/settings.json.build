@@ -66,5 +66,7 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "markdown.extension.theming.decoration.renderCodeSpan": false,
+  "markdown.extension.theming.decoration.renderStrikethrough": false
 }
