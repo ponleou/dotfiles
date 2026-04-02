@@ -140,6 +140,7 @@ Neovim:
 
 - tree-sitter-cli (nvim-treesitter)
 - luarocks (lazy.nvim)
+- libtexprintf (render-markdown.nvim)
 
 Optional:
 
