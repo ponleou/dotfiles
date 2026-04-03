@@ -9,13 +9,14 @@ inputDevice=alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_3E81F21F-00.mono-
 mostUsedPresets=Rode USB
 plugins=rnnoise#0,equalizer#0,stereo_tools#0
 usedPresets=Rode USB:5
+visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,Space One - alt,Space One,none
 outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
 plugins=equalizer#0
-usedPresets=G14 Speaker:22,Space One:8,Space One - alt:10,none:2
+usedPresets=G14 Speaker:24,Space One:8,Space One - alt:10,none:2
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
@@ -23,7 +24,7 @@ visiblePlugin=equalizer#0
 height=1007
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
-visiblePage=pwPage
+visiblePage=inputPage
 visiblePipeWirePage=testSignalsPage
 visiblePresetSheetPage=communityPage
-width=1682
+width=834
