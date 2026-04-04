@@ -1,5 +1,5 @@
 [Presets]
-lastLoadedOutputPreset=G14 Speaker
+lastLoadedOutputPreset=none
 
 [Spectrum]
 spectrumShape=area
@@ -14,9 +14,9 @@ visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,Space One - alt,Space One,none
-outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
+outputDevice=bluez_output.BC_87_FA_F4_61_D3.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:24,Space One:8,Space One - alt:10,none:2
+usedPresets=G14 Speaker:30,Space One:8,Space One - alt:10,none:3
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
@@ -24,7 +24,5 @@ visiblePlugin=equalizer#0
 height=1007
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
-visiblePage=inputPage
 visiblePipeWirePage=testSignalsPage
-visiblePresetSheetPage=communityPage
-width=834
+width=1682
