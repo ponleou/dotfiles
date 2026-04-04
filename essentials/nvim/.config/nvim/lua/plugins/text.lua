@@ -39,6 +39,7 @@ return {
 	-- inplace renderer for markdown files
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
+		cond = not vim.g.vscode,
 		dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" },
 		ft = { "markdown" },
 		---@module 'render-markdown'
