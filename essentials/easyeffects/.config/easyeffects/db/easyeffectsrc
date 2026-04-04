@@ -13,10 +13,10 @@ visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [StreamOutputs]
-mostUsedPresets=G14 Speaker,Space One - alt,Space One,none
+mostUsedPresets=G14 Speaker,none,Space One - alt,Space One
 outputDevice=bluez_output.BC_87_FA_F4_61_D3.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:33,Space One:9,Space One - alt:10,none:8
+usedPresets=G14 Speaker:39,Space One:9,Space One - alt:10,none:14
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
