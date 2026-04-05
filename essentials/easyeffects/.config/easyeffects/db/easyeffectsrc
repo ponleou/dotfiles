@@ -1,5 +1,5 @@
 [Presets]
-lastLoadedOutputPreset=Bose QC Ultra Earbuds
+lastLoadedOutputPreset=none
 
 [Spectrum]
 spectrumShape=area
@@ -16,13 +16,13 @@ visiblePlugin=equalizer#0
 mostUsedPresets=G14 Speaker,none,Space One - alt,Space One,Bose QC Ultra Earbuds
 outputDevice=bluez_output.BC_87_FA_F4_61_D3.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:40,Space One:9,Space One - alt:13,none:18,Bose QC Ultra Earbuds:2
+usedPresets=G14 Speaker:42,Space One:9,Space One - alt:13,none:22,Bose QC Ultra Earbuds:5
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [Window]
-height=758
+height=1007
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 visiblePipeWirePage=testSignalsPage
-width=843
+width=1682
