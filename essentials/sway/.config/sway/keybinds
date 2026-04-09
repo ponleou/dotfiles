@@ -99,8 +99,8 @@ set $file dolphin
     bindsym $mod+Ctrl+x exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/next-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
     bindsym $mod+Ctrl+z exec bash -c "swaymsg 'workspace $(~/.config/sway/scripts/previous-or-new-workspace.sh)' && ~/.config/sway/scripts/reorder-workspace.sh"
     
-    bindsym button9 exec next
-    bindsym button8 exec prev
+    bindsym BTN_SIDE exec next
+    bindsym BTN_EXTRA exec prev
 
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
