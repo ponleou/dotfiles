@@ -69,5 +69,8 @@
   },
   "markdown.extension.theming.decoration.renderCodeSpan": false,
   "markdown.extension.theming.decoration.renderStrikethrough": false,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
 }
