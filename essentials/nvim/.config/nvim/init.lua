@@ -46,3 +46,7 @@ vim.keymap.set({ "n", "v" }, "<leader>s", "s")
 vim.keymap.set({ "n", "v" }, "<leader>S", "S")
 vim.keymap.set({ "n", "v" }, "<leader>c", "c")
 vim.keymap.set({ "n", "v" }, "<leader>C", "C")
+
+if vim.g.vscode then
+	vim.o.cmdheight = 50
+end
