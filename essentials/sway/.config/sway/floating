@@ -2,3 +2,4 @@ for_window [app_id="pavucontrol-qt"] floating enable, resize set 75 ppt 75 ppt, 
 for_window [app_id="wlctl_alacritty"] floating enable, resize set 75 ppt 75 ppt, move position center
 for_window [app_id="btop_alacritty"] floating enable, resize set 75 ppt 75 ppt, move position center
 for_window [app_id="bluetui_alacritty"] floating enable, resize set 75 ppt 75 ppt, move position center
+for_window [app_id="org.gnupg.pinentry-qt"] floating enable
