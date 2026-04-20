@@ -48,5 +48,5 @@ vim.keymap.set({ "n", "v" }, "<leader>c", "c")
 vim.keymap.set({ "n", "v" }, "<leader>C", "C")
 
 if vim.g.vscode then
-	vim.o.cmdheight = 50
+	vim.o.cmdheight = 2000
 end
