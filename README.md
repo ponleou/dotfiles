@@ -121,6 +121,7 @@ _(and more to come)_
 
 - nwg-look
 - catppuccin-gtk-theme-mocha
+- libadwaita-without-adwaita-git
 - qt6ct-kde
 - papirus-folders-catppuccin-git
 - papirus-icon-theme
