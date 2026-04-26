@@ -1,7 +1,7 @@
 {
     "autoUpdate": true,
     "autoUpdateNotification": true,
-    "useQuickCss": true,
+    "useQuickCss": false,
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [],
@@ -565,6 +565,12 @@
         },
         "CustomCommands": {
             "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -577,7 +583,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773544075018
+        "settingsSyncVersion": 1777189090479
     },
     "uiElements": {
         "chatBarButtons": {},
