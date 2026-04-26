@@ -7,7 +7,7 @@
     "enabledThemes": [],
     "enableReactDevtools": false,
     "frameless": false,
-    "transparent": false,
+    "transparent": true,
     "winCtrlQ": false,
     "disableMinSize": false,
     "winNativeTitleBar": false,
@@ -66,6 +66,9 @@
         "WebRichPresence (arRPC)": {
             "enabled": false
         },
+        "BANger": {
+            "enabled": false
+        },
         "BetterFolders": {
             "enabled": false
         },
@@ -102,9 +105,6 @@
         "CallTimer": {
             "enabled": false
         },
-        "CharacterCounter": {
-            "enabled": false
-        },
         "ClearURLs": {
             "enabled": false
         },
@@ -126,9 +126,6 @@
         "CopyFileContents": {
             "enabled": false
         },
-        "CopyStickerLinks": {
-            "enabled": false
-        },
         "CopyUserURLs": {
             "enabled": false
         },
@@ -138,13 +135,10 @@
         "CtrlEnterSend": {
             "enabled": false
         },
-        "CustomCommands": {
+        "CustomRPC": {
             "enabled": false
         },
         "CustomIdle": {
-            "enabled": false
-        },
-        "CustomRPC": {
             "enabled": false
         },
         "Dearrow": {
@@ -160,9 +154,6 @@
             "enabled": false
         },
         "Experiments": {
-            "enabled": false
-        },
-        "ExpressionCloner": {
             "enabled": false
         },
         "F8Break": {
@@ -190,7 +181,7 @@
             "enabled": false
         },
         "FixYoutubeEmbeds": {
-            "enabled": false
+            "enabled": true
         },
         "ForceOwnerCrown": {
             "enabled": false
@@ -225,9 +216,6 @@
         "IgnoreActivities": {
             "enabled": false
         },
-        "ImageFilename": {
-            "enabled": false
-        },
         "ImageLink": {
             "enabled": false
         },
@@ -235,6 +223,9 @@
             "enabled": false
         },
         "ImplicitRelationships": {
+            "enabled": false
+        },
+        "InvisibleChat": {
             "enabled": false
         },
         "IrcColors": {
@@ -267,7 +258,13 @@
         "MessageLogger": {
             "enabled": false
         },
-        "MoreQuickReactions": {
+        "MoreCommands": {
+            "enabled": false
+        },
+        "MoreKaomoji": {
+            "enabled": false
+        },
+        "Moyai": {
             "enabled": false
         },
         "MutualGroupDMs": {
@@ -312,6 +309,9 @@
         "NoUnblockToJump": {
             "enabled": false
         },
+        "NormalizeMessageLinks": {
+            "enabled": false
+        },
         "NotificationVolume": {
             "enabled": false
         },
@@ -325,6 +325,9 @@
             "enabled": false
         },
         "OverrideForumDefaults": {
+            "enabled": false
+        },
+        "PartyMode": {
             "enabled": false
         },
         "PauseInvitesForever": {
@@ -514,13 +517,13 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": false
+            "enabled": true
         },
         "WebKeybinds": {
             "enabled": true
         },
         "WebScreenShareFixes": {
-            "enabled": true
+            "enabled": false
         },
         "WhoReacted": {
             "enabled": false
@@ -533,11 +536,42 @@
         },
         "BadgeAPI": {
             "enabled": true
+        },
+        "NoTrack": {
+            "enabled": true,
+            "disableAnalytics": true
+        },
+        "Settings": {
+            "enabled": true,
+            "settingsLocation": "aboveNitro"
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "SupportHelper": {
+            "enabled": true
+        },
+        "WebContextMenus": {
+            "enabled": true
+        },
+        "ExpressionCloner": {
+            "enabled": false
+        },
+        "CopyStickerLinks": {
+            "enabled": false
+        },
+        "ImageFilename": {
+            "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
         }
-    },
-    "uiElements": {
-        "chatBarButtons": {},
-        "messagePopoverButtons": {}
     },
     "notifications": {
         "timeout": 5000,
@@ -549,6 +583,10 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1777189468180
+        "settingsSyncVersion": 1777189090479
+    },
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
     }
 }
