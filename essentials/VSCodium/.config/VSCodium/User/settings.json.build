@@ -72,5 +72,6 @@
   "editor.wordWrap": "on",
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+  },
+  "claudeCode.preferredLocation": "panel"
 }
