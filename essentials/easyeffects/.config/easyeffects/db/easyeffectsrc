@@ -1,5 +1,5 @@
 [Presets]
-lastLoadedOutputPreset=none
+lastLoadedOutputPreset=Space One - alt
 
 [Spectrum]
 spectrumShape=area
@@ -14,9 +14,9 @@ visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,none,Space One - alt,Space One,Bose QC Ultra Earbuds
-outputDevice=bluez_output.BC_87_FA_F4_61_D3.1
+outputDevice=bluez_output.E8_EE_CC_96_07_DA.1
 plugins=equalizer#0
-usedPresets=G14 Speaker:43,Space One:9,Space One - alt:13,none:24,Bose QC Ultra Earbuds:6
+usedPresets=G14 Speaker:44,Space One:9,Space One - alt:14,none:24,Bose QC Ultra Earbuds:6
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
