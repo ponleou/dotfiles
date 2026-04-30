@@ -127,6 +127,7 @@ _(and more to come)_
 - papirus-icon-theme
 - darkly
 - xdg-desktop-portal-gtk
+- zsh-syntax-highlighting
 
 Fonts:
 
