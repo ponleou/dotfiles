@@ -56,5 +56,22 @@
   "editor.lineNumbers": "relative",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "keyboard.dispatch": "keyCode",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "markdown.extension.theming.decoration.renderCodeSpan": false,
+  "markdown.extension.theming.decoration.renderStrikethrough": false,
+  "editor.wordWrap": "on",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "claudeCode.preferredLocation": "panel"
 }

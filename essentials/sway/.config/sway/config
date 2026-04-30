@@ -46,8 +46,7 @@ focus_on_window_activation focus
 # autostart app
 exec swaync
 exec swaybg
-exec wl-paste --watch cliphist store
-exec gtk-update-icon-cache  # allow wofi to get app icon
+exec wl-paste --watch cliphist -max-items 50 store
 exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec kwalletd6
@@ -59,7 +58,6 @@ exec autotiling
           timeout 600 'swaylock --grace 10 -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y'' \
           timeout 700 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -C ~/.config/swaylock/mocha.conf --clock --indicator --datestr '%d-%m-%Y''
-
 
 #
 # Status Bar:

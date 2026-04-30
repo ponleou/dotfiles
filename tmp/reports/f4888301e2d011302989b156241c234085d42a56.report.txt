@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[1641d4a2e95a480528bbe26d1f7e76605ab4fe64](https://codeberg.org/ponleou/dotfiles/commit/1641d4a2e95a480528bbe26d1f7e76605ab4fe64)
+Last no-diff commit found from autocommit: [c8b221132de1a02e58c1c138a5c4a6556328441f](https://codeberg.org/ponleou/dotfiles/commit/c8b221132de1a02e58c1c138a5c4a6556328441f)
+
+commit count: 1
+diff:
+```
+M	essentials/nvim/.config/nvim/init.lua
+```
