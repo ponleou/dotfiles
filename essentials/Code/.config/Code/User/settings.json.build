@@ -60,5 +60,6 @@
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
   "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.mouseWheelScrollSensitivity": 3
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
+  "claudeCode.preferredLocation": "panel"
 }
