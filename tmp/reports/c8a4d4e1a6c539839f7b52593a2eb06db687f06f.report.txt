@@ -1,0 +1,10 @@
+
+Squashed commits from autocommit/[00bb33d9e5f1ea4ddb1b96abc2cddff20dc19d38](https://codeberg.org/ponleou/dotfiles/commit/00bb33d9e5f1ea4ddb1b96abc2cddff20dc19d38)
+Last no-diff commit found from autocommit: [e95908013c1add36161d6637ea949998638ca576](https://codeberg.org/ponleou/dotfiles/commit/e95908013c1add36161d6637ea949998638ca576)
+
+commit count: 4
+diff:
+```
+
+M	essentials/Code/.config/Code/User/settings.json.build
+```

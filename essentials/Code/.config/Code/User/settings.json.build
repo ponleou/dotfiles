@@ -59,7 +59,12 @@
   },
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-mocha",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "vscord.app.name": "Visual Studio Code",
+  "vscord.status.details.text.notInFile": "Idling",
+  "vscord.status.details.text.viewing": "In {workspace}",
+  "vscord.status.state.text.editing": "Working on {file_name}{file_extension}",
+  "kotlin.languageServer.path": "/usr/bin/kotlin-lsp"
 }
