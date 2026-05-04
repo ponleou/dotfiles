@@ -59,7 +59,7 @@
   },
   "workbench.colorTheme": "",
   "catppuccin.accentColor": "",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-mocha",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
   "claudeCode.preferredLocation": "panel"
 }
