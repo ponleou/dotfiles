@@ -61,5 +61,6 @@
   "catppuccin.accentColor": "",
   "workbench.iconTheme": "catppuccin-mocha",
   "terminal.integrated.mouseWheelScrollSensitivity": 3,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "vscord.app.name": "Visual Studio Code"
 }
