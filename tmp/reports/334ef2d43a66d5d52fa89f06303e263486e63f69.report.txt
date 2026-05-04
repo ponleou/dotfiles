@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[c2ed00f97f9276b6a606854f698d9f619d97b8bf](https://codeberg.org/ponleou/dotfiles/commit/c2ed00f97f9276b6a606854f698d9f619d97b8bf)
+Last no-diff commit found from autocommit: [d368ae87dfcfac6aeae059c2ffb285a764263344](https://codeberg.org/ponleou/dotfiles/commit/d368ae87dfcfac6aeae059c2ffb285a764263344)
+
+commit count: 1
+diff:
+```
+M	mocha/base/rofi/.config/rofi/menu.rasi
+```
