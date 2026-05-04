@@ -111,3 +111,9 @@ element selected {
     text-color: @accent;
     font: @font;
 }
+
+error-message {
+    background-color: transparent;
+    text-color: @text;
+    font: @font;
+}
