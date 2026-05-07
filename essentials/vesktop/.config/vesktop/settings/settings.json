@@ -441,7 +441,9 @@
             "enabled": false
         },
         "SpotifyCrack": {
-            "enabled": true
+            "enabled": false,
+            "noSpotifyAutoPause": true,
+            "keepSpotifyActivityOnIdle": false
         },
         "SpotifyShareCommands": {
             "enabled": false
@@ -589,7 +591,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1778132935977
+        "settingsSyncVersion": 1778136691486
     },
     "uiElements": {
         "chatBarButtons": {},
