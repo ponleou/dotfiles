@@ -441,7 +441,7 @@
             "enabled": false
         },
         "SpotifyCrack": {
-            "enabled": false
+            "enabled": true
         },
         "SpotifyShareCommands": {
             "enabled": false
@@ -519,7 +519,8 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": true
+            "enabled": true,
+            "multiplier": 2
         },
         "WebKeybinds": {
             "enabled": true
@@ -588,7 +589,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1777190559534
+        "settingsSyncVersion": 1778132935977
     },
     "uiElements": {
         "chatBarButtons": {},
