@@ -123,10 +123,7 @@
         "format-off": "󰂲",
         "format-connected": "󰂱",
         "format-connected-battery": "󰂱",
-        "format-device-preference": [
-            "ugreen_1",
-            "ugreen_2"
-        ],
+        "format-no-controller": "󰂲󰈅",
         "tooltip-format": "{controller_alias} {controller_address}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias} {controller_address}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
