@@ -123,11 +123,12 @@
         "format-off": "󰂲",
         "format-connected": "󰂱",
         "format-connected-battery": "󰂱",
-        "format-no-controller": "󰂲󰈅",
+        "format-no-controller": "󰂲 󰈅",
         "tooltip-format": "{controller_alias} {controller_address}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias} {controller_address}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
+        "tooltip-format-no-controller": "No bluetooth controller found",
         "on-click": "alacritty msg create-window --class 'bluetui_alacritty' -e bluetui",
     },
     "sway/mode": {
