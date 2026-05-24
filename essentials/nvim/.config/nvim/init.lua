@@ -24,8 +24,10 @@ vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Use system clipboard for all yank
-vim.opt.clipboard = "unnamedplus"
+-- Use system clipboard for all yank (breaks vscode with vscode-nvim)
+if not vim.g.vscode then
+	vim.opt.clipboard = "unnamedplus"
+end
 
 -- Disable yank on delete (and edit)
 vim.keymap.set({ "n", "v" }, "d", '"_d')
