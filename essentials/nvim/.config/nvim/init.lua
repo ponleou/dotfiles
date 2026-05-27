@@ -29,6 +29,11 @@ if not vim.g.vscode then
 	vim.opt.clipboard = "unnamedplus"
 end
 
+if vim.g.vscode then
+	vim.keymap.set({ "n", "v" }, "y", '"+y')
+	vim.keymap.set("n", "Y", '"+Y')
+end
+
 -- Disable yank on delete (and edit)
 vim.keymap.set({ "n", "v" }, "d", '"_d')
 vim.keymap.set({ "n", "v" }, "D", '"_D')
