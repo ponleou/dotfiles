@@ -27,4 +27,5 @@ lastLoadedOutputPreset=Space One - alt
 outputAutoloadingFallbackPreset=none
 outputAutoloadingUsesFallback=true
 visiblePipeWirePage=testSignalsPage
+visiblePresetSheetPage=autoloadingPage
 width=1682
