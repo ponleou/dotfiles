@@ -96,6 +96,5 @@
   },
   "window.newWindowProfile": "Default",
   "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": "",
-  "workbench.sideBar.location": "right"
+  "workbench.colorTheme": ""
 }
