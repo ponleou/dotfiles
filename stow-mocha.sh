@@ -62,7 +62,7 @@ stow_base() {
   fi
 
   stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
+  stow --dir=$script_dir/mocha/base --target=$script_dir/stows/essentials/bases $mocha_bases
 
   echo "mocha" > "$settings_file_path"
 }
