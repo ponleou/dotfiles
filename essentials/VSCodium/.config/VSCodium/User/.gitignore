@@ -1,2 +1,4 @@
 settings.json
-globalStorage/
+globalStorage/*
+profiles/*/*
+!profiles/*/extensions.json
