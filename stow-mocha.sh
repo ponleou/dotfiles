@@ -58,7 +58,7 @@ stow_base() {
   if [[ -f "$settings_file_path" ]]; then
     local prev_theme=$(cat "$settings_file_path")
     stow -D --dir=$script_dir/$prev_theme/base --target=$HOME $mocha_packages
-    stow -D --dir=$script_dir/$prev_theme/base --target=$script_dir/essentials/bases $mocha_bases
+    stow -D --dir=$script_dir/$prev_theme/base --target=$script_dir/stows/essentials/bases $mocha_bases
   fi
 
   stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
