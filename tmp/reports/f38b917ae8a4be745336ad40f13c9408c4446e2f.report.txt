@@ -5,5 +5,5 @@ Last no-diff commit found from autocommit: [03b18234ab60e3048978b8cde8e2aee44b7f
 commit count: 1
 diff:
 ```
-M	stow-scripts/autosync-stow.sh
+M	service-scripts/autosync-stow.sh
 ```
