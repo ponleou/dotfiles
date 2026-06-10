@@ -20,7 +20,6 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 - btop
 - Vesktop
 - VSCode and VSCodium
-- YouTube Music (pear-desktop)
 - Zen Browser
 - Rofi
 - SwayFX
@@ -157,39 +156,42 @@ Optional:
 
 ```
 ROOT
-├── essentials/
-│   ├── bases/                                          # STOW TARGET—Stowed from [theme]'s BASE PACKAGES, extension files for essential's STOW PACKAGES
-│   ├── build/                                          # Build scripts for dynamic configs
-│   └── [package]/                                      # STOW PACKAGES—Stowed to $HOME, independent from themes
+├── stows/
+│   ├── script/                                             # Contains stow packages for personal scripts
+│   ├── service/                                            # Contains stow packages for personal systemd services
+│   │
+│   ├── essentials/
+│   │   ├── bases/                                          # STOW TARGET—Stowed from [theme]'s BASE PACKAGES, extension files for essential's STOW PACKAGES
+│   │   ├── build/                                          # Build scripts for dynamic configs
+│   │   └── [package]/                                      # STOW PACKAGES—Stowed to $HOME, independent from themes
+│   │
+│   └── [theme] (e.g. mocha, latte)/
+│       ├── base/
+│       │   ├── [package]/                                  # STOW PACKAGES—Stowed to $HOME, standalone theme configs (doesn't require accent)
+│       │   └── [*-base]/                                   # BASE PACKAGES—Stowed to essentials/bases/
+│       │
+│       ├── accents/
+│       │   └── [accent] (e.g. yellow, peach, etc.)/
+│       │       └── [package]/                              # STOW PACKAGES—Stowed to $HOME, dependent on accent
+│       │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
+│       │
+│       ├── modlist/
+│       │   └── [mods] (e.g. background, gap, etc.)/
+│       │       └── [mod-option]/
+│       │           └── [mod-package]/
+│       │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
+│       │
+│       ├── mods/
+│       │   └── [mod-package]/
+│       │       └── FILES                                   # STOW TARGET—Stowed from [theme]'s [mod-package]/FILES, are active mod symlinks
+│       │
+│       ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for [theme]
+│       └── build/                                          # Build scripts for dynamic theme-dependent configs
 │
-├── [theme] (e.g. mocha, latte)/
-│   ├── base/
-│   │   ├── [package]/                                  # STOW PACKAGES—Stowed to $HOME, standalone theme configs (doesn't require accent)
-│   │   └── [*-base]/                                   # BASE PACKAGES—Stowed to essentials/bases/
-│   │
-│   ├── accents/
-│   │   └── [accent] (e.g. yellow, peach, etc.)/
-│   │       └── [package]/                              # STOW PACKAGES—Stowed to $HOME, dependent on accent
-│   │       └── [*-option]/                             # OPTION PACKAGES—Stowed to [theme]/options/
-│   │
-│   ├── modlist/
-│   │   └── [mods] (e.g. background, gap, etc.)/
-│   │       └── [mod-option]/
-│   │           └── [mod-package]/
-│   │               └── FILES                           # MOD FILES—Stowed to [theme]/mods/[mod-package]
-│   │
-│   ├── mods/
-│   │   └── [mod-package]/
-│   │       └── FILES                                   # STOW TARGET—Stowed from [theme]'s [mod-package]/FILES, are active mod symlinks
-│   │
-│   ├── options/                                        # STOW TARGET—Stowed from [theme]'s OPTION PACKAGES, extension files for [theme]
-│   └── build/                                          # Build scripts for dynamic theme-dependent configs
-│
-├── script/                                             # Contains stow packages for personal scripts
-├── service/                                            # Contains stow packages for personal systemd services
 ├── settings/                                           # Active config accents and mods
-├── service-scripts/                                       # Git automation scripts (used by pon-autocommit-stow systemd service)
-└── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
+├── service-scripts/                                    # Git automation scripts (used by pon-autocommit-stow systemd service)
+├── tmp/                                                # Runtime temp files for automation scripts and services (pon-autocommit-stow)
+└── assets/                                             # Assets (e.g. image files) for README.md
 ```
 
 ### Notes:
