@@ -3,10 +3,10 @@
 mocha_packages="btop nwg-look qt6ct rofi swaylock swaync waybar wlogout zsh"
 mocha_bases="alacritty-base nvim-base sway-base vesktop-base"
 
-accent_packages="nwg-look qt6ct ytm zen"
+accent_packages="nwg-look qt6ct zen"
 accent_options="rofi-option sway-option swaync-option vesktop-option waybar-option wlogout-option"
 
-build_packages="Code VSCodium ytm"
+build_packages="Code VSCodium"
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
@@ -57,8 +57,8 @@ stow_base() {
 
   if [[ -f "$settings_file_path" ]]; then
     local prev_theme=$(cat "$settings_file_path")
-    stow -D --dir=$script_dir/$prev_theme/base --target=$HOME $mocha_packages
-    stow -D --dir=$script_dir/$prev_theme/base --target=$script_dir/stows/essentials/bases $mocha_bases
+    stow -D --dir=$script_dir/stows/$prev_theme/base --target=$HOME $mocha_packages
+    stow -D --dir=$script_dir/stows/$prev_theme/base --target=$script_dir/stows/essentials/bases $mocha_bases
   fi
 
   stow --dir=$script_dir/stows/mocha/base --target=$HOME $mocha_packages

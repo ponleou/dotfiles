@@ -1,7 +1,7 @@
 #!/bin/bash
 
-packages="alacritty Code dolphin easyeffects GIMP mpv nvim omz sway vesktop VSCodium ytm zen"
-build_packages="Code VSCodium ytm"
+packages="alacritty Code dolphin easyeffects GIMP mpv nvim omz sway vesktop VSCodium zen"
+build_packages="Code VSCodium"
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
