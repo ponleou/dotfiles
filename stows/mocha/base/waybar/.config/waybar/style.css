@@ -123,7 +123,8 @@ tooltip label {
 }
 
 #pulseaudio.muted,
-#network.disconnected {
+#network.disconnected,
+#bluetooth.no-controller {
   color: @urgent-red;
 }
 
