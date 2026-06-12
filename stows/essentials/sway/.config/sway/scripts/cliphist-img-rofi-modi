@@ -13,18 +13,9 @@ mkdir -p "$tmp_dir"
 read -r -d '' prog <<EOF
 /^[0-9]+\s<meta http-equiv=/ { next }
 match(\$0, /^([0-9]+)\t(\[\[\s)?binary.*(jpg|jpeg|png|bmp)/, grp) {
-    imgfile = "$tmp_dir/"grp[1]"."grp[3]
-    system("echo " grp[1] "\\\\\t | cliphist decode >" imgfile)
-    txtfile = "$tmp_dir/"grp[1]".txt"
-    system("tesseract " imgfile " $tmp_dir/"grp[1] " quiet --psm 7 2>/dev/null")
-    cmd = "cat " txtfile " 2>/dev/null"
-    content = ""
-    while ((cmd | getline line) > 0) {
-        if (line != "") content = content (content ? " " : "") line
-    }
-    close(cmd)
-    if (content == "") content = substr(\$0, index(\$0, "\t") + 1)
-    print content"\0icon\x1f"imgfile"\x1finfo\x1f"\$0
+    system("echo " grp[1] "\\\\\t | cliphist decode >$tmp_dir/"grp[1]"."grp[3])
+    content = substr(\$0, index(\$0, "\t") + 1)
+    print content"\0icon\x1f$tmp_dir/"grp[1]"."grp[3]"\x1finfo\x1f"grp[1]"\t"grp[2]grp[3]
     next
 }
 {
