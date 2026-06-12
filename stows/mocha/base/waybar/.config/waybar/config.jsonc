@@ -13,17 +13,9 @@
         "clock"
     ],
     "modules-right": [
-        "tray",
         "group/stats",
         "group/interact"
     ],
-    "tray": {
-        "icon-size": 12,
-        "spacing": 10,
-        "icons": {
-            "blueman": "bluetooth",
-        }
-    },
     "group/music": {
         "orientation": "horizontal",
         "modules": [
