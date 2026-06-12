@@ -148,6 +148,8 @@ Optional:
 - autotiling
 - gpu-screen-record
 - cliphist
+- tesseract
+- tesseract-data-eng
 - oh-my-zsh
 - rofi-emoji
 - rofi-file-browser-extended-patched
