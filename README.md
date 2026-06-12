@@ -86,7 +86,7 @@ _(and more to come)_
 
 | Keybind         | Action                           |
 | --------------- | -------------------------------- |
-| `$mod + T`      | Open terminal (Konsole)          |
+| `$mod + T`      | Open terminal (Alacritty)          |
 | `$mod + Space`  | Open application launcher (Rofi) |
 | `$mod + E`      | Open file manager (Dolphin)      |
 | `$mod + V`      | Open clipboard history (Rofi)    |
