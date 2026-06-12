@@ -33,6 +33,9 @@ set $file dolphin
     bindsym Print exec bash -c "~/.config/sway/scripts/screenshot.sh"
     bindsym $mod+Print exec bash -c "~/.config/sway/scripts/window-screenshot.sh"
 
+    # extract screen text
+    bindsym $mod+grave exec bash -c "~/.config/sway/scripts/extract_screen_text.sh"
+
     # clipboard history with rofi
     bindsym $mod+v exec rofi -modi clipboard:~/.config/sway/scripts/cliphist-img-rofi-modi -show clipboard -show-icons
 	

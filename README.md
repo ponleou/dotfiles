@@ -86,7 +86,7 @@ _(and more to come)_
 
 | Keybind         | Action                           |
 | --------------- | -------------------------------- |
-| `$mod + T`      | Open terminal (Konsole)          |
+| `$mod + T`      | Open terminal (Alacritty)        |
 | `$mod + Space`  | Open application launcher (Rofi) |
 | `$mod + E`      | Open file manager (Dolphin)      |
 | `$mod + V`      | Open clipboard history (Rofi)    |
@@ -96,6 +96,7 @@ _(and more to come)_
 | `$mod + Y`      | Open screen recorder (Rofi)      |
 | `Print`         | Take screenshot                  |
 | `$mod + Print`  | Take focused window screenshot   |
+| ``$mod + ` ``   | Extract text from screen         |
 
 ### Device-specific
 
@@ -147,6 +148,8 @@ Optional:
 - autotiling
 - gpu-screen-record
 - cliphist
+- tesseract
+- tesseract-data-eng
 - oh-my-zsh
 - rofi-emoji
 - rofi-file-browser-extended-patched
