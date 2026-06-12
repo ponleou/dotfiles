@@ -96,5 +96,6 @@
   },
   "window.newWindowProfile": "Default",
   "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": ""
+  "workbench.colorTheme": "",
+  "gitlens.ai.enabled": false
 }
