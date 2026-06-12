@@ -18,11 +18,10 @@
         "group/interact"
     ],
     "tray": {
-        "icon-size": 21,
+        "icon-size": 12,
         "spacing": 10,
         "icons": {
             "blueman": "bluetooth",
-            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         }
     },
     "group/music": {
