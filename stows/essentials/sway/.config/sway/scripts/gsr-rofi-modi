@@ -5,7 +5,7 @@
 # Author: Justus0405
 # Date: 30.04.2025
 # License: MIT
-# 
+#
 # Modified by: ponleou
 # Date: 17.01.2026
 
@@ -31,7 +31,9 @@ START_REPLAY_PORTAL="󰋚  Start Replay (portal)"
 SAVE_REPLAY="󰐗  Save Replay"
 STOP_REPLAY="󰙦  Stop Replay"
 
+RECORDING="󰻃  Recording Options"
 START_RECORDING="󰻃  Start Recording"
+START_RECORDING_NO_AUDIO="󰻃  Start Recording (no audio)"
 START_RECORDING_PORTAL="󰻃  Start Recording (portal)"
 STOP_RECORDING="󰙦  Stop Recording"
 PAUSE_RECORDING="󰏥  Pause Recording"
@@ -49,7 +51,7 @@ PAUSE_RECORDING_FLAG="/tmp/gsr-rofi-paused"
 if [[ -n "$1" ]]; then
     choice="$1"
     date=$(date +"%Y-%m-%d_%H-%M-%S")
-    
+
     recording_options=(
         -w $WINDOW
         -f $FRAMERATE
@@ -63,7 +65,7 @@ if [[ -n "$1" ]]; then
         -c $CONTAINER
         -o "$SAVE_DIR/Recording_$date.$CONTAINER"
     )
-    
+
     replay_options=(
         -w $WINDOW
         -f $FRAMERATE
@@ -78,9 +80,9 @@ if [[ -n "$1" ]]; then
         -r $REPLAY_BUFFER_SEC
         -o "$SAVE_DIR"
     )
-    
+
     case "$choice" in
-       "$START_REPLAY")
+        "$START_REPLAY")
             ( setsid gpu-screen-recorder "${replay_options[@]}" </dev/null &>/dev/null & )
             ;;
         "$START_REPLAY_PORTAL")
@@ -88,6 +90,9 @@ if [[ -n "$1" ]]; then
             ( setsid gpu-screen-recorder "${replay_options[@]}" </dev/null &>/dev/null & )
             ;;
         "$START_RECORDING")
+            echo "$START_RECORDING"
+            echo "$START_RECORDING_PORTAL"
+            echo "$START_RECORDING_NO_AUDIO"
             ( setsid gpu-screen-recorder "${recording_options[@]}" </dev/null &>/dev/null & )
             ;;
         "$START_RECORDING_PORTAL")
@@ -136,8 +141,7 @@ fi
 if [[ $running == 0 ]]; then
     echo "$START_REPLAY"
     echo "$START_REPLAY_PORTAL"
-    echo "$START_RECORDING"
-    echo "$START_RECORDING_PORTAL"
+    echo "$RECORDING"
 elif [[ $replay_mode == 1 ]]; then
     echo "$SAVE_REPLAY"
     echo "$STOP_REPLAY"
@@ -146,7 +150,7 @@ else
 
     if [ -f "$PAUSE_RECORDING_FLAG" ]; then
         echo "$RESUME_RECORDING"
-    else 
+    else
         echo "$PAUSE_RECORDING";
     fi
 fi
