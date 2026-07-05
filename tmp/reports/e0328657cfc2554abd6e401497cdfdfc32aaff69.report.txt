@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[8defa8671d28bea1ec5561c8b69b134d19dd1964](https://codeberg.org/ponleou/dotfiles/commit/8defa8671d28bea1ec5561c8b69b134d19dd1964)
+Last no-diff commit found from autocommit: [63e13bde19bd6bd2e5d7951d2501162c27d2366f](https://codeberg.org/ponleou/dotfiles/commit/63e13bde19bd6bd2e5d7951d2501162c27d2366f)
+
+commit count: 1
+diff:
+```
+M	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+```

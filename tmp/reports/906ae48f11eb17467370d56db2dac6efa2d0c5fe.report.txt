@@ -1,0 +1,10 @@
+
+Squashed commits from autocommit/[115152e19d139c4705e7cd16d12c9c15b6186e32](https://codeberg.org/ponleou/dotfiles/commit/115152e19d139c4705e7cd16d12c9c15b6186e32)
+Last no-diff commit found from autocommit: [0cd811720ccf8b0ab1c2f6ec55e0515b6b42337d](https://codeberg.org/ponleou/dotfiles/commit/0cd811720ccf8b0ab1c2f6ec55e0515b6b42337d)
+
+commit count: 2
+diff:
+```
+
+M	stows/essentials/sway/.config/sway/scripts/gsr-rofi-modi
+```

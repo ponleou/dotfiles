@@ -1,1 +1,0 @@
-/home/ponleou/.dotfiles/essentials/build/VSCodium/settings_build_hook.sh
