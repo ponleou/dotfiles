@@ -107,6 +107,5 @@
   "kilo-code.new.showTaskTimeline": false,
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
   "redhat.telemetry.enabled": false,
-  "basedpyright.analysis.typeCheckingMode": "all",
-  "breadcrumbs.enabled": false
+  "basedpyright.analysis.typeCheckingMode": "all"
 }
