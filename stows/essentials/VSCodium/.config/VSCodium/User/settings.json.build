@@ -63,7 +63,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdown.extension.theming.decoration.renderCodeSpan": false,
   "markdown.extension.theming.decoration.renderStrikethrough": false,
@@ -97,5 +97,14 @@
   "window.newWindowProfile": "Default",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "",
-  "gitlens.ai.enabled": false
+  "gitlens.ai.enabled": false,
+  "prettier.configPath": ".prettierrc",
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal"
+  ],
+  "kilo-code.new.agentWorkStyle": "skipped",
+  "kilo-code.new.showTaskTimeline": false,
+  "kilo-code.new.autocomplete.enableAutoTrigger": false,
+  "redhat.telemetry.enabled": false
 }
