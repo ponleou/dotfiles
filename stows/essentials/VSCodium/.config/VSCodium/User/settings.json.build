@@ -106,5 +106,7 @@
   "kilo-code.new.agentWorkStyle": "skipped",
   "kilo-code.new.showTaskTimeline": false,
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "basedpyright.analysis.typeCheckingMode": "all",
+  "basedpyright.analysis.diagnosticMode": "workspace"
 }
