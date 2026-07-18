@@ -116,6 +116,7 @@ export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 export PATH=$PATH:$HOME/.dotnet/tools
 export GPG_TTY=$(tty)
+export LLAMA_CACHE="/opt/llama.cpp"
 
 alias code='codium' 
 
