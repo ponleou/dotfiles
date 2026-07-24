@@ -23,7 +23,6 @@
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "editor.minimap.enabled": false,
-  "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "[shellscript]": {
@@ -108,5 +107,6 @@
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
   "redhat.telemetry.enabled": false,
   "basedpyright.analysis.typeCheckingMode": "all",
-  "basedpyright.analysis.diagnosticMode": "workspace"
+  "basedpyright.analysis.diagnosticMode": "workspace",
+  "editor.tabSize": 2
 }
