@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[56616a21466d70ac4f63d1b97b105fbafa071ebb](https://codeberg.org/ponleou/dotfiles/commit/56616a21466d70ac4f63d1b97b105fbafa071ebb)
+Last no-diff commit found from autocommit: [3976bfd625a3098d16a046065c5227e6ab3f8272](https://codeberg.org/ponleou/dotfiles/commit/3976bfd625a3098d16a046065c5227e6ab3f8272)
+
+commit count: 1
+diff:
+```
+M	stows/essentials/nvim/.config/nvim/lazy-lock.json
+```
