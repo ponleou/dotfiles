@@ -97,7 +97,6 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "",
   "gitlens.ai.enabled": false,
-  "prettier.configPath": ".prettierrc",
   "terminal.integrated.commandsToSkipShell": [
     "kilo-code.new.agentManagerOpen",
     "kilo-code.new.agentManager.showTerminal"
