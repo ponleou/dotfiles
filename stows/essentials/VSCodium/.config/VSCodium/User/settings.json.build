@@ -107,5 +107,8 @@
   "redhat.telemetry.enabled": false,
   "basedpyright.analysis.typeCheckingMode": "all",
   "basedpyright.analysis.diagnosticMode": "workspace",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
