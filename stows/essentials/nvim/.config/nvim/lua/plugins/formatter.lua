@@ -2,7 +2,6 @@ return {
     {
         "WhoIsSethDaniel/mason-tool-installer.nvim",
         dependencies = { "mason-org/mason.nvim" },
-        lazy = false,
         config = function()
             require("mason-tool-installer").setup({
                 ensure_installed = {
@@ -36,6 +35,7 @@ return {
                 desc = "Format buffer",
             },
         },
+        lazy = false,
         opts = {
             formatters_by_ft = {
                 sh = { "beautysh" },
