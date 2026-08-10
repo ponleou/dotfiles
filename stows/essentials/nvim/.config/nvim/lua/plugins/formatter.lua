@@ -35,7 +35,6 @@ return {
                 desc = "Format buffer",
             },
         },
-        lazy = false,
         opts = {
             formatters_by_ft = {
                 sh = { "beautysh" },
