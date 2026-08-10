@@ -1,30 +1,5 @@
 return {
     {
-        "WhoIsSethDaniel/mason-tool-installer.nvim",
-        dependencies = { "mason-org/mason.nvim" },
-        config = function()
-            require("mason-tool-installer").setup({
-                ensure_installed = {
-                    "shellcheck",
-                    "trivy",
-                    "cpplint",
-                    "stylelint",
-                    "htmlhint",
-                    "eslint_d",
-                    "jinja-lsp",
-                    "jsonlint",
-                    "vale",
-                    "luacheck",
-                    "phpcs",
-                    "ruff",
-                    "rubocop",
-                    "erb-lint",
-                    "yamllint",
-                },
-            })
-        end,
-    },
-    {
         "mfussenegger/nvim-lint",
         event = { "BufReadPre", "BufNewFile" },
         config = function()
