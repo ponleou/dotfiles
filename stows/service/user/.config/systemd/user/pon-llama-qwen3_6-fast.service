@@ -8,7 +8,7 @@ Type=simple
 User=Ponleou
 Group=Ponleou
 LimitMEMLOCK=infinity
-AmbientCapabilities=CAP_IPC_LOCK
+DevicePolicy=auto
 
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
