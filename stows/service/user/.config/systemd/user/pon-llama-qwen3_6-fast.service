@@ -5,20 +5,8 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-LimitMEMLOCK=infinity
-Slice=session.slice
-MemoryAccounting=no
-PrivateDevices=no
-ProtectClock=no
-ProtectKernelTunables=no
-ProtectKernelModules=no
-ProtectControlGroups=no
-MemoryDenyWriteExecute=no
 
-Environment="HSA_ENABLE_SDMA=0"
-Environment="HSA_THUNK_DEBUG=1"
-Environment="HSA_ENABLE_INTERRUPT=0"
-Environment="HIP_VISIBLE_DEVICES=1"
+Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
