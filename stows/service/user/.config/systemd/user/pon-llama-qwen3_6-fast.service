@@ -1,5 +1,7 @@
 [Unit]
 Description=llama.cpp server hosting Qwen3.6-35B-A3B (Fast config)
+Wants=graphical-session.target
+After=graphical-session.target
 
 [Service]
 Type=simple
