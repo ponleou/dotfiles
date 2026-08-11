@@ -7,7 +7,7 @@ User=Ponleou
 Group=Ponleou
 
 Environment="LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64"
-Environment="HIP_VISIBLE_DEVICES=0"
+Environment="HIP_VISIBLE_DEVICES=1"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
