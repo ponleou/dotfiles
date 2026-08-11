@@ -8,15 +8,7 @@ Type=simple
 User=Ponleou
 Group=Ponleou
 LimitMEMLOCK=infinity
-MemoryMax=16G
-MemorySwapMax=22.4G
-
-DeviceAllow=/dev/kfd rw
-DeviceAllow=/dev/dri/renderD128 rw
-DeviceAllow=/dev/dri/renderD129 rw
-DeviceAllow=/dev/dri/card0 rw
-DeviceAllow=/dev/dri/card1 rw
-DeviceAllow=/dev/dri/card2 rw
+AmbientCapabilities=CAP_IPC_LOCK
 
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
@@ -44,3 +36,6 @@ ExecStart=/usr/bin/zsh -c 'llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CP
 ExecStop=/bin/bash -c 'notify-send -u low "llama.cpp server stopped"'
 Restart=on-failure
 RestartSec=5
+
+[Install]
+WantedBy=default.target
