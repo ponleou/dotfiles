@@ -31,7 +31,7 @@ Environment="MIN_P=0.0"
 Environment="PRES_PEN=0"
 
 ExecStartPre=/bin/bash -c 'notify-send -u low "Starting llama.cpp with Qwen3.6-35B-A3B"'
-ExecStart=/usr/bin/zsh -l -c '/usr/bin/llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CPU_MOE} -c ${CTX} -fa ${FA} -ctk ${KV_K} -ctv ${KV_V} --spec-type ${SPEC_TYPE} --spec-draft-n-max ${SPEC_DRAFT} -np ${NP} --temp ${TEMP} --top-p ${TOP_P} --top-k ${TOP_K} --min_p ${MIN_P} --presence-penalty ${PRES_PEN} --no-mmproj'
+ExecStart=/usr/bin/zsh -l -c '/usr/bin/llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CPU_MOE} -c ${CTX} -fa ${FA} -ctk ${KV_K} -ctv ${KV_V} --spec-type ${SPEC_TYPE} --spec-draft-n-max ${SPEC_DRAFT} -np ${NP} --temp ${TEMP} --top-p ${TOP_P} --top-k ${TOP_K} --min_p ${MIN_P} --presence-penalty ${PRES_PEN} --no-mmproj -fit off --mlock'
 ExecStop=/bin/bash -c 'notify-send -u low "llama.cpp server stopped"'
 Restart=on-failure
 RestartSec=5
