@@ -4,8 +4,9 @@ Description=llama.cpp server hosting Qwen3.6-35B-A3B (Fast config)
 [Service]
 Type=simple
 Group=Ponleou
-SupplementaryGroups=video render
 
+EnvironmentFile=%h/.config/llama.env
+WorkingDirectory=/home/ponleou
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
