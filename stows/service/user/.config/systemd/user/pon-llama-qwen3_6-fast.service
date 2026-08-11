@@ -5,12 +5,13 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-
+PrivateDevices=no
+DeviceAllow=/dev/kfd rw
+DeviceAllow=/dev/dri/* rw
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
-Environment="LD_LIBRARY_PATH=/opt/rocm/lib"
 Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/rocm/bin:/home/ponleou/.cargo/bin/:/home/ponleou/.local/share/gem/ruby/3.4.0/bin:/home/ponleou/.dotnet/tools"
 
 Environment="MODEL=unsloth/Qwen3.6-35B-A3B-MTP-GGUF:Q3_K_XL"
@@ -34,14 +35,6 @@ ExecStart=/usr/bin/zsh -c 'llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CP
 ExecStop=/bin/bash -c 'notify-send -u low "llama.cpp server stopped"'
 Restart=on-failure
 RestartSec=5
-
-MemoryDenyWriteExecute=no
-PrivateDevices=no
-ProtectKernelTunables=no
-ProtectKernelModules=no
-RestrictRealtime=no
-LockPersonality=no
-ProtectClock=no
 
 [Install]
 WantedBy=default.target
