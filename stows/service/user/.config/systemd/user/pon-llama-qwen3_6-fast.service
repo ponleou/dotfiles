@@ -32,7 +32,6 @@ SystemCallErrorNumber=EPERM
 PrivateDevices=no
 DeviceAllow=/dev/kfd rw
 DeviceAllow=/dev/dri/* rw
-MemoryDenyWriteExecute=yes
 TasksMax=infinity
 LimitMEMLOCK=infinity
 LimitSTACK=infinity
