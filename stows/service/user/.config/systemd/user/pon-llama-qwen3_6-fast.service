@@ -3,6 +3,11 @@ Description=llama.cpp server hosting Qwen3.6-35B-A3B (Fast config)
 
 [Service]
 Type=simple
+
+PrivateDevices=no
+DeviceAllow=/dev/kfd rw
+DeviceAllow=/dev/dri/* rw
+
 TasksMax=infinity
 LimitMEMLOCK=infinity
 LimitSTACK=infinity
