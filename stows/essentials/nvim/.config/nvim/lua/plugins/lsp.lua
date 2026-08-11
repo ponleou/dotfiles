@@ -17,7 +17,7 @@ return {
 				"ltex_plus",
 				"mesonlsp",
 				"phpactor",
-				"pylsp",
+				"ty",
 				"herb_ls",
 				"ruby_lsp",
 				"ts_ls",
