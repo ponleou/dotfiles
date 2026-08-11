@@ -15,7 +15,6 @@ LimitSTACK=infinity
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="HSA_ENABLE_SDMA=0"
 Environment="HIP_VISIBLE_DEVICES=0"
-Environment="LD_LIBRARY_PATH=/opt/rocm/lib"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
 
@@ -36,7 +35,7 @@ Environment="MIN_P=0.0"
 Environment="PRES_PEN=0"
 
 ExecStartPre=/bin/bash -c 'notify-send -u low "Starting llama.cpp with Qwen3.6-35B-A3B"'
-ExecStart=/usr/bin/llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CPU_MOE} -c ${CTX} -fa ${FA} -ctk ${KV_K} -ctv ${KV_V} --spec-type ${SPEC_TYPE} --spec-draft-n-max ${SPEC_DRAFT} -np ${NP} --temp ${TEMP} --top-p ${TOP_P} --top-k ${TOP_K} --min_p ${MIN_P} --presence-penalty ${PRES_PEN} --no-mmproj
+ExecStart=/usr/bin/zsh -l -c 'llama serve -hf ${MODEL} -ngl ${NGL} --n-cpu-moe ${CPU_MOE} -c ${CTX} -fa ${FA} -ctk ${KV_K} -ctv ${KV_V} --spec-type ${SPEC_TYPE} --spec-draft-n-max ${SPEC_DRAFT} -np ${NP} --temp ${TEMP} --top-p ${TOP_P} --top-k ${TOP_K} --min_p ${MIN_P} --presence-penalty ${PRES_PEN} --no-mmproj'
 ExecStop=/bin/bash -c 'notify-send -u low "llama.cpp server stopped"'
 Restart=on-failure
 RestartSec=5
