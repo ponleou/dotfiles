@@ -35,6 +35,7 @@ DeviceAllow=/dev/dri/* rw
 TasksMax=infinity
 LimitMEMLOCK=infinity
 LimitSTACK=infinity
+LimitNOFILE=65535
 
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="HSA_ENABLE_SDMA=0"
