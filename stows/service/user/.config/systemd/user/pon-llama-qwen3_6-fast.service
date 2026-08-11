@@ -7,15 +7,12 @@ User=Ponleou
 Group=Ponleou
 
 Environment="LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64"
-Environment="HIP_VISIBLE_DEVICES=1"
+Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
 LimitMEMLOCK=infinity
 LimitNOFILE=1048576
-Environment="PATH=/usr/local/bin:/usr/bin:/home/Ponleou/.cargo/bin:/home/Ponleou/.local/share/gem/ruby/3.4.0/bin:/home/Ponleou/.dotnet/tools"
-Environment="HOME=/home/ponleou"
-Environment="XDG_RUNTIME_DIR=/run/user/1001"
 
 Environment="MODEL=unsloth/Qwen3.6-35B-A3B-MTP-GGUF:Q3_K_XL"
 Environment="NGL=999"
