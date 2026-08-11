@@ -12,6 +12,7 @@ Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
 LimitMEMLOCK=infinity
+LimitMEMLOCK=infinity
 LimitNOFILE=1048576
 
 Environment="MODEL=unsloth/Qwen3.6-35B-A3B-MTP-GGUF:Q3_K_XL"
