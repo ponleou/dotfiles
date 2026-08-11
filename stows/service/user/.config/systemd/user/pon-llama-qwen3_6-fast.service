@@ -4,6 +4,7 @@ Description=llama.cpp server hosting Qwen3.6-35B-A3B (Fast config)
 [Service]
 Type=simple
 
+Environment="LLAMA_CACHE=/opt/llama.cpp"
 Environment="MODEL=unsloth/Qwen3.6-35B-A3B-MTP-GGUF:Q3_K_XL"
 Environment="NGL=999"
 Environment="CPU_MOE=28"
