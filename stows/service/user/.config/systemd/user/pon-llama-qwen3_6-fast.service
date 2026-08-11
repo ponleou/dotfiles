@@ -9,6 +9,10 @@ LimitMEMLOCK=infinity
 MemoryMax=16G
 MemorySwapMax=22.4G
 
+DeviceAllow=/dev/kfd rw
+DeviceAllow=/dev/dri/renderD128 rw
+DeviceAllow=/dev/dri/renderD129 rw
+
 Environment="LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64"
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
