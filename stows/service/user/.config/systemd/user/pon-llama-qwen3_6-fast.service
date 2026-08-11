@@ -14,6 +14,9 @@ MemorySwapMax=22.4G
 DeviceAllow=/dev/kfd rw
 DeviceAllow=/dev/dri/renderD128 rw
 DeviceAllow=/dev/dri/renderD129 rw
+DeviceAllow=/dev/dri/card0 rw
+DeviceAllow=/dev/dri/card1 rw
+DeviceAllow=/dev/dri/card2 rw
 
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
