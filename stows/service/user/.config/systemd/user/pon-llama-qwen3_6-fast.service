@@ -5,8 +5,15 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-PAMName=login
 LimitMEMLOCK=infinity
+Slice=session.slice
+MemoryAccounting=no
+PrivateDevices=no
+ProtectClock=no
+ProtectKernelTunables=no
+ProtectKernelModules=no
+ProtectControlGroups=no
+MemoryDenyWriteExecute=no
 
 Environment="HSA_ENABLE_SDMA=0"
 Environment="HSA_THUNK_DEBUG=1"
