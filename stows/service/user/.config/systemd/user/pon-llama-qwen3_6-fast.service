@@ -35,5 +35,13 @@ ExecStop=/bin/bash -c 'notify-send -u low "llama.cpp server stopped"'
 Restart=on-failure
 RestartSec=5
 
+MemoryDenyWriteExecute=no
+PrivateDevices=no
+ProtectKernelTunables=no
+ProtectKernelModules=no
+RestrictRealtime=no
+LockPersonality=no
+ProtectClock=no
+
 [Install]
 WantedBy=default.target
