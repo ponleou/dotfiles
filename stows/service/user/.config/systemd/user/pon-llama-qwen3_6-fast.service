@@ -8,8 +8,11 @@ Type=simple
 PrivateDevices=no
 DeviceAllow=/dev/kfd rw
 DeviceAllow=/dev/dri/* rw
-Environment="HIP_VISIBLE_DEVICES=0"
+
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
+Environment="HSA_ENABLE_SDMA=0"
+Environment="HIP_VISIBLE_DEVICES=0"
+Environment="LD_LIBRARY_PATH=/opt/rocm/lib"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
 Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/rocm/bin:/home/ponleou/.cargo/bin/:/home/ponleou/.local/share/gem/ruby/3.4.0/bin:/home/ponleou/.dotnet/tools"
