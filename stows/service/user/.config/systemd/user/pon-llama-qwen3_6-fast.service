@@ -4,6 +4,8 @@ Description=llama.cpp server hosting Qwen3.6-35B-A3B (Fast config)
 [Service]
 Type=simple
 TasksMax=infinity
+LimitMEMLOCK=infinity
+LimitSTACK=infinity
 
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="HSA_ENABLE_SDMA=0"
