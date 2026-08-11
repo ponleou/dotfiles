@@ -7,7 +7,7 @@ User=Ponleou
 Group=Ponleou
 LimitMEMLOCK=infinity
 MemoryMax=16G
-MemorySwapMax=0
+MemorySwapMax=22.4G
 
 Environment="LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64"
 Environment="HIP_VISIBLE_DEVICES=0"
