@@ -15,7 +15,7 @@ DeviceAllow=/dev/kfd rw
 DeviceAllow=/dev/dri/renderD128 rw
 DeviceAllow=/dev/dri/renderD129 rw
 
-Environment="HIP_VISIBLE_DEVICES=2"
+Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
 Environment="ROCM_PATH=/opt/rocm"
 Environment="LLAMA_CACHE=/opt/llama.cpp"
