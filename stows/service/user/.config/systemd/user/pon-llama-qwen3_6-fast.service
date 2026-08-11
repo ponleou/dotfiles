@@ -5,22 +5,6 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-User=Ponleou
-Group=Ponleou
-LimitMEMLOCK=infinity
-DevicePolicy=auto
-PassEnvironment=DISPLAY WAYLAND_DISPLAY XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_SEAT XDG_VTNR XDG_RUNTIME_DIR
-
-Environment="XDG_SEAT=seat0"
-Environment="XDG_VTNR=1"
-
-DeviceAllow=/dev/dri/card0 rw
-DeviceAllow=/dev/dri/card1 rw
-DeviceAllow=/dev/dri/card2 rw
-DeviceAllow=/dev/dri/renderD128 rw
-DeviceAllow=/dev/dri/renderD129 rw
-DeviceAllow=/dev/kfd rw
-MemoryAccounting=no
 
 Environment="HIP_VISIBLE_DEVICES=0"
 Environment="HSA_OVERRIDE_GFX_VERSION=10.3.0"
