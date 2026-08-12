@@ -4,5 +4,5 @@
 
 pid_file="$LLAMA_CACHE/pid"
 
-kill $(cat "$pid_file")
+[[ -s "$pid_file" ]] && kill $(cat "$pid_file")
 : > "$pid_file"
