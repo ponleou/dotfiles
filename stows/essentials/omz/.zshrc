@@ -140,8 +140,8 @@ alias gs="git status"
 alias op="sudo systemctl start pon-onpower"
 alias ob="sudo systemctl start pon-onbattery"
 
-alias gwen="~/.local/bin/llama-cpp_qwen.sh"
-alias gwenf="~/.local/bin/llama-cpp_qwen-fast.sh"
+alias qwen="~/.local/bin/llama-cpp_qwen.sh"
+alias qwenf="~/.local/bin/llama-cpp_qwen-fast.sh"
 
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
