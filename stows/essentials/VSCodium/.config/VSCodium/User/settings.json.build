@@ -99,7 +99,9 @@
   "gitlens.ai.enabled": false,
   "terminal.integrated.commandsToSkipShell": [
     "kilo-code.new.agentManagerOpen",
-    "kilo-code.new.agentManager.showTerminal"
+    "kilo-code.new.agentManager.showTerminal",
+    "kilo-code.new.agentManager.previousTerminal",
+    "kilo-code.new.agentManager.nextTerminal"
   ],
   "kilo-code.new.agentWorkStyle": "skipped",
   "kilo-code.new.showTaskTimeline": true,
