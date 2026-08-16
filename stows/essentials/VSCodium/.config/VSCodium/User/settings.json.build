@@ -104,7 +104,7 @@
     "kilo-code.new.agentManager.nextTerminal"
   ],
   "kilo-code.new.agentWorkStyle": "skipped",
-  "kilo-code.new.showTaskTimeline": true,
+  "kilo-code.new.showTaskTimeline": false,
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
   "redhat.telemetry.enabled": false,
   "basedpyright.analysis.typeCheckingMode": "all",
@@ -119,5 +119,6 @@
       "id": "6AF56B12-03C9-47DA-91E4-B2F4F92A748C",
       "isDefault": true
     }
-  ]
+  ],
+  "pendant.runtimeSource": "external"
 }
