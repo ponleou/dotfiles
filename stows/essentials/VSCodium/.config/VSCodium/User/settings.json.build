@@ -104,7 +104,7 @@
     "kilo-code.new.agentManager.nextTerminal"
   ],
   "kilo-code.new.agentWorkStyle": "skipped",
-  "kilo-code.new.showTaskTimeline": true,
+  "kilo-code.new.showTaskTimeline": false,
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
   "redhat.telemetry.enabled": false,
   "basedpyright.analysis.typeCheckingMode": "all",
