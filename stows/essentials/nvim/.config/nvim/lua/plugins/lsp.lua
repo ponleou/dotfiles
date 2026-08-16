@@ -1,8 +1,18 @@
 return {
 	{
 		"mason-org/mason-lspconfig.nvim",
-		opts = {
-			ensure_installed = {
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
+        config = function()
+                vim.lsp.config("ltex_plus", {
+      settings = {
+        ltex = { language = "en-AU" },
+      },
+    })
+    require("mason-lspconfig").setup({
+        ensure_installed = {
 				"bashls",
 				"csharp_ls",
 				"clangd",
@@ -24,11 +34,8 @@ return {
 				"vue_ls",
 				"yamlls",
 			},
-		},
-		dependencies = {
-			{ "mason-org/mason.nvim", opts = {} },
-			"neovim/nvim-lspconfig",
-		},
+
+    })
 	},
 	{
 		"folke/lazydev.nvim",
