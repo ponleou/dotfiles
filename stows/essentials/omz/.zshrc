@@ -118,6 +118,11 @@ export PATH=$PATH:$HOME/.dotnet/tools
 export GPG_TTY=$(tty)
 export LLAMA_CACHE="/opt/llama.cpp"
 
+# for qt apps outside of kde (might break kde theme)
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORM=wayland
+
+
 alias code='codium' 
 
 dotfiles_path="~/.dotfiles"
