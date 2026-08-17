@@ -120,5 +120,9 @@
       "isDefault": true
     }
   ],
-  "pendant.runtimeSource": "external"
+  "pendant.runtimeSource": "external",
+  "ty.interpreter": "",
+  "ty.path": [
+    "/usr/bin/ty"
+  ]
 }
