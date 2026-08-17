@@ -110,13 +110,18 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
-export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
-export GEM_HOME="$(gem env user_gemhome)"
-export PATH=$PATH:~/.cargo/bin/
-export PATH=$PATH:$GEM_HOME/bin
 export PATH=$PATH:$HOME/.dotnet/tools
+
+# for GPG git commit signing
 export GPG_TTY=$(tty)
+
+# llama.cpp models location
 export LLAMA_CACHE="/opt/llama.cpp"
+
+# for qt apps outside of kde (might break kde theme)
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_QPA_PLATFORM=wayland
+
 
 alias code='codium' 
 
