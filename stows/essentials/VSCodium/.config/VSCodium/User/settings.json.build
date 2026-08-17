@@ -16,9 +16,6 @@
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "dotnet.codeLens.enableReferencesCodeLens": false,
-  "[php]": {
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  },
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
@@ -37,9 +34,6 @@
     "*.hip": "cpp"
   },
   "catppuccin.accentColor": "",
-  "[erb]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp"
-  },
   "vscord.app.name": "VSCodium",
   "vscord.status.details.text.notInFile": "Idling",
   "mesonbuild.downloadLanguageServer": true,
@@ -70,8 +64,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "claudeCode.preferredLocation": "panel",
-  "kotlin.languageServer.path": "/usr/bin/kotlin-lsp",
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -96,19 +88,7 @@
   "window.newWindowProfile": "Default",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "",
-  "gitlens.ai.enabled": false,
-  "terminal.integrated.commandsToSkipShell": [
-    "kilo-code.new.agentManagerOpen",
-    "kilo-code.new.agentManager.showTerminal",
-    "kilo-code.new.agentManager.previousTerminal",
-    "kilo-code.new.agentManager.nextTerminal"
-  ],
-  "kilo-code.new.agentWorkStyle": "skipped",
-  "kilo-code.new.showTaskTimeline": false,
-  "kilo-code.new.autocomplete.enableAutoTrigger": false,
   "redhat.telemetry.enabled": false,
-  "basedpyright.analysis.typeCheckingMode": "all",
-  "basedpyright.analysis.diagnosticMode": "workspace",
   "editor.tabSize": 2,
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -120,7 +100,6 @@
       "isDefault": true
     }
   ],
-  "pendant.runtimeSource": "external",
   "ty.interpreter": "",
   "ty.path": [
     "/usr/bin/ty"
