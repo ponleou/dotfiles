@@ -124,5 +124,8 @@
   "ty.interpreter": "",
   "ty.path": [
     "/usr/bin/ty"
+  ],
+  "ruff.interpreter": [
+    "/usr/bin/ruff"
   ]
 }
