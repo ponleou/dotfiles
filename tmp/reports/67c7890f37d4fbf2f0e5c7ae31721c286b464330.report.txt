@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[26fc87798dbe6b017a413aa725ac6cb5a4499797](https://codeberg.org/ponleou/dotfiles/commit/26fc87798dbe6b017a413aa725ac6cb5a4499797)
+Last no-diff commit found from autocommit: [142d5a6f8020702de95e0e5731209c4641b0a525](https://codeberg.org/ponleou/dotfiles/commit/142d5a6f8020702de95e0e5731209c4641b0a525)
+
+commit count: 1
+diff:
+```
+M	stows/mocha/base/waybar/.config/waybar/config.jsonc
+```

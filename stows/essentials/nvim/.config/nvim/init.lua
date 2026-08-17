@@ -20,6 +20,10 @@ vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
 vim.keymap.set("n", "<C-/>", "gcc", { remap = true })
 vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 
+-- Diagnostics
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+-- also, [d and ]d moves between diagnostics
+
 -- Enable line numbers (relative)
 vim.opt.number = true
 vim.opt.relativenumber = true

@@ -10,20 +10,16 @@
   "editor.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "dotnet.codeLens.enableReferencesCodeLens": false,
-  "[php]": {
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-  },
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "editor.minimap.enabled": false,
-  "prettier.tabWidth": 4,
   "prettier.printWidth": 120,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "[shellscript]": {
@@ -38,9 +34,6 @@
     "*.hip": "cpp"
   },
   "catppuccin.accentColor": "",
-  "[erb]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp"
-  },
   "vscord.app.name": "VSCodium",
   "vscord.status.details.text.notInFile": "Idling",
   "mesonbuild.downloadLanguageServer": true,
@@ -63,7 +56,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdown.extension.theming.decoration.renderCodeSpan": false,
   "markdown.extension.theming.decoration.renderStrikethrough": false,
@@ -71,8 +64,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "claudeCode.preferredLocation": "panel",
-  "kotlin.languageServer.path": "/usr/bin/kotlin-lsp",
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -97,5 +88,23 @@
   "window.newWindowProfile": "Default",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorTheme": "",
-  "gitlens.ai.enabled": false
+  "redhat.telemetry.enabled": false,
+  "editor.tabSize": 2,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "6AF56B12-03C9-47DA-91E4-B2F4F92A748C",
+      "isDefault": true
+    }
+  ],
+  "ty.interpreter": "",
+  "ty.path": [
+    "/usr/bin/ty"
+  ],
+  "ruff.interpreter": [
+    "/usr/bin/ruff"
+  ]
 }

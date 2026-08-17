@@ -1,5 +1,5 @@
 [Presets]
-lastLoadedOutputPreset=Bose QC Ultra Earbuds
+lastLoadedOutputPreset=G14 Speaker
 
 [Spectrum]
 spectrumShape=area
@@ -14,17 +14,17 @@ visiblePlugin=equalizer#0
 
 [StreamOutputs]
 mostUsedPresets=G14 Speaker,none,Bose QC Ultra Earbuds
-outputDevice=bluez_output.BC_87_FA_F4_61_D3.1
+outputDevice=alsa_output.pci-0000_07_00.6.analog-stereo
 plugins=equalizer#0
-usedPresets=G14 Speaker:81,none:67,Bose QC Ultra Earbuds:20
+usedPresets=G14 Speaker:82,none:68,Bose QC Ultra Earbuds:20
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [Window]
-height=1007
+height=1022
 lastLoadedInputPreset=Rode USB
 lastLoadedOutputPreset=Space One - alt
 outputAutoloadingFallbackPreset=none
 outputAutoloadingUsesFallback=true
 visiblePipeWirePage=testSignalsPage
-width=1682
+width=1692
