@@ -26,7 +26,7 @@ GlobalViewProps=false
 RememberOpenedTabs=false
 ShowStatusBar=Disabled
 Version=202
-ViewPropsTimestamp=2023,10,22,13,32,19.79
+ViewPropsTimestamp=2026,8,22,23,1,48.375
 
 [IconsMode]
 PreviewSize=80
@@ -45,12 +45,4 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,pothumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
-
-[ViewPropertiesDialog]
-1706x1066 screen: Height=542
-1706x1066 screen: Width=407
-1707x1067 screen: Height=634
-1707x1067 screen: Width=401
-2 screens: Height=634
-2 screens: Width=401
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
