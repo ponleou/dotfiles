@@ -106,5 +106,6 @@
   ],
   "ruff.interpreter": [
     "/usr/bin/ruff"
-  ]
+  ],
+  "security.workspace.trust.enabled": false
 }
