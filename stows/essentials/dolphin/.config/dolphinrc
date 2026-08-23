@@ -4,7 +4,8 @@ MenuBar=Disabled
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
 [DetailsMode]
-PreviewSize=22
+IconSize=22
+PreviewSize=32
 SidePadding=0
 
 [ExtractDialog]
