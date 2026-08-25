@@ -105,7 +105,8 @@
     "/usr/bin/ty"
   ],
   "ruff.interpreter": [
-    "/usr/bin/ruff"
+    "/usr/bin/ruff",
+    "${workspaceFolder}/.venv/bin/python"
   ],
   "security.workspace.trust.enabled": false
 }
