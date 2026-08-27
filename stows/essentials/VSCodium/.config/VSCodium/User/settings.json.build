@@ -108,6 +108,5 @@
     "/usr/bin/ruff",
     "${workspaceFolder}/.venv/bin/python"
   ],
-  "security.workspace.trust.enabled": false,
-  "window.menuBarVisibility": "compact"
+  "security.workspace.trust.enabled": false
 }
