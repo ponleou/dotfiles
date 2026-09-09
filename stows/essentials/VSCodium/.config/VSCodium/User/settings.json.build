@@ -109,5 +109,6 @@
     "${workspaceFolder}/.venv/bin/python"
   ],
   "security.workspace.trust.enabled": false,
-  "sqltools.useNodeRuntime": true
+  "sqltools.useNodeRuntime": true,
+  "workbench.activityBar.location": "top"
 }
