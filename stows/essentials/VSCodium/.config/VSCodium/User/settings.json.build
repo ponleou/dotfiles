@@ -110,5 +110,6 @@
   ],
   "security.workspace.trust.enabled": false,
   "sqltools.useNodeRuntime": true,
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "diffEditor.ignoreTrimWhitespace": false
 }
