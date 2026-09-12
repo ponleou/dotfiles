@@ -95,7 +95,7 @@ numBands=10
 
 [soe][Equalizer#0#left]
 band0Frequency=105
-band0Gain=5
+band0Gain=2.5
 band0Mode=6
 band0Q=0.699999988079071
 band0Type=5
@@ -160,7 +160,7 @@ band9Type=3
 
 [soe][Equalizer#0#right]
 band0Frequency=105
-band0Gain=5
+band0Gain=2.5
 band0Mode=6
 band0Q=0.699999988079071
 band0Type=5
