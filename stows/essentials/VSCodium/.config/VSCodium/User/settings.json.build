@@ -111,5 +111,21 @@
   "security.workspace.trust.enabled": false,
   "sqltools.useNodeRuntime": true,
   "workbench.activityBar.location": "top",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#0000FF",
+      "backgroundColor": "#E0FFFF",
+      "overviewRulerColor": "#0000FF"
+    },
+    {
+      "text": "WARN:",
+      "color": "#FFFFFF",
+      "backgroundColor": "#FF8C00",
+      "overviewRulerColor": "#FF8C00",
+      "border": "1px solid #FF8C00",
+      "borderRadius": "2px"
+    }
+  ]
 }
