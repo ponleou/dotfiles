@@ -1,0 +1,11 @@
+
+Squashed commits from autocommit/[cab27068b9170fb0e637aecb78c02c99ccc07eaf](https://codeberg.org/ponleou/dotfiles/commit/cab27068b9170fb0e637aecb78c02c99ccc07eaf)
+Last no-diff commit found from autocommit: [948d69743830e02dc84af773cac25f5aa8d02cb3](https://codeberg.org/ponleou/dotfiles/commit/948d69743830e02dc84af773cac25f5aa8d02cb3)
+
+commit count: 2
+diff:
+```
+
+M	stows/essentials/omz/.zshrc
+M	stows/script/user/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh
+```
