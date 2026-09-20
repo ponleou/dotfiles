@@ -1,0 +1,12 @@
+
+Squashed commits from autocommit/[087cd05892f9761eef3be22ba411c4b3b108ec8c](https://codeberg.org/ponleou/dotfiles/commit/087cd05892f9761eef3be22ba411c4b3b108ec8c)
+Last no-diff commit found from autocommit: [8184c44f4aaa9ce5958caa9a3fde014a2e2c7392](https://codeberg.org/ponleou/dotfiles/commit/8184c44f4aaa9ce5958caa9a3fde014a2e2c7392)
+
+commit count: 6
+diff:
+```
+
+A	stows/script/user/.local/bin/llama-cpp/llama-cpp_qwen-fast.sh
+M	stows/script/user/.local/bin/llama-cpp/llama-cpp_qwen-fast.sh
+M	stows/script/user/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh
+```
