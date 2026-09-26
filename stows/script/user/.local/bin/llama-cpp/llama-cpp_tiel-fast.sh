@@ -7,6 +7,6 @@ pid_file="$LLAMA_CACHE/pid"
 
 [[ -s "$pid_file" ]] && exit 1
 
-nohup llama-server --device ROCm0 -hf peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP:Q4_K_S -ngl 999 --n-cpu-moe 30 -b 4096 -ub 4096 -c 32768 -fa 1 -ctk q8_0 -ctv q8_0 --spec-type draft-mtp --spec-draft-n-max 2 -np 1 --temp 0.6 --top-p 0.95 --top-k 20 --min_p 0.0 --presence-penalty 0 --no-mmproj --jinja > >(awk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), $0; fflush() }' >> "$log_file") 2>&1 &
+nohup llama-server --device ROCm0 -hf peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP:Q4_K_S -ngl 999 --n-cpu-moe 30 -b 4096 -ub 4096 -c 30720 -fa 1 -ctk q8_0 -ctv q8_0 --spec-type draft-mtp --spec-draft-n-max 2 -np 1 --temp 0.6 --top-p 0.95 --top-k 20 --min_p 0.0 --presence-penalty 0 --no-mmproj --jinja > >(awk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), $0; fflush() }' >> "$log_file") 2>&1 &
 
 echo $! > "$pid_file"
