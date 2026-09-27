@@ -142,7 +142,7 @@ alias op="sudo systemctl start pon-onpower"
 alias ob="sudo systemctl start pon-onbattery"
 
 alias tielq="~/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh"
-alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
+# alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
 alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
