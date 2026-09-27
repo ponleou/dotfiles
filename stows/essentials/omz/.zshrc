@@ -141,10 +141,8 @@ alias gs="git status"
 alias op="sudo systemctl start pon-onpower"
 alias ob="sudo systemctl start pon-onbattery"
 
-alias qwen="~/.local/bin/llama-cpp/llama-cpp_qwen.sh"
-alias qwenq="~/.local/bin/llama-cpp/llama-cpp_qwen-quality.sh"
-alias qwenf="~/.local/bin/llama-cpp/llama-cpp_qwen-fast.sh"
 alias tielq="~/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh"
+alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
 alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
