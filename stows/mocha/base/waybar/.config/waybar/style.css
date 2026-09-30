@@ -33,8 +33,7 @@ tooltip label {
 }
 
 #workspaces button {
-  padding: 0 0px;
-  margin: 0 -5px;
+  padding: 0 1px;
   color: @base;
 }
 
