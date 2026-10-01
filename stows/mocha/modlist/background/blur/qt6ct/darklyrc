@@ -1,5 +1,6 @@
 [Common]
 OutlineCloseButton=false
+CornerRadius=5
 
 [Style]
 DolphinSidebarOpacity=60
