@@ -6,3 +6,4 @@ DolphinSidebarOpacity=60
 
 [Windeco]
 DrawBackgroundGradient=false
+OtherCornerRadius=0
