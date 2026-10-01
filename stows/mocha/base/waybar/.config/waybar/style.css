@@ -17,7 +17,7 @@ window#waybar {
 }
 
 tooltip {
-  background-color: @background;
+  background-color: alpha(@background, 100);
   border: 1px solid @surface1;
   font-family: "FiraCode Nerd Font Mono";
 }
@@ -33,7 +33,7 @@ tooltip label {
 }
 
 #workspaces button {
-  padding: 0 1px;
+  padding: 0 2px;
   color: @base;
 }
 

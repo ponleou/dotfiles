@@ -3,8 +3,7 @@ OutlineCloseButton=false
 
 [Style]
 DolphinSidebarOpacity=60
-MenuBarOpacity=60
-TabBarOpacity=60
 
 [Windeco]
 DrawBackgroundGradient=false
+OtherCornerRadius=0
