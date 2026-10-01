@@ -127,5 +127,6 @@
       "border": "1px solid #FF8C00",
       "borderRadius": "2px"
     }
-  ]
+  ],
+  "workbench.browser.showInTitleBar": false
 }
