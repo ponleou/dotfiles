@@ -17,7 +17,7 @@ window#waybar {
 }
 
 tooltip {
-  background-color: @background;
+  background-color: alpha(@background, 100);
   border: 1px solid @surface1;
   font-family: "FiraCode Nerd Font Mono";
 }
