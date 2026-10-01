@@ -14,6 +14,8 @@ include keybinds
 font pango: WorkSans Regular 12
 
 default_border pixel 2
+for_window [floating] border pixel 2
+animation_duration_ms 100 
 
 # set sway cursor
 seat seat0 xcursor_theme breeze_cursors 24
