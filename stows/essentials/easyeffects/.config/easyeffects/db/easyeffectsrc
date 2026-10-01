@@ -20,6 +20,9 @@ usedPresets=G14 Speaker:95,none:83,Bose QC Ultra Earbuds:24
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
+[Style]
+forceBreezeTheme=false
+
 [Window]
 height=1022
 lastLoadedInputPreset=Rode USB
