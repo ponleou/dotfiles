@@ -3,6 +3,6 @@
 }
 
 .visual-refresh.theme-dark span[class^="botTag"],
-.visual-refresh.theme-dark div[class^="lowerBadge"] div[class^="base"] {
+.visual-refresh.theme-dark div[class^="lowerBadge"] {
   --white: rgba(30, 30, 46, 1) !important;
 }
