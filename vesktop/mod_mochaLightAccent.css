@@ -2,6 +2,7 @@
   --control-primary-text-default: rgba(30, 30, 46, 1) !important;
 }
 
-.visual-refresh.theme-dark span[class^="botTag"] {
+.visual-refresh.theme-dark span[class^="botTag"],
+.visual-refresh.theme-dark div[class^="numberBadge"] {
   --white: rgba(30, 30, 46, 1) !important;
 }
