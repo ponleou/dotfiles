@@ -1,0 +1,23 @@
+
+Squashed commits from autocommit/[6a08c50b220bd47b03bbc4822d00359dffc3c8bb](https://codeberg.org/ponleou/dotfiles/commit/6a08c50b220bd47b03bbc4822d00359dffc3c8bb)
+Last no-diff commit found from autocommit: [e4541e496c1595c2e06787a480b556a068f1376a](https://codeberg.org/ponleou/dotfiles/commit/e4541e496c1595c2e06787a480b556a068f1376a)
+
+commit count: 4
+diff:
+```
+
+A	stows/mocha/accents/colors.css
+D	stows/mocha/accents/colors.css
+M	stows/mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/colors.css
+M	stows/mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/colors.css
+M	stows/mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/colors.css
+M	stows/mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/rosewater/nwg-look/.config/gtk-4.0/colors.css
+M	stows/mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/colors.css
+M	stows/mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css
+M	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/colors.css
+```
