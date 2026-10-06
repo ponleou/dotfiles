@@ -13,20 +13,35 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 
 ### Supported Applications
 
-- QT and GTK themes
+- Qt (with `qt6ct-kde`)
+- GTK (with `nwg-look`)
 - Alacritty
-- Dolphin
-- Neovim
 - btop
-- Vesktop
-- VSCode and VSCodium
-- Zen Browser
+- Neovim
 - Rofi
 - SwayFX
 - swaylock
 - SwayNC
+- Vesktop
+- VSCode and VSCodium
+- Zen Browser
 - WayBar
 - wlogout
+- Zen Browser
+- zsh syntax highlighting
+
+<details>
+<summary>Other saved dotfiles (essentials, but not themed)</summary>
+
+- Dolphin
+- Easy Effects
+- PhotoGIMP
+- mpv (with plugins)
+- zsh (zshrc)
+- custom scripts
+- custom `systemd` services
+
+</details>
 
 ### Theming
 
