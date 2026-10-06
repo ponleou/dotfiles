@@ -1,0 +1,13 @@
+
+Squashed commits from autocommit/[06ed2d126870dbbb7962061d2739c04eec715dc6](https://codeberg.org/ponleou/dotfiles/commit/06ed2d126870dbbb7962061d2739c04eec715dc6)
+Last no-diff commit found from autocommit: [2dc7defe5b857176cfb0f6c4b073b751af226e3e](https://codeberg.org/ponleou/dotfiles/commit/2dc7defe5b857176cfb0f6c4b073b751af226e3e)
+
+commit count: 2
+diff:
+```
+
+A	stows/essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+A	stows/essentials/yay/.config/yay/config.json
+A	stows/essentials/yay/.config/yay/init.lua
+M	stow-essentials.sh
+```
