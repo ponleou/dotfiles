@@ -13,20 +13,35 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 
 ### Supported Applications
 
-- QT and GTK themes
+- Qt (with `qt6ct-kde`)
+- GTK (with `nwg-look`)
 - Alacritty
-- Dolphin
-- Neovim
 - btop
-- Vesktop
-- VSCode and VSCodium
-- Zen Browser
+- Neovim
 - Rofi
 - SwayFX
 - swaylock
 - SwayNC
+- Vesktop
+- VSCode and VSCodium
+- Zen Browser
 - WayBar
 - wlogout
+- Zen Browser
+- zsh syntax highlighting
+
+<details>
+<summary>Other saved dotfiles (essentials, but not themed)</summary>
+
+- Dolphin
+- Easy Effects
+- PhotoGIMP
+- mpv (with plugins)
+- zsh (zshrc)
+- custom scripts
+- custom `systemd` services
+
+</details>
 
 ### Theming
 
@@ -145,6 +160,8 @@ Neovim:
 Optional:
 
 - autotiling
+- grim
+- satty
 - gpu-screen-record
 - cliphist
 - tesseract
@@ -196,10 +213,18 @@ ROOT
 └── assets/                                             # Assets (e.g. image files) for README.md
 ```
 
+### Branching:
+
+- `main`: The current version's stable branch (version number is from `.version`).
+- `autocommit`: Live-synchronisation with my current desktop, with highly redundant commits at a 1-minute debounce on changes. Used as a very reliable VC backup for my dotfiles, but not suitable to view as version changes.
+- `unstable`: Synchronisation with my current desktop at a 1-hour debounce on changes. Merges to `main` when stable.
+- `squash/main`: **The default branch**. As up-to-date as `main` branch, with commits squashed for every merge from `unstable` to `main`.
+- `stable/v#`: Archived `main` branch for every version bump.
+- `host`: Stores host files or other files related to the dotfiles.
+
 ### Notes:
 
 - Built config files, that are built with build scripts, contains a base template in \*.build
 - for Vesktop config packages, stow only owns the vesktop/settings/ directory
-- for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 - for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
 - `nwc` in modlist options stands for "no WayBar corners"
