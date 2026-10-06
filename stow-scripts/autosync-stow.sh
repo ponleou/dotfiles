@@ -2,7 +2,7 @@
 
 set -e
 
-LOCK_FILE="autosync.lock"
+LOCK_FILE="autosync.lck"
 
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 

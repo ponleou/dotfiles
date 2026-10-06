@@ -112,4 +112,6 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
+export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:~/.cargo/bin/
+export PATH=$PATH:$GEM_HOME/bin

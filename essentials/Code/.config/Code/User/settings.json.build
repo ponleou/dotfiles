@@ -1,0 +1,60 @@
+{
+    "terminal.integrated.fontWeight": "normal",
+    "editor.fontLigatures": true,
+    "terminal.integrated.automationProfile.linux": {},
+    "task.slowProviderWarning": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.connectTimeout": 300,
+    "remote.SSH.remotePlatform": {},
+    "terminal.integrated.fontFamily": "'Fira Code', 'monospace', monospace",
+    "git.enableSmartCommit": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "cmake.showOptionsMovedNotification": false,
+    "omnisharp.sdkPath": "/usr/local/bin/dotnet/sdk",
+    "editor.fontFamily": "'Fira Code', 'Symbols Nerd Font', 'monospace', monospace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "ionic.autoImportIcons": "yes",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    },
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "[php]": {
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.minimap.enabled": false,
+    "[groovy]": {
+        "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
+    },
+    "github.copilot.enable": {
+        "*": false
+    },
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "discord.lowerDetailsEditing": "Workspace: {workspace_folder}",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "[shellscript]": {
+        "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+    },
+    "notebook.output.scrolling": true,
+    "notebook.lineNumbers": "on",
+    "[opencl]": {
+        "editor.defaultFormatter": "galarius.vscode-opencl"
+    },
+    "files.associations": {
+        "*.hip": "cpp"
+    },
+    "material-icon-theme.files.associations": {
+        "*.hip": "cpp"
+    },
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "",
+    "catppuccin.accentColor": "",
+    "workbench.iconTheme": "material-icon-theme"
+}
