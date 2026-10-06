@@ -14,7 +14,7 @@ script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 validate_accent() {
   local accent="$1"
 
-  if [[ ! -d "$script_dir/mocha/accents/$accent" ]]; then
+  if [[ -z "$accent" || ! -d "$script_dir/mocha/accents/$accent" ]]; then
     echo "Error: Unknown accent '$1'. Available accents:" >&2
     local files=$(ls -1 "$script_dir/mocha/accents/")
     echo "$files" >&2

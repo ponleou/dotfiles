@@ -1,0 +1,13 @@
+window#waybar,
+#workspaces,
+#interact,
+#stats,
+#swayinfo,
+#music,
+#custom-playerctl {
+    border-radius: 5px;
+}
+
+#mode {
+    border-radius: 3px;
+}

@@ -1,6 +1,7 @@
 @import "mocha.css";
 @import "./option/accent.css";
 @import "./mod/background.css";
+@import "./mod/rounded.css";
 
 * {
     background-image: none;
@@ -12,7 +13,7 @@ window {
 }
 
 button {
-    border-radius: 0;
+    border-radius: 0px;
     border-color: @accent;
     text-decoration-color: @text;
     color: @text;

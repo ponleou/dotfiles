@@ -1,6 +1,7 @@
 @import "./colors.rasi"
 @import "./option/accent.rasi"
 @import "./mod/background.rasi"
+@import "./mod/rounded.rasi"
 
 * {
     width: 600;
@@ -23,7 +24,7 @@ window {
     font: @font;
     border: 2px;
     border-color: @accent;
-    border-radius: 5px;
+    border-radius: @window-rounded;
 }
 
 mainbox {
@@ -46,7 +47,7 @@ prompt {
     margin: 0px;
     font: @font;
     padding: 5px 7px;
-    border-radius: 5px;
+    border-radius: @rounded;
 }
 
 textbox-prompt-colon {
@@ -88,13 +89,11 @@ listview {
     background-color: transparent;
     fixed-height: false;
     lines: 7;
-    border-radius: 0px;
     font: @font;
 }
 
 element {
     padding: 5px;
-    border-radius: 0px;
     font: @font;
     background-color: transparent;
     text-color: @text;

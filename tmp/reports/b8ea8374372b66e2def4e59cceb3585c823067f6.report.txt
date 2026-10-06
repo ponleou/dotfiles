@@ -1,0 +1,10 @@
+
+Squashed commits from autocommit/[452e503a0d3c13359f6753ab17eed830074e0222](https://codeberg.org/ponleou/dotfiles/commit/452e503a0d3c13359f6753ab17eed830074e0222)
+Last no-diff commit found from autocommit: [624f761acc5800bff6739fb207e6a532c0d8ea1b](https://codeberg.org/ponleou/dotfiles/commit/624f761acc5800bff6739fb207e6a532c0d8ea1b)
+
+commit count: 6
+diff:
+```
+
+M	essentials/sway/.config/sway/config
+```

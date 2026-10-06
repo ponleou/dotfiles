@@ -1,6 +1,9 @@
 {
     "height": 30,
     "spacing": 1,
+
+    "include": ["./mod/gap.jsonc"],
+
     "modules-left": ["sway/workspaces", "group/swayinfo", "group/music"],
     "modules-center": ["clock"],
     "modules-right": ["group/stats", "group/interact"],
@@ -8,18 +11,18 @@
     "group/music": {
         "orientation": "horizontal",
         "modules": ["custom/playerctl", "custom/playerlabel"],
-        "disable_auto_hide": false
+        "disable_auto_hide": false,
     },
 
     "group/swayinfo": {
         "orientation": "horizontal",
         "modules": ["sway/mode", "sway/scratchpad"],
-        "disable_auto_hide": false
+        "disable_auto_hide": false,
     },
 
     "group/stats": {
         "orientation": "horizontal",
-        "modules": ["memory", "cpu", "temperature", "battery"]
+        "modules": ["memory", "cpu", "temperature", "battery"],
     },
 
     "group/interact": {
@@ -31,8 +34,8 @@
             "bluetooth",
             "pulseaudio",
             "custom/power",
-            "custom/notification"
-        ]
+            "custom/notification",
+        ],
     },
 
     "custom/notification": {
@@ -45,7 +48,7 @@
             "inhibited-notification": "󰂚<span foreground='#d20f39'><sup></sup></span>",
             "inhibited-none": "󰂚",
             "dnd-inhibited-notification": "󰂛<span foreground='#d20f39'><sup></sup></span>",
-            "dnd-inhibited-none": "󰂛"
+            "dnd-inhibited-none": "󰂛",
         },
         "tooltip": true,
         "return-type": "json",
@@ -53,25 +56,25 @@
         "exec": "swaync-client -swb",
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
-        "escape": true
+        "escape": true,
     },
 
     "backlight": {
         "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip-format": "Brightness: {percent}%"
+        "tooltip-format": "Brightness: {percent}%",
     },
 
     "battery": {
         "interval": 60,
         "states": {
             "warning": 30,
-            "critical": 15
+            "critical": 15,
         },
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "max-length": 25,
-        "tooltip-format": "{timeTo} ({power}W)"
+        "tooltip-format": "{timeTo} ({power}W)",
     },
 
     "sway/workspaces": {
@@ -82,8 +85,8 @@
         "format-icons": {
             "urgent": "󰀨",
             "focused": "",
-            "default": "󰧞"
-        }
+            "default": "󰧞",
+        },
     },
 
     "bluetooth": {
@@ -97,10 +100,10 @@
         "tooltip-format-connected": "{controller_alias} {controller_address}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
-        "on-click": "blueman-manager"
+        "on-click": "blueman-manager",
     },
     "sway/mode": {
-        "format": "{}"
+        "format": "{}",
     },
 
     "custom/playerctl": {
@@ -113,15 +116,15 @@
         "on-click-right": "playerctl -p playerctld next",
         "format-icons": {
             "Playing": "󰒮  󰏥  󰒭",
-            "Paused": "󰒮  󰐌  󰒭"
-        }
+            "Paused": "󰒮  󰐌  󰒭",
+        },
     },
 
     "custom/playerlabel": {
         "format": "<span>{}</span>",
         "return-type": "json",
         "max-length": 48,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} — {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}: {{markup_escape(artist)}} — {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F"
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} — {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}: {{markup_escape(artist)}} — {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     },
 
     "sway/scratchpad": {
@@ -129,17 +132,17 @@
         "show-empty": true,
         "format-icons": ["󱂬"],
         "tooltip": true,
-        "tooltip-format": "{app}: {title}"
+        "tooltip-format": "{app}: {title}",
     },
 
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
             "activated": "󰒳",
-            "deactivated": "󰒲"
+            "deactivated": "󰒲",
         },
         "tooltip-format-activated": "Sleep Disabled",
-        "tooltip-format-deactivated": "Sleep Enabled"
+        "tooltip-format-deactivated": "Sleep Enabled",
     },
 
     "clock": {
@@ -156,21 +159,21 @@
                 "days": "<span color='#cdd6f4'><b>{}</b></span>",
                 "weeks": "<span color='#94e2d5'>W{}</span>",
                 "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
-                "today": "<span color='#f5e0dc'><b><u>{}</u></b></span>"
-            }
+                "today": "<span color='#f5e0dc'><b><u>{}</u></b></span>",
+            },
         },
         "actions": {
             "on-click-right": "mode",
             "on-click-forward": "tz_up",
             "on-click-backward": "tz_down",
             "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
+            "on-scroll-down": "shift_down",
+        },
     },
     "cpu": {
         "interval": 5,
         "format": "{usage}% ",
-        "on-click": "konsole -e btop"
+        "on-click": "konsole -e btop",
     },
     "memory": {
         "interval": 5,
@@ -178,8 +181,8 @@
         "on-click": "konsole -e btop",
         "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G. Swap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
         "states": {
-            "critical": 80
-        }
+            "critical": 80,
+        },
     },
     "temperature": {
         "interval": 5,
@@ -189,7 +192,7 @@
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", "", "", ""],
         "on-click": "konsole -e btop",
-        "tooltip-format": "Temperature: {temperatureC}°C"
+        "tooltip-format": "Temperature: {temperatureC}°C",
     },
 
     "network": {
@@ -204,7 +207,7 @@
         "format-linked": "󰈁",
         "format-disconnected": "󱚵",
         "format-disabled": "󰖪",
-        "on-click": "nmgui"
+        "on-click": "nmgui",
     },
 
     "pulseaudio": {
@@ -221,16 +224,16 @@
             "phone": "󰏲",
             "portable": "󰏲",
             "car": "󰄋",
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": ["󰕿", "󰖀", "󰕾"],
         },
         "tooltip-format": "{desc}\n{volume}% 󰕾 {format_source}",
-        "on-click": "pavucontrol-qt"
+        "on-click": "pavucontrol-qt",
     },
 
     "custom/power": {
         "format": "󰐥",
         "tooltip": true,
         "tooltip-format": "Power Options",
-        "on-click": "wlogout"
-    }
+        "on-click": "wlogout",
+    },
 }
