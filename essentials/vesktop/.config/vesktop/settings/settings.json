@@ -103,7 +103,8 @@
             "enabled": false
         },
         "CallTimer": {
-            "enabled": false
+            "enabled": false,
+            "format": "stopwatch"
         },
         "ClearURLs": {
             "enabled": false
@@ -136,7 +137,8 @@
             "enabled": false
         },
         "CustomRPC": {
-            "enabled": false
+            "enabled": false,
+            "type": 0
         },
         "CustomIdle": {
             "enabled": false
@@ -532,7 +534,7 @@
             "enabled": false
         },
         "YoutubeAdblock": {
-            "enabled": false
+            "enabled": true
         },
         "BadgeAPI": {
             "enabled": true
@@ -565,6 +567,15 @@
         },
         "CustomCommands": {
             "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
+        },
+        "ConcatenatedComponentExtractor": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -577,7 +588,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773544075018
+        "settingsSyncVersion": 1777190559534
     },
     "uiElements": {
         "chatBarButtons": {},

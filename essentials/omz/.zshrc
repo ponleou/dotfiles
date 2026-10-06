@@ -114,13 +114,14 @@ export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 export GEM_HOME="$(gem env user_gemhome)"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
+export PATH=$PATH:$HOME/.dotnet/tools
 export GPG_TTY=$(tty)
 
 alias code='codium' 
-alias nano='nvim'
 
 dotfiles_path="~/.dotfiles"
 alias sm="$dotfiles_path/stow-mocha.sh"
+
 alias gm="cat ~/.git_messages.doc"
 
 alias gp="git push"
@@ -134,3 +135,6 @@ alias gra="git rebase -i --autosquash"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gs="git status"
+
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

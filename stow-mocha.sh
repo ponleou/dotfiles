@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mocha_packages="btop nwg-look qt6ct rofi swaylock swaync waybar wlogout"
+mocha_packages="btop nwg-look qt6ct rofi swaylock swaync waybar wlogout zsh"
 mocha_bases="alacritty-base nvim-base sway-base vesktop-base"
 
 accent_packages="nwg-look qt6ct ytm zen"

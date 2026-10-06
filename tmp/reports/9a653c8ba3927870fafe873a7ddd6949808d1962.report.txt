@@ -1,0 +1,10 @@
+
+Squashed commits from autocommit/[09c039c6a7fb5287c73511470424618157e5f731](https://codeberg.org/ponleou/dotfiles/commit/09c039c6a7fb5287c73511470424618157e5f731)
+Last no-diff commit found from autocommit: [552d35be89f60214f39b15672069c01ddedbc702](https://codeberg.org/ponleou/dotfiles/commit/552d35be89f60214f39b15672069c01ddedbc702)
+
+commit count: 2
+diff:
+```
+
+M	essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+```

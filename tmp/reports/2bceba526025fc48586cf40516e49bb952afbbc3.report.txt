@@ -1,0 +1,44 @@
+
+Squashed commits from autocommit/[f9e5ae8a8ae753dd5614f1ab685cfc8e5116121f](https://codeberg.org/ponleou/dotfiles/commit/f9e5ae8a8ae753dd5614f1ab685cfc8e5116121f)
+Last no-diff commit found from autocommit: [b7ce5c6b04e2289ac9e8f82ee7a9b1e88cce8216](https://codeberg.org/ponleou/dotfiles/commit/b7ce5c6b04e2289ac9e8f82ee7a9b1e88cce8216)
+
+commit count: 5
+diff:
+```
+
+M	essentials/nvim/.config/nvim/lazy-lock.json
+M	mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/green/nwg-look/.gtkrc-2.0
+M	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/mauve/nwg-look/.gtkrc-2.0
+M	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/peach/nwg-look/.gtkrc-2.0
+M	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets
+M	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css
+M	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css
+M	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/rosewater/nwg-look/.gtkrc-2.0
+M	mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/sapphire/nwg-look/.gtkrc-2.0
+M	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini
+M	mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini
+M	mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf
+M	mocha/accents/yellow/nwg-look/.gtkrc-2.0
+M	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+M	README.md
+```

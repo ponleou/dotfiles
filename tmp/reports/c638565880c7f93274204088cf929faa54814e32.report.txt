@@ -1,0 +1,80 @@
+
+Squashed commits from autocommit/[624418218e32a1196aa1bdfa4c826d02fab09d20](https://codeberg.org/ponleou/dotfiles/commit/624418218e32a1196aa1bdfa4c826d02fab09d20)
+Last no-diff commit found from autocommit: [d19318438446e49b9eee8df030ca39c04ebf7c8b](https://codeberg.org/ponleou/dotfiles/commit/d19318438446e49b9eee8df030ca39c04ebf7c8b)
+
+commit count: 6
+diff:
+```
+
+A	mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/green/nwg-look/.gtkrc-2.0
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/mauve/nwg-look/.gtkrc-2.0
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/peach/nwg-look/.gtkrc-2.0
+A	mocha/accents/rosewater/nwg-look/.config/colors.css
+A	mocha/accents/rosewater/nwg-look/.config/.gitignore
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/rosewater/nwg-look/.config/gtk.css
+A	mocha/accents/rosewater/nwg-look/.config/settings.ini
+A	mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/rosewater/nwg-look/.gtkrc-2.0
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/sapphire/nwg-look/.gtkrc-2.0
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/yellow/nwg-look/.gtkrc-2.0
+M	essentials/nvim/.config/nvim/lazy-lock.json
+M	essentials/sway/.config/sway/floating
+M	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+M	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/rosewater/nwg-look/.config/colors.css	mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/rosewater/nwg-look/.config/.gitignore	mocha/accents/green/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/rosewater/nwg-look/.config/gtk.css	mocha/accents/green/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/rosewater/nwg-look/.config/settings.ini	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini
+```
