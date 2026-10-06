@@ -1,0 +1,1599 @@
+
+Squashed commits from autocommit/[ae6207decfa1cab58bc722bddff82ac34da7b3d1](https://codeberg.org/ponleou/dotfiles/commit/ae6207decfa1cab58bc722bddff82ac34da7b3d1)
+Last no-diff commit found from autocommit: [d600d8be8340fe9f6debf370f6410f1cd9c8f1de](https://codeberg.org/ponleou/dotfiles/commit/d600d8be8340fe9f6debf370f6410f1cd9c8f1de)
+
+commit count: 5
+diff:
+```
+
+A	essentials/alacritty/.config/alacritty/alacritty.toml
+A	essentials/alacritty/.config/alacritty/base
+A	essentials/bases/.gitignore
+A	essentials/build/Code/build.sh
+A	essentials/build/Code/settings_build_hook.sh
+A	essentials/build/Code/settings.json
+A	essentials/build/Code/settings.json.build
+A	essentials/build/VSCodium/build.sh
+A	essentials/build/VSCodium/settings_build_hook.sh
+A	essentials/build/VSCodium/settings.json
+A	essentials/build/VSCodium/settings.json.build
+A	essentials/build/ytm/build.sh
+A	essentials/build/ytm/config_build_hook.sh
+A	essentials/build/ytm/config.json
+A	essentials/build/ytm/config.json.build
+A	essentials/Code/.config/Code/User/.gitignore
+A	essentials/Code/.config/Code/User/settings.json.build
+A	essentials/Code/.stow-local-ignore
+A	essentials/dolphin/.config/dolphinrc
+A	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+A	essentials/easyeffects/.config/easyeffects/db/equalizerrc
+A	essentials/easyeffects/.config/easyeffects/db/.gitignore
+A	essentials/easyeffects/.config/easyeffects/db/rnnoiserc
+A	essentials/easyeffects/.config/easyeffects/db/stereotoolsrc
+A	essentials/GIMP/.config/GIMP/3.0/action-history
+A	essentials/GIMP/.config/GIMP/3.0/colorrc
+A	essentials/GIMP/.config/GIMP/3.0/contextrc
+A	essentials/GIMP/.config/GIMP/3.0/controllerrc
+A	essentials/GIMP/.config/GIMP/3.0/devicerc
+A	essentials/GIMP/.config/GIMP/3.0/dockrc
+A	essentials/GIMP/.config/GIMP/3.0/extensionrc
+A	essentials/GIMP/.config/GIMP/3.0/filters/GimpBrightnessContrastConfig.settings
+A	essentials/GIMP/.config/GIMP/3.0/gimprc
+A	essentials/GIMP/.config/GIMP/3.0/internal-data/custom.ggr
+A	essentials/GIMP/.config/GIMP/3.0/modifiersrc
+A	essentials/GIMP/.config/GIMP/3.0/parasiterc
+A	essentials/GIMP/.config/GIMP/3.0/pluginrc
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-export.last
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-load.last
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-export.last
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-load.last
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-pnm-load.last
+A	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-plug-in-unit-editor.last
+A	essentials/GIMP/.config/GIMP/3.0/profilerc
+A	essentials/GIMP/.config/GIMP/3.0/sessionrc
+A	essentials/GIMP/.config/GIMP/3.0/shortcutsrc
+A	essentials/GIMP/.config/GIMP/3.0/splashes/splash-screen-2025-v2.png
+A	essentials/GIMP/.config/GIMP/3.0/tags.xml
+A	essentials/GIMP/.config/GIMP/3.0/templaterc
+A	essentials/GIMP/.config/GIMP/3.0/theme.css
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-airbrush-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-align-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-brightness-contrast-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-bucket-fill-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-by-color-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-cage-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-clone-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-color-picker-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-convolve-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-crop-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-curves-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-dodge-burn-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ellipse-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-eraser-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-flip-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-foreground-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-free-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-fuzzy-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gegl-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gradient-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-handle-transform-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-heal-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ink-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-iscissors-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-levels-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-measure-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-move-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-mypaint-brush-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-offset-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-operation-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-paintbrush-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-pencil-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-clone-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rect-select-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rotate-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-scale-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-shear-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-smudge-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-text-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-threshold-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-transform-3d-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-unified-transform-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-vector-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-warp-tool
+A	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-zoom-tool
+A	essentials/GIMP/.config/GIMP/3.0/toolrc
+A	essentials/GIMP/.config/GIMP/3.0/unitrc
+A	essentials/GIMP/.local/share/applications/org.gimp.GIMP.desktop
+A	essentials/GIMP/.local/share/icons/hicolor/128x128/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/128x128/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/16x16/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/16x16/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/256x256/256x256.png
+A	essentials/GIMP/.local/share/icons/hicolor/256x256/apps/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/256x256/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/32x32/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/32x32/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/48x48/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/48x48/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/512x512/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/512x512/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/64x64/apps/photogimp.png
+A	essentials/GIMP/.local/share/icons/hicolor/64x64/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/.DS_Store
+A	essentials/GIMP/.local/share/icons/hicolor/photogimp.png
+A	essentials/mpv/.config/mpv/fonts/Material-Design-Iconic-Font.ttf
+A	essentials/mpv/.config/mpv/.gitattributes
+A	essentials/mpv/.config/mpv/input.conf
+A	essentials/mpv/.config/mpv/mpv.conf
+A	essentials/mpv/.config/mpv/scripts/modern.lua
+A	essentials/mpv/.config/mpv/scripts/webm.lua
+A	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x4.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Clamp_Highlights.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_Fast.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_HQ.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_VeryFast.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_DoG.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_Original.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mean.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Median.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mode.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_L.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_M.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_S.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_L.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_M.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_S.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_UL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_VL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_UL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_VL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_Fast.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_HQ.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_VeryFast.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_L.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_M.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_S.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_UL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_VL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_DoG_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_Original_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_L.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_M.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_S.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_UL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DoG_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DTD_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Original_x2.glsl
+A	essentials/mpv/.config/mpv/shaders/CAS.glsl
+A	essentials/mpv/.config/mpv/shaders/CAS-scaled.glsl
+A	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_16-0-4-1.glsl
+A	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_8-0-4-1.glsl
+A	essentials/mpv/.config/mpv/shaders/FSR.glsl
+A	essentials/nvim/.config/nvim/base
+A	essentials/nvim/.config/nvim/init.lua
+A	essentials/nvim/.config/nvim/lazy-lock.json
+A	essentials/nvim/.config/nvim/lua/config/lazy.lua
+A	essentials/nvim/.config/nvim/lua/plugins/coding.lua
+A	essentials/nvim/.config/nvim/lua/plugins/colors.lua
+A	essentials/nvim/.config/nvim/lua/plugins/example.lua
+A	essentials/nvim/.config/nvim/lua/plugins/formatter.lua
+A	essentials/nvim/.config/nvim/lua/plugins/linter.lua
+A	essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+A	essentials/nvim/.config/nvim/lua/plugins/text.lua
+A	essentials/nvim/.config/nvim/lua/plugins/treesitter.lua
+A	essentials/omz/.zshrc
+A	essentials/sway/.config/sway/base
+A	essentials/sway/.config/sway/config
+A	essentials/sway/.config/sway/floating
+A	essentials/sway/.config/sway/.gitignore
+A	essentials/sway/.config/sway/keybinds
+A	essentials/sway/.config/sway/outputs
+A	essentials/sway/.config/sway/scripts/cliphist-img-rofi-modi
+A	essentials/sway/.config/sway/scripts/gsr-rofi-modi
+A	essentials/sway/.config/sway/scripts/next-or-new-workspace.sh
+A	essentials/sway/.config/sway/scripts/previous-or-new-workspace.sh
+A	essentials/sway/.config/sway/scripts/reorder-workspace.sh
+A	essentials/sway/.config/sway/scripts/screenshot.sh
+A	essentials/sway/.config/sway/scripts/wallpaper-rofi.sh
+A	essentials/sway/.config/sway/scripts/window-screenshot.sh
+A	essentials/vesktop/.config/vesktop/settings/base
+A	essentials/vesktop/.config/vesktop/settings/quickCss.css
+A	essentials/vesktop/.config/vesktop/settings/settings.json
+A	essentials/VSCodium/.config/VSCodium/User/.gitignore
+A	essentials/VSCodium/.config/VSCodium/User/keybindings.json
+A	essentials/VSCodium/.config/VSCodium/User/settings.json.build
+A	essentials/VSCodium/.stow-local-ignore
+A	essentials/ytm/.config/YouTube Music/config.json.build
+A	essentials/ytm/.config/YouTube Music/.gitignore
+A	essentials/ytm/.stow-local-ignore
+A	essentials/zen/.zen/profiles.ini
+A	mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/green/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/green/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/green/nwg-look/.gtkrc-2.0
+A	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/green/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Green.colors
+A	mocha/accents/green/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/green/rofi-option/rofi/accent.rasi
+A	mocha/accents/green/swaync-option/swaync/accent.css
+A	mocha/accents/green/sway-option/sway/accent
+A	mocha/accents/green/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/green/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/green/waybar-option/waybar/accent.css
+A	mocha/accents/green/wlogout-option/wlogout/accent.css
+A	mocha/accents/green/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/green/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/green/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/green/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/green/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/green/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/green/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+A	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/mauve/nwg-look/.gtkrc-2.0
+A	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/mauve/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Mauve.colors
+A	mocha/accents/mauve/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/mauve/rofi-option/rofi/accent.rasi
+A	mocha/accents/mauve/swaync-option/swaync/accent.css
+A	mocha/accents/mauve/sway-option/sway/accent
+A	mocha/accents/mauve/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/mauve/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/mauve/waybar-option/waybar/accent.css
+A	mocha/accents/mauve/wlogout-option/wlogout/accent.css
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/mauve/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/mauve/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+A	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/peach/nwg-look/.gtkrc-2.0
+A	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/peach/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Peach.colors
+A	mocha/accents/peach/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/peach/rofi-option/rofi/accent.rasi
+A	mocha/accents/peach/swaync-option/swaync/accent.css
+A	mocha/accents/peach/sway-option/sway/accent
+A	mocha/accents/peach/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/peach/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/peach/waybar-option/waybar/accent.css
+A	mocha/accents/peach/wlogout-option/wlogout/accent.css
+A	mocha/accents/peach/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/peach/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/peach/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/peach/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/peach/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/peach/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/peach/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/rosewater/nwg-look/.gtkrc-2.0
+A	mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/rosewater/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Rosewater.colors
+A	mocha/accents/rosewater/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/rosewater/rofi-option/rofi/accent.rasi
+A	mocha/accents/rosewater/swaync-option/swaync/accent.css
+A	mocha/accents/rosewater/sway-option/sway/accent
+A	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/rosewater/waybar-option/waybar/accent.css
+A	mocha/accents/rosewater/wlogout-option/wlogout/accent.css
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/rosewater/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/rosewater/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+A	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/sapphire/nwg-look/.gtkrc-2.0
+A	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/sapphire/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Sapphire.colors
+A	mocha/accents/sapphire/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/sapphire/rofi-option/rofi/accent.rasi
+A	mocha/accents/sapphire/swaync-option/swaync/accent.css
+A	mocha/accents/sapphire/sway-option/sway/accent
+A	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/sapphire/waybar-option/waybar/accent.css
+A	mocha/accents/sapphire/wlogout-option/wlogout/accent.css
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/sapphire/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/sapphire/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+A	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/.gitignore
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/gtk.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css
+A	mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini
+A	mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf
+A	mocha/accents/yellow/nwg-look/.gtkrc-2.0
+A	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+A	mocha/accents/yellow/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Yellow.colors
+A	mocha/accents/yellow/qt6ct/.config/qt6ct/qt6ct.conf
+A	mocha/accents/yellow/rofi-option/rofi/accent.rasi
+A	mocha/accents/yellow/swaync-option/swaync/accent.css
+A	mocha/accents/yellow/sway-option/sway/accent
+A	mocha/accents/yellow/vesktop-option/vesktop/quickCss_default.css
+A	mocha/accents/yellow/vesktop-option/vesktop/quickCss_transparent.css
+A	mocha/accents/yellow/waybar-option/waybar/accent.css
+A	mocha/accents/yellow/wlogout-option/wlogout/accent.css
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/hibernate.svg
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/lock.svg
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/logout.svg
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/reboot.svg
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/shutdown.svg
+A	mocha/accents/yellow/wlogout-option/wlogout/icons/suspend.svg
+A	mocha/accents/yellow/ytm/.config/YouTube Music/mocha.css
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userChrome.css
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userContent.css
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+A	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes.css
+A	mocha/base/alacritty-base/alacritty/colors.toml
+A	mocha/base/alacritty-base/alacritty/mod
+A	mocha/base/btop/.config/btop/btop.conf
+A	mocha/base/btop/.config/btop/btop.log
+A	mocha/base/btop/.config/btop/themes/catppuccin_mocha.theme
+A	mocha/base/nvim-base/nvim/colors.lua
+A	mocha/base/nwg-look/.config/nwg-look/config
+A	mocha/base/nwg-look/.icons/default/index.theme
+A	mocha/base/qt6ct/.config/darklyrc
+A	mocha/base/rofi/.config/rofi/colors.rasi
+A	mocha/base/rofi/.config/rofi/config.rasi
+A	mocha/base/rofi/.config/rofi/menu.rasi
+A	mocha/base/rofi/.config/rofi/mod
+A	mocha/base/rofi/.config/rofi/option
+A	mocha/base/rofi/.config/rofi/wallpaper-file-browser.rasi
+A	mocha/base/sway-base/sway/mocha-option
+A	mocha/base/sway-base/sway/mod
+A	mocha/base/sway-base/sway/theme
+A	mocha/base/swaylock/.config/swaylock/mocha.conf
+A	mocha/base/swaync/.config/swaync/config.json
+A	mocha/base/swaync/.config/swaync/mocha.css
+A	mocha/base/swaync/.config/swaync/mod
+A	mocha/base/swaync/.config/swaync/option
+A	mocha/base/swaync/.config/swaync/style.css
+A	mocha/base/vesktop-base/vesktop/mod
+A	mocha/base/vesktop-base/vesktop/quickCss.css
+A	mocha/base/waybar/.config/waybar/config.jsonc
+A	mocha/base/waybar/.config/waybar/mocha.css
+A	mocha/base/waybar/.config/waybar/mod
+A	mocha/base/waybar/.config/waybar/option
+A	mocha/base/waybar/.config/waybar/style.css
+A	mocha/base/wlogout/.config/wlogout/layout
+A	mocha/base/wlogout/.config/wlogout/mocha.css
+A	mocha/base/wlogout/.config/wlogout/mod
+A	mocha/base/wlogout/.config/wlogout/option
+A	mocha/base/wlogout/.config/wlogout/style.css
+A	mocha/base/zsh/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+A	mocha/build/Code/build.sh
+A	mocha/build/Code/settings.json
+A	mocha/build/Code/settings.json.build
+A	mocha/build/VSCodium/build.sh
+A	mocha/build/VSCodium/settings.json
+A	mocha/build/VSCodium/settings.json.build
+A	mocha/build/ytm/build.sh
+A	mocha/build/ytm/config.json
+A	mocha/build/ytm/config.json.build
+A	mocha/modlist/background/blur/alacritty/bg.toml
+A	mocha/modlist/background/blur/qt6ct/darklyrc
+A	mocha/modlist/background/blur/rofi/background.rasi
+A	mocha/modlist/background/blur/sway/bg
+A	mocha/modlist/background/blur/swaync/background.css
+A	mocha/modlist/background/blur/vesktop/quickCss.css
+A	mocha/modlist/background/blur/waybar/background.css
+A	mocha/modlist/background/blur/wlogout/background.css
+A	mocha/modlist/background/solid/alacritty/bg.toml
+A	mocha/modlist/background/solid/qt6ct/darklyrc
+A	mocha/modlist/background/solid/rofi/background.rasi
+A	mocha/modlist/background/solid/sway/bg
+A	mocha/modlist/background/solid/swaync/background.css
+A	mocha/modlist/background/solid/vesktop/quickCss.css
+A	mocha/modlist/background/solid/waybar/background.css
+A	mocha/modlist/background/solid/wlogout/background.css
+A	mocha/modlist/gap/big_nwc/sway/gap
+A	mocha/modlist/gap/big_nwc/swaync/gap.css
+A	mocha/modlist/gap/big_nwc/waybar/gap.css
+A	mocha/modlist/gap/big_nwc/waybar/gap.jsonc
+A	mocha/modlist/gap/big/sway/gap
+A	mocha/modlist/gap/big/swaync/gap.css
+A	mocha/modlist/gap/big/waybar/gap.css
+A	mocha/modlist/gap/big/waybar/gap.jsonc
+A	mocha/modlist/gap/none/sway/gap
+A	mocha/modlist/gap/none/swaync/gap.css
+A	mocha/modlist/gap/none/waybar/gap.css
+A	mocha/modlist/gap/none/waybar/gap.jsonc
+A	mocha/modlist/gap/small_nwc/sway/gap
+A	mocha/modlist/gap/small_nwc/swaync/gap.css
+A	mocha/modlist/gap/small_nwc/waybar/gap.css
+A	mocha/modlist/gap/small_nwc/waybar/gap.jsonc
+A	mocha/modlist/gap/small/sway/gap
+A	mocha/modlist/gap/small/swaync/gap.css
+A	mocha/modlist/gap/small/waybar/gap.css
+A	mocha/modlist/gap/small/waybar/gap.jsonc
+A	mocha/modlist/rounded/all_nwc/rofi/rounded.rasi
+A	mocha/modlist/rounded/all_nwc/swaync/rounded.css
+A	mocha/modlist/rounded/all_nwc/sway/rounded
+A	mocha/modlist/rounded/all_nwc/waybar/rounded.css
+A	mocha/modlist/rounded/all_nwc/wlogout/rounded.css
+A	mocha/modlist/rounded/all/rofi/rounded.rasi
+A	mocha/modlist/rounded/all/swaync/rounded.css
+A	mocha/modlist/rounded/all/sway/rounded
+A	mocha/modlist/rounded/all/waybar/rounded.css
+A	mocha/modlist/rounded/all/wlogout/rounded.css
+A	mocha/modlist/rounded/minimal/rofi/rounded.rasi
+A	mocha/modlist/rounded/minimal/swaync/rounded.css
+A	mocha/modlist/rounded/minimal/sway/rounded
+A	mocha/modlist/rounded/minimal/waybar/rounded.css
+A	mocha/modlist/rounded/minimal/wlogout/rounded.css
+A	mocha/modlist/rounded/none/rofi/rounded.rasi
+A	mocha/modlist/rounded/none/swaync/rounded.css
+A	mocha/modlist/rounded/none/sway/rounded
+A	mocha/modlist/rounded/none/waybar/rounded.css
+A	mocha/modlist/rounded/none/wlogout/rounded.css
+A	mocha/mods/alacritty/.gitkeep
+A	mocha/mods/btop/.gitkeep
+A	mocha/mods/DO_NOT_MODIFY
+A	mocha/mods/.gitignore
+A	mocha/mods/nvim/.gitkeep
+A	mocha/mods/nwg-look/.gitkeep
+A	mocha/mods/qt6ct/.gitkeep
+A	mocha/mods/rofi/.gitkeep
+A	mocha/mods/sway/.gitkeep
+A	mocha/mods/swaylock/.gitkeep
+A	mocha/mods/swaync/.gitkeep
+A	mocha/mods/vesktop/.gitkeep
+A	mocha/mods/waybar/.gitkeep
+A	mocha/mods/wlogout/.gitkeep
+A	mocha/options/DO_NOT_MODIFY
+A	mocha/options/.gitignore
+A	stows/mocha/mods/waybar/.gitkeep
+A	stows/mocha/mods/wlogout/.gitkeep
+A	stows/mocha/options/DO_NOT_MODIFY
+D	essentials/alacritty/.config/alacritty/alacritty.toml
+D	essentials/alacritty/.config/alacritty/base
+D	essentials/bases/DO_NOT_MODIFY
+D	essentials/bases/.gitignore
+D	essentials/build/Code/build.sh
+D	essentials/build/Code/settings_build_hook.sh
+D	essentials/build/Code/settings.json
+D	essentials/build/Code/settings.json.build
+D	essentials/build/VSCodium/build.sh
+D	essentials/build/VSCodium/settings_build_hook.sh
+D	essentials/build/VSCodium/settings.json
+D	essentials/build/VSCodium/settings.json.build
+D	essentials/build/ytm/build.sh
+D	essentials/build/ytm/config_build_hook.sh
+D	essentials/build/ytm/config.json
+D	essentials/build/ytm/config.json.build
+D	essentials/Code/.config/Code/User/.gitignore
+D	essentials/Code/.config/Code/User/settings.json.build
+D	essentials/Code/.stow-local-ignore
+D	essentials/dolphin/.config/dolphinrc
+D	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+D	essentials/easyeffects/.config/easyeffects/db/equalizerrc
+D	essentials/easyeffects/.config/easyeffects/db/.gitignore
+D	essentials/easyeffects/.config/easyeffects/db/rnnoiserc
+D	essentials/easyeffects/.config/easyeffects/db/stereotoolsrc
+D	essentials/GIMP/.config/GIMP/3.0/action-history
+D	essentials/GIMP/.config/GIMP/3.0/colorrc
+D	essentials/GIMP/.config/GIMP/3.0/contextrc
+D	essentials/GIMP/.config/GIMP/3.0/controllerrc
+D	essentials/GIMP/.config/GIMP/3.0/devicerc
+D	essentials/GIMP/.config/GIMP/3.0/dockrc
+D	essentials/GIMP/.config/GIMP/3.0/extensionrc
+D	essentials/GIMP/.config/GIMP/3.0/filters/GimpBrightnessContrastConfig.settings
+D	essentials/GIMP/.config/GIMP/3.0/gimprc
+D	essentials/GIMP/.config/GIMP/3.0/internal-data/custom.ggr
+D	essentials/GIMP/.config/GIMP/3.0/modifiersrc
+D	essentials/GIMP/.config/GIMP/3.0/parasiterc
+D	essentials/GIMP/.config/GIMP/3.0/pluginrc
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-export.last
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-load.last
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-export.last
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-load.last
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-pnm-load.last
+D	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-plug-in-unit-editor.last
+D	essentials/GIMP/.config/GIMP/3.0/profilerc
+D	essentials/GIMP/.config/GIMP/3.0/sessionrc
+D	essentials/GIMP/.config/GIMP/3.0/shortcutsrc
+D	essentials/GIMP/.config/GIMP/3.0/splashes/splash-screen-2025-v2.png
+D	essentials/GIMP/.config/GIMP/3.0/tags.xml
+D	essentials/GIMP/.config/GIMP/3.0/templaterc
+D	essentials/GIMP/.config/GIMP/3.0/theme.css
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-airbrush-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-align-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-brightness-contrast-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-bucket-fill-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-by-color-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-cage-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-clone-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-color-picker-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-convolve-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-crop-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-curves-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-dodge-burn-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ellipse-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-eraser-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-flip-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-foreground-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-free-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-fuzzy-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gegl-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gradient-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-handle-transform-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-heal-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ink-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-iscissors-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-levels-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-measure-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-move-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-mypaint-brush-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-offset-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-operation-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-paintbrush-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-pencil-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-clone-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rect-select-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rotate-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-scale-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-shear-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-smudge-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-text-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-threshold-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-transform-3d-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-unified-transform-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-vector-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-warp-tool
+D	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-zoom-tool
+D	essentials/GIMP/.config/GIMP/3.0/toolrc
+D	essentials/GIMP/.config/GIMP/3.0/unitrc
+D	essentials/GIMP/.local/share/applications/org.gimp.GIMP.desktop
+D	essentials/GIMP/.local/share/icons/hicolor/128x128/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/128x128/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/16x16/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/16x16/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/256x256/256x256.png
+D	essentials/GIMP/.local/share/icons/hicolor/256x256/apps/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/256x256/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/32x32/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/32x32/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/48x48/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/48x48/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/512x512/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/512x512/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/64x64/apps/photogimp.png
+D	essentials/GIMP/.local/share/icons/hicolor/64x64/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/.DS_Store
+D	essentials/GIMP/.local/share/icons/hicolor/photogimp.png
+D	essentials/mpv/.config/mpv/fonts/Material-Design-Iconic-Font.ttf
+D	essentials/mpv/.config/mpv/.gitattributes
+D	essentials/mpv/.config/mpv/input.conf
+D	essentials/mpv/.config/mpv/mpv.conf
+D	essentials/mpv/.config/mpv/scripts/modern.lua
+D	essentials/mpv/.config/mpv/scripts/webm.lua
+D	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x4.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Clamp_Highlights.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_Fast.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_HQ.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_VeryFast.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_DoG.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_Original.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mean.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Median.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mode.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_L.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_M.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_S.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_L.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_M.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_S.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_UL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_VL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_UL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_VL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_Fast.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_HQ.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_VeryFast.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_L.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_M.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_S.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_UL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_VL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_DoG_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_Original_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_L.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_M.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_S.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_UL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DoG_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DTD_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Original_x2.glsl
+D	essentials/mpv/.config/mpv/shaders/CAS.glsl
+D	essentials/mpv/.config/mpv/shaders/CAS-scaled.glsl
+D	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_16-0-4-1.glsl
+D	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_8-0-4-1.glsl
+D	essentials/mpv/.config/mpv/shaders/FSR.glsl
+D	essentials/nvim/.config/nvim/base
+D	essentials/nvim/.config/nvim/init.lua
+D	essentials/nvim/.config/nvim/lazy-lock.json
+D	essentials/nvim/.config/nvim/lua/config/lazy.lua
+D	essentials/nvim/.config/nvim/lua/plugins/coding.lua
+D	essentials/nvim/.config/nvim/lua/plugins/colors.lua
+D	essentials/nvim/.config/nvim/lua/plugins/example.lua
+D	essentials/nvim/.config/nvim/lua/plugins/formatter.lua
+D	essentials/nvim/.config/nvim/lua/plugins/linter.lua
+D	essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+D	essentials/nvim/.config/nvim/lua/plugins/text.lua
+D	essentials/nvim/.config/nvim/lua/plugins/treesitter.lua
+D	essentials/omz/.zshrc
+D	essentials/sway/.config/sway/base
+D	essentials/sway/.config/sway/config
+D	essentials/sway/.config/sway/floating
+D	essentials/sway/.config/sway/.gitignore
+D	essentials/sway/.config/sway/keybinds
+D	essentials/sway/.config/sway/outputs
+D	essentials/sway/.config/sway/scripts/cliphist-img-rofi-modi
+D	essentials/sway/.config/sway/scripts/gsr-rofi-modi
+D	essentials/sway/.config/sway/scripts/next-or-new-workspace.sh
+D	essentials/sway/.config/sway/scripts/previous-or-new-workspace.sh
+D	essentials/sway/.config/sway/scripts/reorder-workspace.sh
+D	essentials/sway/.config/sway/scripts/screenshot.sh
+D	essentials/sway/.config/sway/scripts/wallpaper-rofi.sh
+D	essentials/sway/.config/sway/scripts/window-screenshot.sh
+D	essentials/sway/.config/sway/wallpapers/.gitkeep
+D	essentials/sway/.config/sway/workspaces
+D	essentials/vesktop/.config/vesktop/settings/base
+D	essentials/vesktop/.config/vesktop/settings/quickCss.css
+D	essentials/vesktop/.config/vesktop/settings/settings.json
+D	essentials/VSCodium/.config/VSCodium/User/.gitignore
+D	essentials/VSCodium/.config/VSCodium/User/keybindings.json
+D	essentials/VSCodium/.config/VSCodium/User/settings.json.build
+D	essentials/VSCodium/.stow-local-ignore
+D	essentials/ytm/.config/YouTube Music/config.json.build
+D	essentials/ytm/.config/YouTube Music/.gitignore
+D	essentials/ytm/.stow-local-ignore
+D	essentials/zen/.zen/profiles.ini
+D	mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/green/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/green/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/green/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/green/nwg-look/.gtkrc-2.0
+D	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/green/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Green.colors
+D	mocha/accents/green/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/green/rofi-option/rofi/accent.rasi
+D	mocha/accents/green/swaync-option/swaync/accent.css
+D	mocha/accents/green/sway-option/sway/accent
+D	mocha/accents/green/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/green/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/green/waybar-option/waybar/accent.css
+D	mocha/accents/green/wlogout-option/wlogout/accent.css
+D	mocha/accents/green/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/green/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/green/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/green/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/green/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/green/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/green/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+D	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/mauve/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/mauve/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/mauve/nwg-look/.gtkrc-2.0
+D	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/mauve/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Mauve.colors
+D	mocha/accents/mauve/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/mauve/rofi-option/rofi/accent.rasi
+D	mocha/accents/mauve/swaync-option/swaync/accent.css
+D	mocha/accents/mauve/sway-option/sway/accent
+D	mocha/accents/mauve/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/mauve/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/mauve/waybar-option/waybar/accent.css
+D	mocha/accents/mauve/wlogout-option/wlogout/accent.css
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/mauve/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/mauve/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+D	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/peach/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/peach/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/peach/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/peach/nwg-look/.gtkrc-2.0
+D	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/peach/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Peach.colors
+D	mocha/accents/peach/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/peach/rofi-option/rofi/accent.rasi
+D	mocha/accents/peach/swaync-option/swaync/accent.css
+D	mocha/accents/peach/sway-option/sway/accent
+D	mocha/accents/peach/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/peach/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/peach/waybar-option/waybar/accent.css
+D	mocha/accents/peach/wlogout-option/wlogout/accent.css
+D	mocha/accents/peach/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/peach/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/peach/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/peach/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/peach/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/peach/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/peach/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/rosewater/nwg-look/.gtkrc-2.0
+D	mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/rosewater/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Rosewater.colors
+D	mocha/accents/rosewater/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/rosewater/rofi-option/rofi/accent.rasi
+D	mocha/accents/rosewater/swaync-option/swaync/accent.css
+D	mocha/accents/rosewater/sway-option/sway/accent
+D	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/rosewater/waybar-option/waybar/accent.css
+D	mocha/accents/rosewater/wlogout-option/wlogout/accent.css
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/rosewater/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/rosewater/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+D	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/sapphire/nwg-look/.gtkrc-2.0
+D	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/sapphire/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Sapphire.colors
+D	mocha/accents/sapphire/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/sapphire/rofi-option/rofi/accent.rasi
+D	mocha/accents/sapphire/swaync-option/swaync/accent.css
+D	mocha/accents/sapphire/sway-option/sway/accent
+D	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/sapphire/waybar-option/waybar/accent.css
+D	mocha/accents/sapphire/wlogout-option/wlogout/accent.css
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/sapphire/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/sapphire/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+D	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css
+D	mocha/accents/yellow/nwg-look/.config/gtk-3.0/.gitignore
+D	mocha/accents/yellow/nwg-look/.config/gtk-3.0/gtk.css
+D	mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini
+D	mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets
+D	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css
+D	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css
+D	mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini
+D	mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf
+D	mocha/accents/yellow/nwg-look/.gtkrc-2.0
+D	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+D	mocha/accents/yellow/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Yellow.colors
+D	mocha/accents/yellow/qt6ct/.config/qt6ct/qt6ct.conf
+D	mocha/accents/yellow/rofi-option/rofi/accent.rasi
+D	mocha/accents/yellow/swaync-option/swaync/accent.css
+D	mocha/accents/yellow/sway-option/sway/accent
+D	mocha/accents/yellow/vesktop-option/vesktop/quickCss_default.css
+D	mocha/accents/yellow/vesktop-option/vesktop/quickCss_transparent.css
+D	mocha/accents/yellow/waybar-option/waybar/accent.css
+D	mocha/accents/yellow/wlogout-option/wlogout/accent.css
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/hibernate.svg
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/lock.svg
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/logout.svg
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/reboot.svg
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/shutdown.svg
+D	mocha/accents/yellow/wlogout-option/wlogout/icons/suspend.svg
+D	mocha/accents/yellow/ytm/.config/YouTube Music/mocha.css
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userChrome.css
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userContent.css
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+D	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes.css
+D	mocha/base/alacritty-base/alacritty/colors.toml
+D	mocha/base/alacritty-base/alacritty/mod
+D	mocha/base/btop/.config/btop/btop.conf
+D	mocha/base/btop/.config/btop/btop.log
+D	mocha/base/btop/.config/btop/themes/catppuccin_mocha.theme
+D	mocha/base/nvim-base/nvim/colors.lua
+D	mocha/base/nwg-look/.config/nwg-look/config
+D	mocha/base/nwg-look/.icons/default/index.theme
+D	mocha/base/qt6ct/.config/darklyrc
+D	mocha/base/rofi/.config/rofi/colors.rasi
+D	mocha/base/rofi/.config/rofi/config.rasi
+D	mocha/base/rofi/.config/rofi/menu.rasi
+D	mocha/base/rofi/.config/rofi/mod
+D	mocha/base/rofi/.config/rofi/option
+D	mocha/base/rofi/.config/rofi/wallpaper-file-browser.rasi
+D	mocha/base/sway-base/sway/mocha-option
+D	mocha/base/sway-base/sway/mod
+D	mocha/base/sway-base/sway/theme
+D	mocha/base/swaylock/.config/swaylock/mocha.conf
+D	mocha/base/swaync/.config/swaync/config.json
+D	mocha/base/swaync/.config/swaync/mocha.css
+D	mocha/base/swaync/.config/swaync/mod
+D	mocha/base/swaync/.config/swaync/option
+D	mocha/base/swaync/.config/swaync/style.css
+D	mocha/base/vesktop-base/vesktop/mod
+D	mocha/base/vesktop-base/vesktop/quickCss.css
+D	mocha/base/waybar/.config/waybar/config.jsonc
+D	mocha/base/waybar/.config/waybar/mocha.css
+D	mocha/base/waybar/.config/waybar/mod
+D	mocha/base/waybar/.config/waybar/option
+D	mocha/base/waybar/.config/waybar/style.css
+D	mocha/base/wlogout/.config/wlogout/layout
+D	mocha/base/wlogout/.config/wlogout/mocha.css
+D	mocha/base/wlogout/.config/wlogout/mod
+D	mocha/base/wlogout/.config/wlogout/option
+D	mocha/base/wlogout/.config/wlogout/style.css
+D	mocha/base/zsh/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+D	mocha/build/Code/build.sh
+D	mocha/build/Code/settings.json
+D	mocha/build/Code/settings.json.build
+D	mocha/build/VSCodium/build.sh
+D	mocha/build/VSCodium/settings.json
+D	mocha/build/VSCodium/settings.json.build
+D	mocha/build/ytm/build.sh
+D	mocha/build/ytm/config.json
+D	mocha/build/ytm/config.json.build
+D	mocha/modlist/background/blur/alacritty/bg.toml
+D	mocha/modlist/background/blur/qt6ct/darklyrc
+D	mocha/modlist/background/blur/rofi/background.rasi
+D	mocha/modlist/background/blur/sway/bg
+D	mocha/modlist/background/blur/swaync/background.css
+D	mocha/modlist/background/blur/vesktop/quickCss.css
+D	mocha/modlist/background/blur/waybar/background.css
+D	mocha/modlist/background/blur/wlogout/background.css
+D	mocha/modlist/background/solid/alacritty/bg.toml
+D	mocha/modlist/background/solid/qt6ct/darklyrc
+D	mocha/modlist/background/solid/rofi/background.rasi
+D	mocha/modlist/background/solid/sway/bg
+D	mocha/modlist/background/solid/swaync/background.css
+D	mocha/modlist/background/solid/vesktop/quickCss.css
+D	mocha/modlist/background/solid/waybar/background.css
+D	mocha/modlist/background/solid/wlogout/background.css
+D	mocha/modlist/gap/big_nwc/sway/gap
+D	mocha/modlist/gap/big_nwc/swaync/gap.css
+D	mocha/modlist/gap/big_nwc/waybar/gap.css
+D	mocha/modlist/gap/big_nwc/waybar/gap.jsonc
+D	mocha/modlist/gap/big/sway/gap
+D	mocha/modlist/gap/big/swaync/gap.css
+D	mocha/modlist/gap/big/waybar/gap.css
+D	mocha/modlist/gap/big/waybar/gap.jsonc
+D	mocha/modlist/gap/none/sway/gap
+D	mocha/modlist/gap/none/swaync/gap.css
+D	mocha/modlist/gap/none/waybar/gap.css
+D	mocha/modlist/gap/none/waybar/gap.jsonc
+D	mocha/modlist/gap/small_nwc/sway/gap
+D	mocha/modlist/gap/small_nwc/swaync/gap.css
+D	mocha/modlist/gap/small_nwc/waybar/gap.css
+D	mocha/modlist/gap/small_nwc/waybar/gap.jsonc
+D	mocha/modlist/gap/small/sway/gap
+D	mocha/modlist/gap/small/swaync/gap.css
+D	mocha/modlist/gap/small/waybar/gap.css
+D	mocha/modlist/gap/small/waybar/gap.jsonc
+D	mocha/modlist/rounded/all_nwc/rofi/rounded.rasi
+D	mocha/modlist/rounded/all_nwc/swaync/rounded.css
+D	mocha/modlist/rounded/all_nwc/sway/rounded
+D	mocha/modlist/rounded/all_nwc/waybar/rounded.css
+D	mocha/modlist/rounded/all_nwc/wlogout/rounded.css
+D	mocha/modlist/rounded/all/rofi/rounded.rasi
+D	mocha/modlist/rounded/all/swaync/rounded.css
+D	mocha/modlist/rounded/all/sway/rounded
+D	mocha/modlist/rounded/all/waybar/rounded.css
+D	mocha/modlist/rounded/all/wlogout/rounded.css
+D	mocha/modlist/rounded/minimal/rofi/rounded.rasi
+D	mocha/modlist/rounded/minimal/swaync/rounded.css
+D	mocha/modlist/rounded/minimal/sway/rounded
+D	mocha/modlist/rounded/minimal/waybar/rounded.css
+D	mocha/modlist/rounded/minimal/wlogout/rounded.css
+D	mocha/modlist/rounded/none/rofi/rounded.rasi
+D	mocha/modlist/rounded/none/swaync/rounded.css
+D	mocha/modlist/rounded/none/sway/rounded
+D	mocha/modlist/rounded/none/waybar/rounded.css
+D	mocha/modlist/rounded/none/wlogout/rounded.css
+D	mocha/mods/alacritty/.gitkeep
+D	mocha/mods/btop/.gitkeep
+D	mocha/mods/DO_NOT_MODIFY
+D	mocha/mods/.gitignore
+D	mocha/mods/nvim/.gitkeep
+D	mocha/mods/nwg-look/.gitkeep
+D	mocha/mods/qt6ct/.gitkeep
+D	mocha/mods/rofi/.gitkeep
+D	mocha/mods/sway/.gitkeep
+D	mocha/mods/swaylock/.gitkeep
+D	mocha/mods/swaync/.gitkeep
+D	mocha/mods/vesktop/.gitkeep
+D	mocha/mods/waybar/.gitkeep
+D	mocha/mods/wlogout/.gitkeep
+D	mocha/options/DO_NOT_MODIFY
+D	mocha/options/.gitignore
+D	stows/essentials/ytm/.config/YouTube Music/config.json.build
+D	stows/essentials/ytm/.config/YouTube Music/.gitignore
+D	stows/essentials/ytm/.stow-local-ignore
+D	stows/mocha/accents/green/ytm/.config/YouTube Music/mocha.css
+D	stows/mocha/accents/mauve/ytm/.config/YouTube Music/mocha.css
+D	stows/mocha/accents/peach/ytm/.config/YouTube Music/mocha.css
+M	stow-essentials.sh
+M	stow-mocha.sh
+M	stow-user-script.sh
+M	stow-user-service.sh
+R100	essentials/alacritty/.config/alacritty/alacritty.toml	stows/essentials/alacritty/.config/alacritty/alacritty.toml
+R100	essentials/alacritty/.config/alacritty/base	stows/essentials/alacritty/.config/alacritty/base
+R100	essentials/bases/DO_NOT_MODIFY	stows/essentials/bases/DO_NOT_MODIFY
+R100	essentials/bases/.gitignore	stows/essentials/bases/.gitignore
+R100	essentials/build/Code/build.sh	stows/essentials/build/Code/build.sh
+R100	essentials/build/Code/settings_build_hook.sh	stows/essentials/build/Code/settings_build_hook.sh
+R100	essentials/build/Code/settings.json.build	stows/essentials/build/Code/settings.json.build
+R100	essentials/build/Code/settings.json	stows/essentials/build/Code/settings.json
+R100	essentials/build/VSCodium/build.sh	stows/essentials/build/VSCodium/build.sh
+R100	essentials/build/VSCodium/settings_build_hook.sh	stows/essentials/build/VSCodium/settings_build_hook.sh
+R100	essentials/build/VSCodium/settings.json.build	stows/essentials/build/VSCodium/settings.json.build
+R100	essentials/build/VSCodium/settings.json	stows/essentials/build/VSCodium/settings.json
+R100	essentials/build/ytm/build.sh	stows/essentials/build/ytm/build.sh
+R100	essentials/build/ytm/config_build_hook.sh	stows/essentials/build/ytm/config_build_hook.sh
+R100	essentials/build/ytm/config.json.build	stows/essentials/build/ytm/config.json.build
+R100	essentials/build/ytm/config.json	stows/essentials/build/ytm/config.json
+R100	essentials/Code/.config/Code/User/.gitignore	stows/essentials/Code/.config/Code/User/.gitignore
+R100	essentials/Code/.config/Code/User/settings.json.build	stows/essentials/Code/.config/Code/User/settings.json.build
+R100	essentials/Code/.stow-local-ignore	stows/essentials/Code/.stow-local-ignore
+R100	essentials/dolphin/.config/dolphinrc	stows/essentials/dolphin/.config/dolphinrc
+R100	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc	stows/essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+R100	essentials/easyeffects/.config/easyeffects/db/equalizerrc	stows/essentials/easyeffects/.config/easyeffects/db/equalizerrc
+R100	essentials/easyeffects/.config/easyeffects/db/.gitignore	stows/essentials/easyeffects/.config/easyeffects/db/.gitignore
+R100	essentials/easyeffects/.config/easyeffects/db/rnnoiserc	stows/essentials/easyeffects/.config/easyeffects/db/rnnoiserc
+R100	essentials/easyeffects/.config/easyeffects/db/stereotoolsrc	stows/essentials/easyeffects/.config/easyeffects/db/stereotoolsrc
+R100	essentials/GIMP/.config/GIMP/3.0/action-history	stows/essentials/GIMP/.config/GIMP/3.0/action-history
+R100	essentials/GIMP/.config/GIMP/3.0/colorrc	stows/essentials/GIMP/.config/GIMP/3.0/colorrc
+R100	essentials/GIMP/.config/GIMP/3.0/contextrc	stows/essentials/GIMP/.config/GIMP/3.0/contextrc
+R100	essentials/GIMP/.config/GIMP/3.0/controllerrc	stows/essentials/GIMP/.config/GIMP/3.0/controllerrc
+R100	essentials/GIMP/.config/GIMP/3.0/devicerc	stows/essentials/GIMP/.config/GIMP/3.0/devicerc
+R100	essentials/GIMP/.config/GIMP/3.0/dockrc	stows/essentials/GIMP/.config/GIMP/3.0/dockrc
+R100	essentials/GIMP/.config/GIMP/3.0/extensionrc	stows/essentials/GIMP/.config/GIMP/3.0/extensionrc
+R100	essentials/GIMP/.config/GIMP/3.0/filters/GimpBrightnessContrastConfig.settings	stows/essentials/GIMP/.config/GIMP/3.0/filters/GimpBrightnessContrastConfig.settings
+R100	essentials/GIMP/.config/GIMP/3.0/gimprc	stows/essentials/GIMP/.config/GIMP/3.0/gimprc
+R100	essentials/GIMP/.config/GIMP/3.0/internal-data/custom.ggr	stows/essentials/GIMP/.config/GIMP/3.0/internal-data/custom.ggr
+R100	essentials/GIMP/.config/GIMP/3.0/modifiersrc	stows/essentials/GIMP/.config/GIMP/3.0/modifiersrc
+R100	essentials/GIMP/.config/GIMP/3.0/parasiterc	stows/essentials/GIMP/.config/GIMP/3.0/parasiterc
+R100	essentials/GIMP/.config/GIMP/3.0/pluginrc	stows/essentials/GIMP/.config/GIMP/3.0/pluginrc
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-export.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-export.last
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-load.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-jpeg-load.last
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-export.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-export.last
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-load.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-png-load.last
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-pnm-load.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-file-pnm-load.last
+R100	essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-plug-in-unit-editor.last	stows/essentials/GIMP/.config/GIMP/3.0/plug-in-settings/GimpProcedureConfigRun-plug-in-unit-editor.last
+R100	essentials/GIMP/.config/GIMP/3.0/profilerc	stows/essentials/GIMP/.config/GIMP/3.0/profilerc
+R100	essentials/GIMP/.config/GIMP/3.0/sessionrc	stows/essentials/GIMP/.config/GIMP/3.0/sessionrc
+R100	essentials/GIMP/.config/GIMP/3.0/shortcutsrc	stows/essentials/GIMP/.config/GIMP/3.0/shortcutsrc
+R100	essentials/GIMP/.config/GIMP/3.0/splashes/splash-screen-2025-v2.png	stows/essentials/GIMP/.config/GIMP/3.0/splashes/splash-screen-2025-v2.png
+R100	essentials/GIMP/.config/GIMP/3.0/tags.xml	stows/essentials/GIMP/.config/GIMP/3.0/tags.xml
+R100	essentials/GIMP/.config/GIMP/3.0/templaterc	stows/essentials/GIMP/.config/GIMP/3.0/templaterc
+R100	essentials/GIMP/.config/GIMP/3.0/theme.css	stows/essentials/GIMP/.config/GIMP/3.0/theme.css
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-airbrush-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-airbrush-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-align-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-align-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-brightness-contrast-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-brightness-contrast-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-bucket-fill-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-bucket-fill-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-by-color-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-by-color-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-cage-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-cage-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-clone-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-clone-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-color-picker-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-color-picker-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-convolve-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-convolve-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-crop-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-crop-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-curves-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-curves-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-dodge-burn-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-dodge-burn-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ellipse-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ellipse-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-eraser-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-eraser-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-flip-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-flip-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-foreground-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-foreground-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-free-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-free-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-fuzzy-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-fuzzy-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gegl-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gegl-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gradient-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-gradient-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-handle-transform-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-handle-transform-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-heal-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-heal-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ink-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-ink-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-iscissors-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-iscissors-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-levels-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-levels-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-measure-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-measure-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-move-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-move-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-mypaint-brush-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-mypaint-brush-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-offset-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-offset-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-operation-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-operation-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-paintbrush-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-paintbrush-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-pencil-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-pencil-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-clone-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-clone-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-perspective-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rect-select-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rect-select-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rotate-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-rotate-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-scale-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-scale-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-shear-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-shear-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-smudge-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-smudge-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-text-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-text-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-threshold-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-threshold-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-transform-3d-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-transform-3d-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-unified-transform-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-unified-transform-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-vector-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-vector-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-warp-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-warp-tool
+R100	essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-zoom-tool	stows/essentials/GIMP/.config/GIMP/3.0/tool-options/gimp-zoom-tool
+R100	essentials/GIMP/.config/GIMP/3.0/toolrc	stows/essentials/GIMP/.config/GIMP/3.0/toolrc
+R100	essentials/GIMP/.config/GIMP/3.0/unitrc	stows/essentials/GIMP/.config/GIMP/3.0/unitrc
+R100	essentials/GIMP/.local/share/applications/org.gimp.GIMP.desktop	stows/essentials/GIMP/.local/share/applications/org.gimp.GIMP.desktop
+R100	essentials/GIMP/.local/share/icons/hicolor/128x128/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/128x128/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/128x128/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/128x128/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/16x16/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/16x16/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/16x16/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/16x16/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/256x256/256x256.png	stows/essentials/GIMP/.local/share/icons/hicolor/256x256/256x256.png
+R100	essentials/GIMP/.local/share/icons/hicolor/256x256/apps/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/256x256/apps/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/256x256/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/256x256/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/32x32/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/32x32/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/32x32/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/32x32/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/48x48/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/48x48/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/48x48/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/48x48/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/512x512/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/512x512/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/512x512/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/512x512/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/64x64/apps/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/64x64/apps/photogimp.png
+R100	essentials/GIMP/.local/share/icons/hicolor/64x64/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/64x64/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/.DS_Store	stows/essentials/GIMP/.local/share/icons/hicolor/.DS_Store
+R100	essentials/GIMP/.local/share/icons/hicolor/photogimp.png	stows/essentials/GIMP/.local/share/icons/hicolor/photogimp.png
+R100	essentials/mpv/.config/mpv/fonts/Material-Design-Iconic-Font.ttf	stows/essentials/mpv/.config/mpv/fonts/Material-Design-Iconic-Font.ttf
+R100	essentials/mpv/.config/mpv/.gitattributes	stows/essentials/mpv/.config/mpv/.gitattributes
+R100	essentials/mpv/.config/mpv/input.conf	stows/essentials/mpv/.config/mpv/input.conf
+R100	essentials/mpv/.config/mpv/mpv.conf	stows/essentials/mpv/.config/mpv/mpv.conf
+R100	essentials/mpv/.config/mpv/scripts/modern.lua	stows/essentials/mpv/.config/mpv/scripts/modern.lua
+R100	essentials/mpv/.config/mpv/scripts/webm.lua	stows/essentials/mpv/.config/mpv/scripts/webm.lua
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x4.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_AutoDownscalePre_x4.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Clamp_Highlights.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Clamp_Highlights.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_Fast.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Darken_Fast.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_HQ.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Darken_HQ.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Darken_VeryFast.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Darken_VeryFast.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_DoG.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_DoG.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_Original.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Deblur_Original.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mean.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mean.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Median.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Median.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mode.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Denoise_Bilateral_Mode.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_L.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_L.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_M.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_M.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_S.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_S.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_L.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_L.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_M.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_M.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_S.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_S.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_UL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_UL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_VL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_Soft_VL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_UL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_UL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_VL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Restore_CNN_VL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_Fast.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Thin_Fast.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_HQ.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Thin_HQ.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Thin_VeryFast.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Thin_VeryFast.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_L.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_L.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_M.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_M.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_S.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_S.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_UL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_UL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_VL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_CNN_x2_VL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_DoG_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_DoG_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_Original_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Deblur_Original_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_L.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_L.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_M.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_M.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_S.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_S.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_UL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_UL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Denoise_CNN_x2_VL.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DoG_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DoG_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DTD_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_DTD_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Original_x2.glsl	stows/essentials/mpv/.config/mpv/shaders/Anime4K_Upscale_Original_x2.glsl
+R100	essentials/mpv/.config/mpv/shaders/CAS.glsl	stows/essentials/mpv/.config/mpv/shaders/CAS.glsl
+R100	essentials/mpv/.config/mpv/shaders/CAS-scaled.glsl	stows/essentials/mpv/.config/mpv/shaders/CAS-scaled.glsl
+R100	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_16-0-4-1.glsl	stows/essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_16-0-4-1.glsl
+R100	essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_8-0-4-1.glsl	stows/essentials/mpv/.config/mpv/shaders/FSRCNNX_x2_8-0-4-1.glsl
+R100	essentials/mpv/.config/mpv/shaders/FSR.glsl	stows/essentials/mpv/.config/mpv/shaders/FSR.glsl
+R100	essentials/nvim/.config/nvim/base	stows/essentials/nvim/.config/nvim/base
+R100	essentials/nvim/.config/nvim/init.lua	stows/essentials/nvim/.config/nvim/init.lua
+R100	essentials/nvim/.config/nvim/lazy-lock.json	stows/essentials/nvim/.config/nvim/lazy-lock.json
+R100	essentials/nvim/.config/nvim/lua/config/lazy.lua	stows/essentials/nvim/.config/nvim/lua/config/lazy.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/coding.lua	stows/essentials/nvim/.config/nvim/lua/plugins/coding.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/colors.lua	stows/essentials/nvim/.config/nvim/lua/plugins/colors.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/example.lua	stows/essentials/nvim/.config/nvim/lua/plugins/example.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/formatter.lua	stows/essentials/nvim/.config/nvim/lua/plugins/formatter.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/linter.lua	stows/essentials/nvim/.config/nvim/lua/plugins/linter.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/lsp.lua	stows/essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/text.lua	stows/essentials/nvim/.config/nvim/lua/plugins/text.lua
+R100	essentials/nvim/.config/nvim/lua/plugins/treesitter.lua	stows/essentials/nvim/.config/nvim/lua/plugins/treesitter.lua
+R100	essentials/omz/.zshrc	stows/essentials/omz/.zshrc
+R100	essentials/sway/.config/sway/base	stows/essentials/sway/.config/sway/base
+R100	essentials/sway/.config/sway/config	stows/essentials/sway/.config/sway/config
+R100	essentials/sway/.config/sway/floating	stows/essentials/sway/.config/sway/floating
+R100	essentials/sway/.config/sway/.gitignore	stows/essentials/sway/.config/sway/.gitignore
+R100	essentials/sway/.config/sway/keybinds	stows/essentials/sway/.config/sway/keybinds
+R100	essentials/sway/.config/sway/outputs	stows/essentials/sway/.config/sway/outputs
+R100	essentials/sway/.config/sway/scripts/cliphist-img-rofi-modi	stows/essentials/sway/.config/sway/scripts/cliphist-img-rofi-modi
+R100	essentials/sway/.config/sway/scripts/gsr-rofi-modi	stows/essentials/sway/.config/sway/scripts/gsr-rofi-modi
+R100	essentials/sway/.config/sway/scripts/next-or-new-workspace.sh	stows/essentials/sway/.config/sway/scripts/next-or-new-workspace.sh
+R100	essentials/sway/.config/sway/scripts/previous-or-new-workspace.sh	stows/essentials/sway/.config/sway/scripts/previous-or-new-workspace.sh
+R100	essentials/sway/.config/sway/scripts/reorder-workspace.sh	stows/essentials/sway/.config/sway/scripts/reorder-workspace.sh
+R100	essentials/sway/.config/sway/scripts/screenshot.sh	stows/essentials/sway/.config/sway/scripts/screenshot.sh
+R100	essentials/sway/.config/sway/scripts/wallpaper-rofi.sh	stows/essentials/sway/.config/sway/scripts/wallpaper-rofi.sh
+R100	essentials/sway/.config/sway/scripts/window-screenshot.sh	stows/essentials/sway/.config/sway/scripts/window-screenshot.sh
+R100	essentials/sway/.config/sway/wallpapers/.gitkeep	stows/essentials/sway/.config/sway/wallpapers/.gitkeep
+R100	essentials/sway/.config/sway/workspaces	stows/essentials/sway/.config/sway/workspaces
+R100	essentials/vesktop/.config/vesktop/settings/base	stows/essentials/vesktop/.config/vesktop/settings/base
+R100	essentials/vesktop/.config/vesktop/settings/quickCss.css	stows/essentials/vesktop/.config/vesktop/settings/quickCss.css
+R100	essentials/vesktop/.config/vesktop/settings/settings.json	stows/essentials/vesktop/.config/vesktop/settings/settings.json
+R100	essentials/VSCodium/.config/VSCodium/User/.gitignore	stows/essentials/VSCodium/.config/VSCodium/User/.gitignore
+R100	essentials/VSCodium/.config/VSCodium/User/keybindings.json	stows/essentials/VSCodium/.config/VSCodium/User/keybindings.json
+R100	essentials/VSCodium/.config/VSCodium/User/settings.json.build	stows/essentials/VSCodium/.config/VSCodium/User/settings.json.build
+R100	essentials/VSCodium/.stow-local-ignore	stows/essentials/VSCodium/.stow-local-ignore
+R100	essentials/ytm/.config/YouTube Music/config.json.build	stows/essentials/ytm/.config/YouTube Music/config.json.build
+R100	essentials/ytm/.config/YouTube Music/.gitignore	stows/essentials/ytm/.config/YouTube Music/.gitignore
+R100	essentials/ytm/.stow-local-ignore	stows/essentials/ytm/.stow-local-ignore
+R100	essentials/zen/.zen/profiles.ini	stows/essentials/zen/.zen/profiles.ini
+R100	mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/green/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/green/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/green/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/green/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/green/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/green/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/green/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/green/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/green/nwg-look/.gtkrc-2.0	stows/mocha/accents/green/nwg-look/.gtkrc-2.0
+R100	mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/green/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/green/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Green.colors	stows/mocha/accents/green/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Green.colors
+R100	mocha/accents/green/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/green/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/green/rofi-option/rofi/accent.rasi	stows/mocha/accents/green/rofi-option/rofi/accent.rasi
+R100	mocha/accents/green/swaync-option/swaync/accent.css	stows/mocha/accents/green/swaync-option/swaync/accent.css
+R100	mocha/accents/green/sway-option/sway/accent	stows/mocha/accents/green/sway-option/sway/accent
+R100	mocha/accents/green/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/green/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/green/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/green/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/green/waybar-option/waybar/accent.css	stows/mocha/accents/green/waybar-option/waybar/accent.css
+R100	mocha/accents/green/wlogout-option/wlogout/accent.css	stows/mocha/accents/green/wlogout-option/wlogout/accent.css
+R100	mocha/accents/green/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/green/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/green/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/green/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/green/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/green/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/green/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/green/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/green/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+R100	mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes.css	stows/mocha/accents/green/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/mauve/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/mauve/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/mauve/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/mauve/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/mauve/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/mauve/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/mauve/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/mauve/nwg-look/.gtkrc-2.0	stows/mocha/accents/mauve/nwg-look/.gtkrc-2.0
+R100	mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/mauve/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/mauve/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Mauve.colors	stows/mocha/accents/mauve/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Mauve.colors
+R100	mocha/accents/mauve/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/mauve/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/mauve/rofi-option/rofi/accent.rasi	stows/mocha/accents/mauve/rofi-option/rofi/accent.rasi
+R100	mocha/accents/mauve/swaync-option/swaync/accent.css	stows/mocha/accents/mauve/swaync-option/swaync/accent.css
+R100	mocha/accents/mauve/sway-option/sway/accent	stows/mocha/accents/mauve/sway-option/sway/accent
+R100	mocha/accents/mauve/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/mauve/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/mauve/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/mauve/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/mauve/waybar-option/waybar/accent.css	stows/mocha/accents/mauve/waybar-option/waybar/accent.css
+R100	mocha/accents/mauve/wlogout-option/wlogout/accent.css	stows/mocha/accents/mauve/wlogout-option/wlogout/accent.css
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/mauve/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/mauve/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/mauve/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/mauve/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+R100	mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes.css	stows/mocha/accents/mauve/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/peach/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/peach/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/peach/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/peach/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/peach/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/peach/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/peach/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/peach/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/peach/nwg-look/.gtkrc-2.0	stows/mocha/accents/peach/nwg-look/.gtkrc-2.0
+R100	mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/peach/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/peach/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Peach.colors	stows/mocha/accents/peach/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Peach.colors
+R100	mocha/accents/peach/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/peach/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/peach/rofi-option/rofi/accent.rasi	stows/mocha/accents/peach/rofi-option/rofi/accent.rasi
+R100	mocha/accents/peach/swaync-option/swaync/accent.css	stows/mocha/accents/peach/swaync-option/swaync/accent.css
+R100	mocha/accents/peach/sway-option/sway/accent	stows/mocha/accents/peach/sway-option/sway/accent
+R100	mocha/accents/peach/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/peach/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/peach/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/peach/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/peach/waybar-option/waybar/accent.css	stows/mocha/accents/peach/waybar-option/waybar/accent.css
+R100	mocha/accents/peach/wlogout-option/wlogout/accent.css	stows/mocha/accents/peach/wlogout-option/wlogout/accent.css
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/peach/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/peach/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/peach/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/peach/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/peach/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-themes.css	essentials/sway/.config/sway/workspaces
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/rosewater/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/rosewater/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/rosewater/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/rosewater/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/rosewater/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/rosewater/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/rosewater/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/rosewater/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/rosewater/nwg-look/.gtkrc-2.0	stows/mocha/accents/rosewater/nwg-look/.gtkrc-2.0
+R100	mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/rosewater/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/rosewater/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Rosewater.colors	stows/mocha/accents/rosewater/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Rosewater.colors
+R100	mocha/accents/rosewater/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/rosewater/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/rosewater/rofi-option/rofi/accent.rasi	stows/mocha/accents/rosewater/rofi-option/rofi/accent.rasi
+R100	mocha/accents/rosewater/swaync-option/swaync/accent.css	stows/mocha/accents/rosewater/swaync-option/swaync/accent.css
+R100	mocha/accents/rosewater/sway-option/sway/accent	stows/mocha/accents/rosewater/sway-option/sway/accent
+R100	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/rosewater/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/rosewater/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/rosewater/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/rosewater/waybar-option/waybar/accent.css	stows/mocha/accents/rosewater/waybar-option/waybar/accent.css
+R100	mocha/accents/rosewater/wlogout-option/wlogout/accent.css	stows/mocha/accents/rosewater/wlogout-option/wlogout/accent.css
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/rosewater/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/rosewater/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/rosewater/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/rosewater/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+R100	mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes.css	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/sapphire/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/sapphire/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/sapphire/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/sapphire/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/sapphire/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/sapphire/nwg-look/.gtkrc-2.0	stows/mocha/accents/sapphire/nwg-look/.gtkrc-2.0
+R100	mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/sapphire/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/sapphire/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Sapphire.colors	stows/mocha/accents/sapphire/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Sapphire.colors
+R100	mocha/accents/sapphire/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/sapphire/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/sapphire/rofi-option/rofi/accent.rasi	stows/mocha/accents/sapphire/rofi-option/rofi/accent.rasi
+R100	mocha/accents/sapphire/swaync-option/swaync/accent.css	stows/mocha/accents/sapphire/swaync-option/swaync/accent.css
+R100	mocha/accents/sapphire/sway-option/sway/accent	stows/mocha/accents/sapphire/sway-option/sway/accent
+R100	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/sapphire/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/sapphire/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/sapphire/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/sapphire/waybar-option/waybar/accent.css	stows/mocha/accents/sapphire/waybar-option/waybar/accent.css
+R100	mocha/accents/sapphire/wlogout-option/wlogout/accent.css	stows/mocha/accents/sapphire/wlogout-option/wlogout/accent.css
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/sapphire/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/sapphire/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/sapphire/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/sapphire/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+R100	mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes.css	stows/mocha/accents/sapphire/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css	stows/mocha/accents/yellow/nwg-look/.config/gtk-3.0/colors.css
+R100	mocha/accents/yellow/nwg-look/.config/gtk-3.0/.gitignore	stows/mocha/accents/yellow/nwg-look/.config/gtk-3.0/.gitignore
+R100	mocha/accents/yellow/nwg-look/.config/gtk-3.0/gtk.css	stows/mocha/accents/yellow/nwg-look/.config/gtk-3.0/gtk.css
+R100	mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini	stows/mocha/accents/yellow/nwg-look/.config/gtk-3.0/settings.ini
+R100	mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets
+R100	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css
+R100	mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css
+R100	mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/settings.ini
+R100	mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf	stows/mocha/accents/yellow/nwg-look/.config/xsettingsd/xsettingsd.conf
+R100	mocha/accents/yellow/nwg-look/.gtkrc-2.0	stows/mocha/accents/yellow/nwg-look/.gtkrc-2.0
+R100	mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings	stows/mocha/accents/yellow/nwg-look/.local/share/nwg-look/gsettings
+R100	mocha/accents/yellow/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Yellow.colors	stows/mocha/accents/yellow/qt6ct/.config/qt6ct/colors/Catppuccin Mocha Yellow.colors
+R100	mocha/accents/yellow/qt6ct/.config/qt6ct/qt6ct.conf	stows/mocha/accents/yellow/qt6ct/.config/qt6ct/qt6ct.conf
+R100	mocha/accents/yellow/rofi-option/rofi/accent.rasi	stows/mocha/accents/yellow/rofi-option/rofi/accent.rasi
+R100	mocha/accents/yellow/swaync-option/swaync/accent.css	stows/mocha/accents/yellow/swaync-option/swaync/accent.css
+R100	mocha/accents/yellow/sway-option/sway/accent	stows/mocha/accents/yellow/sway-option/sway/accent
+R100	mocha/accents/yellow/vesktop-option/vesktop/quickCss_default.css	stows/mocha/accents/yellow/vesktop-option/vesktop/quickCss_default.css
+R100	mocha/accents/yellow/vesktop-option/vesktop/quickCss_transparent.css	stows/mocha/accents/yellow/vesktop-option/vesktop/quickCss_transparent.css
+R100	mocha/accents/yellow/waybar-option/waybar/accent.css	stows/mocha/accents/yellow/waybar-option/waybar/accent.css
+R100	mocha/accents/yellow/wlogout-option/wlogout/accent.css	stows/mocha/accents/yellow/wlogout-option/wlogout/accent.css
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/hibernate.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/hibernate.svg
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/lock.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/lock.svg
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/logout.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/logout.svg
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/reboot.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/reboot.svg
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/shutdown.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/shutdown.svg
+R100	mocha/accents/yellow/wlogout-option/wlogout/icons/suspend.svg	stows/mocha/accents/yellow/wlogout-option/wlogout/icons/suspend.svg
+R100	mocha/accents/yellow/ytm/.config/YouTube Music/mocha.css	stows/mocha/accents/yellow/ytm/.config/YouTube Music/mocha.css
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userChrome.css	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userChrome.css
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userContent.css	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/userContent.css
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-logo-mocha.svg
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+R100	mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes.css	stows/mocha/accents/yellow/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/base/alacritty-base/alacritty/colors.toml	stows/mocha/base/alacritty-base/alacritty/colors.toml
+R100	mocha/base/alacritty-base/alacritty/mod	stows/mocha/base/alacritty-base/alacritty/mod
+R100	mocha/base/btop/.config/btop/btop.conf	stows/mocha/base/btop/.config/btop/btop.conf
+R100	mocha/base/btop/.config/btop/btop.log	stows/mocha/base/btop/.config/btop/btop.log
+R100	mocha/base/btop/.config/btop/themes/catppuccin_mocha.theme	stows/mocha/base/btop/.config/btop/themes/catppuccin_mocha.theme
+R100	mocha/base/nvim-base/nvim/colors.lua	stows/mocha/base/nvim-base/nvim/colors.lua
+R100	mocha/base/nwg-look/.config/nwg-look/config	stows/mocha/base/nwg-look/.config/nwg-look/config
+R100	mocha/base/nwg-look/.icons/default/index.theme	stows/mocha/base/nwg-look/.icons/default/index.theme
+R100	mocha/base/qt6ct/.config/darklyrc	stows/mocha/base/qt6ct/.config/darklyrc
+R100	mocha/base/rofi/.config/rofi/colors.rasi	stows/mocha/base/rofi/.config/rofi/colors.rasi
+R100	mocha/base/rofi/.config/rofi/config.rasi	stows/mocha/base/rofi/.config/rofi/config.rasi
+R100	mocha/base/rofi/.config/rofi/menu.rasi	stows/mocha/base/rofi/.config/rofi/menu.rasi
+R100	mocha/base/rofi/.config/rofi/mod	stows/mocha/base/rofi/.config/rofi/mod
+R100	mocha/base/rofi/.config/rofi/option	stows/mocha/base/rofi/.config/rofi/option
+R100	mocha/base/rofi/.config/rofi/wallpaper-file-browser.rasi	stows/mocha/base/rofi/.config/rofi/wallpaper-file-browser.rasi
+R100	mocha/base/sway-base/sway/mocha-option	stows/mocha/base/sway-base/sway/mocha-option
+R100	mocha/base/sway-base/sway/mod	stows/mocha/base/sway-base/sway/mod
+R100	mocha/base/sway-base/sway/theme	stows/mocha/base/sway-base/sway/theme
+R100	mocha/base/swaylock/.config/swaylock/mocha.conf	stows/mocha/base/swaylock/.config/swaylock/mocha.conf
+R100	mocha/base/swaync/.config/swaync/config.json	stows/mocha/base/swaync/.config/swaync/config.json
+R100	mocha/base/swaync/.config/swaync/mocha.css	stows/mocha/base/swaync/.config/swaync/mocha.css
+R100	mocha/base/swaync/.config/swaync/mod	stows/mocha/base/swaync/.config/swaync/mod
+R100	mocha/base/swaync/.config/swaync/option	stows/mocha/base/swaync/.config/swaync/option
+R100	mocha/base/swaync/.config/swaync/style.css	stows/mocha/base/swaync/.config/swaync/style.css
+R100	mocha/base/vesktop-base/vesktop/mod	stows/mocha/base/vesktop-base/vesktop/mod
+R100	mocha/base/vesktop-base/vesktop/quickCss.css	stows/mocha/base/vesktop-base/vesktop/quickCss.css
+R100	mocha/base/waybar/.config/waybar/config.jsonc	stows/mocha/base/waybar/.config/waybar/config.jsonc
+R100	mocha/base/waybar/.config/waybar/mocha.css	stows/mocha/base/waybar/.config/waybar/mocha.css
+R100	mocha/base/waybar/.config/waybar/mod	stows/mocha/base/waybar/.config/waybar/mod
+R100	mocha/base/waybar/.config/waybar/option	stows/mocha/base/waybar/.config/waybar/option
+R100	mocha/base/waybar/.config/waybar/style.css	stows/mocha/base/waybar/.config/waybar/style.css
+R100	mocha/base/wlogout/.config/wlogout/layout	stows/mocha/base/wlogout/.config/wlogout/layout
+R100	mocha/base/wlogout/.config/wlogout/mocha.css	stows/mocha/base/wlogout/.config/wlogout/mocha.css
+R100	mocha/base/wlogout/.config/wlogout/mod	stows/mocha/base/wlogout/.config/wlogout/mod
+R100	mocha/base/wlogout/.config/wlogout/option	stows/mocha/base/wlogout/.config/wlogout/option
+R100	mocha/base/wlogout/.config/wlogout/style.css	stows/mocha/base/wlogout/.config/wlogout/style.css
+R100	mocha/base/zsh/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh	stows/mocha/base/zsh/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+R100	mocha/build/Code/build.sh	stows/mocha/build/Code/build.sh
+R100	mocha/build/Code/settings.json.build	stows/mocha/build/Code/settings.json.build
+R100	mocha/build/Code/settings.json	stows/mocha/build/Code/settings.json
+R100	mocha/build/VSCodium/build.sh	stows/mocha/build/VSCodium/build.sh
+R100	mocha/build/VSCodium/settings.json.build	stows/mocha/build/VSCodium/settings.json.build
+R100	mocha/build/VSCodium/settings.json	stows/mocha/build/VSCodium/settings.json
+R100	mocha/build/ytm/build.sh	stows/mocha/build/ytm/build.sh
+R100	mocha/build/ytm/config.json.build	stows/mocha/build/ytm/config.json.build
+R100	mocha/build/ytm/config.json	stows/mocha/build/ytm/config.json
+R100	mocha/modlist/background/blur/alacritty/bg.toml	stows/mocha/modlist/background/blur/alacritty/bg.toml
+R100	mocha/modlist/background/blur/qt6ct/darklyrc	stows/mocha/modlist/background/blur/qt6ct/darklyrc
+R100	mocha/modlist/background/blur/rofi/background.rasi	stows/mocha/modlist/background/blur/rofi/background.rasi
+R100	mocha/modlist/background/blur/sway/bg	stows/mocha/modlist/background/blur/sway/bg
+R100	mocha/modlist/background/blur/swaync/background.css	stows/mocha/modlist/background/blur/swaync/background.css
+R100	mocha/modlist/background/blur/vesktop/quickCss.css	stows/mocha/modlist/background/blur/vesktop/quickCss.css
+R100	mocha/modlist/background/blur/waybar/background.css	stows/mocha/modlist/background/blur/waybar/background.css
+R100	mocha/modlist/background/blur/wlogout/background.css	stows/mocha/modlist/background/blur/wlogout/background.css
+R100	mocha/modlist/background/solid/alacritty/bg.toml	stows/mocha/modlist/background/solid/alacritty/bg.toml
+R100	mocha/modlist/background/solid/qt6ct/darklyrc	stows/mocha/modlist/background/solid/qt6ct/darklyrc
+R100	mocha/modlist/background/solid/rofi/background.rasi	stows/mocha/modlist/background/solid/rofi/background.rasi
+R100	mocha/modlist/background/solid/sway/bg	stows/mocha/accents/peach/zen/.zen/main.Default (release)/chrome/zen-themes.css
+R100	mocha/modlist/background/solid/swaync/background.css	stows/mocha/modlist/background/solid/swaync/background.css
+R100	mocha/modlist/background/solid/vesktop/quickCss.css	stows/mocha/modlist/background/solid/vesktop/quickCss.css
+R100	mocha/modlist/background/solid/waybar/background.css	stows/mocha/modlist/background/solid/waybar/background.css
+R100	mocha/modlist/background/solid/wlogout/background.css	stows/mocha/modlist/background/solid/wlogout/background.css
+R100	mocha/modlist/gap/big_nwc/sway/gap	stows/mocha/modlist/gap/big_nwc/sway/gap
+R100	mocha/modlist/gap/big_nwc/swaync/gap.css	stows/mocha/modlist/gap/big_nwc/swaync/gap.css
+R100	mocha/modlist/gap/big_nwc/waybar/gap.css	stows/mocha/modlist/gap/big_nwc/waybar/gap.css
+R100	mocha/modlist/gap/big_nwc/waybar/gap.jsonc	stows/mocha/modlist/gap/big_nwc/waybar/gap.jsonc
+R100	mocha/modlist/gap/big/sway/gap	stows/mocha/modlist/gap/big/sway/gap
+R100	mocha/modlist/gap/big/swaync/gap.css	stows/mocha/modlist/gap/big/swaync/gap.css
+R100	mocha/modlist/gap/big/waybar/gap.css	stows/mocha/modlist/gap/big/waybar/gap.css
+R100	mocha/modlist/gap/big/waybar/gap.jsonc	stows/mocha/modlist/gap/big/waybar/gap.jsonc
+R100	mocha/modlist/gap/none/sway/gap	stows/mocha/modlist/gap/none/sway/gap
+R100	mocha/modlist/gap/none/swaync/gap.css	stows/mocha/modlist/gap/none/swaync/gap.css
+R100	mocha/modlist/gap/none/waybar/gap.css	stows/mocha/modlist/gap/none/waybar/gap.css
+R100	mocha/modlist/gap/none/waybar/gap.jsonc	stows/mocha/modlist/gap/none/waybar/gap.jsonc
+R100	mocha/modlist/gap/small_nwc/sway/gap	stows/mocha/modlist/gap/small_nwc/sway/gap
+R100	mocha/modlist/gap/small_nwc/swaync/gap.css	stows/mocha/modlist/gap/small_nwc/swaync/gap.css
+R100	mocha/modlist/gap/small_nwc/waybar/gap.css	stows/mocha/modlist/gap/small_nwc/waybar/gap.css
+R100	mocha/modlist/gap/small_nwc/waybar/gap.jsonc	stows/mocha/modlist/gap/small_nwc/waybar/gap.jsonc
+R100	mocha/modlist/gap/small/sway/gap	stows/mocha/modlist/gap/small/sway/gap
+R100	mocha/modlist/gap/small/swaync/gap.css	stows/mocha/modlist/gap/small/swaync/gap.css
+R100	mocha/modlist/gap/small/waybar/gap.css	stows/mocha/modlist/gap/small/waybar/gap.css
+R100	mocha/modlist/gap/small/waybar/gap.jsonc	stows/mocha/modlist/gap/small/waybar/gap.jsonc
+R100	mocha/modlist/rounded/all_nwc/rofi/rounded.rasi	stows/mocha/modlist/rounded/all_nwc/rofi/rounded.rasi
+R100	mocha/modlist/rounded/all_nwc/swaync/rounded.css	stows/mocha/modlist/rounded/all_nwc/swaync/rounded.css
+R100	mocha/modlist/rounded/all_nwc/sway/rounded	stows/mocha/modlist/rounded/all_nwc/sway/rounded
+R100	mocha/modlist/rounded/all_nwc/waybar/rounded.css	stows/mocha/modlist/rounded/all_nwc/waybar/rounded.css
+R100	mocha/modlist/rounded/all_nwc/wlogout/rounded.css	stows/mocha/modlist/rounded/all_nwc/wlogout/rounded.css
+R100	mocha/modlist/rounded/all/rofi/rounded.rasi	stows/mocha/modlist/rounded/all/rofi/rounded.rasi
+R100	mocha/modlist/rounded/all/swaync/rounded.css	stows/mocha/modlist/rounded/all/swaync/rounded.css
+R100	mocha/modlist/rounded/all/sway/rounded	stows/mocha/modlist/rounded/all/sway/rounded
+R100	mocha/modlist/rounded/all/waybar/rounded.css	stows/mocha/modlist/rounded/all/waybar/rounded.css
+R100	mocha/modlist/rounded/all/wlogout/rounded.css	stows/mocha/modlist/rounded/all/wlogout/rounded.css
+R100	mocha/modlist/rounded/minimal/rofi/rounded.rasi	stows/mocha/modlist/rounded/minimal/rofi/rounded.rasi
+R100	mocha/modlist/rounded/minimal/swaync/rounded.css	stows/mocha/modlist/rounded/minimal/swaync/rounded.css
+R100	mocha/modlist/rounded/minimal/sway/rounded	stows/mocha/modlist/rounded/minimal/sway/rounded
+R100	mocha/modlist/rounded/minimal/waybar/rounded.css	stows/mocha/modlist/rounded/minimal/waybar/rounded.css
+R100	mocha/modlist/rounded/minimal/wlogout/rounded.css	stows/mocha/modlist/rounded/minimal/wlogout/rounded.css
+R100	mocha/modlist/rounded/none/rofi/rounded.rasi	stows/mocha/modlist/rounded/none/rofi/rounded.rasi
+R100	mocha/modlist/rounded/none/swaync/rounded.css	stows/mocha/modlist/rounded/none/swaync/rounded.css
+R100	mocha/modlist/rounded/none/sway/rounded	stows/mocha/modlist/rounded/none/sway/rounded
+R100	mocha/modlist/rounded/none/waybar/rounded.css	stows/mocha/modlist/rounded/none/waybar/rounded.css
+R100	mocha/modlist/rounded/none/wlogout/rounded.css	stows/mocha/modlist/rounded/none/wlogout/rounded.css
+R100	mocha/mods/alacritty/.gitkeep	essentials/sway/.config/sway/wallpapers/.gitkeep
+R100	mocha/mods/btop/.gitkeep	stows/mocha/modlist/background/solid/sway/bg
+R100	mocha/mods/DO_NOT_MODIFY	essentials/bases/DO_NOT_MODIFY
+R100	mocha/mods/.gitignore	stows/mocha/mods/.gitignore
+R100	mocha/mods/nvim/.gitkeep	stows/mocha/mods/alacritty/.gitkeep
+R100	mocha/mods/nwg-look/.gitkeep	stows/mocha/mods/btop/.gitkeep
+R100	mocha/mods/qt6ct/.gitkeep	stows/mocha/mods/nvim/.gitkeep
+R100	mocha/mods/rofi/.gitkeep	stows/mocha/mods/nwg-look/.gitkeep
+R100	mocha/mods/sway/.gitkeep	stows/mocha/mods/qt6ct/.gitkeep
+R100	mocha/mods/swaylock/.gitkeep	stows/mocha/mods/rofi/.gitkeep
+R100	mocha/mods/swaync/.gitkeep	stows/mocha/mods/sway/.gitkeep
+R100	mocha/mods/vesktop/.gitkeep	stows/mocha/mods/swaylock/.gitkeep
+R100	mocha/mods/waybar/.gitkeep	stows/mocha/mods/swaync/.gitkeep
+R100	mocha/mods/wlogout/.gitkeep	stows/mocha/mods/vesktop/.gitkeep
+R100	mocha/options/DO_NOT_MODIFY	stows/mocha/mods/DO_NOT_MODIFY
+R100	mocha/options/.gitignore	stows/mocha/options/.gitignore
+R100	service/user/.config/systemd/user/default.target.wants/pon-autocommit-stow.service	stows/service/user/.config/systemd/user/default.target.wants/pon-autocommit-stow.service
+R100	service/user/.config/systemd/user/pon-autocommit-stow.service	stows/service/user/.config/systemd/user/pon-autocommit-stow.service
+```

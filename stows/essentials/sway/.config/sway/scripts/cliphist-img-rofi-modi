@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+tmp_dir="/tmp/cliphist"
+rm -rf "$tmp_dir"
+
+if [[ -n "$ROFI_INFO" ]]; then
+    cliphist decode <<<"$ROFI_INFO" | wl-copy
+    exit
+fi
+
+mkdir -p "$tmp_dir"
+
+read -r -d '' prog <<EOF
+/^[0-9]+\s<meta http-equiv=/ { next }
+match(\$0, /^([0-9]+)\t(\[\[\s)?binary.*(jpg|jpeg|png|bmp)/, grp) {
+    system("echo " grp[1] "\\\\\t | cliphist decode >$tmp_dir/"grp[1]"."grp[3])
+    content = substr(\$0, index(\$0, "\t") + 1)
+    print content"\0icon\x1f$tmp_dir/"grp[1]"."grp[3]"\x1finfo\x1f"grp[1]"\t"grp[2]grp[3]
+    next
+}
+{
+    content = substr(\$0, index(\$0, "\t") + 1)
+    print content"\0info\x1f"\$0
+}
+EOF
+cliphist list | gawk "$prog"

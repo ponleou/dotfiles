@@ -3,10 +3,10 @@
 mocha_packages="btop nwg-look qt6ct rofi swaylock swaync waybar wlogout zsh"
 mocha_bases="alacritty-base nvim-base sway-base vesktop-base"
 
-accent_packages="nwg-look qt6ct ytm zen"
+accent_packages="nwg-look qt6ct zen"
 accent_options="rofi-option sway-option swaync-option vesktop-option waybar-option wlogout-option"
 
-build_packages="Code VSCodium ytm"
+build_packages="Code VSCodium"
 
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
@@ -14,9 +14,9 @@ script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 validate_accent() {
   local accent="$1"
 
-  if [[ -z "$accent" || ! -d "$script_dir/mocha/accents/$accent" ]]; then
+  if [[ -z "$accent" || ! -d "$script_dir/stows/mocha/accents/$accent" ]]; then
     echo "Error: Unknown accent '$1'. Available accents:" >&2
-    local files=$(ls -1 "$script_dir/mocha/accents/")
+    local files=$(ls -1 "$script_dir/stows/mocha/accents/")
     echo "$files" >&2
     exit 1
   fi
@@ -32,16 +32,16 @@ validate_mods() {
       exit 2
     fi
 
-    if [[ ! -d "$script_dir/mocha/modlist/$flag" ]]; then
+    if [[ ! -d "$script_dir/stows/mocha/modlist/$flag" ]]; then
       echo "Error: Unknown mod '$flag'. Available mods:" >&2
-      local files=$(ls -1 "$script_dir/mocha/modlist/")
+      local files=$(ls -1 "$script_dir/stows/mocha/modlist/")
       echo "$files" >&2
       exit 2
     fi
 
-    if [[ ! -d "$script_dir/mocha/modlist/$flag/$value" ]]; then
+    if [[ ! -d "$script_dir/stows/mocha/modlist/$flag/$value" ]]; then
       echo "Error: Invalid option '$value' for mod '$flag'. Available options:" >&2
-      local files=$(ls -1 "$script_dir/mocha/modlist/$flag/")
+      local files=$(ls -1 "$script_dir/stows/mocha/modlist/$flag/")
       echo "$files" >&2
       exit 2
     fi
@@ -57,12 +57,12 @@ stow_base() {
 
   if [[ -f "$settings_file_path" ]]; then
     local prev_theme=$(cat "$settings_file_path")
-    stow -D --dir=$script_dir/$prev_theme/base --target=$HOME $mocha_packages
-    stow -D --dir=$script_dir/$prev_theme/base --target=$script_dir/essentials/bases $mocha_bases
+    stow -D --dir=$script_dir/stows/$prev_theme/base --target=$HOME $mocha_packages
+    stow -D --dir=$script_dir/stows/$prev_theme/base --target=$script_dir/stows/essentials/bases $mocha_bases
   fi
 
-  stow --dir=$script_dir/mocha/base --target=$HOME $mocha_packages
-  stow --dir=$script_dir/mocha/base --target=$script_dir/essentials/bases $mocha_bases
+  stow --dir=$script_dir/stows/mocha/base --target=$HOME $mocha_packages
+  stow --dir=$script_dir/stows/mocha/base --target=$script_dir/stows/essentials/bases $mocha_bases
 
   echo "mocha" > "$settings_file_path"
 }
@@ -70,16 +70,16 @@ stow_base() {
 stow_accent() {
   local settings_file=".current_accent"
   local settings_file_path="$script_dir/settings/$settings_file"
-  local accent="$1"   # this is the variable after --dir=$script_dir/mocha/
+  local accent="$1"   # this is the variable after --dir=$script_dir/stows/mocha/
 
   if [[ -f "$settings_file_path" ]]; then
     local prev_accent=$(cat "$settings_file_path")
-    stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$HOME" $accent_packages
-    stow -D --dir="$script_dir/mocha/accents/$prev_accent" --target="$script_dir/mocha/options" $accent_options
+    stow -D --dir="$script_dir/stows/mocha/accents/$prev_accent" --target="$HOME" $accent_packages
+    stow -D --dir="$script_dir/stows/mocha/accents/$prev_accent" --target="$script_dir/stows/mocha/options" $accent_options
   fi
 
-  stow --dir="$script_dir/mocha/accents/$accent" --target="$HOME" $accent_packages
-  stow --dir="$script_dir/mocha/accents/$accent" --target="$script_dir/mocha/options" $accent_options
+  stow --dir="$script_dir/stows/mocha/accents/$accent" --target="$HOME" $accent_packages
+  stow --dir="$script_dir/stows/mocha/accents/$accent" --target="$script_dir/stows/mocha/options" $accent_options
 
   papirus-folders -C cat-mocha-$accent > /dev/null 2>&1
 
@@ -95,10 +95,10 @@ stow_mods() {
 
     if [[ -f "$script_dir/settings/$settings_prefix$flag" ]]; then
       local prev=$(cat "$script_dir/settings/$settings_prefix$flag")
-      stow -D --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$prev"
+      stow -D --dir=$script_dir/stows/mocha/modlist/$flag --target=$script_dir/stows/mocha/mods "$prev"
     fi
 
-    stow --dir=$script_dir/mocha/modlist/$flag --target=$script_dir/mocha/mods "$value"
+    stow --dir=$script_dir/stows/mocha/modlist/$flag --target=$script_dir/stows/mocha/mods "$value"
 
     echo $value > $script_dir/settings/$settings_prefix$flag
 
@@ -110,7 +110,7 @@ build() {
   export expbuild_accent=$accent
 
   for package in "$@"; do
-    bash "$script_dir/mocha/build/$package/build.sh"
+    bash "$script_dir/stows/mocha/build/$package/build.sh"
   done
 }
 

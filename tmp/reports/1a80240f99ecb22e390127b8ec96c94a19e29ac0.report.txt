@@ -1,0 +1,12 @@
+
+Squashed commits from autocommit/[457a5b5537cc66a87aff67887bd36b9d8b035091](https://codeberg.org/ponleou/dotfiles/commit/457a5b5537cc66a87aff67887bd36b9d8b035091)
+Last no-diff commit found from autocommit: [c7bec3cd8459503bec67d00cdbe604c86205067e](https://codeberg.org/ponleou/dotfiles/commit/c7bec3cd8459503bec67d00cdbe604c86205067e)
+
+commit count: 8
+diff:
+```
+
+M	essentials/easyeffects/.config/easyeffects/db/easyeffectsrc
+M	essentials/easyeffects/.config/easyeffects/db/equalizerrc
+M	essentials/nvim/.config/nvim/lazy-lock.json
+```

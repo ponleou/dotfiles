@@ -1,0 +1,119 @@
+@import "./colors.rasi"
+@import "./option/accent.rasi"
+@import "./mod/background.rasi"
+@import "./mod/rounded.rasi"
+
+* {
+    width: 600;
+    font: "Work Sans 12";
+}
+
+element-text,
+element-icon,
+mode-switcher {
+    background-color: inherit;
+    text-color: inherit;
+    font: @font;
+    highlight: none;
+}
+
+window {
+    border-color: transparent;
+    background-color: @background;
+    padding: 20px;
+    font: @font;
+    border: 2px;
+    border-color: @accent;
+    border-radius: @window-rounded;
+}
+
+mainbox {
+    background-color: transparent;
+    font: @font;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: transparent;
+    font: @font;
+    border-color: @accent;
+}
+
+prompt {
+    enabled: true;
+    background-color: @surface0;
+    text-color: @text;
+    text-align: center;
+    margin: 0px;
+    font: @font;
+    padding: 5px 7px;
+    border-radius: @rounded;
+}
+
+textbox-prompt-colon {
+    text-color: @text;
+    background-color: transparent;
+    font: @font;
+    expand: false;
+    width: 1ch;
+}
+
+message {
+    margin: 5px 0 0;
+    padding: 5px;
+    background-color: transparent;
+}
+
+textbox {
+    background-color: transparent;
+    font: @font;
+    text-color: @text;
+}
+
+entry {
+    padding: 0 0 0 5px;
+    padding: 5px;
+    text-color: @text;
+    background-color: transparent;
+    text-align: center;
+    line-height: 30px;
+    font: @font;
+    cursor-color: transparent;
+    padding: 5px 10px 5px 10px;
+}
+
+listview {
+    border: 0px;
+    padding: 5px 0px 0px;
+    columns: 1;
+    background-color: transparent;
+    fixed-height: false;
+    lines: 7;
+    font: @font;
+}
+
+element {
+    padding: 5px;
+    font: @font;
+    background-color: transparent;
+    text-color: @text;
+    margin: 10px 0 0;
+}
+
+element-icon {
+    size: 22px;
+    padding: 0 5px 0 0;
+    font: @font;
+}
+
+element selected {
+    background-color: transparent;
+    text-color: @accent;
+    font: @font;
+}
+
+error-message {
+    background-color: transparent;
+    text-color: @text;
+    font: @font;
+}
