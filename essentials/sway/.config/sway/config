@@ -35,6 +35,12 @@ input type:touchpad {
 	drag_lock enabled
 }
 
+input type:keyboard {
+    repeat_rate 66
+    repeat_delay 250
+    xkb_options caps:swapescape
+}
+
 focus_on_window_activation focus
 
 # autostart app
@@ -45,7 +51,8 @@ exec gtk-update-icon-cache  # allow wofi to get app icon
 exec easyeffects --gapplication-service
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec kwalletd6
-exec_always autotiling
+exec alacritty --daemon
+exec autotiling
 
 ### Idle configuration
  exec swayidle -w \
@@ -60,9 +67,5 @@ exec_always autotiling
 bar {
 	swaybar_command waybar
 }
-
-# fix epiphany being transparent
-for_window [app_id="org.gnome.Epiphany"] opacity 1.0; blur disable
-
 
 include /etc/sway/config.d/*

@@ -1,9 +1,0 @@
-
-Squashed commits from autocommit/[a6e8e2222e1134377dd459b1dbdc27370306e652](https://codeberg.org/ponleou/dotfiles/commit/a6e8e2222e1134377dd459b1dbdc27370306e652)
-Last no-diff commit found from autocommit: [9135f6210ee9f65ea0482df5a8797f8f898b7054](https://codeberg.org/ponleou/dotfiles/commit/9135f6210ee9f65ea0482df5a8797f8f898b7054)
-
-commit count: 1
-diff:
-```
-M	mocha/base/btop/.config/btop/btop.conf
-```

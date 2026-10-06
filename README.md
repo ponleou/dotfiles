@@ -14,7 +14,7 @@ My highly customisable rice for my Arch Linux + SwayFX machine based on Catppucc
 ### Supported Applications
 
 - QT and GTK themes
-- Konsole
+- Alacritty
 - Dolphin
 - Neovim
 - btop

@@ -5,75 +5,73 @@
 @import "./mod/gap.css";
 
 * {
-    border: none;
-    font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
-    font-size: 12px;
-    min-height: 0;
+  border: none;
+  font-size: 12px;
+  min-height: 0;
 }
 
 window#waybar {
-    background-color: @background;
-    color: @text;
+  background-color: @background;
+  color: @text;
+  font-family: WorkSans, FontAwesome6Free, SymbolsNerdFont;
 }
 
 tooltip {
-    background-color: @background;
-    border: 1px solid @surface1;
+  background-color: @background;
+  border: 1px solid @surface1;
+  font-family: "FiraCode Nerd Font Mono";
 }
 
 tooltip label {
-    color: @text;
+  color: @text;
 }
 
 #workspaces {
-    background-color: @accent;
-    margin-right: 5px;
-    padding: 1px 4px;
+  background-color: @accent;
+  margin-right: 5px;
+  padding: 1px 4px;
 }
 
 #workspaces button {
-    padding: 0 0px;
-    margin: 0 -5px;
-    color: @base;
+  padding: 0 0px;
+  margin: 0 -5px;
+  color: @base;
 }
 
 #workspaces button:hover {
-    box-shadow: inherit;
-    text-shadow: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 #workspaces button.urgent {
-    color: @urgent-red;
+  color: @urgent-red;
 }
 
 .modules-right,
 .modules-center,
 .modules-left {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    padding: 2px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 2px;
 }
 
 #interact {
-    background-color: @accent;
-    color: @mantle;
-    padding: 1px 5px;
+  background-color: @accent;
+  color: @mantle;
+  padding: 1px 5px;
 }
 
 #stats {
-    border: @accent solid 1px;
-    margin-right: 5px;
-    padding: 1px 3px;
+  border: @accent solid 1px;
+  margin-right: 5px;
+  padding: 1px 3px;
 }
 
 #swayinfo {
-    border: @accent solid 1px;
-    padding: 1px 1px;
-    margin-right: 5px;
+  border: @accent solid 1px;
+  padding: 1px 1px;
+  margin-right: 5px;
 }
-
-/* #music {
-} */
 
 #idle_inhibitor,
 #pulseaudio,
@@ -82,7 +80,7 @@ tooltip label {
 #backlight,
 #custom-power,
 #custom-notification {
-    margin: 0 -3px;
+  margin: 0 -3px;
 }
 
 #window,
@@ -103,39 +101,39 @@ tooltip label {
 #backlight,
 #custom-power,
 #custom-notification {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 #battery.charging {
-    color: @green;
+  color: @green;
 }
 
 #custom-playerctl {
-    background-color: @accent;
-    color: @mantle;
+  background-color: @accent;
+  color: @mantle;
 }
 
 #custom-playerlabel {
-    margin: 0 -5px;
+  margin: 0 -5px;
 }
 
 #mode {
-    background-color: @red;
-    color: @mantle;
+  background-color: @red;
+  color: @mantle;
 }
 
 #pulseaudio.muted,
 #network.disconnected {
-    color: @urgent-red;
+  color: @urgent-red;
 }
 
 @keyframes blink {
-    to {
-        background-color: @mantle;
-        color: @text;
-    }
+  to {
+    background-color: @mantle;
+    color: @text;
+  }
 }
 
 label:focus {
-    background-color: @mantle;
+  background-color: @mantle;
 }
