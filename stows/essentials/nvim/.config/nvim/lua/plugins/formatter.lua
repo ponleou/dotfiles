@@ -1,27 +1,5 @@
 return {
 	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		dependencies = { "mason-org/mason.nvim" },
-		config = function()
-			require("mason-tool-installer").setup({
-				ensure_installed = {
-					"beautysh",
-					"csharpier",
-					"clang-format",
-					"prettierd",
-					"prettier",
-					"djlint",
-					"latexindent",
-					"stylua",
-					"php-cs-fixer",
-					"black",
-					"rubocop",
-					"erb-formatter",
-				},
-			})
-		end,
-	},
-	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		cmd = { "ConformInfo" },
@@ -51,7 +29,7 @@ return {
 				lua = { "stylua" },
 				markdown = { "prettierd", "prettier", stop_after_first = true },
 				php = { "php_cs_fixer" },
-				python = { "black" },
+				python = { "ruff" },
 				ruby = { "rubocop" },
 				eruby = { "erb_format" },
 				typescript = { "prettierd", "prettier", stop_after_first = true },

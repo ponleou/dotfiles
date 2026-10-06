@@ -10,7 +10,12 @@ return {
 			"norg",
 		},
 		config = function()
-			require("autolist").setup()
+			require("autolist").setup({
+				colon = { -- if a line ends in a colon
+					indent = false, -- if in list and line ends in `:` then create list
+					indent_raw = false, -- above, but doesn't need to be in a list to work
+				},
+			})
 
 			vim.keymap.set("i", "<tab>", "<cmd>AutolistTab<cr>")
 			vim.keymap.set("i", "<s-tab>", "<cmd>AutolistShiftTab<cr>")

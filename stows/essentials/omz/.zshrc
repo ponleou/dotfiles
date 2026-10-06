@@ -116,6 +116,7 @@ export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:$GEM_HOME/bin
 export PATH=$PATH:$HOME/.dotnet/tools
 export GPG_TTY=$(tty)
+export LLAMA_CACHE="/opt/llama.cpp"
 
 alias code='codium' 
 
@@ -132,9 +133,17 @@ alias gc="git commit -m"
 alias gcf="git commit --fixup"
 alias gr="git rebase"
 alias gra="git rebase -i --autosquash"
+alias gb="git branch"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gs="git status"
+
+alias op="sudo systemctl start pon-onpower"
+alias ob="sudo systemctl start pon-onbattery"
+
+alias qwen="~/.local/bin/llama-cpp/llama-cpp_qwen.sh"
+alias qwenf="~/.local/bin/llama-cpp/llama-cpp_qwen-fast.sh"
+alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
