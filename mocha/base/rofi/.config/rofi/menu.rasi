@@ -94,7 +94,6 @@ element-icon {
 
 element selected {
     background-color: #00000000;
-    border-radius: 7.5px;
     text-color: @accent;
     font: @font;
 }

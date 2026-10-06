@@ -1,0 +1,89 @@
+@import "./colors.rasi"
+@import "./option/accent.rasi"
+@import "./mod/background.rasi"
+
+* {
+	background-color: transparent;
+	text-color:       @text;
+	width: 1000;
+	font: "Work Sans 12";
+}
+
+window {
+	children: [wrap, listview, message];
+	spacing: 10px;
+	padding: 20px;
+	background-color: @background;
+	border: 2px;
+	border-color: @accent;
+    border-radius: 5px;
+}
+
+wrap {
+	expand: false;
+	orientation: vertical;
+	children: [ inputbar ];
+	spacing: 10px;
+}
+
+message {
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: #00000000;
+    font: @font;
+    border-color: @accent;
+}
+
+prompt {
+    enabled: true;
+    background-color: @surface0;
+    text-color: @text;
+    text-align: center;
+    margin: 0px;
+    font: @font;
+    padding: 5px 7px;
+    border-radius: 5px;
+	content: "wallpaper";
+}
+
+entry {
+    padding: 0 0 0 5px;
+    text-color: @text;
+    background-color: #00000000;
+    text-align: center; 
+    line-height: 30px;   
+    font: @font;
+    cursor-color: transparent;
+    padding: 5px 10px 5px 10px;
+}
+
+listview {
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 6;
+	lines: 3;
+	spacing: 10px;
+}
+
+element {
+	orientation: vertical;
+  	children: [element-icon ];
+}
+
+element-icon {
+	size: calc(1200px/12);
+	horizontal-align: 0.5;
+}
+
+element-text {
+	horizontal-align: 0.5;
+}
+
+element selected {
+	border: 2px;
+	border-color: @accent;
+	border-radius: 5px;
+}
+

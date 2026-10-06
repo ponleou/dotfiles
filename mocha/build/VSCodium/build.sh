@@ -5,5 +5,5 @@
 script_dir="$(dirname "$(realpath "$0")")" # directory of where the script is
 
 # modify the settings.json
-sed -i --follow-symlinks "s/\"workbench.colorTheme\": \"[^\"]*\"/\"workbench.colorTheme\": \"Catppuccin Mocha\"/" $script_dir/settings.json
-sed -i --follow-symlinks "s/\"catppuccin.accentColor\": \"[^\"]*\"/\"catppuccin.accentColor\": \"$expbuild_accent\"/" $script_dir/settings.json
+jq '."workbench.colorTheme" = "Catppuccin Mocha"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
+jq '."catppuccin.accentColor" = "'"$expbuild_accent"'"' "$script_dir/settings.json" | sponge "$script_dir/settings.json"
