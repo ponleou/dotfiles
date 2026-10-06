@@ -213,6 +213,15 @@ ROOT
 └── assets/                                             # Assets (e.g. image files) for README.md
 ```
 
+### Branching:
+
+- `main`: The current version's stable branch (version number is from `.version`).
+- `autocommit`: Live-synchronisation with my current desktop, with highly redundant commits at a 1-minute debounce on changes. Used as a very reliable VC backup for my dotfiles, but not suitable to view as version changes.
+- `unstable`: Synchronisation with my current desktop at a 1-hour debounce on changes. Merges to `main` when stable.
+- `squash/main`: **The default branch**. As up-to-date as `main` branch, with commits squashed for every merge from `unstable` to `main`.
+- `stable/v#`: Archived `main` branch for every version bump.
+- `host`: Stores host files or other files related to the dotfiles.
+
 ### Notes:
 
 - Built config files, that are built with build scripts, contains a base template in \*.build
