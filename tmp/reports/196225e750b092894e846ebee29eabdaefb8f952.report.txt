@@ -1,0 +1,9 @@
+
+Squashed commits from autocommit/[e81cc3db9b5fbfd1d5009dad27c191681935a557](https://codeberg.org/ponleou/dotfiles/commit/e81cc3db9b5fbfd1d5009dad27c191681935a557)
+Last no-diff commit found from autocommit: [42b062a63547df267522558267eab155a8d9d215](https://codeberg.org/ponleou/dotfiles/commit/42b062a63547df267522558267eab155a8d9d215)
+
+commit count: 1
+diff:
+```
+M	stows/mocha/modlist/background/solid/qt6ct/darklyrc
+```

@@ -110,12 +110,12 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME="/home/ponleou/Android/Sdk"
 export ANDROID_SDK_ROOT="/home/ponleou/Android/Sdk"
-export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
-export GEM_HOME="$(gem env user_gemhome)"
-export PATH=$PATH:~/.cargo/bin/
-export PATH=$PATH:$GEM_HOME/bin
 export PATH=$PATH:$HOME/.dotnet/tools
+
+# for GPG git commit signing
 export GPG_TTY=$(tty)
+
+# llama.cpp models location
 export LLAMA_CACHE="/opt/llama.cpp"
 
 alias code='codium' 
@@ -141,8 +141,9 @@ alias gs="git status"
 alias op="sudo systemctl start pon-onpower"
 alias ob="sudo systemctl start pon-onbattery"
 
-alias qwen="~/.local/bin/llama-cpp/llama-cpp_qwen.sh"
-alias qwenf="~/.local/bin/llama-cpp/llama-cpp_qwen-fast.sh"
+alias tielq="~/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh"
+# alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
+alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 

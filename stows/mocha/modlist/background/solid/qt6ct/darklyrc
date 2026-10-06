@@ -3,3 +3,4 @@ OutlineCloseButton=false
 
 [Windeco]
 DrawBackgroundGradient=false
+OtherCornerRadius=0

@@ -120,12 +120,11 @@ _(and more to come)_
 ### Dependencies (may not be complete)
 
 - nwg-look
-- catppuccin-gtk-theme-mocha
-- libadwaita-without-adwaita-git
 - qt6ct-kde
 - papirus-folders-catppuccin-git
 - papirus-icon-theme
 - darkly
+- darkly-gtk
 - xdg-desktop-portal-gtk
 - zsh-syntax-highlighting
 

@@ -1,0 +1,23 @@
+
+Squashed commits from autocommit/[375a37b784803440bce845562529958bf53a5530](https://codeberg.org/ponleou/dotfiles/commit/375a37b784803440bce845562529958bf53a5530)
+Last no-diff commit found from autocommit: [5afa8f7a7c5fb3dd0904c8e5e6af49ab6d92a554](https://codeberg.org/ponleou/dotfiles/commit/5afa8f7a7c5fb3dd0904c8e5e6af49ab6d92a554)
+
+commit count: 1
+diff:
+```
+M	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/assets
+M	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/gtk.css
+M	stows/mocha/accents/green/nwg-look/.config/gtk-4.0/gtk-dark.css
+M	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/assets
+M	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk.css
+M	stows/mocha/accents/mauve/nwg-look/.config/gtk-4.0/gtk-dark.css
+M	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/assets
+M	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk.css
+M	stows/mocha/accents/peach/nwg-look/.config/gtk-4.0/gtk-dark.css
+M	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/assets
+M	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk.css
+M	stows/mocha/accents/sapphire/nwg-look/.config/gtk-4.0/gtk-dark.css
+M	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/assets
+M	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk.css
+M	stows/mocha/accents/yellow/nwg-look/.config/gtk-4.0/gtk-dark.css
+```
