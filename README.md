@@ -160,6 +160,8 @@ Neovim:
 Optional:
 
 - autotiling
+- grim
+- satty
 - gpu-screen-record
 - cliphist
 - tesseract
@@ -215,6 +217,5 @@ ROOT
 
 - Built config files, that are built with build scripts, contains a base template in \*.build
 - for Vesktop config packages, stow only owns the vesktop/settings/ directory
-- for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 - for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
 - `nwc` in modlist options stands for "no WayBar corners"
