@@ -147,5 +147,5 @@ alias tielq="~/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh"
 alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
+source ~/.zsh/theme-zsh-syntax-highlighting.zsh 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
