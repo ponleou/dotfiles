@@ -1,0 +1,6 @@
+{
+    "device": "alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_3E81F21F-00.mono-fallback",
+    "device-description": "RØDE NT-USB Mini Mono",
+    "device-profile": "mono-fallback",
+    "preset-name": "Rode USB"
+}

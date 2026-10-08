@@ -126,7 +126,7 @@ alias sm="$dotfiles_path/stow-mocha.sh"
 alias gm="cat ~/.git_messages.doc"
 
 alias gp="git push"
-alias gl="git pull"
+alias gpl="git pull"
 alias gf="git fetch"
 alias ga="git add"
 alias gc="git commit -m"
@@ -137,6 +137,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gs="git status"
+alias gl="git log"
 
 alias op="sudo systemctl start pon-onpower"
 alias ob="sudo systemctl start pon-onbattery"
@@ -146,5 +147,5 @@ alias tielq="~/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh"
 alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh 
+source ~/.zsh/theme-zsh-syntax-highlighting.zsh 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
