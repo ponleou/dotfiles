@@ -6,34 +6,45 @@
 
 My highly customisable rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic scripts and services. Feel free to take inspiration or copy for yourself.
 
+<img src="../assets/dotfiles_demo.gif" />
+
 ## Screenshots
 
-<img src="../assets/img_1.png" width="24%" />
-
-<img src="../assets/img_2.png" width="24%" />
-
-<img src="../assets/img_3.png" width="24%" />
-
-<img src="../assets/img_4.png" width="24%" />
+<img src="../assets/img_1.png" width="24%" /> <img src="../assets/img_2.png" width="24%" /> <img src="../assets/img_3.png" width="24%" /> <img src="../assets/img_4.png" width="24%" />
 
 ## Features
 
 ### Supported Applications
 
-- QT and GTK themes
+- Qt (with `qt6ct-kde`)
+- GTK (with `nwg-look`)
 - Alacritty
-- Dolphin
-- Neovim
 - btop
-- Vesktop
-- VSCode and VSCodium
-- Zen Browser
+- Neovim
 - Rofi
 - SwayFX
 - swaylock
 - SwayNC
+- Vesktop
+- VSCode and VSCodium
+- Zen Browser
 - WayBar
 - wlogout
+- Zen Browser
+- zsh syntax highlighting
+
+<details>
+<summary>Other saved dotfiles (essentials, but not themed)</summary>
+
+- Dolphin
+- Easy Effects
+- PhotoGIMP
+- mpv (with plugins)
+- zsh (zshrc)
+- custom scripts
+- custom `systemd` services
+
+</details>
 
 ### Theming
 
@@ -127,12 +138,11 @@ _(and more to come)_
 ### Dependencies (may not be complete)
 
 - nwg-look
-- catppuccin-gtk-theme-mocha
-- libadwaita-without-adwaita-git
 - qt6ct-kde
 - papirus-folders-catppuccin-git
 - papirus-icon-theme
 - darkly
+- darkly-gtk
 - xdg-desktop-portal-gtk
 - zsh-syntax-highlighting
 
@@ -153,6 +163,8 @@ Neovim:
 Optional:
 
 - autotiling
+- grim
+- satty
 - gpu-screen-record
 - cliphist
 - tesseract
@@ -204,10 +216,18 @@ ROOT
 └── assets/                                             # Assets (e.g. image files) for README.md
 ```
 
+### Branching:
+
+- `main`: The current version's stable branch (version number is from `.version`).
+- `autocommit`: Live-synchronisation with my current desktop, with highly redundant commits at a 1-minute debounce on changes. Used as a very reliable VC backup for my dotfiles, but not suitable to view as version changes.
+- `unstable`: Synchronisation with my current desktop at a 1-hour debounce on changes. Merges to `main` when stable.
+- `squash/main`: **The default branch**. As up-to-date as `main` branch, with commits squashed for every merge from `unstable` to `main`.
+- `stable/v#`: Archived `main` branch for every version bump.
+- `host`: Stores host files or other files related to the dotfiles.
+
 ### Notes:
 
 - Built config files, that are built with build scripts, contains a base template in \*.build
 - for Vesktop config packages, stow only owns the vesktop/settings/ directory
-- for YouTube Music config packages, stow only owns the "YouTube Music"/config.json and /[theme].css files
 - for Code and VSCodium config packages, stow only owns the Code/User/settings.json file (along with its \*.build file), and necessary extensions must be installed manually
 - `nwc` in modlist options stands for "no WayBar corners"

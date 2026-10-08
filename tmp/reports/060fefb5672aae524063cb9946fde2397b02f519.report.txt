@@ -1,0 +1,13 @@
+
+Squashed commits from autocommit/[050a2230c271580ec3f0e88c9f9fdeefe48a5e6c](https://codeberg.org/ponleou/dotfiles/commit/050a2230c271580ec3f0e88c9f9fdeefe48a5e6c)
+Last no-diff commit found from autocommit: [97ff021925e1baa4790c883f293d21ce9c555f9a](https://codeberg.org/ponleou/dotfiles/commit/97ff021925e1baa4790c883f293d21ce9c555f9a)
+
+commit count: 2
+diff:
+```
+
+D	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css
+D	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json
+D	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes/642854b5-88b4-4c40-b256-e035532109df/readme.md
+M	stows/mocha/accents/rosewater/zen/.zen/main.Default (release)/chrome/zen-themes.css
+```
