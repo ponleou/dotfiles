@@ -27,14 +27,16 @@ validate_mods() {
     local flag="${1##-}"
     local value="$2"
 
-    if [[ $# -lt 2 ]]; then
-      echo "Error: Flag '$1' requires a value" >&2
-      exit 2
-    fi
-
     if [[ ! -d "$script_dir/stows/mocha/modlist/$flag" ]]; then
       echo "Error: Unknown mod '$flag'. Available mods:" >&2
       local files=$(ls -1 "$script_dir/stows/mocha/modlist/")
+      echo "$files" >&2
+      exit 2
+    fi
+
+    if [[ $# -lt 2 ]]; then
+      echo "Error: Flag '$1' requires a value" >&2
+      local files=$(ls -1 "$script_dir/stows/mocha/modlist/$flag/")
       echo "$files" >&2
       exit 2
     fi

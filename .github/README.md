@@ -6,6 +6,8 @@
 
 My highly customisable rice for my Arch Linux + SwayFX machine based on Catppuccin colour palette. Possibly overengineered for modularity in extensible colour palettes, accents, and mods, with automatic scripts and services. Feel free to take inspiration or copy for yourself.
 
+<video src="../assets/dotfiles_demo.mp4" controls></video>
+
 ## Screenshots
 
 <img src="../assets/img_1.png" width="24%" /> <img src="../assets/img_2.png" width="24%" /> <img src="../assets/img_3.png" width="24%" /> <img src="../assets/img_4.png" width="24%" />
