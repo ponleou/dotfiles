@@ -1,9 +1,0 @@
-
-Squashed commits from autocommit/[8b056637011e68a94052a3b60c7945a3f3b1b0e9](https://codeberg.org/ponleou/dotfiles/commit/8b056637011e68a94052a3b60c7945a3f3b1b0e9)
-Last no-diff commit found from autocommit: [2d443b054c636f867053a2cc963fe950f1f08328](https://codeberg.org/ponleou/dotfiles/commit/2d443b054c636f867053a2cc963fe950f1f08328)
-
-commit count: 1
-diff:
-```
-M	stows/script/user/.local/bin/llama-cpp/llama-cpp_tiel-quality.sh
-```
