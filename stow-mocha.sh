@@ -34,14 +34,15 @@ validate_mods() {
       exit 2
     fi
 
-    if [[ ! -d "$script_dir/stows/mocha/modlist/$flag/$value" ]]; then
+    if [[ $# -lt 2 ]]; then
+      echo "Error: Flag '$1' requires a value" >&2
+      local files=$(ls -1 "$script_dir/stows/mocha/modlist/$flag/")
+      echo "$files" >&2
+      exit 2
+    fi
 
-      if [[ $# -lt 2 ]]; then
-        echo "Error: Flag '$1' requires a value" >&2
-      else
-        echo "Error: Invalid option '$value' for mod '$flag'. Available options:" >&2
-      fi
-      
+    if [[ ! -d "$script_dir/stows/mocha/modlist/$flag/$value" ]]; then
+      echo "Error: Invalid option '$value' for mod '$flag'. Available options:" >&2
       local files=$(ls -1 "$script_dir/stows/mocha/modlist/$flag/")
       echo "$files" >&2
       exit 2
