@@ -128,5 +128,6 @@
       "borderRadius": "2px"
     }
   ],
-  "workbench.browser.showInTitleBar": false
+  "workbench.browser.showInTitleBar": false,
+  "window.controlsStyle": "hidden"
 }
