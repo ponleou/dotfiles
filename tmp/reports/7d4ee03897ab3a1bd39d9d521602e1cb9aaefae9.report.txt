@@ -1,0 +1,14 @@
+
+Squashed commits from autocommit/[c3f145223eb26dd2aceb4caf5029c3528f71ccbb](https://codeberg.org/ponleou/dotfiles/commit/c3f145223eb26dd2aceb4caf5029c3528f71ccbb)
+Last no-diff commit found from autocommit: [cec2a874897480d023bfd6e8673c985c9eaefb88](https://codeberg.org/ponleou/dotfiles/commit/cec2a874897480d023bfd6e8673c985c9eaefb88)
+
+commit count: 4
+diff:
+```
+
+M	stows/essentials/nvim/.config/nvim/lazy-lock.json
+M	stows/essentials/nvim/.config/nvim/lua/plugins/formatter.lua
+M	stows/essentials/nvim/.config/nvim/lua/plugins/linter.lua
+M	stows/essentials/nvim/.config/nvim/lua/plugins/lsp.lua
+M	stows/essentials/nvim/.config/nvim/lua/plugins/mason.lua
+```
