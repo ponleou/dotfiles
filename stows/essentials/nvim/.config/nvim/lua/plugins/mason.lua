@@ -21,6 +21,7 @@ return {
 					"rubocop",
 					"erb-lint",
 					"yamllint",
+					"statix",
 					-- formatters
 					"beautysh",
 					"csharpier",
@@ -34,6 +35,7 @@ return {
 					"ruff",
 					"rubocop",
 					"erb-formatter",
+					"nixfmt",
 				},
 			})
 		end,
