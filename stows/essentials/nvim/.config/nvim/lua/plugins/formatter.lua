@@ -28,6 +28,7 @@ return {
 				tex = { "latexindent" },
 				lua = { "stylua" },
 				markdown = { "prettierd", "prettier", stop_after_first = true },
+				nix = { "nixfmt" },
 				php = { "php_cs_fixer" },
 				python = { "ruff" },
 				ruby = { "rubocop" },
