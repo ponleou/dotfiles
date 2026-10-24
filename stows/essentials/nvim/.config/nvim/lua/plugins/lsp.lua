@@ -24,6 +24,7 @@ return {
 					"texlab",
 					"lua_ls",
 					"marksman",
+					"nil",
 					"ltex_plus",
 					"mesonlsp",
 					"phpactor",
