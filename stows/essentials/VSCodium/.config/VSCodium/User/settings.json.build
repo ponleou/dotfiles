@@ -129,5 +129,9 @@
     }
   ],
   "workbench.browser.showInTitleBar": false,
-  "window.controlsStyle": "hidden"
+  "window.controlsStyle": "hidden",
+  "nix.formatterPath": "nix fmt",
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  }
 }
