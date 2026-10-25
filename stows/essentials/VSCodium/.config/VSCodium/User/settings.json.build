@@ -130,9 +130,18 @@
   ],
   "workbench.browser.showInTitleBar": false,
   "window.controlsStyle": "hidden",
-  "nix.formatterPath": "nix3-fmt",
+  "nix.serverSettings": {
+    "nixd": {
+      "formatting": {
+        "command": [
+          "nix3-fmt"
+        ]
+      }
+    }
+  },
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   },
-  "nix.enableLanguageServer": true
+  "nix.enableLanguageServer": true,
+  "nix.formatterPath": "nixfmt"
 }
