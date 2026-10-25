@@ -1,0 +1,10 @@
+
+Squashed commits from autocommit/[a0d2b6227a8ac11f2e82076b309f317c4bd89514](https://codeberg.org/ponleou/dotfiles/commit/a0d2b6227a8ac11f2e82076b309f317c4bd89514)
+Last no-diff commit found from autocommit: [6435abf9793ddd6afb16b98855818c752ffe7ed7](https://codeberg.org/ponleou/dotfiles/commit/6435abf9793ddd6afb16b98855818c752ffe7ed7)
+
+commit count: 5
+diff:
+```
+
+M	stows/essentials/VSCodium/.config/VSCodium/User/settings.json.build
+```
