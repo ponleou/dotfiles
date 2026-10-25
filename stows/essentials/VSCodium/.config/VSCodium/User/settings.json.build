@@ -133,5 +133,6 @@
   "nix.formatterPath": "nix3-fmt",
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
-  }
+  },
+  "nix.enableLanguageServer": true
 }
