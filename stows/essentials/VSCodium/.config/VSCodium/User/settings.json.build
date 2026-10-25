@@ -130,7 +130,11 @@
   ],
   "workbench.browser.showInTitleBar": false,
   "window.controlsStyle": "hidden",
-  "nix.formatterPath": "nix fmt",
+  "nix.formatterPath": [
+    "nix",
+    "fmt",
+    "{file}"
+  ],
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   }
