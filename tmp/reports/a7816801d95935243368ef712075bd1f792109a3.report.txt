@@ -1,0 +1,12 @@
+
+Squashed commits from autocommit/[2a3823e3ff56faa79665bfb876bc0122d697a154](https://codeberg.org/ponleou/dotfiles/commit/2a3823e3ff56faa79665bfb876bc0122d697a154)
+Last no-diff commit found from autocommit: [66cd1f074a8994605253853d5f7c2ef7ed301544](https://codeberg.org/ponleou/dotfiles/commit/66cd1f074a8994605253853d5f7c2ef7ed301544)
+
+commit count: 2
+diff:
+```
+
+M	stows/essentials/omz/.zshrc
+M	stows/script/user/.local/bin/llama-cpp/llama-cpp_mellum.sh
+R100	stows/script/user/.local/bin/llama-cpp/llama-cpp_ling.sh	stows/script/user/.local/bin/llama-cpp/llama-cpp_mellum.sh
+```
