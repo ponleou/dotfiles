@@ -556,9 +556,6 @@
         "WebContextMenus": {
             "enabled": true
         },
-        "ExpressionCloner": {
-            "enabled": false
-        },
         "CopyStickerLinks": {
             "enabled": false
         },
@@ -579,6 +576,9 @@
         },
         "MusicRichPresence": {
             "enabled": false
+        },
+        "ExpressionManager": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -591,11 +591,12 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1784182492670
+        "settingsSyncVersion": 1793440748970
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
     },
-    "windowsMaterial": "none"
+    "windowsMaterial": "none",
+    "nativeTitleBar": false
 }
