@@ -145,8 +145,7 @@ alias ob="sudo systemctl start pon-onbattery"
 alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
 alias mellum="~/.local/bin/llama-cpp/llama-cpp_mellum.sh"
 alias lfm="~/.local/bin/llama-cpp/llama-cpp_lfm.sh"
-# alias tiel="~/.local/bin/llama-cpp/llama-cpp_tiel.sh"
-# alias tielf="~/.local/bin/llama-cpp/llama-cpp_tiel-fast.sh"
+alias ornith="~/.local/bin/llama-cpp/llama-cpp_ornith.sh"
 alias kllama="~/.local/bin/llama-cpp/kill_llama-cpp.sh"
 
 source ~/.zsh/theme-zsh-syntax-highlighting.zsh 
