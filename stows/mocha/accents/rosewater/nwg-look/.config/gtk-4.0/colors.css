@@ -43,7 +43,7 @@
 @define-color theme_button_foreground_backdrop_insensitive_breeze #999fb9;
 @define-color theme_button_foreground_insensitive_breeze #999fb9;
 @define-color theme_button_foreground_normal_breeze #cdd6f4;
-@define-color theme_fg_color_breeze #cdd6f4;
+@define-color theme_fg_color_breeze red;
 @define-color theme_header_background_backdrop_breeze #1e1e2e;
 @define-color theme_header_background_breeze #181825;
 @define-color theme_header_background_light_breeze #181825;
