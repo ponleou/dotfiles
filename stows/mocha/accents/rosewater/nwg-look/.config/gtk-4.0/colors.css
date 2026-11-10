@@ -26,7 +26,7 @@
 @define-color theme_button_background_backdrop_breeze #202031;
 @define-color theme_button_background_backdrop_insensitive_breeze #2b2c3d;
 @define-color theme_button_background_insensitive_breeze #2b2c3d;
-@define-color theme_button_background_normal_breeze #313244;
+@define-color theme_button_background_normal_breeze red;
 @define-color theme_button_decoration_focus_backdrop_breeze #868492;
 @define-color theme_button_decoration_focus_backdrop_insensitive_breeze #b5a6a8;
 @define-color theme_button_decoration_focus_breeze #f5e0dc;
