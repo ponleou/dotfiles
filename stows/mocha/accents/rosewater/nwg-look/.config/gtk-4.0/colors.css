@@ -37,7 +37,7 @@
 @define-color theme_button_decoration_hover_insensitive_breeze #2b2c3d;
 @define-color theme_button_foreground_active_backdrop_breeze #808194;
 @define-color theme_button_foreground_active_backdrop_insensitive_breeze #999fb9;
-@define-color theme_button_foreground_active_breeze #fff;
+@define-color theme_button_foreground_active_breeze #11111b;
 @define-color theme_button_foreground_active_insensitive_breeze #999fb9;
 @define-color theme_button_foreground_backdrop_breeze #808194;
 @define-color theme_button_foreground_backdrop_insensitive_breeze #999fb9;
