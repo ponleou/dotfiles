@@ -1,2 +1,6 @@
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-peach.theme.css");
+
+/* includes mirror links */
 @import url("https://codeberg.org/ponleou/dotfiles/raw/branch/host/vesktop/mod_mochaLightAccent.css");
+@import url("https://forge.ponleou.cc/ponleou/dotfiles/raw/branch/host/vesktop/mod_mochaLightAccent.css");
+
