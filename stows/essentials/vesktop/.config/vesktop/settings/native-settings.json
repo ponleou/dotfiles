@@ -1,0 +1,11 @@
+{
+    "plugins": {},
+    "customCspRules": {
+        "forge.ponleou.cc": [
+            "connect-src",
+            "img-src",
+            "style-src",
+            "font-src"
+        ]
+    }
+}
