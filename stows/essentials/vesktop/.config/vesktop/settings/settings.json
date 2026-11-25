@@ -579,6 +579,9 @@
         },
         "ExpressionManager": {
             "enabled": false
+        },
+        "BetterYouTubeEmbeds": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -591,7 +594,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1793440748970
+        "settingsSyncVersion": 1795624780778
     },
     "uiElements": {
         "chatBarButtons": {},
