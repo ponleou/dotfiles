@@ -138,7 +138,13 @@
         },
         "CustomRPC": {
             "enabled": false,
-            "type": 0
+            "profiles": [
+                {
+                    "type": 0,
+                    "id": "default",
+                    "label": "Default"
+                }
+            ]
         },
         "CustomIdle": {
             "enabled": false
@@ -594,12 +600,13 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1795624780778
+        "settingsSyncVersion": 1795789418040
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
     },
     "windowsMaterial": "none",
-    "nativeTitleBar": false
+    "nativeTitleBar": false,
+    "disableBackgroundOptimization": true
 }
